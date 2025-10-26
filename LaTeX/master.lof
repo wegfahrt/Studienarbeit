@@ -2,23 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Drei Schichten Architektur}}{12}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Hexagonale Architektur}}{15}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Clean Architektur}}{16}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Test Pyramide}}{27}{figure.caption.66}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use-Case Diagramm}}{44}{figure.caption.119}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Context Map}}{45}{figure.caption.120}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Story-Mapping Diagramm}}{46}{figure.caption.121}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces \ac {ER}-Model Diagramm}}{50}{figure.caption.128}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Beispiel State-Machine}}{54}{figure.caption.131}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces \ac {ER}-Model Diagramm der Zustandsmodelle}}{55}{figure.caption.132}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gantt Diagramm}}{64}{figure.caption.135}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Container Popup}}{65}{figure.caption.137}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Web Framework Benchmark}}{72}{figure.caption.147}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Information technology spending on enterprise software worldwide}}{78}{figure.caption.158}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\def \@chapapp {\appendixname }
 \addvspace {10\p@ }

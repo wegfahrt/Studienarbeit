@@ -8,7 +8,7 @@ https://github.com/wegfahrt/arc-raiders-tools
 
 ## Planung
 
-### Agile Board
+### Kanban Board
 https://arc-raiders-companion.youtrack.cloud/agiles/192-3/current
 
 ### Gantt Zeitplan

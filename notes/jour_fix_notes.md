@@ -11,7 +11,7 @@
 2. Grundlagen (State of the Art)
  2.1 Arc Raiders (Spielbeschreibung, evtl. Screenshots, offizielle Quellen)
  2.2 Vorhandene Tools/Anwendungen (Qualitätsprobleme(ChatGPT?), MetaForge abhebung durch welche Features?, Parallelen zu Tools aus anderen Spielen wie Tarkov?)
- 2.3 Datenquellen (Beschreibung, evtl. Screenshots, offizielle Quellen)
+ 2.3 Datenquellen 
 3. Umsetzung/Durchführung
 4. Validierung/ Evaluation der Ergebnisse
   4.1 Objektivierung der Ergebnisse (Tabelle, Aufgabe, erledigt?, verifiziert?)
@@ -39,4 +39,9 @@ Wie kann man es erweitern
 - realistischen Zeitplan erstellen (Gantt?), inklusive Studienarbeit Kapitel schreiben
 - repo mit allen Daten (Zeitplan, YouTrack, Labortagebuch, Studienarbeit) github:kraut4nix
 
+# 27.10
 
+## Fragen
+- "Operationalisierung" Beispiel? Aufbereitung nach Invest Kriterien?
+- Fan vom Grundlagen Split in theoretisch, methodisch und technisch?
+- Methodische Grundlagen wie (Kanban, Gantt etc) überhaupt nötig da Arbeit für Fachleute? Wo ist die Grenze?
