@@ -2,19 +2,41 @@
 \chapter{Einleitung}
 
 \section{Motivation}
-"Einordnung in die Umwelt"
+Der globale Gaming-Markt verzeichnet ein beispielloses Wachstum: Mit einer Bewertung von 298,98 Milliarden USD im Jahr 2024 wird prognostiziert, dass der Markt bis 2030 auf 600,74 Milliarden USD anwachsen wird (Grand View Research, 2024). Diese Entwicklung zeigt deutlich, dass Anwendungen in diesem Bereich ein großes Potenzial haben.
+
+Innerhalb dieses dynamischen Marktes hat sich der Extraction Shooter als besonders anspruchsvolles und komplexes Genre etabliert. Spiele wie Escape from Tarkov und Hunt: Showdown definieren dieses Genre durch ihre charakteristischen Merkmale: hochriskante \ac{PvPvE}-Gameplay-Mechaniken, komplexe Progressionssysteme mit zahlreichen Quest-Lines, ressourcenbasierte Upgrade-Systeme und die permanente Gefahr des Verlusts aller mitgeführten Items bei einem Spieltod (Gaming News, 2025). Arc Raiders, entwickelt von Embark Studios und im Oktober 2025 veröffentlicht, positioniert sich als ambitionierter Vertreter dieses Genres mit dem Ziel, die Komplexität von Tarkov mit einer zugänglicheren Spielerfahrung zu verbinden.
+
+Die inhärente Komplexität von Extraction Shootern stellt Spieler jedoch vor erhebliche Herausforderungen: Multiple Quest-Lines mit unterschiedlichen Zielen und Abhängigkeiten, begrenzter Inventarplatz, knappe Ressourcen und die Notwendigkeit koordinierter Squad-Basierter Strategien erfordern ein hohes Maß an Planung und Informationsmanagement. Companion Apps haben sich in der Gaming-Industrie als effektive Lösung etabliert, um solche Komplexitäten zu bewältigen. Es bestehen zahlreiche Beispiele aus verschiedenen Genres wie League of Legends, Destiny 2 oder eben Extraction-Shootern wie Escape from Tarkov, welche demonstrieren, wie externe Anwendungen das Spielerlebnis durch Statistik-Tracking, Ressourcenmanagement und Team-Koordination signifikant verbessern können (Brainhub, 2024; The Gamer, 2023).
+
+\pagebreak
+
 \section{Problemstellung}
-"Was ist das Problem?"
+Spieler von Arc Raiders sehen sich mit mehreren miteinander verknüpften Herausforderungen konfrontiert:
+
+\textbf{Informationsasymmetrie und mangelnde Übersicht: } Das Spiel bietet zahlreiche Quest-Lines mit unterschiedlichen Zielen, zeigt jedoch nur die aktiven Quests an. Spieler haben dadurch keinen vollständigen Überblick über verfügbare Quests, deren Abhängigkeiten, den optimalen Pfad zur Erfüllung ihrer Ziele oder benötigter Materialien für die Zukunft. Diese Informationsfragmentierung erschwert strategische Planung und führt zu ineffizienten Entscheidungen.
+
+\textbf{Ressourcenmanagement: } Die Upgrade-Systeme für Workstations erfordern multiple Ressourcentypen über mehrere Stufen hinweg. Bei begrenztem Inventarplatz und knappen Ressourcen fehlen Spielern Werkzeuge zur Kalkulation benötigter Materialien und zur Priorisierung von Upgrades basierend auf ihren individuellen Spielzielen.
+
+\textbf{Squad-Koordination: } Arc Raiders basiert auf Squad-orientiertem Gameplay, doch wenn jedes Squad-Mitglied nur seine eigenen Ziele verfolgt, entstehen Konflikte bei der Routenplanung und Ressourcenverteilung. Die fehlende zentrale Übersicht über Squad-Ziele behindert effektive Koordination und optimale Ressourcennutzung.
+
+\textbf{Fehlen offizieler Planungstools: } Zum aktuellen Stand (November 2025) existieren keine offiziellen Tools oder \ac{API} zur Lösung dieser Probleme. Daten werden von Spielern über diverse Plattformen gesammelt und bereitgestellt. 
+
+Diese Problemstellung ist nicht singulär für Arc Raiders, sondern repräsentativ für die Herausforderungen moderner Extraction Shooter mit komplexen Meta-Progression-Systemen. Die Lösung dieser Probleme durch eine dedizierte Companion App könnte somit über Arc Raiders hinaus als Referenzimplementierung für ähnliche Spiele dienen.
+
 \section{Aufgabenstellung}
-"Wie wird es gelöst?"
+Zur Lösung der identifizierten Problemstellung wird im Rahmen dieser Studienarbeit eine externe Companion Applikation für Arc Raiders konzipiert und implementiert. Die Aufgabenstellung gliedert sich in folgende Hauptkomponenten:
 
-"Operationalisierung" der Problemstellung in Schritte (Akzeptanzkriterien, Validierbar, Verifizierbar)
+\begin{enumerate}
+	\item \textbf{Anforderungsanalyse: } Zunächst werden die Anforderungen der Applikation definiert. Dies umfasst die Erhebung von Nutzerbedürfnissen basierend auf Erkenntinissen aus den Spieltests, die Analyse vergleichbarer Companion Apps und die Definition von Akzeptanzkriterien für die Kernsystemfunktionalitäten.
+	\item \textbf{Design/Vorbereitung: } Daraufhin wird eine passende Systemarchitektur entworfen und die verwendeten Technologien ausgewählt. Hierzu werden die Anforderungen herangezogen, um die Komplexität und Risiken der jewiligen Lösungen abzuschätzen. Es werden Datenmodelle, wie ER-Diagramme, entwickelt und verschiedene Quellen für die zugrunde liegenden Daten verglichen. Abschließend werden die ursprünglich definierten Aufgaben mithilfe der gewonnenen Kenntnisse aufgearbeitet,zeitlich organisiert sowie ein Testansatz entwickelt, um die anschließende Implementierung zu erleichtern.
+	\item \textbf{Implementierung: } Die Applikation wird nun entsprechend des definierten Plans umgesetzt. Jedes Feature wird mit seinen Tests implementiert.
+\end{enumerate}
 
-User Stories nach
-SMART, INVEST
-DoD Kriterien
-Give, When, Then, And Formulierung?
-Formulierung von TEstfällen
+
+
+
+
+
 
 \section{Methoden und Verfahren}
 "Welche Methoden und Verfahren werden verwendet?"

@@ -40,8 +40,12 @@ Wie kann man es erweitern
 - repo mit allen Daten (Zeitplan, YouTrack, Labortagebuch, Studienarbeit) github:kraut4nix
 
 # 27.10
+- Aufgabenstellung => Implementierung => Ergebnisse
+- High Level Ziele wie Anforderungsanalyse, Marktanalyse, Design wie Technologieentscheid, nicht die tatsächlichen user stories
 
 ## Fragen
 - "Operationalisierung" Beispiel? Aufbereitung nach Invest Kriterien?
 - Fan vom Grundlagen Split in theoretisch, methodisch und technisch?
 - Methodische Grundlagen wie (Kanban, Gantt etc) überhaupt nötig da Arbeit für Fachleute? Wo ist die Grenze?
+- Alternative Validierungsmethoden zu E2E Tests bei solchen Anwendungen
+- Praxisarbeit schreiben als Issues im Planungstool?
