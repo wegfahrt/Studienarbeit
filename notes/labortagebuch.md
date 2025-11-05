@@ -20,3 +20,6 @@
 Bericht:
 - web-basiert vs desktopbasiert (informationen des spiels, integration wie aktuelle map, auslesen von komplexeren daten)
 - Wo in der Aufgabenstellung ide Zeitliche Planung einordnen? Design?
+- Festlegen auf verwendete Planungsmethoden, User Stories, Gantt Chart, Kanban Board, etc.
+- Orientieren an T2000
+- Was kommt in "Methoden und Verfahren"  und "Grundlagen"? Use-Cases, User-Stories?

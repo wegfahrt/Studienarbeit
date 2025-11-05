@@ -13,24 +13,30 @@ Die inhärente Komplexität von Extraction Shootern stellt Spieler jedoch vor er
 \section{Problemstellung}
 Spieler von Arc Raiders sehen sich mit mehreren miteinander verknüpften Herausforderungen konfrontiert:
 
-\textbf{Informationsasymmetrie und mangelnde Übersicht: } Das Spiel bietet zahlreiche Quest-Lines mit unterschiedlichen Zielen, zeigt jedoch nur die aktiven Quests an. Spieler haben dadurch keinen vollständigen Überblick über verfügbare Quests, deren Abhängigkeiten, den optimalen Pfad zur Erfüllung ihrer Ziele oder benötigter Materialien für die Zukunft. Diese Informationsfragmentierung erschwert strategische Planung und führt zu ineffizienten Entscheidungen.
+\textbf{Informationsasymmetrie und mangelnde Übersicht:} Das Spiel bietet zahlreiche Quest-Lines mit unterschiedlichen Zielen, zeigt jedoch nur die aktiven Quests an. Spieler haben dadurch keinen vollständigen Überblick über verfügbare Quests, deren Abhängigkeiten, den optimalen Pfad zur Erfüllung ihrer Ziele oder benötigter Materialien für die Zukunft. Diese Informationsfragmentierung erschwert strategische Planung und führt zu ineffizienten Entscheidungen.
 
-\textbf{Ressourcenmanagement: } Die Upgrade-Systeme für Workstations erfordern multiple Ressourcentypen über mehrere Stufen hinweg. Bei begrenztem Inventarplatz und knappen Ressourcen fehlen Spielern Werkzeuge zur Kalkulation benötigter Materialien und zur Priorisierung von Upgrades basierend auf ihren individuellen Spielzielen.
+\textbf{Ressourcenmanagement:} Die Upgrade-Systeme für Workstations erfordern multiple Ressourcentypen über mehrere Stufen hinweg. Bei begrenztem Inventarplatz und knappen Ressourcen fehlen Spielern Werkzeuge zur Kalkulation benötigter Materialien und zur Priorisierung von Upgrades basierend auf ihren individuellen Spielzielen.
 
-\textbf{Squad-Koordination: } Arc Raiders basiert auf Squad-orientiertem Gameplay, doch wenn jedes Squad-Mitglied nur seine eigenen Ziele verfolgt, entstehen Konflikte bei der Routenplanung und Ressourcenverteilung. Die fehlende zentrale Übersicht über Squad-Ziele behindert effektive Koordination und optimale Ressourcennutzung.
+\textbf{Squad-Koordination:} Arc Raiders basiert auf Squad-orientiertem Gameplay, doch wenn jedes Squad-Mitglied nur seine eigenen Ziele verfolgt, entstehen Konflikte bei der Routenplanung und Ressourcenverteilung. Die fehlende zentrale Übersicht über Squad-Ziele behindert effektive Koordination und optimale Ressourcennutzung.
 
-\textbf{Fehlen offizieler Planungstools: } Zum aktuellen Stand (November 2025) existieren keine offiziellen Tools oder \ac{API} zur Lösung dieser Probleme. Daten werden von Spielern über diverse Plattformen gesammelt und bereitgestellt. 
+\textbf{Fehlen offizieler Planungstools:} Zum aktuellen Stand (November 2025) existieren keine offiziellen Tools oder \ac{API} zur Lösung dieser Probleme. Daten werden von Spielern über diverse Plattformen gesammelt und bereitgestellt. 
 
 Diese Problemstellung ist nicht singulär für Arc Raiders, sondern repräsentativ für die Herausforderungen moderner Extraction Shooter mit komplexen Meta-Progression-Systemen. Die Lösung dieser Probleme durch eine dedizierte Companion App könnte somit über Arc Raiders hinaus als Referenzimplementierung für ähnliche Spiele dienen.
 
 \section{Aufgabenstellung}
-Zur Lösung der identifizierten Problemstellung wird im Rahmen dieser Studienarbeit eine externe Companion Applikation für Arc Raiders konzipiert und implementiert. Die Aufgabenstellung gliedert sich in folgende Hauptkomponenten:
+Zur Lösung der identifizierten Problemstellung wird im Rahmen dieser Studienarbeit eine externe Companion Applikation für Arc Raiders konzipiert und implementiert. Der Entwicklungsprozess orientiert sich an agilen Methoden und integriert gleichzeitig wissenschaftliche Methoden zur Sicherstellung einer fundierten und nutzerzentrierten Lösung. Die Arbeit gliedert sich in folgende Hauptphasen:
 
 \begin{enumerate}
-	\item \textbf{Anforderungsanalyse: } Zunächst werden die Anforderungen der Applikation definiert. Dies umfasst die Erhebung von Nutzerbedürfnissen basierend auf Erkenntinissen aus den Spieltests, die Analyse vergleichbarer Companion Apps und die Definition von Akzeptanzkriterien für die Kernsystemfunktionalitäten.
-	\item \textbf{Design/Vorbereitung: } Daraufhin wird eine passende Systemarchitektur entworfen und die verwendeten Technologien ausgewählt. Hierzu werden die Anforderungen herangezogen, um die Komplexität und Risiken der jewiligen Lösungen abzuschätzen. Es werden Datenmodelle, wie ER-Diagramme, entwickelt und verschiedene Quellen für die zugrunde liegenden Daten verglichen. Abschließend werden die ursprünglich definierten Aufgaben mithilfe der gewonnenen Kenntnisse aufgearbeitet,zeitlich organisiert sowie ein Testansatz entwickelt, um die anschließende Implementierung zu erleichtern.
-	\item \textbf{Implementierung: } Die Applikation wird nun entsprechend des definierten Plans umgesetzt. Jedes Feature wird mit seinen Tests implementiert.
+	\item \textbf{Anforderungsanalyse:} Zunächst werden die Anforderungen der Applikation definiert. Dies umfasst die Erhebung von Nutzerbedürfnissen basierend auf Erkenntnissen aus den Spieltests, die Analyse vergleichbarer Companion Apps und die Definition von Akzeptanzkriterien für die Kernsystemfunktionalitäten.
+
+	\item \textbf{Design/Vorbereitung:} Es wird eine passende Systemarchitektur entworfen und die verwendeten Technologien ausgewählt. Hierzu werden die Anforderungen herangezogen, um die Komplexität und Risiken der jewiligen Lösungen abzuschätzen. Es werden Datenmodelle, wie ER-Diagramme, entwickelt und verschiedene Quellen für die zugrunde liegenden Daten verglichen. Abschließend werden die ursprünglich definierten Aufgaben mithilfe der gewonnenen Kenntnisse aufgearbeitet, zeitlich organisiert sowie ein Testansatz entwickelt, um die anschließende Implementierung zu erleichtern.
+
+	\item \textbf{Implementierung:} Die Applikation wird nun entsprechend des definierten Plans in agilen Iterationen umgesetzt, wobei kontinuierlich Feedback eingeholt und in die Entwicklung integriert wird. Jedes Feature wird mit seinen Tests implementiert um eine hohe Softwarequalität sicherzustellen.
+	
+	\item \textbf{Evaluation, Diskussion und Ausblick:} Abschließend wird die entwickelte Applikation hinsichtlich der Erfüllung der definierten Anforderungen evaluiert. Dabei werden sowohl die Stärken als auch die Schwächen der Lösung diskutiert und mögliche Verbesserungen aufgezeigt. Zudem wird ein Ausblick auf zukünftige Entwicklungen und Erweiterungen der Applikation gegeben.
 \end{enumerate}
+
+Diese Vorgehensweise gewährleistet eine strukturierte und zielgerichtete Entwicklung der Companion App, die den Bedürfnissen der Spieler gerecht wird und die identifizierten Herausforderungen effektiv adressiert.
 
 
 
