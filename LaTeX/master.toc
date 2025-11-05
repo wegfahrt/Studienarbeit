@@ -28,3 +28,4 @@
 \contentsline {chapter}{\numberline {5}Fazit und Ausblick}{7}{chapter.5}%
 \def \@chapapp {\appendixname }
 \contentsline {chapter}{Anhang}{}{chapter.5}
+\contentsline {chapter}{\nonumberline Literatur}{8}{chapter*.10}%

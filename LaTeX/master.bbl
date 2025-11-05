@@ -16,5 +16,82 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{TheGamer}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0f05d1e45f1742a971eb8fee5eeb64fa}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{fullhash}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{fullhashraw}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{bibnamehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{authorbibnamehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{authornamehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{authorfullhash}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \strng{authorfullhashraw}{0f05d1e45f1742a971eb8fee5eeb64fa}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best Companion Apps In Video Games}
+      \field{year}{2023}
+    \endentry
+    \entry{Brainhub}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=ad8547e96ce08818afc1ab41de0b2084}{%
+           family={Giersza},
+           familyi={G\bibinitperiod},
+           given={Olga},
+           giveni={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Brainhub}%
+      }
+      \strng{namehash}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{fullhash}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{fullhashraw}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{bibnamehash}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{authorbibnamehash}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{authornamehash}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{authorfullhash}{ad8547e96ce08818afc1ab41de0b2084}
+      \strng{authorfullhashraw}{ad8547e96ce08818afc1ab41de0b2084}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Companion Apps are Taking Video Games to the Next Level}
+      \field{year}{2024}
+    \endentry
+    \entry{VideoGameMarket}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=b969eb2b40666d51b62eb8e1f6416c21}{%
+           family={Research},
+           familyi={R\bibinitperiod},
+           given={Grand\bibnamedelima View},
+           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{fullhash}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{fullhashraw}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{bibnamehash}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{authorbibnamehash}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{authornamehash}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{authorfullhash}{b969eb2b40666d51b62eb8e1f6416c21}
+      \strng{authorfullhashraw}{b969eb2b40666d51b62eb8e1f6416c21}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Video Game Market Size, Share And Growth Report}
+      \field{year}{2024}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
