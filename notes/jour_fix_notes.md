@@ -46,3 +46,9 @@ Wie kann man es erweitern
 ## Fragen
 - Was kommt in "Methoden und Verfahren" und "Grundlagen"? Use-Cases, User-Stories?
 - Methodische Grundlagen wie (Kanban, Gantt etc) überhaupt nötig da Arbeit für Fachleute? Wo ist die Grenze?
+
+## 10.11
+AUfgabenstellung feedback
+- in eigenes Kapitel
+- operationalisierung erwähnen, wie die aufgabenstellung aus der problwemstellung abgeleitet wurde
+- Schritte atomarer gestalen e.g 1 -> 1.1 Anforderungen definieren und 1..1 erhebung 1.1.3 erkentnisse aus spieltest 1.1.4 anayse vergleichbarer apps
