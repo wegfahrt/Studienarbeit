@@ -44,8 +44,5 @@ Wie kann man es erweitern
 - High Level Ziele wie Anforderungsanalyse, Marktanalyse, Design wie Technologieentscheid, nicht die tatsächlichen user stories
 
 ## Fragen
-- "Operationalisierung" Beispiel? Aufbereitung nach Invest Kriterien?
-- Fan vom Grundlagen Split in theoretisch, methodisch und technisch?
+- Was kommt in "Methoden und Verfahren" und "Grundlagen"? Use-Cases, User-Stories?
 - Methodische Grundlagen wie (Kanban, Gantt etc) überhaupt nötig da Arbeit für Fachleute? Wo ist die Grenze?
-- Alternative Validierungsmethoden zu E2E Tests bei solchen Anwendungen
-- Praxisarbeit schreiben als Issues im Planungstool?

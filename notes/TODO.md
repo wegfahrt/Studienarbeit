@@ -7,3 +7,7 @@
 - [ ] Handle exceptions like apricots and mushrooms properly, remove s in db or in code?
 
 bg-[oklch(var(--muted))]
+
+# Recycling Page
+
+# Recipe Page (accessed via workstation)
