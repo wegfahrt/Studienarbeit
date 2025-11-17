@@ -2376,6 +2376,11 @@
     <bcf:citekey order="1" intorder="1">VideoGameMarket</bcf:citekey>
     <bcf:citekey order="2" intorder="1">Brainhub</bcf:citekey>
     <bcf:citekey order="3" intorder="1">TheGamer</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">vanLamsweerde2000</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Abukhalaf2025</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Visure2025</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Ambler2023</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Ebirim2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

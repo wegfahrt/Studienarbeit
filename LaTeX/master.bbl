@@ -19,6 +19,72 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
+    \entry{Abukhalaf2025}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=9b0fad32b7bdda51643f8ab82f7074e7}{%
+           family={Abukhalaf},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{fullhash}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{fullhashraw}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{bibnamehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{authorbibnamehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{authornamehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{authorfullhash}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \strng{authorfullhashraw}{879f34bc3ce7bf721da01ff7cc2e07f0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Computer Science}
+      \field{title}{Automated requirements engineering framework for agile model-driven development}
+      \field{volume}{7}
+      \field{year}{2025}
+      \verb{doi}
+      \verb 10.3389/fcomp.2025.1537100
+      \endverb
+    \endentry
+    \entry{Ambler2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=fc1f56563a26d9659940dfe2082b6700}{%
+           family={Ambler},
+           familyi={A\bibinitperiod},
+           given={Scott\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Agile Modeling}%
+      }
+      \strng{namehash}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{fullhash}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{fullhashraw}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{bibnamehash}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{authorbibnamehash}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{authornamehash}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{authorfullhash}{fc1f56563a26d9659940dfe2082b6700}
+      \strng{authorfullhashraw}{fc1f56563a26d9659940dfe2082b6700}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Agile Requirements Modeling: Strategies for Agile Teams}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://agilemodeling.com/essays/agileRequirements.htm
+      \endverb
+      \verb{url}
+      \verb http://agilemodeling.com/essays/agileRequirements.htm
+      \endverb
+    \endentry
     \entry{TheGamer}{article}{}{}
       \name{author}{1}{}{%
         {{hash=0f05d1e45f1742a971eb8fee5eeb64fa}{%
@@ -41,6 +107,36 @@
       \field{labeltitlesource}{title}
       \field{title}{Best Companion Apps In Video Games}
       \field{year}{2023}
+    \endentry
+    \entry{Ebirim2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=e60a2a36402e6b458d8954b0e82d173e}{%
+           family={Ebirim},
+           familyi={E\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{fullhash}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{fullhashraw}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{bibnamehash}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{authorbibnamehash}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{authornamehash}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{authorfullhash}{44303a8766ec8fc5c9345f116d9309b9}
+      \strng{authorfullhashraw}{44303a8766ec8fc5c9345f116d9309b9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{World Journal of Advanced Research and Reviews}
+      \field{number}{01}
+      \field{title}{Advancements and innovations in requirements elicitation}
+      \field{volume}{22}
+      \field{year}{2024}
+      \field{pages}{1209\bibrangedash 1220}
+      \range{pages}{12}
     \endentry
     \entry{Brainhub}{article}{}{}
       \name{author}{1}{}{%
@@ -68,6 +164,40 @@
       \field{title}{Companion Apps are Taking Video Games to the Next Level}
       \field{year}{2024}
     \endentry
+    \entry{vanLamsweerde2000}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=6ac904da73bf9a2a94a328cd63950e37}{%
+           family={Lamsweerde},
+           familyi={L\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Press}%
+      }
+      \strng{namehash}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{fullhash}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{fullhashraw}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{bibnamehash}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{authorbibnamehash}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{authornamehash}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{authorfullhash}{6ac904da73bf9a2a94a328cd63950e37}
+      \strng{authorfullhashraw}{6ac904da73bf9a2a94a328cd63950e37}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 22nd International Conference on Software Engineering (ICSE'00)}
+      \field{title}{Requirements Engineering in the Year 00: A Research Perspective}
+      \field{year}{2000}
+      \field{pages}{5\bibrangedash 19}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1145/337180.337184
+      \endverb
+    \endentry
     \entry{VideoGameMarket}{report}{}{}
       \name{author}{1}{}{%
         {{hash=b969eb2b40666d51b62eb8e1f6416c21}{%
@@ -90,6 +220,37 @@
       \field{labeltitlesource}{title}
       \field{title}{Video Game Market Size, Share And Growth Report}
       \field{year}{2024}
+    \endentry
+    \entry{Visure2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=bafadb13d8c40ebabecd9cd66af7a79f}{%
+           family={{Visure Solutions}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{fullhash}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{fullhashraw}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{bibnamehash}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{authorbibnamehash}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{authornamehash}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{authorfullhash}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \strng{authorfullhashraw}{bafadb13d8c40ebabecd9cd66af7a79f}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Requirements Gathering Techniques in Agile Software Engineering}
+      \field{urlday}{27}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://visuresolutions.com/alm-guide/requirements-gathering-techniques-for-agile
+      \endverb
+      \verb{url}
+      \verb https://visuresolutions.com/alm-guide/requirements-gathering-techniques-for-agile
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

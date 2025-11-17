@@ -1,7 +1,7 @@
 % !TEX root =  master.tex
 \chapter{Einleitung}
 
-\section{Motivation}
+\section{Motivation}\label{sec:motivation}
 Der globale Gaming-Markt verzeichnet ein beispielloses Wachstum: Mit einer Bewertung von 298,98 Milliarden USD im Jahr 2024 wird prognostiziert, dass der Markt bis 2030 auf 600,74 Milliarden USD anwachsen wird \cite{VideoGameMarket}. Diese Entwicklung zeigt deutlich, dass Anwendungen in diesem Bereich ein großes Potenzial haben.
 
 Innerhalb dieses dynamischen Marktes hat sich der Extraction Shooter als besonders anspruchsvolles und komplexes Genre etabliert. Spiele wie Escape from Tarkov und Hunt: Showdown definieren dieses Genre durch ihre charakteristischen Merkmale: hochriskante \ac{PvPvE}-Gameplay-Mechaniken, komplexe Progressionssysteme mit zahlreichen Quest-Lines, ressourcenbasierte Upgrade-Systeme und die permanente Gefahr des Verlusts aller mitgeführten Items bei einem Spieltod. Arc Raiders, entwickelt von Embark Studios und im Oktober 2025 veröffentlicht, positioniert sich als ambitionierter Vertreter dieses Genres mit dem Ziel, die Komplexität von Tarkov mit einer zugänglicheren Spielerfahrung zu verbinden.
@@ -10,7 +10,7 @@ Die inhärente Komplexität von Extraction Shootern stellt Spieler jedoch vor er
 
 \pagebreak
 
-\section{Problemstellung}
+\section{Problemstellung}\label{sec:problemstellung}
 Spieler von Arc Raiders sehen sich mit mehreren miteinander verknüpften Herausforderungen konfrontiert:
 
 \textbf{Informationsasymmetrie und mangelnde Übersicht:} Das Spiel bietet zahlreiche Quest-Lines mit unterschiedlichen Zielen, zeigt jedoch nur die aktiven Quests an. Spieler haben dadurch keinen vollständigen Überblick über verfügbare Quests, deren Abhängigkeiten, den optimalen Pfad zur Erfüllung ihrer Ziele oder benötigter Materialien für die Zukunft. Diese Informationsfragmentierung erschwert strategische Planung und führt zu ineffizienten Entscheidungen.
@@ -23,21 +23,147 @@ Spieler von Arc Raiders sehen sich mit mehreren miteinander verknüpften Herausf
 
 Diese Problemstellung ist nicht singulär für Arc Raiders, sondern repräsentativ für die Herausforderungen moderner Extraction Shooter mit komplexen Meta-Progression-Systemen. Die Lösung dieser Probleme durch eine dedizierte Companion App könnte somit über Arc Raiders hinaus als Referenzimplementierung für ähnliche Spiele dienen.
 
-\section{Aufgabenstellung}
-Zur Lösung der identifizierten Problemstellung wird im Rahmen dieser Studienarbeit eine externe Companion Applikation für Arc Raiders konzipiert und implementiert. Der Entwicklungsprozess orientiert sich an agilen Methoden und integriert gleichzeitig wissenschaftliche Methoden zur Sicherstellung einer fundierten und nutzerzentrierten Lösung. Die Arbeit gliedert sich in folgende Hauptphasen:
+\chapter{Aufgabenstellung und Entwicklungsmethodik}
 
-\begin{enumerate}
-	\item \textbf{Anforderungsanalyse:} Zunächst werden die Anforderungen der Applikation definiert. Dies umfasst die Erhebung von Nutzerbedürfnissen basierend auf Erkenntnissen aus den Spieltests, die Analyse vergleichbarer Companion Apps und die Definition von Akzeptanzkriterien für die Kernsystemfunktionalitäten.
+\section{Operationalisierung der Problemstellung}
+Die in Abschnitt \ref{sec:problemstellung} identifizierten Herausforderungen für Spieler von Arc Raiders -- Informationsasymmetrie bei Quest-Lines, ineffizientes Ressourcenmanagement und unzureichende Squad-Koordination -- werden durch systematische Operationalisierung in konkrete Entwicklungsaufgaben überführt. Operationalisierung bezeichnet dabei die systematische Ableitung von Services und technischen Constraints aus übergeordneten Zielen \cite{vanLamsweerde2000}. 
 
-	\item \textbf{Design/Vorbereitung:} Es wird eine passende Systemarchitektur entworfen und die verwendeten Technologien ausgewählt. Hierzu werden die Anforderungen herangezogen, um die Komplexität und Risiken der jewiligen Lösungen abzuschätzen. Es werden Datenmodelle, wie ER-Diagramme, entwickelt und verschiedene Quellen für die zugrunde liegenden Daten verglichen. Abschließend werden die ursprünglich definierten Aufgaben mithilfe der gewonnenen Kenntnisse aufgearbeitet, zeitlich organisiert sowie ein Testansatz entwickelt, um die anschließende Implementierung zu erleichtern.
+Die identifizierten Probleme lassen sich wie folgt operationalisieren:
 
-	\item \textbf{Implementierung:} Die Applikation wird nun entsprechend des definierten Plans in agilen Iterationen umgesetzt, wobei kontinuierlich Feedback eingeholt und in die Entwicklung integriert wird. Jedes Feature wird mit seinen Tests implementiert um eine hohe Softwarequalität sicherzustellen.
+\begin{itemize}
+  \item \textbf{Problem ``Informationsasymmetrie und mangelnde Übersicht''} \\
+	$\rightarrow$ \textbf{Ziel} ``Vollständiger Überblick über Quest-Lines und Abhängigkeiten'' \\
+	$\rightarrow$ \textbf{Service} ``Quest Tracking mit Kanban/Flow-Chart-Visualisierung'' \\
+	$\rightarrow$ \textbf{Technische Anforderung} ``Datenmodell für Quest-Abhängigkeiten, Filterung und Statusverwaltung''
+  
+  \item \textbf{Problem ``Ressourcenmanagement bei begrenztem Inventar''} \\
+  $\rightarrow$ \textbf{Ziel} ``Optimierte Materialnutzung und Upgrade-Priorisierung'' \\
+  $\rightarrow$ \textbf{Service} ``Material Calculator \& Workstation Planner'' \\
+  $\rightarrow$ \textbf{Technische Anforderung} ``Berechnung für Upgrade-Kosten über multiple Stufen''
+  
+  \item \textbf{Problem ``Fehlende Squad-Koordination''} \\
+  $\rightarrow$ \textbf{Ziel} ``Zentrale Übersicht über Squad-Ziele und effiziente Routenplanung'' \\
+  $\rightarrow$ \textbf{Service} ``Squad-basierte Routenoptimierung mit interaktiven Karten'' \\
+  $\rightarrow$ \textbf{Technische Anforderung} ``Darstellung von Zielen und Karten mit Tools zur Routenoptimierung''
+\end{itemize}
+
+Diese Operationalisierung adressiert das in Abschnitt \ref{sec:problemstellung} beschriebene Fehlen offizieller Planungstools und nutzt die von der Community bereitgestellten Daten als Grundlage. Sie bildet die methodische Basis für die nachfolgend beschriebene Entwicklung einer Companion App, die als Referenzimplementierung für ähnliche Extraction Shooter dienen kann.
+
+\section{Entwicklungsmethodik und Phasenmodell}
+
+\subsection{Phase 1: Requirements Engineering}
+In agilen Entwicklungsumgebungen ist Requirements Engineering integraler Bestandteil zur Sicherstellung, dass sich entwickelnde Bedürfnisse und Erwartungen der Stakeholder während des gesamten Entwicklungsprozesses erfasst werden \cite{Abukhalaf2025}.
+
+\subsubsection{1.1 Anforderungserhebung (Requirements Elicitation)}
+
+\begin{itemize}
+  \item \textbf{1.1.1 Empirische Datenerhebung aus Spieltests:} Die in Abschnitt \ref{sec:motivation} erwähnte Teilnahme an einem Spieltest von Arc Raiders bildet die empirische Grundlage für die Anforderungserhebung. Durch systematische Beobachtung und Protokollierung werden konkrete Pain Points bei Quest-Management und Ressourcenplanung identifiziert.
+  
+  \item \textbf{1.1.2 Stakeholder-Interviews:} Durchführung direkter Gespräche mit Stakeholdern zur Extraktion von Bedürfnissen und Ideen \cite{Visure2025}. Strukturierte Interviews mit Arc Raiders-Spielern verschiedener Erfahrungsstufen sowie gemeinsame Brainstorming-Sessions zur Feature-Ideenfindung ermöglichen die Erfassung spezifischer Anforderungen für Squad-basiertes Gameplay. Die in Abschnitt \ref{sec:problemstellung} identifizierten Problemstellungen werden dabei validiert und präzisiert.
+  
+  \item \textbf{1.1.3 Comparative Analysis:} Wie in Abschnitt \ref{sec:motivation} dargelegt, haben sich Companion Apps in der Gaming-Industrie als effektive Lösung etabliert. Die systematische Analyse umfasst primär etablierte Companion Apps für Extraction Shooter. Dies identifiziert Standard-Features und Innovationspotenziale, während die heuristische Evaluation von UI/UX-Patterns für komplexe Informationsdarstellung Best Practices aufzeigt.
+  
+  \item \textbf{1.1.4 Ableitung von User Stories:} Transformation der identifizierten Nutzerbedürfnisse in User Stories nach dem Format \glqq Als [Rolle] möchte ich [Funktion], um [Nutzen] zu erreichen\grqq. Beispiele bezogen auf die Problemstellung: 
+  
+  \begin{itemize}
+		\item \glqq Als Spieler möchte ich alle verfügbaren Quests und deren Abhängigkeiten sehen, um meine Ziele zu planen\grqq, 
+		\item \glqq Als Squad-Leader möchte ich die Quest-Ziele meiner Teammitglieder auf einer Karte visualisieren, um eine effiziente Route für das gesamte Team zu planen\grqq
+		\item \glqq Als Spieler möchte ich kalkulieren, welche Materialien ich für geplante Workstation-Upgrades, Quests sowie Projekte benötige, um mein begrenztes Inventar optimal zu nutzen\grqq.
+	\end{itemize}
+
+\end{itemize}
+
+\subsubsection{1.2 Anforderungsanalyse (Requirements Analysis)}
+
+\begin{itemize}
+  \item \textbf{1.2.1 Kategorisierung und zeitliche Strukturierung:} Gruppierung in funktionale Anforderungen nach Seite (z.B. Dashboard, Quests, Workstations) und Implementierungsphase (z.B. P1-Visualization, P2-Progression) sowie nicht-funktionale Anforderungen (Performance, Usability, Verfügbarkeit). Identifikation von Abhängigkeiten zwischen Anforderungen (z.B. Routenplanung benötigt Maps) zur Planung der Implementierungsreihenfolge.
+  
+  \item \textbf{1.2.2 Priorisierung:} Implementierung der höchstpriorisierten Anforderungen zuerst zur Maximierung des Stakeholder-ROI \cite{Ambler2023}. Anwendung der MoSCoW-Methode (Must, Should, Could, Won't) mit Bewertung nach Business Value (Lösung der Kernprobleme aus Abschnitt~\ref{sec:problemstellung}) und technischer Komplexität. Dokumentation in Form eines Kanban Boards sowie Gantt-Diagramms unter Berücksichtigung von Abhängigkeiten zwischen Features.
+  
+  \item \textbf{1.2.3 Spezifikation von Akzeptanzkriterien:} Definition messbarer Erfolgskriterien für jede User Story nach SMART-Kriterien (Specific, Measurable, Achievable, Relevant, Time-bound). Beispiele umfassen: 
+  \begin{itemize}
+  \item \glqq Quest-Suche liefert Ergebnisse in <500ms \ac{TTI} für 95\% der Anfragen\grqq
+  \item \glqq Material Calculator berechnet Upgrade-Kosten für beliebige Kombinationen von Workstations korrekt\grqq.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{1.3 Anforderungsvalidierung}
+
+\begin{itemize}
+  \item \textbf{1.3.1 Prototyping:} Erstellen von \ac{MVP}-Prototypen zur Visualisierung und Validierung der Anforderungen mit Stakeholdern. Interaktive Mockups und Wireframes ermöglichen frühes Feedback zu UI/UX-Designs und Funktionalitäten, um sicherzustellen, dass die entwickelten Lösungen den identifizierten Bedürfnissen entsprechen.
+  
+  \item \textbf{1.3.3 Abgleich mit Problemstellung:} Systematischer Abgleich der definierten Anforderungen mit der ursprünglichen Problemstellung zur Sicherstellung vollständiger Abdeckung aller drei Hauptherausforderungen: Informationsasymmetrie bei Quest-Lines, ineffizientes Ressourcenmanagement und unzureichende Squad-Koordination.
+\end{itemize}
+
+\subsection{Phase 2: Architektur und Design}
+
+\subsubsection{2.1 Systemarchitektur}
+
+\begin{itemize}
+  \item \textbf{2.1.1 Architekturentwurf:} Definition der Systemgrenzen und Komponenten (Frontend, Backend, Datenbank, externe Datenquellen) sowie Auswahl geeigneter Architekturmuster unter Berücksichtigung der Komplexität. Die Dokumentation erfolgt durch Architekturdiagramme nach dem C4-Modell (Context, Container, Component, Code), um verschiedene Abstraktionsebenen abzubilden und Stakeholdern unterschiedliche Detailgrade zu ermöglichen.
+  
+  \item \textbf{2.1.2 Technologie-Assessment:} Wie in Abschnitt~\ref{sec:motivation} erwähnt, rechtfertigt das enorme Wachstumspotenzial des Gaming-Marktes die Wahl skalierbarer Technologien. Die systematische Evaluation umfasst Frontend-Frameworks (React, Vue, Angular), Backend-Technologien (Next.js API Routes, separate Backend-Lösung), Datenbank-Systeme (PostgreSQL, MongoDB, Firebase) sowie Hosting-Plattformen (Vercel, Netlify, AWS) unter Berücksichtigung von Kosteneffizienz für Hobby-Projekte. \ac{MCDA} ermöglicht die Technologieauswahl basierend auf Kriterien wie Performance, Entwicklerfreundlichkeit, Skalierbarkeit und Kosten.
+  
+  \item \textbf{2.1.3 Risikoanalyse:} Identifikation technischer Risiken, insbesondere die in Abschnitt~\ref{sec:problemstellung} erwähnte Abhängigkeit von Community-bereitgestellten Daten statt offizieller \ac{API}. Bewertung nach Eintrittswahrscheinlichkeit und Impact sowie Definition von Mitigationsstrategien: Backup-Strategien für Datenquellen (Web-Scraping des offiziellen Fandoms gemäß robots.txt, User-Generated Content mit Qualitätssicherung), Caching-Mechanismen zur Reduzierung der Abhängigkeit von externen Quellen sowie Validierung und Qualitätssicherung von Community-Daten.
+\end{itemize}
+
+\subsubsection{2.2 Datenmodellierung}
+
+\begin{itemize}
+  \item \textbf{2.2.1 Konzeptionelle Modellierung:} Erstellung von Modellierungsdiagrammen wie \ac{ER}-Digrammen zur Abbildung der Hauptentitäten (Quests, Workstations, Materialien, Spielerprofile) und deren Beziehungen oder Context Diagrams aus dem \ac{DDD} zur Identifikation von Bounded Contexts. Berücksichtigung der in Abschnitt \ref{sec:problemstellung} beschriebenen Anforderungen an Flexibilität und Erweiterbarkeit für zukünftige Features.
+  
+  \item \textbf{2.2.2 Datenquellen-Strategie:} Aufgrund des in Abschnitt \ref{sec:problemstellung} beschriebenen Fehlens offizieller Tools müssen mehrere Community-Datenquellen miteinander Verglichen und möglicherweise kombiniert werden. Hierbei wird ähnlich wie bei der Technologie-Assessment-Methode eine \ac{MCDA} angewendet, um die Zuverlässigkeit, Aktualität und Vollständigkeit der Datenquellen zu bewerten. Strategien zur Datenintegration und -synchronisation werden definiert, um eine konsistente und aktuelle Datenbasis sicherzustellen.
+\end{itemize}
+
+\subsection{Phase 3: Implementierung in Iterationen}
+Agile Entwicklung betont die iterative Natur mit kontinuierlicher Verfeinerung und Validierung \cite{Ebirim2024}.
+
+
+\subsubsection{3.1 Entwicklung}
+
+\begin{itemize}
+	\item \textbf{3.1.1 Iterative Entwicklung:} Umsetzung der priorisierten User Stories in Iterationen unter Berücksichtigung von Clean-Code Prinzipien. Jede Iteration umfasst Planung, Implementierung, Testing und Review. Kontinuierliche Integration von Feedback aus Reviews zur Anpassung des Backlogs und Verbesserung der Implementierung.
 	
-	\item \textbf{Evaluation, Diskussion und Ausblick:} Abschließend wird die entwickelte Applikation hinsichtlich der Erfüllung der definierten Anforderungen evaluiert. Dabei werden sowohl die Stärken als auch die Schwächen der Lösung diskutiert und mögliche Verbesserungen aufgezeigt. Zudem wird ein Ausblick auf zukünftige Entwicklungen und Erweiterungen der Applikation gegeben.
-\end{enumerate}
+  \item \textbf{3.1.2 Continuous Integration:} Automatisierte Builds bei jedem Commit über GitHub Actions oder ähnliche CI-Tools sowie automatisierte Testausführung der gesamten Test-Suite. Code Quality Checks umfassen Linting (ESLint für JavaScript/TypeScript). Automatisches Deployment auf Staging-Umgebung (z.B. Vercel Preview Deployments) für frühzeitiges Testen.
+\end{itemize}
 
-Diese Vorgehensweise gewährleistet eine strukturierte und zielgerichtete Entwicklung der Companion App, die den Bedürfnissen der Spieler gerecht wird und die identifizierten Herausforderungen effektiv adressiert.
+\subsubsection{3.2 Review und Retrospektive}
 
+\begin{itemize}
+  \item \textbf{3.2.1 Review:} Demonstration implementierter Features an Stakeholder zur Einholung von Feedback bezüglich der Lösungen für die Probleme aus Abschnitt~\ref{sec:problemstellung}. Backlog-Refinement basierend auf gewonnenen Erkenntnissen sowie Anpassung der Priorisierung bei Bedarf.
+  
+  \item \textbf{3.2.2 Retrospektive:} Reflexion des Entwicklungsprozesses mit den Leitfragen: Was lief gut? Was kann verbessert werden? Identifikation von Verbesserungspotenzialen in Prozess, Definition konkreter Aufgaben für den nächsten Zyklus sowie Anpassung der Entwicklungspraktiken basierend auf Lessons Learned.
+\end{itemize}
+
+\subsection{Phase 4: Evaluation und Reflexion}
+
+\subsubsection{4.1 Quantitative Evaluation}
+
+\begin{itemize}
+  \item \textbf{4.1.1 Performance-Metriken:} Messung von Page Load Time durch Metriken wie der \ac{TTI} für alle Hauptseiten. Messung der API-Antwortzeiten für kritische Endpunkte (Quest-Suche, Material Calculator, Routenplanung) sowie Überwachung der Server- und Datenbank-Performance (CPU-, Speicher- und Datenbank-Latenz) unter Lastbedingungen.
+  
+  \item \textbf{4.1.3 User-Engagement-Metriken:} Sofern Veröffentlichung erfolgt: Daily Active Users (DAU), Feature Usage Statistics zur Identifikation der am häufigsten genutzten Funktionalitäten sowie User Retention Rate zur Bewertung des langfristigen Nutzens.
+\end{itemize}
+
+\subsubsection{4.2 Qualitative Evaluation}
+
+\begin{itemize}
+  \item \textbf{4.2.2 User Experience Interviews:} Durchführung von User Experience Interviews mit Spielern zur Bewertung, ob die in Abschnitt~\ref{sec:problemstellung} identifizierten Probleme gelöst wurden. Bewertung der Zielerreichung bezüglich Verbesserung der Quest-Übersicht, Effizienzsteigerung im Ressourcenmanagement sowie Optimierung der Squad-Koordination.
+  
+  \item \textbf{4.2.3 Vergleich mit Anforderungen:} Systematischer Vergleich der implementierten Features mit initialen Anforderungen und Akzeptanzkriterien. Identifikation von vollständig erfüllten, teilweise erfüllten und nicht erfüllten Anforderungen mit Begründung der Abweichungen.
+\end{itemize}
+
+\subsubsection{4.3 Kritische Reflexion}
+
+\begin{itemize}
+  \item \textbf{4.3.1 Architektur-Bewertung:} Bewertung der gewählten Architektur hinsichtlich Eignung für die Anforderungen, Entwicklungseffizienz, Skalierbarkeit und Wartbarkeit sowie Diskussion von Trade-offs und alternativen Ansätzen. Reflexion, ob die Architekturentscheidungen im Kontext des in Abschnitt~\ref{sec:motivation} beschriebenen Marktwachstums zukunftsfähig sind.
+  
+  \item \textbf{4.3.2 Technologie-Entscheidungen:} Diskussion des gewählten Technologie-Stacks (React/Next.js, Supabase/PostgreSQL, Vercel) mit Fokus auf Stärken, Schwächen und Lessons Learned. Reflexion der Datenhaltungsstrategie (Community-Daten, Caching, Synchronisation) und der in Abschnitt~\ref{sec:problemstellung} beschriebenen Herausforderung einer fehlenden offiziellen \ac{API}.
+  
+  \item \textbf{4.3.3 Lessons Learned:} Dokumentation gewonnener Erkenntnisse aus dem Entwicklungsprozess: erfolgreiche Praktiken, aufgetretene Herausforderungen und deren Lösungen sowie Empfehlungen für zukünftige Projekte. Reflexion der agilen Methodik und deren Eignung für die Entwicklung einer Gaming Companion App.
+  
+  \item \textbf{4.3.4 Generalisierbarkeit:} Bewertung, inwieweit die entwickelte Lösung als Referenzimplementierung für andere Extraction Shooter dienen kann, wie in Abschnitt~\ref{sec:problemstellung} postuliert. Identifikation von spielspezifischen Aspekten und übertragbaren Konzepten.
+\end{itemize}
 
 
 
