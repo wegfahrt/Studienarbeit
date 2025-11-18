@@ -85,6 +85,80 @@
       \verb http://agilemodeling.com/essays/agileRequirements.htm
       \endverb
     \endentry
+    \entry{Ansari2024NextJSAppRouter}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1ce7d032dd2039954be39c039e07a34e}{%
+           family={Ansari},
+           familyi={A\bibinitperiod},
+           given={Kulsum},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{fullhash}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{fullhashraw}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{bibnamehash}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{authorbibnamehash}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{authornamehash}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{authorfullhash}{1ce7d032dd2039954be39c039e07a34e}
+      \strng{authorfullhashraw}{1ce7d032dd2039954be39c039e07a34e}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: April 19, 2024}
+      \field{title}{Next.js App Router: Routing}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@kulsumansari4/next-js-app-router-routing-8d795dbe324c
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@kulsumansari4/next-js-app-router-routing-8d795dbe324c
+      \endverb
+    \endentry
+    \entry{Bhatu2024TypeScript}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=b51657ef73d9300ba15dee9c84336fc6}{%
+           family={Bhatu},
+           familyi={B\bibinitperiod},
+           given={Rohit},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{fullhash}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{fullhashraw}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{bibnamehash}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{authorbibnamehash}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{authornamehash}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{authorfullhash}{b51657ef73d9300ba15dee9c84336fc6}
+      \strng{authorfullhashraw}{b51657ef73d9300ba15dee9c84336fc6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: March 8, 2024}
+      \field{title}{Why Choose TypeScript in 2024: The Evolution of JavaScript Development}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@bhaturohit/why-choose-typescript-in-2024-the-evolution-of-javascript-development-fdf77dd56a62
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@bhaturohit/why-choose-typescript-in-2024-the-evolution-of-javascript-development-fdf77dd56a62
+      \endverb
+    \endentry
     \entry{Statista2024ConsoleApps}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b9ad742be475e490663762c287a736c9}{%
@@ -144,6 +218,41 @@
       \field{labeltitlesource}{title}
       \field{title}{Best Companion Apps In Video Games}
       \field{year}{2023}
+    \endentry
+    \entry{Djirdeh2024TypeScriptBestPractices}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c66df1b4932c4897ad8bf07ad1e9cfdc}{%
+           family={Djirdeh},
+           familyi={D\bibinitperiod},
+           given={Hassan},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{fullhash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{fullhashraw}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{bibnamehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{authorbibnamehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{authornamehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{authorfullhash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \strng{authorfullhashraw}{c66df1b4932c4897ad8bf07ad1e9cfdc}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Telerik Blog}
+      \field{note}{Published: November 01, 2024}
+      \field{title}{Mastering TypeScript: Benefits and Best Practices}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.telerik.com/blogs/mastering-typescript-benefits-best-practices
+      \endverb
+      \verb{url}
+      \verb https://www.telerik.com/blogs/mastering-typescript-benefits-best-practices
+      \endverb
     \endentry
     \entry{Ebirim2024}{article}{}{}
       \true{moreauthor}
@@ -207,6 +316,109 @@
       \endverb
       \verb{url}
       \verb https://store.steampowered.com/app/1808500/ARC_Raiders/
+      \endverb
+    \endentry
+    \entry{Expedite2024TypeScript}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b62763926f29d89aa7e835a065b657e7}{%
+           family={{Expedite Informatics}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Expedite Informatics}%
+      }
+      \strng{namehash}{b62763926f29d89aa7e835a065b657e7}
+      \strng{fullhash}{b62763926f29d89aa7e835a065b657e7}
+      \strng{fullhashraw}{b62763926f29d89aa7e835a065b657e7}
+      \strng{bibnamehash}{b62763926f29d89aa7e835a065b657e7}
+      \strng{authorbibnamehash}{b62763926f29d89aa7e835a065b657e7}
+      \strng{authornamehash}{b62763926f29d89aa7e835a065b657e7}
+      \strng{authorfullhash}{b62763926f29d89aa7e835a065b657e7}
+      \strng{authorfullhashraw}{b62763926f29d89aa7e835a065b657e7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TypeScript in 2024: Trends, Standards, Benefits, Challenges, and Commitments}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://expediteinformatics.com/typescript-in-2024-trends-standards-benefits-challenges-and-commitments/
+      \endverb
+      \verb{url}
+      \verb https://expediteinformatics.com/typescript-in-2024-trends-standards-benefits-challenges-and-commitments/
+      \endverb
+    \endentry
+    \entry{ReactDocs2024Composition}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=bb28d0ea561a82f24cc2500627ff9fd0}{%
+           family={{Facebook Open Source}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {React Documentation}%
+      }
+      \strng{namehash}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{fullhash}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{fullhashraw}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{bibnamehash}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{authorbibnamehash}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{authornamehash}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{authorfullhash}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \strng{authorfullhashraw}{bb28d0ea561a82f24cc2500627ff9fd0}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composition vs Inheritance}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://legacy.reactjs.org/docs/composition-vs-inheritance.html
+      \endverb
+      \verb{url}
+      \verb https://legacy.reactjs.org/docs/composition-vs-inheritance.html
+      \endverb
+    \endentry
+    \entry{GeeksForGeeks2025ReactComponent}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {GeeksforGeeks}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: July 23, 2025}
+      \field{title}{React Component Based Architecture}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org/reactjs/react-component-based-architecture/
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org/reactjs/react-component-based-architecture/
       \endverb
     \endentry
     \entry{Brainhub}{article}{}{}
@@ -341,6 +553,41 @@
       \verb https://insider-gaming.com/love-or-hate-extraction-shooters-wild/
       \endverb
     \endentry
+    \entry{Invicta2024TypeScriptLargeScale}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1c116e9d55cc7ee4b284e0a5e0944885}{%
+           family={{Invictarasolutions}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{fullhash}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{fullhashraw}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{bibnamehash}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{authorbibnamehash}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{authornamehash}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{authorfullhash}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \strng{authorfullhashraw}{1c116e9d55cc7ee4b284e0a5e0944885}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: October 27, 2024}
+      \field{title}{Why TypeScript is Becoming the Go-To for Large-Scale JavaScript Projects}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@invictarasolutions/why-typescript-is-becoming-the-go-to-for-large-scale-javascript-projects-5439aabf4bb7
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@invictarasolutions/why-typescript-is-becoming-the-go-to-for-large-scale-javascript-projects-5439aabf4bb7
+      \endverb
+    \endentry
     \entry{vanLamsweerde2000}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{hash=6ac904da73bf9a2a94a328cd63950e37}{%
@@ -373,6 +620,43 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1145/337180.337184
+      \endverb
+    \endentry
+    \entry{Mishra2024CompositionReact}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4c47f5af7a2db11da5a9867a51d9be5c}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Mohi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{fullhash}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{fullhashraw}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{bibnamehash}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{authorbibnamehash}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{authornamehash}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{authorfullhash}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \strng{authorfullhashraw}{4c47f5af7a2db11da5a9867a51d9be5c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: April 2, 2024}
+      \field{title}{Composition vs Inheritance in React: Simplifying Component Reusability}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@mohimishra016/composition-vs-inheritance-in-react-simplifying-component-reusability-f978363bacf6
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@mohimishra016/composition-vs-inheritance-in-react-simplifying-component-reusability-f978363bacf6
       \endverb
     \endentry
     \entry{HandbookEFT2024}{online}{}{}
@@ -443,6 +727,77 @@
       \verb https://www.overwolf.com/app/W4rGo-Game_Maps_Escape_from_Tarkov
       \endverb
     \endentry
+    \entry{Phutson2024NextJSStructure}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=060bf272b77642d80c9002fe05dc6825}{%
+           family={Phutson},
+           familyi={P\bibinitperiod},
+           given={Thiraphat},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{060bf272b77642d80c9002fe05dc6825}
+      \strng{fullhash}{060bf272b77642d80c9002fe05dc6825}
+      \strng{fullhashraw}{060bf272b77642d80c9002fe05dc6825}
+      \strng{bibnamehash}{060bf272b77642d80c9002fe05dc6825}
+      \strng{authorbibnamehash}{060bf272b77642d80c9002fe05dc6825}
+      \strng{authornamehash}{060bf272b77642d80c9002fe05dc6825}
+      \strng{authorfullhash}{060bf272b77642d80c9002fe05dc6825}
+      \strng{authorfullhashraw}{060bf272b77642d80c9002fe05dc6825}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: September 21, 2024}
+      \field{title}{Mastering Next.js App Router: Best Practices for Structuring Your Application}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://thiraphat-ps-dev.medium.com/mastering-next-js-app-router-best-practices-for-structuring-your-application-3f8cf0c76580
+      \endverb
+      \verb{url}
+      \verb https://thiraphat-ps-dev.medium.com/mastering-next-js-app-router-best-practices-for-structuring-your-application-3f8cf0c76580
+      \endverb
+    \endentry
+    \entry{ProNextJS2024FileRouting}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b7b7a212e2eb7a4707f474dc63c12073}{%
+           family={{ProNextJS}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ProNextJS Workshops}%
+      }
+      \strng{namehash}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{fullhash}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{fullhashraw}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{bibnamehash}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{authorbibnamehash}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{authornamehash}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{authorfullhash}{b7b7a212e2eb7a4707f474dc63c12073}
+      \strng{authorfullhashraw}{b7b7a212e2eb7a4707f474dc63c12073}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{File-Based Routing with App Router}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.pronextjs.dev/workshops/next-js-foundations-for-professional-web-development~lxb18/file-based-routing-with-app-router~dtnrx
+      \endverb
+      \verb{url}
+      \verb https://www.pronextjs.dev/workshops/next-js-foundations-for-professional-web-development~lxb18/file-based-routing-with-app-router~dtnrx
+      \endverb
+    \endentry
     \entry{VideoGameMarket}{report}{}{}
       \name{author}{1}{}{%
         {{hash=b969eb2b40666d51b62eb8e1f6416c21}{%
@@ -465,6 +820,111 @@
       \field{labeltitlesource}{title}
       \field{title}{Video Game Market Size, Share And Growth Report}
       \field{year}{2024}
+    \endentry
+    \entry{Snayak2024DissectingPPR}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=64da869569ec2d095042fcc2bbe00f3a}{%
+           family={Snayak},
+           familyi={S\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{fullhash}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{fullhashraw}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{bibnamehash}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{authorbibnamehash}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{authornamehash}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{authorfullhash}{64da869569ec2d095042fcc2bbe00f3a}
+      \strng{authorfullhashraw}{64da869569ec2d095042fcc2bbe00f3a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: July 6, 2024}
+      \field{title}{Dissecting Partial Pre Rendering}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.nikhilsnayak.dev/blogs/dissecting-partial-pre-rendering
+      \endverb
+      \verb{url}
+      \verb https://www.nikhilsnayak.dev/blogs/dissecting-partial-pre-rendering
+      \endverb
+    \endentry
+    \entry{Srivastava2025NextJSRendering}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=87742ffc6c9c6cbb89a28f959e6ea049}{%
+           family={Srivastava},
+           familyi={S\bibinitperiod},
+           given={Ritesh},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{fullhash}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{fullhashraw}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{bibnamehash}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{authorbibnamehash}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{authornamehash}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{authorfullhash}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \strng{authorfullhashraw}{87742ffc6c9c6cbb89a28f959e6ea049}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: February 10, 2025}
+      \field{title}{Next JS: Rendering Strategies --- SSG, SSR, CSR and PPR}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@ritsrivastava/next-js-rendering-strategies-ssg-ssr-csr-and-ppr-d6243ec0ce72
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@ritsrivastava/next-js-rendering-strategies-ssg-ssr-csr-and-ppr-d6243ec0ce72
+      \endverb
+    \endentry
+    \entry{StudyRaid2024Composition}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6ab8d9d38d5abf9973257722a2e65d63}{%
+           family={{StudyRaid}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {StudyRaid}%
+      }
+      \strng{namehash}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{fullhash}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{fullhashraw}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{bibnamehash}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{authorbibnamehash}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{authornamehash}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{authorfullhash}{6ab8d9d38d5abf9973257722a2e65d63}
+      \strng{authorfullhashraw}{6ab8d9d38d5abf9973257722a2e65d63}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composition vs Inheritance - React - The Complete Guide}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://app.studyraid.com/en/read/1665/22475/composition-vs-inheritance
+      \endverb
+      \verb{url}
+      \verb https://app.studyraid.com/en/read/1665/22475/composition-vs-inheritance
+      \endverb
     \endentry
     \entry{TarkovDev2024}{online}{}{}
       \name{author}{1}{}{%
@@ -495,6 +955,41 @@
       \endverb
       \verb{url}
       \verb https://tarkov.dev/
+      \endverb
+    \endentry
+    \entry{Toxigon2025TypeScriptTrends}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=306e04cc88699267ba20568ec222e3d3}{%
+           family={{Toxigon}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Toxigon Blog}%
+      }
+      \strng{namehash}{306e04cc88699267ba20568ec222e3d3}
+      \strng{fullhash}{306e04cc88699267ba20568ec222e3d3}
+      \strng{fullhashraw}{306e04cc88699267ba20568ec222e3d3}
+      \strng{bibnamehash}{306e04cc88699267ba20568ec222e3d3}
+      \strng{authorbibnamehash}{306e04cc88699267ba20568ec222e3d3}
+      \strng{authornamehash}{306e04cc88699267ba20568ec222e3d3}
+      \strng{authorfullhash}{306e04cc88699267ba20568ec222e3d3}
+      \strng{authorfullhashraw}{306e04cc88699267ba20568ec222e3d3}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: March 21, 2025}
+      \field{title}{TypeScript Trends 2024: The Rise of Static Typing}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://toxigon.com/typescript-trend-2024
+      \endverb
+      \verb{url}
+      \verb https://toxigon.com/typescript-trend-2024
       \endverb
     \endentry
     \entry{OverwolfTarkovCompanion2024}{online}{}{}
@@ -529,6 +1024,183 @@
       \endverb
       \verb{url}
       \verb https://www.overwolf.com/app/treestn-tarkov_companion
+      \endverb
+    \endentry
+    \entry{Udeji2024NextJS15Rendering}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6ead3b65d45a008e54dec4434cfedd48}{%
+           family={Udeji},
+           familyi={U\bibinitperiod},
+           given={Emmanuel},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Medium}%
+      }
+      \strng{namehash}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{fullhash}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{fullhashraw}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{bibnamehash}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{authorbibnamehash}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{authornamehash}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{authorfullhash}{6ead3b65d45a008e54dec4434cfedd48}
+      \strng{authorfullhashraw}{6ead3b65d45a008e54dec4434cfedd48}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: November 4, 2024}
+      \field{title}{Mastering Next.js 15: A Guide to App Router Rendering Strategies for Modern Web Applications}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/@emmaudeji/mastering-next-js-15-a-guide-to-app-router-rendering-strategies-for-modern-web-applications-8a6683d8c348
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@emmaudeji/mastering-next-js-15-a-guide-to-app-router-rendering-strategies-for-modern-web-applications-8a6683d8c348
+      \endverb
+    \endentry
+    \entry{Vercel2024RenderingStrategy}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Vercel Blog}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to choose the best rendering strategy for your app}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app
+      \endverb
+      \verb{url}
+      \verb https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app
+      \endverb
+    \endentry
+    \entry{NextJS2024AppRouter}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Next.js Documentation}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{2}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Next.js Docs: App Router}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nextjs.org/docs/app
+      \endverb
+      \verb{url}
+      \verb https://nextjs.org/docs/app
+      \endverb
+    \endentry
+    \entry{Vercel2024PartialPrerendering}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Vercel Blog}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Partial prerendering: Building towards a new default rendering model for web applications}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model
+      \endverb
+      \verb{url}
+      \verb https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model
+      \endverb
+    \endentry
+    \entry{NextJS2024DefiningRoutes}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Next.js Documentation}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{4}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Routing: Defining Routes}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nextjs.org/docs/14/app/building-your-application/routing/defining-routes
+      \endverb
+      \verb{url}
+      \verb https://nextjs.org/docs/14/app/building-your-application/routing/defining-routes
       \endverb
     \endentry
     \entry{Visure2025}{online}{}{}

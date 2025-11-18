@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  18 NOV 2025 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  18 NOV 2025 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1032,25 +1032,33 @@ chapter 3.
 
 [13]
 
-[14]) (./chapter2.tex
+[14]
 
 [15]
+
+[16]
+
+[17]
+
+[18]) (./chapter2.tex
+
+[19]
 chapter 4.
 ) (./chapter3.tex
 
-[16
+[20
 
 ]
 chapter 5.
 ) (./conclusion.tex
 
-[17
+[21
 
 ]
 chapter 6.
 )
 
-[18
+[22
 
 ]
 chapter without number
@@ -1059,17 +1067,39 @@ LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <12> not available
 (Font)              Font shape `T1/cmr/m/sc' tried instead on input line 274.
 
 
+Overfull \hbox (14.53268pt too wide) in paragraph at lines 275--275
+\T1/cmtt/m/n/12 @bhaturohit / why -[] choose -[] typescript -[] in -[] 2024 -[] the -[] evolution -[] of -[] javascript -[]
+ []
 
-[19
+
+
+[23
 
 ]
+Overfull \hbox (6.75937pt too wide) in paragraph at lines 275--275
+\T1/cmss/m/n/12 ty^^P. In: (2024). Pu-blis-hed: April 2, 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / medium . com / @mohimishra016 /
+ []
+
+
+Overfull \hbox (14.03268pt too wide) in paragraph at lines 275--275
+\T1/cmtt/m/n/12 composition -[] vs -[] inheritance -[] in -[] react -[] simplifying -[] component -[] reusability -[]
+ []
+
+
+Overfull \hbox (31.05316pt too wide) in paragraph at lines 275--275
+[]$\T1/cmtt/m/n/12 https : / / www . pronextjs . dev / workshops / next -[] js -[] foundations -[] for -[] professional -[]
+ []
+
+
+
+[24]
 Overfull \hbox (12.19682pt too wide) in paragraph at lines 275--275
 \T1/cmss/m/n/12 2025. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / visuresolutions . com / alm -[] guide / requirements -[] gathering -[]
  []
 
 
 
-[20] (./master.ind) (./master.aux)
+[25] (./master.ind) (./master.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -1083,18 +1113,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29536 strings out of 467747
- 581875 string characters out of 5431120
- 1675658 words of memory out of 5000000
- 57748 multiletter control sequences out of 15000+600000
+ 29616 strings out of 467747
+ 585964 string characters out of 5431120
+ 1682322 words of memory out of 5000000
+ 57804 multiletter control sequences out of 15000+600000
  638764 words of font info for 61 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11254b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on master.pdf (30 pages, 351365 bytes).
+Output written on master.pdf (35 pages, 373274 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 589 compressed objects within 6 object streams
- 140 named destinations out of 1000 (max. 500000)
+ 801 PDF objects out of 1000 (max. 8388607)
+ 734 compressed objects within 8 object streams
+ 164 named destinations out of 1000 (max. 500000)
  454 words of extra memory for PDF output out of 10000 (max. 10000000)
 

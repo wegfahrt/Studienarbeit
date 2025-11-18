@@ -68,24 +68,81 @@ Tarkov.dev bietet ein freies, community-erstelltes und Open-Source-Ökosystem vo
 
 
 \section{Moderne Web-Technologien}
-  \subsection{Typescript}
-  kurz halten
 
-  Type Safety in großen Projekten
+Die Wahl geeigneter Web-Technologien ist entscheidend für den langfristigen Erfolg komplexer Webanwendungen. Für die Entwicklung einer Arc Raiders Companion App kommen moderne, produktionsreife Technologien zum Einsatz, die sowohl Entwicklerproduktivität als auch Anwendungsperformance optimieren.
 
-  Developer Experience
+\subsection{TypeScript}
 
-  \subsection{React}
-  Komponentenbasiertes UI
+TypeScript hat sich als De-facto-Standard für moderne JavaScript-Entwicklung etabliert. Als Superset von JavaScript fügt TypeScript statische Typisierung und erweiterte Sprachfeatures hinzu, die besonders für große Projekte wertvoll sind~\cite{Invicta2024TypeScriptLargeScale}.
 
-  Komposition over Inheritance
+\textbf{Type Safety in großen Projekten:} Type Safety ist eines der herausragenden Merkmale von TypeScript und adressiert eine kritische Limitierung des dynamischen Typsystems von JavaScript~\cite{Invicta2024TypeScriptLargeScale}. In größeren Anwendungen, wo mehrere Entwickler am selben Codebase arbeiten, können unterschiedliche Annahmen über Datentypen zu unerwartetem Verhalten und schwer auffindbaren Bugs führen~\cite{Invicta2024TypeScriptLargeScale}. TypeScript ermöglicht es Entwicklern, Typen explizit für Variablen, Funktionsparameter und Rückgabewerte zu definieren, wodurch potenzielle Fehler zur Compile-Zeit statt zur Laufzeit erkannt werden~\cite{Invicta2024TypeScriptLargeScale}.
 
-  \subsection{Full Stack React Frameworks}
-  Nextjs als React "Backend" Framework, 
+Organisationen übernehmen TypeScript zunehmend für Large-Scale-Anwendungen aufgrund seiner Fähigkeit, Fehler zur Compile-Zeit zu erkennen, wodurch Laufzeitfehler reduziert und die Code-Qualität verbessert wird~\cite{Expedite2024TypeScript}. Der strukturierte Ansatz von TypeScript hilft Teams, komplexe Codebases effizienter zu verwalten~\cite{Expedite2024TypeScript}. In größeren Teams verbessert Type Safety die Zusammenarbeit durch Reduzierung der kognitiven Last und Förderung klarerer Kommunikation~\cite{Invicta2024TypeScriptLargeScale}.
 
-  SSR vs. SSG vs. ISR vs. PPR (Partial Prerendering)
+\textbf{Developer Experience:} TypeScript verbessert nicht nur die Code-Qualität, sondern steigert auch signifikant die Developer Experience durch überlegenes Tooling und Error Reporting~\cite{Invicta2024TypeScriptLargeScale}. Die Integration mit modernen IDEs bietet erweiterte Features wie intelligente Code-Vervollständigung, automatisches Refactoring und Code-Navigation~\cite{Djirdeh2024TypeScriptBestPractices}. 
 
-  file based routing
+Tooling und IDE-Unterstützung für TypeScript erfuhren 2024 signifikante Verbesserungen, wobei Entwickler von besserem IntelliSense, Auto-Completion und Refactoring-Tools profitieren, was den Entwicklungsprozess reibungsloser und effizienter gestaltet~\cite{Toxigon2025TypeScriptTrends}. TypeScript wird zunehmend mit modernen Frameworks wie React, Angular und Vue.js integriert, was Entwicklern ermöglicht, die Vorteile von TypeScripts Type-Checking zu nutzen und gleichzeitig die leistungsstarken Features dieser Frameworks für den Aufbau von Benutzeroberflächen zu verwenden~\cite{Expedite2024TypeScript}.
+
+Durch die Nutzung des statischen Typsystems von TypeScript können Entwickler sichereren und wartbareren Code schreiben und die Gesamtqualität und Zuverlässigkeit ihrer Anwendungen verbessern~\cite{Djirdeh2024TypeScriptBestPractices}. Mit dem Fokus auf statische Typisierung und Developer-Ergonomie ist TypeScript gut positioniert, um den sich entwickelnden Anforderungen der Webentwicklung auch zukünftig gerecht zu werden~\cite{Bhatu2024TypeScript}.
+
+\subsection{React}
+
+React hat sich als führende JavaScript-Bibliothek für den Aufbau von Benutzeroberflächen etabliert, primär für Single-Page-Applications (SPAs)~\cite{GeeksForGeeks2025ReactComponent}. Eines der wichtigsten Features von React ist seine komponentenbasierte Architektur, die Entwicklern ermöglicht, skalierbare und wartbare Anwendungen effizient zu erstellen.
+
+\textbf{Komponentenbasiertes UI:} In React ist eine Komponente eine wiederverwendbare, eigenständige Einheit einer Benutzeroberfläche~\cite{GeeksForGeeks2025ReactComponent}. Komponenten ermöglichen es, eine Anwendung in kleinere, unabhängige Teile zu zerlegen, die effizient verwaltet und wiederverwendet werden können~\cite{GeeksForGeeks2025ReactComponent}. Diese modulare Struktur macht die Anwendung einfacher zu entwickeln, zu warten und zu skalieren, da Komponenten über verschiedene Teile der App oder sogar in unterschiedlichen Projekten wiederverwendet werden können~\cite{GeeksForGeeks2025ReactComponent}.
+
+Jede React-Anwendung besteht aus einem Baum von Komponenten, wobei jede Komponente ihre eigene Logik, ihren State und ihre UI-Repräsentation hat~\cite{GeeksForGeeks2025ReactComponent}. Die Vorteile dieser Architektur umfassen:
+\begin{itemize}
+    \item \textbf{Wiederverwendbarkeit:} Komponenten können mehrfach in verschiedenen Teilen einer Anwendung verwendet werden
+    \item \textbf{Modularität:} Jede Komponente handhabt ein spezifisches Stück Funktionalität, was die Anwendung strukturierter macht
+    \item \textbf{Skalierbarkeit:} Große Anwendungen können durch Zusammensetzen kleinerer, wiederverwendbarer Komponenten entwickelt werden
+    \item \textbf{Wartbarkeit:} Updates und Bugfixes sind einfacher, da Änderungen auf spezifische Komponenten lokalisiert sind~\cite{GeeksForGeeks2025ReactComponent}
+\end{itemize}
+
+\textbf{Komposition over Inheritance:} React verfügt über ein leistungsstarkes Kompositionsmodell, und die Verwendung von Komposition anstelle von Vererbung wird empfohlen, um Code zwischen Komponenten wiederzuverwenden~\cite{ReactDocs2024Composition}. Bei Facebook verwenden die Entwickler React in tausenden von Komponenten, und es wurden keine Anwendungsfälle gefunden, bei denen die Erstellung von Komponenten-Vererbungshierarchien empfohlen würde~\cite{ReactDocs2024Composition}. Props und Komposition bieten die gesamte Flexibilität, die benötigt wird, um das Aussehen und Verhalten einer Komponente auf explizite und sichere Weise anzupassen~\cite{ReactDocs2024Composition}.
+
+Komposition ist eine Technik, bei der eine Komponente durch Zusammensetzen anderer Komponenten aufgebaut wird, ähnlich wie man ein Lied aus verschiedenen musikalischen Noten komponieren würde~\cite{StudyRaid2024Composition}. React fördert die Verwendung von Komposition anstelle von Vererbung aus mehreren Gründen:
+
+\begin{itemize}
+    \item \textbf{Flexibilität:} Komposition gibt mehr Flexibilität bei der gemeinsamen Nutzung von Funktionalität zwischen Komponenten~\cite{StudyRaid2024Composition}
+    \item \textbf{Einfachheit:} Sie fördert einfachere Hierarchien mit Komponenten, die isoliert verstanden werden können, ohne eine Vererbungskette kennen zu müssen~\cite{StudyRaid2024Composition}
+    \item \textbf{Wiederverwendbarkeit:} Für Komposition entworfene Komponenten sind oft einfacher wiederzuverwenden, da sie keine Annahmen über den Kontext treffen, in dem sie verwendet werden~\cite{StudyRaid2024Composition}
+    \item \textbf{Vermeidung von Tight Coupling:} Vererbung kann zu enger Kopplung zwischen Komponenten führen, was die Codebasis fragil und schwer zu refaktorisieren macht~\cite{StudyRaid2024Composition}
+\end{itemize}
+
+React fördert Komposition gegenüber Vererbung, weil sie größere Flexibilität und Trennung von Belangen ermöglicht~\cite{Mishra2024CompositionReact}. Vererbung kann manchmal zu enger Kopplung zwischen Komponenten führen, was es schwieriger macht, Anwendungen zu modifizieren oder zu skalieren~\cite{Mishra2024CompositionReact}. Durch die Übernahme von Komposition anstelle von Vererbung können Entwickler die Wiederverwendbarkeit von Komponenten vereinfachen und ihren Code flexibler und wartbarer gestalten~\cite{Mishra2024CompositionReact}.
+
+\subsection{Full Stack React Frameworks}
+
+Während React als UI-Bibliothek exzelliert, benötigen produktionsreife Anwendungen zusätzliche Funktionalitäten wie Routing, Server-Side Rendering und Daten-Fetching. Full-Stack React Frameworks wie Next.js adressieren diese Anforderungen durch Bereitstellung einer kompletten Lösung für moderne Webanwendungen.
+
+\textbf{Next.js als React-Backend-Framework:} Next.js hat sich zu einem Kraftpaket für den Aufbau performanter und SEO-freundlicher React-Anwendungen entwickelt~\cite{Srivastava2025NextJSRendering}. Der App Router ist ein dateibasierter Router, der Reacts neueste Features wie Server Components, Suspense und Server Functions nutzt~\cite{NextJS2024AppRouter}. Next.js verwendet ein dateisystembasiertes Routing, bei dem Ordner zur Definition von Routen verwendet werden~\cite{NextJS2024DefiningRoutes}. Jeder Ordner repräsentiert ein Routen-Segment, das einem URL-Segment zugeordnet wird~\cite{NextJS2024DefiningRoutes}.
+
+\textbf{File-Based Routing:} Mit dem App Router ermutigt Next.js zu einem dateibasierten Routing-System, bei dem die Verzeichnisstruktur die URL-Struktur widerspiegelt~\cite{Phutson2024NextJSStructure}. In Next.js nutzt der App Router das dateibasierte Routing, was bedeutet, dass die Position der \texttt{page.tsx}- oder \texttt{route.ts}-Datei innerhalb des \texttt{app}-Verzeichnisses definiert, wie sie auf eine gegebene URL abgebildet wird~\cite{ProNextJS2024FileRouting}.
+
+Next.js folgt weiterhin dem dateibasierten Routing, aber mit der Einführung des App Routers haben Dateien und Ordner nun strikt definierte Rollen~\cite{Ansari2024NextJSAppRouter}:
+\begin{itemize}
+    \item \textbf{Ordner:} Ordner definieren die Routen der Anwendung. Ein Routen-Segment ist ein Pfad vom Root-Ordner bis zu einem Blatt-Ordner, der eine \texttt{page.ts}-Datei enthält~\cite{Ansari2024NextJSAppRouter}
+    \item \textbf{Dateien:} Dateien erstellen die UI für ein Routen-Segment~\cite{Ansari2024NextJSAppRouter}
+\end{itemize}
+
+Eine spezielle \texttt{page.ts}-Datei wird verwendet, um Routen-Segmente öffentlich zugänglich zu machen~\cite{NextJS2024DefiningRoutes}. Dynamic Route Segments können durch Umschließen des Ordnernamens mit eckigen Klammern erstellt werden, wie \texttt{[productId]}~\cite{Ansari2024NextJSAppRouter}.
+
+\textbf{Rendering-Strategien:} Next.js ist zu einem führenden Framework geworden, indem es verschiedene Rendering-Strategien anbietet: Static Site Generation (SSG), Server-Side Rendering (SSR), Client-Side Rendering (CSR), Incremental Static Regeneration (ISR) und das experimentelle Partial Prerendering (PPR)~\cite{Vercel2024RenderingStrategy}. Diese wurden entwickelt, um Performance, SEO und User Experience in verschiedenen Situationen zu optimieren~\cite{Vercel2024RenderingStrategy}.
+
+\textbf{SSG (Static Site Generation):} Bei SSG wird die initiale HTML zur Build-Zeit generiert, was zu ultra-schnellen Ladezeiten führt~\cite{Srivastava2025NextJSRendering}. SSG ist ideal für Inhalte, die sich nicht häufig ändern, wie Blog-Posts, Dokumentation oder Marketing-Seiten~\cite{Srivastava2025NextJSRendering}. Im App Router-Modell rendert SSG automatisch jede Komponente statisch, die keine server-spezifischen Funktionen nutzt~\cite{Udeji2024NextJS15Rendering}.
+
+\textbf{SSR (Server-Side Rendering):} SSR generiert HTML auf dem Server für jede Anfrage~\cite{Srivastava2025NextJSRendering}. Diese Strategie ist optimal für echtzeitbezogene, nutzerspezifische Inhalte wie personalisierte Dashboards, Account-Profile oder News-Feeds~\cite{Udeji2024NextJS15Rendering}. SSR garantiert, dass jeder Besucher bei jedem Laden der Seite die neuesten Daten sieht~\cite{Udeji2024NextJS15Rendering}.
+
+\textbf{ISR (Incremental Static Regeneration):} ISR baut auf SSG auf und fügt die Fähigkeit hinzu, Inhalte zu aktualisieren, ohne einen vollständigen Rebuild der Site zu erfordern~\cite{Srivastava2025NextJSRendering}. Bei ISR wird weiterhin die initiale HTML zur Build-Zeit generiert, aber Next.js wird auch mitgeteilt, wie oft nach Updates geprüft und die HTML-Dateien revalidiert werden sollen~\cite{Srivastava2025NextJSRendering}. ISR ist geeignet für Inhalte, die sich periodisch ändern, wie Blog-Posts oder Produkt-Listings~\cite{Udeji2024NextJS15Rendering}.
+
+\textbf{PPR (Partial Prerendering):} PPR ist eine der neuesten Ergänzungen zu Next.js und befindet sich derzeit im experimentellen Status~\cite{Udeji2024NextJS15Rendering}. PPR ermöglicht es, dass eine Seite teilweise mit statischen und dynamischen Segmenten kombiniert pre-gerendert wird~\cite{Udeji2024NextJS15Rendering}. Dies ist besonders nützlich für Seiten mit Sektionen, die progressiv laden können, während kritischer Content sofort erscheint~\cite{Udeji2024NextJS15Rendering}.
+
+Partial Prerendering kombiniert ultra-schnelle statische Edge-Delivery mit vollständig dynamischen Fähigkeiten und hat das Potenzial, das Standard-Rendering-Modell für Webanwendungen zu werden~\cite{Vercel2024PartialPrerendering}. PPR bietet ein vereinheitlichtes Modell, das die Zuverlässigkeit und Geschwindigkeit von Incremental Static Regeneration (ISR) mit den dynamischen Fähigkeiten von Server-Side Rendering (SSR) verbindet~\cite{Vercel2024PartialPrerendering}. 
+
+PPR basiert auf React Suspense Boundaries: zur Build-Zeit wird der gesamte Content bis zur Suspense-Boundary zusammen mit den Fallbacks statisch generiert und suspendiert das Rendering zur Build-Zeit~\cite{Snayak2024DissectingPPR}. Zur Request-Zeit wird die pre-gerenderte statische Shell sofort an den Client geliefert, während Next.js das Rendering dort fortsetzt, wo es zur Build-Zeit suspendiert wurde~\cite{Snayak2024DissectingPPR}. Sobald die suspendierten Children auflösen, wird die UI zum Client in derselben Response gestreamt~\cite{Snayak2024DissectingPPR}.
+
+Bei der Entscheidung für eine Rendering-Strategie sollten folgende Faktoren berücksichtigt werden: Wie oft ändert sich dieser Content? SSG ist gut für statische Inhalte, ISR ist hervorragend für periodisch wechselnde Inhalte, und SSR oder CSR ist am besten für Echtzeit-Daten~\cite{Vercel2024RenderingStrategy}. Next.js ermöglicht Entwicklern, verschiedene Rendering-Methoden innerhalb einer einzelnen Anwendung zu nutzen, je nach Bedarf, auf Seiten-Basis~\cite{Vercel2024RenderingStrategy}.
 
 \section{UI/UX Frameworks \& Design System}
 
@@ -99,9 +156,10 @@ Tarkov.dev bietet ein freies, community-erstelltes und Open-Source-Ökosystem vo
 
   unterschied zu "klassischen" Bibliotheken wie MUI bootstrap
 
-  \subsection{React-Flow}
+  \subsection{React-Flow \& Dagre}
   Visualisierung von Graphen/Netzwerken
 
+  Layout Algorithmen (Dagre)
 \section{State Management \& Data Fetching}
 
   \subsection{State Management/State Stores}
