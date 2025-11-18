@@ -386,6 +386,43 @@
       \verb https://legacy.reactjs.org/docs/composition-vs-inheritance.html
       \endverb
     \endentry
+    \entry{Frost2016AtomicDesign}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=689a1fbcd0c358d7a4a4b35ccbbb28c9}{%
+           family={Frost},
+           familyi={F\bibinitperiod},
+           given={Brad},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Brad Frost}%
+      }
+      \strng{namehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{fullhash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{fullhashraw}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{bibnamehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{authorbibnamehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{authornamehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{authorfullhash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \strng{authorfullhashraw}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-9982966-0-9}
+      \field{title}{Atomic Design}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://atomicdesign.bradfrost.com/
+      \endverb
+      \verb{url}
+      \verb https://atomicdesign.bradfrost.com/
+      \endverb
+    \endentry
     \entry{GeeksForGeeks2025ReactComponent}{online}{}{}
       \name{author}{1}{}{%
         {{hash=f1e069787ece74531d112559945c6871}{%
@@ -588,6 +625,41 @@
       \verb https://medium.com/@invictarasolutions/why-typescript-is-becoming-the-go-to-for-large-scale-javascript-projects-5439aabf4bb7
       \endverb
     \endentry
+    \entry{DevCommunity2025HeadlessVsTraditional}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=766f823eddcaa82d7f6633f467b3f2f4}{%
+           family={Khaled},
+           familyi={K\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{fullhash}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{fullhashraw}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{bibnamehash}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{authorbibnamehash}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{authornamehash}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{authorfullhash}{766f823eddcaa82d7f6633f467b3f2f4}
+      \strng{authorfullhashraw}{766f823eddcaa82d7f6633f467b3f2f4}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DEV Community}
+      \field{note}{Published: April 11, 2025}
+      \field{title}{Headless vs. Traditional UI Libraries: When and Why to Choose Each}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.to/mohammad_kh4441/headless-vs-traditional-ui-libraries-when-and-why-to-choose-each-1c5b
+      \endverb
+      \verb{url}
+      \verb https://dev.to/mohammad_kh4441/headless-vs-traditional-ui-libraries-when-and-why-to-choose-each-1c5b
+      \endverb
+    \endentry
     \entry{vanLamsweerde2000}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{hash=6ac904da73bf9a2a94a328cd63950e37}{%
@@ -620,6 +692,41 @@
       \range{pages}{15}
       \verb{doi}
       \verb 10.1145/337180.337184
+      \endverb
+    \endentry
+    \entry{LogRocket2024HeadlessShift}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=c10d85658a76abac452c5ddffcb30c09}{%
+           family={{LogRocket}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {LogRocket Blog}%
+      }
+      \strng{namehash}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{fullhash}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{fullhashraw}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{bibnamehash}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{authorbibnamehash}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{authornamehash}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{authorfullhash}{c10d85658a76abac452c5ddffcb30c09}
+      \strng{authorfullhashraw}{c10d85658a76abac452c5ddffcb30c09}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: June 4, 2024}
+      \field{title}{Exploring the shift from CSS-in-JS to headless UI libraries}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blog.logrocket.com/exploring-shift-css-in-js-headless-ui-libraries/
+      \endverb
+      \verb{url}
+      \verb https://blog.logrocket.com/exploring-shift-css-in-js-headless-ui-libraries/
       \endverb
     \endentry
     \entry{Mishra2024CompositionReact}{article}{}{}
@@ -657,6 +764,41 @@
       \endverb
       \verb{url}
       \verb https://medium.com/@mohimishra016/composition-vs-inheritance-in-react-simplifying-component-reusability-f978363bacf6
+      \endverb
+    \endentry
+    \entry{MUIBlog2022IntroducingBase}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e9ab773e09cd1bf790c5d5ffc3014605}{%
+           family={{MUI}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {MUI Blog}%
+      }
+      \strng{namehash}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{fullhash}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{fullhashraw}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{bibnamehash}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{authorbibnamehash}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{authornamehash}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{authorfullhash}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \strng{authorfullhashraw}{e9ab773e09cd1bf790c5d5ffc3014605}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: September 7, 2022}
+      \field{title}{Introducing MUI Base: the headless alternative to Material UI}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mui.com/blog/introducing-base-ui/
+      \endverb
+      \verb{url}
+      \verb https://mui.com/blog/introducing-base-ui/
       \endverb
     \endentry
     \entry{HandbookEFT2024}{online}{}{}
@@ -725,6 +867,40 @@
       \endverb
       \verb{url}
       \verb https://www.overwolf.com/app/W4rGo-Game_Maps_Escape_from_Tarkov
+      \endverb
+    \endentry
+    \entry{OpenReplay2024ShadcnReact}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0f03620da97b27fbb87c5e6772bacd61}{%
+           family={{OpenReplay}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {OpenReplay Blog}%
+      }
+      \strng{namehash}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{fullhash}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{fullhashraw}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{bibnamehash}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{authorbibnamehash}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{authornamehash}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{authorfullhash}{0f03620da97b27fbb87c5e6772bacd61}
+      \strng{authorfullhashraw}{0f03620da97b27fbb87c5e6772bacd61}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Why Developers Are Switching to shadcn/ui in React Projects}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blog.openreplay.com/developers-switching-shadcn-ui-react/
+      \endverb
+      \verb{url}
+      \verb https://blog.openreplay.com/developers-switching-shadcn-ui-react/
       \endverb
     \endentry
     \entry{Phutson2024NextJSStructure}{article}{}{}
@@ -924,6 +1100,40 @@
       \endverb
       \verb{url}
       \verb https://app.studyraid.com/en/read/1665/22475/composition-vs-inheritance
+      \endverb
+    \endentry
+    \entry{TailwindDocs2024UtilityFirst}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=115eb058b42d5a622d39c9383748c476}{%
+           family={{Tailwind Labs}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Tailwind CSS Documentation}%
+      }
+      \strng{namehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{fullhash}{115eb058b42d5a622d39c9383748c476}
+      \strng{fullhashraw}{115eb058b42d5a622d39c9383748c476}
+      \strng{bibnamehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authorbibnamehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authornamehash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authorfullhash}{115eb058b42d5a622d39c9383748c476}
+      \strng{authorfullhashraw}{115eb058b42d5a622d39c9383748c476}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Utility-First Fundamentals}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://tailwindcss.com/docs/utility-first
+      \endverb
+      \verb{url}
+      \verb https://tailwindcss.com/docs/utility-first
       \endverb
     \endentry
     \entry{TarkovDev2024}{online}{}{}
@@ -1234,6 +1444,49 @@
       \verb https://visuresolutions.com/alm-guide/requirements-gathering-techniques-for-agile
       \endverb
     \endentry
+    \entry{SplunkEngineering2022CustomGraphViz}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2fdd3ada629ae15dc823e03c67a6b860}{%
+           family={Werner},
+           familyi={W\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+        {{hash=80e6449efe7615389b90579b948ca574}{%
+           family={Fishel},
+           familyi={F\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Splunk}%
+      }
+      \strng{namehash}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{fullhash}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{fullhashraw}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{bibnamehash}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{authorbibnamehash}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{authornamehash}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{authorfullhash}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \strng{authorfullhashraw}{27773b3eb985d88c41e1e2411e9ea7e0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium - Splunk Engineering}
+      \field{note}{Published: May 10, 2022}
+      \field{title}{Lessons Learned from Creating a Custom Graph Visualization in React}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://medium.com/splunk-engineering/lessons-learned-from-creating-a-custom-graph-visualization-in-react-9a667ba799d1
+      \endverb
+      \verb{url}
+      \verb https://medium.com/splunk-engineering/lessons-learned-from-creating-a-custom-graph-visualization-in-react-9a667ba799d1
+      \endverb
+    \endentry
     \entry{WikipediaARCRaiders2025}{misc}{}{}
       \name{author}{1}{}{%
         {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
@@ -1248,6 +1501,7 @@
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{1}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -1265,6 +1519,109 @@
       \endverb
       \verb{url}
       \verb https://en.wikipedia.org/wiki/ARC_Raiders
+      \endverb
+    \endentry
+    \entry{WikipediaTailwindCSS}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Wikipedia, The Free Encyclopedia}
+      \field{note}{Last edited: 4 weeks ago from retrieval date}
+      \field{title}{Tailwind CSS}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Tailwind_CSS
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Tailwind_CSS
+      \endverb
+    \endentry
+    \entry{WorkOS2025RadixVsShadcn}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4af44ed0e42dc586f14591c4e92cbea7}{%
+           family={{WorkOS}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {WorkOS Blog}%
+      }
+      \strng{namehash}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{fullhash}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{fullhashraw}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{bibnamehash}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{authorbibnamehash}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{authornamehash}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{authorfullhash}{4af44ed0e42dc586f14591c4e92cbea7}
+      \strng{authorfullhashraw}{4af44ed0e42dc586f14591c4e92cbea7}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Published: February 20, 2025}
+      \field{title}{What is the difference between Radix and shadcn-ui?}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://workos.com/blog/what-is-the-difference-between-radix-and-shadcn-ui
+      \endverb
+      \verb{url}
+      \verb https://workos.com/blog/what-is-the-difference-between-radix-and-shadcn-ui
+      \endverb
+    \endentry
+    \entry{ReactFlowDocs2024Layouting}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2d1c0e7036e9b0589b36cf0b1e50d3b8}{%
+           family={{xyflow}},
+           familyi={x\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {React Flow Documentation}%
+      }
+      \strng{namehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{fullhash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{fullhashraw}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{bibnamehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{authorbibnamehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{authornamehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{authorfullhash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \strng{authorfullhashraw}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
+      \field{sortinit}{x}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Layouting - React Flow}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://reactflow.dev/learn/layouting/layouting
+      \endverb
+      \verb{url}
+      \verb https://reactflow.dev/learn/layouting/layouting
       \endverb
     \endentry
   \enddatalist
