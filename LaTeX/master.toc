@@ -28,38 +28,41 @@
 \contentsline {subsection}{\numberline {2.3.1}Verwendete Tools und Technologien}{9}{subsection.2.3.1}%
 \contentsline {chapter}{\numberline {3}Grundlagen}{10}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Arc Raiders \& Gaming Tools}{10}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Arc Raiders}{10}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Marktanalyse, vorhandene Tools/Anwendungen}{10}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Moderne Web-Technologien}{10}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Typescript}{10}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}React}{10}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Full Stack React Frameworks}{10}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}UI/UX Frameworks \& Design System}{11}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Tailwindcss}{11}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Moderne Komponenten-Bibliotheken}{11}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}React-Flow}{11}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}State Management \& Data Fetching}{11}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}State Management/State Stores}{11}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}react-query / tanstack-query als Daten-Fetching Library}{11}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Datenbank und Backend Design}{11}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Supabase}{11}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Orm - Drizzle}{11}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Deployment \& DevOps}{12}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Git basierter Workflow}{12}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Vercel}{12}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Testing Frameworks \& Strategien}{12}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Vitest}{12}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Cypress}{12}{subsection.3.7.2}%
-\contentsline {chapter}{\numberline {4}Durchführung}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Anforderungsanalyse}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Vorbereitung}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Implementierung}{13}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Testen}{13}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{14}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{14}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion?}{14}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{14}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{15}{chapter.6}%
+\contentsline {subsection}{\numberline {3.1.1}Companion Applications im digitalen Ökosystem}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Gaming Companion Apps: Funktionale Kategorisierung}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Extraction Shooter: Genre-spezifische Anforderungen}{11}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Arc Raiders: Technische Charakteristika und Systeme}{11}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Referenzimplementierungen: Tarkov Companion Ecosystem}{12}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Moderne Web-Technologien}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Typescript}{12}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}React}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Full Stack React Frameworks}{13}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}UI/UX Frameworks \& Design System}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Tailwindcss}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Moderne Komponenten-Bibliotheken}{13}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}React-Flow}{13}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}State Management \& Data Fetching}{13}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}State Management/State Stores}{13}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}react-query / tanstack-query als Daten-Fetching Library}{14}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Datenbank und Backend Design}{14}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Supabase}{14}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Orm - Drizzle}{14}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Deployment \& DevOps}{14}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Git basierter Workflow}{14}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Vercel}{14}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Testing Frameworks \& Strategien}{15}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Vitest}{15}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Cypress}{15}{subsection.3.7.2}%
+\contentsline {chapter}{\numberline {4}Durchführung}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Anforderungsanalyse}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Vorbereitung}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Implementierung}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Testen}{16}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{17}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{17}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion?}{17}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{17}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{18}{chapter.6}%
 \def \@chapapp {\appendixname }
 \contentsline {chapter}{Anhang}{}{chapter.6}
-\contentsline {chapter}{\nonumberline Literatur}{16}{chapter*.35}%
+\contentsline {chapter}{\nonumberline Literatur}{19}{chapter*.35}%

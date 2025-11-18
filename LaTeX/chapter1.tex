@@ -1,39 +1,102 @@
 % !TEX root =  master.tex
 \chapter{Grundlagen}
-"State of the Art"
-
 \section{Arc Raiders \& Gaming Tools}
-"Funktionale Anforderungsanalyse sollte erkenntlich sein, jedoch nicht direkt so benannt"
 
-  \subsection{Arc Raiders}
-  "Spielbeschreibung"
+\subsection{Companion Applications im digitalen Ökosystem}
 
-  \subsection{Marktanalyse, vorhandene Tools/Anwendungen}
-  (Parallelen zu Tools aus anderen Spielen wie Tarkov?)
+Companion Applications haben sich als eigenständige Software-Kategorie etabliert, die primäre Anwendungen durch zusätzliche Funktionalität ergänzt, ohne das Hauptprodukt zu ersetzen. Im Gaming-Kontext erfüllen diese Anwendungen mehrere Schlüsselfunktionen: Sie erweitern die Spielerfahrung über die Session hinaus, bieten Planungs- und Analysewerkzeuge und ermöglichen Social Features außerhalb der Spielumgebung.
+
+Companion Apps für Gaming-Konsolen verzeichneten seit 2020 ein signifikantes Wachstum, wobei die PC-Gaming-Plattform Steam mit etwa 33,4 Millionen Downloads im zuletzt gemessenen Quartal führend war~\cite{Statista2024ConsoleApps}. Diese Entwicklung zeigt, dass Spieler bereit sind, zusätzliche Tools zu nutzen, um ihre Gaming-Erfahrung zu optimieren.
+
+Die technische Architektur von Companion Apps variiert je nach Anwendungsfall:
+\begin{itemize}
+    \item \textbf{Offizielle Plattform-Apps:} Direkte Integration mit Herstellersystemen (PlayStation App, Xbox App, Steam Mobile)
+    \item \textbf{Game-spezifische Tools:} Fokus auf ein einzelnes Spiel oder Franchise
+    \item \textbf{Community-getriebene Lösungen:} Von Spielern entwickelte Third-Party-Tools
+\end{itemize}
+
+\subsection{Gaming Companion Apps: Funktionale Kategorisierung}
+
+Basierend auf der Analyse existierender Lösungen lassen sich Gaming Companion Apps in folgende funktionale Kategorien einteilen:
+
+\textbf{Informations- und Datenbank-Tools:} Diese Tools bieten Zugriff auf Spieldaten wie Item-Statistiken, Charakterwerte oder Mechaniken. Apps wie Handbook for EFT bieten Spielern offline verfügbare Informationen zu Karten, Munitionsvergleichen, Waffen-Performance, Ausrüstung, Quest-Guides und Key-Informationen~\cite{HandbookEFT2024}.
+
+\textbf{Progress-Tracking-Systeme:} Apps wie The Hideout: Tarkov Sidekick ermöglichen Quest-Tracking, Hideout-Modul-Verwaltung und Team-Quest-Tracking, wo Spieler den Status ihrer Freunde sehen können~\cite{TheHideoutApp2024}.
+
+\textbf{Markt- und Wirtschafts-Tools:} Funktionen wie Flea Market-Preisanzeige, Preishistorien bis zu einem Jahr zurück und Preis-Alerts für Flea Market-Preise helfen Spielern bei wirtschaftlichen Entscheidungen~\cite{TheHideoutApp2024}.
+
+\textbf{Karten- und Navigationshilfen:} Interactive Maps-Apps bieten detaillierte, community-erstellte Karten mit Loot-Spots, Extraktionspunkten, Key-Locations und Quest-Details~\cite{GameMapsOverwolf2024}.
+
+\textbf{Build-Planer und Kalkulatoren:} Weapon Builder und Damage Calculator ("`Tarkov'd Simulator"') ermöglichen theoretisches Durchspielen von Szenarien vor der Implementierung im Spiel~\cite{TheHideoutApp2024}.
+
+\subsection{Extraction Shooter: Genre-spezifische Anforderungen}
+
+Extraction Shooter basieren auf Konzepten der Verlustaversion und verzögerten Gratifikation, wobei jeder Raid ein Risiko darstellt und der erfolgreiche Abschluss eines wertvollen Durchgangs intensive dopamingesteuerte Befriedigung freisetzt~\cite{InsiderGaming2025ExtractionShooters}. Diese psychologischen Mechanismen erzeugen spezifische Anforderungen an unterstützende Tools.
+
+\textbf{Risiko-Management:} Die Permadeath-Mechanik von Extraction Shootern erfordert sorgfältige Planung. Companion Apps können helfen, Risiken zu minimieren durch:
+\begin{itemize}
+    \item Vorausschauende Ressourcenplanung
+    \item Optimale Route-Planung zur Minimierung von Begegnungen
+    \item Wert-Kalkulation von Loot vs. Risiko
+\end{itemize}
+
+\textbf{Komplexitätsreduktion:} Das Extraction-Shooter-Genre gilt aufgrund seiner Komplexität als schwer zugänglich für den Massenmarkt~\cite{IconEra2024ExtractionMarket}. Arc Raiders hat durch seine Betonung von Teamsynergien und intuitiveren Spielerführungssystemen einen zugänglicheren Einstiegspunkt geschaffen~\cite{InsiderGaming2025ExtractionShooters}.
+
+Der aktuelle Markt konzentriert sich auf Escape from Tarkov (ca.~60.000 gleichzeitige Nutzer), Hunt Showdown (ca.~20.000) und Dark and Darker (ca.~10.000), zusammen etwa 100.000 gleichzeitige Nutzer~\cite{IconEra2024ExtractionMarket}. Die Herausforderung für neue Titel liegt in der Etablierung eigener Tool-Ökosysteme.
+
+\subsection{Arc Raiders: Technische Charakteristika und Systeme}
+
+ARC Raiders ist ein 2025 veröffentlichter Third-Person-Extraction-Shooter, entwickelt mit der Unreal Engine 5 für PlayStation 5, Windows und Xbox Series X/S~\cite{WikipediaARCRaiders2025}. Bis zum 11.~November 2025 hatte das Spiel weltweit über vier Millionen Exemplare verkauft~\cite{WikipediaARCRaiders2025}, was eine signifikante Nutzerbasis für Companion-Tools darstellt.
+
+Das Spiel implementiert mehrere Systeme, die durch externe Tools unterstützt werden können:
+
+\textbf{Quest-System:} Spieler erfüllen Quests für Händler mit unterschiedlichen Motiven und Agenden, was sich in komplexen Quest-Chains mit Abhängigkeiten manifestiert~\cite{SteamARCRaiders2025}. Das Ingame-Interface zeigt nur aktive Quests, was einen Gesamtüberblick erschwert.
+
+\textbf{Crafting und Ressourcen:} Spieler müssen Workshop-Stationen upgraden und Blueprints lernen, um fortgeschrittenere Items zu craften~\cite{SteamARCRaiders2025}. Bei begrenztem Inventarplatz ist strategisches Ressourcen-Management essentiell.
+
+\textbf{Skill-Progression:} Der ARC Raiders Skill-Tree verzweigt sich in drei Pfade: Survival, Mobility und Conditioning~\cite{SteamARCRaiders2025}, was Langzeitplanung erfordert.
+
+\textbf{Multiplayer-Koordination:} Das Spiel unterstützt nahtloses Cross-Platform-Spiel zwischen PlayStation, Xbox und PC, wobei Spieler in Squads bis zu drei Personen oder solo spielen können~\cite{SteamARCRaiders2025}.
+
+\subsection{Referenzimplementierungen: Tarkov Companion Ecosystem}
+
+Das Escape from Tarkov Ökosystem bietet wertvolle Erkenntnisse für die Entwicklung von Companion Apps.
+
+Tarkov Companion als Overwolf-App bietet Quest-Management sortiert nach Händler, Location oder Status, Browse-Funktionen für Karten mit Extraktionen, Loot-Hotspots und Quest-Items sowie Key-Suche und Hideout-Upgrade-Tracking~\cite{OverwolfTarkovCompanion2024}. Diese Features repräsentieren den aktuellen Standard für Extraction-Shooter-Companion-Apps.
+
+Tarkov.dev bietet ein freies, community-erstelltes und Open-Source-Ökosystem von Escape from Tarkov-Tools inklusive Informationen zu Items, Crafts, Barters, Maps, Loot-Tiers, Hideout-Profiten und einer freien API~\cite{TarkovDev2024}. Die Verfügbarkeit einer API ermöglicht die Entwicklung vielfältiger Third-Party-Tools.
+
 
 \section{Moderne Web-Technologien}
   \subsection{Typescript}
   kurz halten
+
   Type Safety in großen Projekten
+
   Developer Experience
 
   \subsection{React}
   Komponentenbasiertes UI
+
   Komposition over Inheritance
 
   \subsection{Full Stack React Frameworks}
   Nextjs als React "Backend" Framework, 
+
   SSR vs. SSG vs. ISR vs. PPR (Partial Prerendering)
+
   file based routing
 
 \section{UI/UX Frameworks \& Design System}
 
   \subsection{Tailwindcss}
   Utility First CSS Framework, inline
+
   v4 mit "Just in Time" Compiler und global.css
 
   \subsection{Moderne Komponenten-Bibliotheken}
   Shadcn/using
+
   unterschied zu "klassischen" Bibliotheken wie MUI bootstrap
 
   \subsection{React-Flow}
@@ -43,24 +106,32 @@
 
   \subsection{State Management/State Stores}
   Bibliotheken wie zustand
+
   client side
   
   \subsection{react-query / tanstack-query als Daten-Fetching Library}
   Server State Management
+
   Caching Strategien
+
   Optimistic Updates
 
 \section{Datenbank und Backend Design}
 
   \subsection{Supabase}
   PostgreSQL-basiert
+
   Real-time Capabilities
+
   Row Level Security
+
   edge functions (Serverless Functions)
 
   \subsection{Orm - Drizzle}
   ORM's
+
   Type-Safety
+
   code-first approach
 
 \section{Deployment \& DevOps}
@@ -69,15 +140,19 @@
 
   \subsection{Vercel}
   Deployment von Nextjs Applikationen
+
   weitere features
+
   CI/CD Pipelines
 
 \section{Testing Frameworks \& Strategien}
 
   \subsection{Vitest}
   Unit und Integration Tests
+
   fast, modern, built for TS
 
   \subsection{Cypress}
   End-to-End Testing
+
   real browser testing

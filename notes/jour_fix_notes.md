@@ -52,3 +52,6 @@ Aufgabenstellung feedback
 - in eigenes Kapitel
 - operationalisierung erwähnen, wie die aufgabenstellung aus der problwemstellung abgeleitet wurde
 - Schritte atomarer gestalen e.g 1 -> 1.1 Anforderungen definieren und 1..1 erhebung 1.1.3 erkentnisse aus spieltest 1.1.4 anayse vergleichbarer apps
+
+24.11
+- "Entwicklungsmethodik und Phasenmodell" konkrete Beispiele und Lösungen kürzen und erst im Kapitel über die Durchführung oder in MEthoden und Verfahren spezifizieren?
