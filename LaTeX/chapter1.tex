@@ -144,7 +144,7 @@ Partial Prerendering kombiniert ultra-schnelle statische Edge-Delivery mit volls
 
 Bei der Entscheidung für eine Rendering-Strategie sollten folgende Faktoren berücksichtigt werden: Wie oft ändert sich dieser Content? \ac{SSG} ist gut für statische Inhalte, \ac{ISR} ist hervorragend für periodisch wechselnde Inhalte, und \ac{SSR} oder \ac{CSR} ist am besten für Echtzeit-Daten~\cite{Vercel2024RenderingStrategy}. Next.js ermöglicht Entwicklern, verschiedene Rendering-Methoden innerhalb einer einzelnen Anwendung zu nutzen, je nach Bedarf, auf Seiten-Basis~\cite{Vercel2024RenderingStrategy}.
 
-\section{\ac{UI}/\ac{UX} Frameworks \& Design System}
+\section{UI/UX Frameworks \& Design System}
 
 Die systematische Entwicklung von Benutzeroberflächen erfordert strukturierte Ansätze zur Gewährleistung von Konsistenz, Wartbarkeit und Skalierbarkeit. Moderne Web-Anwendungen stehen vor der Herausforderung, Interfaces für eine Vielzahl von Geräten, Bildschirmgrößen und Nutzungskontexten bereitzustellen. Design Systems und \ac{UI}-Frameworks bieten methodische Lösungen für diese Komplexität, wobei sich in den letzten Jahren fundamentale Paradigmenwechsel vollzogen haben.
 
@@ -326,17 +326,238 @@ Dagre minimiert Edge-Crossings und optimiert Layer-Spacing. ~\cite{ReactFlowDocs
 
 \section{State Management \& Data Fetching}
 
-  \subsection{State Management/State Stores}
-  Bibliotheken wie zustand
+Die systematische Verwaltung von Anwendungszustand (State) stellt eine fundamentale Herausforderung in der Entwicklung moderner Webanwendungen dar. Die Evolution von State Management Lösungen im React-Ökosystem reflektiert eine kontinuierliche Auseinandersetzung mit den Trade-offs zwischen Komplexität, Developer Experience und Skalierbarkeit. Für die Arc Raiders Companion App ergibt sich die Notwendigkeit einer hybriden State Management Architektur, die sowohl lokalen \ac{UI}-State als auch Server-synchronisierte Daten effizient verwaltet.
 
-  client side
+\subsection{Evolution der State Management Paradigmen}
+
+Die historische Entwicklung von State Management Libraries in React verdeutlicht einen Paradigmenwechsel von monolithischen, opinionated Lösungen hin zu spezialisierten, kompositionellen Architekturen.
+
+\textbf{Die Flux-Architektur als konzeptuelle Grundlage:} Facebooks Einführung der Flux-Architektur um 2014 etablierte das Konzept unidirektionalen Datenflusses als Antwort auf die Probleme bidirektionaler Data Bindings~\cite{FrontendUndefined2024ReactStateHistory}. Die zentrale Innovation bestand in der Separation von State-Updates durch ein strukturiertes Muster: Actions beschreiben \textit{was} passiert ist, während Reducer definieren \textit{wie} der State sich ändert~\cite{Redux2024History}. Diese konzeptuelle Trennung adressierte die Unvorhersagbarkeit von Backbone-artigen Model-View Architekturen, bei denen Template-Updates zu unkontrollierbaren Kaskaden von State-Mutationen führen konnten~\cite{Redux2024History}.
+
+\textbf{Redux als De-facto-Standard (2015--2019):} Dan Abramovs Redux, 2015 veröffentlicht, synthetisierte Flux-Prinzipien mit funktionaler Programmierung und wurde durch die Demonstration von Time-Travel Debugging bekannt~\cite{Redux2024History}. Bis 2016 etablierte sich die Konvention \glqq If you're using React, you must be using Redux too\grqq~\cite{Redux2024History}, was jedoch zu übermäßiger Adoption selbst in Kontexten führte, wo Redux nicht erforderlich war. Die zentrale Stärke von Redux manifestierte sich in der Vorhersagbarkeit: Ein zentraler Store, reine Reducer-Funktionen und immutable Updates ermöglichten deterministisches State Management~\cite{Redux2024History}.
+
+\textbf{Das Boilerplate-Problem:} Die fundamentale Kritik an Redux fokussierte sich auf den exzessiven Boilerplate-Code~\cite{FrontendUndefined2024ReactStateHistory}. Die Implementation einer einzelnen State-Property erforderte die Erstellung von Action Types, Action Creators, Reducer Cases und Selectors. Für asynchrone Operationen wie \ac{API}-Requests mussten zusätzlich Middleware-Patterns (Redux Thunk, Redux Saga) mit separaten Actions für Loading-, Success- und Error-States implementiert werden~\cite{Redux2024History}. Diese Code-Proliferation führte zu signifikanter Entwicklungslatenz und erschwerte die Wartbarkeit, insbesondere in schnell iterierenden Projekten.
+
+\textbf{Die Context \ac{API} Revolution (2019):} Die Einführung der modernisierten React Context \ac{API} mit korrekter Value-Propagation und die Verfügbarkeit von React Hooks veränderten die State Management Landschaft fundamental~\cite{Redux2024History}. Die ursprüngliche Context \ac{API} war \glqq essentially broken\grqq{} und konnte updated Values nicht korrekt propagieren, was Redux als faktisch einzige Option für Application-Wide State etablierte~\cite{Redux2024History}. Mit der neuen \ac{API} wurde \texttt{useState} mit \texttt{useContext} zu einer viablen Alternative für einfachere Anwendungsfälle, was die \glqq You don't need Redux at all\grqq{} Bewegung initiierte.
+
+\textbf{Spezialisierung und Komposition (2019--heute):} Die Erkenntnis, dass nicht alle State-Kategorien identische Management-Patterns erfordern, führte zu spezialisierten Lösungen~\cite{Redux2024History}. Moderne Architekturen trennen explizit zwischen Client State Management (Zustand, Jotai, Recoil) und Server State Management (TanStack Query, \ac{SWR}, Apollo)~\cite{FrontendUndefined2024ReactStateHistory}. Diese Spezialisierung reduziert Komplexität durch Single Responsibility: Bibliotheken fokussieren sich auf spezifische Problemdomänen statt universeller Lösungen~\cite{Codemancers2024TanStackQuery}.
+
+\subsection{Die Client-Server State Dichotomie}
+
+Die fundamentale Unterscheidung zwischen Client State und Server State bildet die theoretische Grundlage moderner State Management Architekturen.
+
+\textbf{Client State -- Kurzlebige \ac{UI}-Logik:} Client State umfasst Daten, die vollständig im Browser existieren und keine Server-Persistenz erfordern~\cite{DevCommunity2023ServerClientState}. Charakteristisch sind:
+
+\begin{itemize}
+    \item \textbf{Lokale \ac{UI}-Zustände:} Modal-Visibility, Dropdown-States, Form-Input-Werte, Tab-Selection
+    \item \textbf{Temporäre Daten:} Multi-Step-Form Progress, Undo-Redo History, Draft-Content
+    \item \textbf{View-Layer Optimierungen:} Scroll-Position, Pagination-Cursor, Filter-Kriterien
+\end{itemize}
+
+Die Management-Strategie für Client State priorisiert Entwicklerergonomie und React-Integration, da dieser State keine Synchronisation mit Backend-Systemen erfordert~\cite{DevCommunity2023ServerClientState}.
+
+\textbf{Server State -- Asynchrone Remote-Daten:} Server State repräsentiert Daten, deren autoritative Quelle serverseitig liegt und die asynchron fetched, gecacht und synchronisiert werden müssen~\cite{TanStackQuery2024Overview}. Die inhärenten Charakteristika unterscheiden sich fundamental von Client State~\cite{DevCommunity2023ServerClientState}:
+
+\begin{itemize}
+    \item \textbf{Asynchronität:} Fetching erfolgt über Network Requests mit unvorhersagbarer Latenz
+    \item \textbf{Shared Ownership:} Andere Clients können dieselben Daten parallel modifizieren
+    \item \textbf{Staleness:} Gecachte Daten werden potenziell obsolet und erfordern Revalidierung
+    \item \textbf{Persistenz:} Daten persistieren über Sessions und Devices hinweg
+\end{itemize}
+
+Die herkömmliche Verwaltung von Server State in globalen Client State Managern (Redux, MobX) führt zu suboptimalen Patterns~\cite{TanStackQuery2024Overview}. Entwickler müssen manuell Loading States, Error Handling, Cache Invalidation, Request Deduplication und Background Refetching implementieren -- Komplexität, die spezialisierte Libraries wie TanStack Query abstrahieren~\cite{Codemancers2024TanStackQuery}.
+
+\subsection{Zustand als minimalistischer Client State Manager}
+
+Zustand etablierte sich als moderne Alternative zu Redux durch radikale Vereinfachung bei Beibehaltung essentieller State Management Patterns~\cite{Refine2024Zustand}.
+
+\textbf{Philosophische Grundprinzipien:} Zustand verfolgt eine \glqq barebones\grqq{} Philosophie: minimale \ac{API}-Surface, keine Opinions über State-Struktur, und vollständige Hook-basierte Integration~\cite{ZustandGitHub2024}. Im Gegensatz zu Redux erfordert Zustand keine Provider-Wrapping der Application, keine Action Types, keine Reducer Boilerplate~\cite{Refine2024Zustand}. Der gesamte Store wird durch eine einzelne \texttt{create}-Function definiert~\cite{Refine2024Zustand}:
+
+\begin{lstlisting}
+import { create } from 'zustand'
+
+const useQuestStore = create((set, get) => ({
+  // State
+  activeFilter: 'all',
+  selectedQuest: null,
   
-  \subsection{react-query / tanstack-query als Daten-Fetching Library}
-  Server State Management
+  // Actions
+  setFilter: (filter) => set({ activeFilter: filter }),
+  selectQuest: (quest) => set({ selectedQuest: quest }),
+  
+  // Computed/Derived State via get()
+  getFilteredQuests: () => {
+    const filter = get().activeFilter
+    // Filtering logic...
+  }
+}))
+\end{lstlisting}
 
-  Caching Strategien
+\textbf{Selektive Reactivity und Performance:} Zustand implementiert feingradiges Dependency Tracking durch Proxy-basierte Subscriptions~\cite{Refine2024Zustand}. Components subscriben nur zu spezifischen State-Slices via Selector-Functions, was unnötige Re-Renders minimiert~\cite{ZustandGitHub2024}:
 
-  Optimistic Updates
+\begin{lstlisting}
+// Component re-rendert nur bei activeFilter Changes
+const filter = useQuestStore(state => state.activeFilter)
+
+// Component re-rendert nur bei selectedQuest Changes
+const quest = useQuestStore(state => state.selectedQuest)
+\end{lstlisting}
+
+Diese automatische Optimization eliminiert die Notwendigkeit manueller Memoization via \texttt{React.memo} oder \texttt{useMemo}~\cite{Refine2024Zustand}.
+
+\textbf{DevTools und Persistence:} Zustand bietet Middleware für Redux DevTools Integration und LocalStorage Persistence~\cite{ZustandGitHub2024}:
+
+\begin{lstlisting}
+import { devtools, persist } from 'zustand/middleware'
+
+const useStore = create(
+  devtools(
+    persist(
+      (set) => ({ /* store definition */ }),
+      { name: 'quest-filter-storage' }
+    )
+  )
+)
+\end{lstlisting}
+
+Die Persist-Middleware ermöglicht automatisches Speichern und Laden von State aus LocalStorage, essentiell für Features wie Quest-Filter-Präferenzen, die über Sessions persistieren sollen~\cite{Refine2024Zustand}.
+
+\textbf{Trade-offs und Limitierungen:} Zustand's Minimalismus ist gleichzeitig Stärke und Limitation. Die Library bietet keine eingebauten Patterns für asynchrone Operations, keine strukturierten Side-Effect-Modelle wie Redux Saga, und ein kleineres Ecosystem als Redux~\cite{Refine2024Zustand}. Für komplexe State Machines oder stark strukturierte Business Logic kann Redux mit Redux Toolkit weiterhin überlegen sein.
+
+\subsection{TanStack Query als Server State Spezialist}
+
+TanStack Query (vormals React Query) revolutionierte Server State Management durch Abstraktion der inhärenten Komplexität asynchroner Datenoperationen~\cite{TanStackQuery2024Overview}.
+
+\textbf{Deklaratives Data Fetching:} TanStack Query verschiebt Data Fetching von imperativem \texttt{useEffect}-Code zu deklarativen Query-Definitionen~\cite{Codemancers2024TanStackQuery}:
+
+\begin{lstlisting}
+import { useQuery } from '@tanstack/react-query'
+
+function QuestList() {
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['quests'],
+    queryFn: () => fetch('/api/quests').then(r => r.json())
+  })
+  
+  if (isLoading) return <LoadingSpinner />
+  if (error) return <ErrorMessage error={error} />
+  
+  return <div>{data.map(quest => <QuestCard quest={quest} />)}</div>
+}
+\end{lstlisting}
+
+Diese Deklaration eliminiert manuelle State-Variablen für \texttt{loading}, \texttt{error} und \texttt{data}, die traditionell in Redux oder lokalem State verwaltet werden mussten~\cite{TanStackQuery2024Overview}.
+
+\textbf{Intelligent Caching und Query Keys:} Das Cache-System basiert auf Query Keys als eindeutigen Identifiern~\cite{Atlantbh2024TanStackQuery}. Beim Query-Execution prüft TanStack Query zunächst den Cache:
+
+\begin{enumerate}
+    \item Existiert gecachte Data für den Query Key?
+    \item Ist die gecachte Data \glqq fresh\grqq{} basierend auf \texttt{staleTime}?
+    \item Falls fresh: Sofortige Rückgabe aus Cache
+    \item Falls stale: Background Refetch während gecachte Data angezeigt wird~\cite{Codemancers2024TanStackQuery}
+\end{enumerate}
+
+Die Parameter \texttt{staleTime} und \texttt{gcTime} (vormals \texttt{cacheTime}) kontrollieren dieses Verhalten~\cite{Atlantbh2024TanStackQuery}:
+
+\begin{itemize}
+    \item \textbf{staleTime:} Duration, für die Data als fresh gilt und nicht refetched wird (Default: 0ms)
+    \item \textbf{gcTime:} Duration, für die unused Cache-Entries in Memory verbleiben (Default: 5min)~\cite{Atlantbh2024TanStackQuery}
+\end{itemize}
+
+\textbf{Request Deduplication:} Wenn multiple Components simultan denselben Query requesten, konsolidiert TanStack Query diese zu einem einzelnen Network Request~\cite{Codemancers2024TanStackQuery}. Alle subscribenden Components erhalten dieselbe Response, was Redundanz eliminiert:
+
+\begin{lstlisting}
+// Component A
+const { data } = useQuery({ queryKey: ['quests'], queryFn: fetchQuests })
+
+// Component B (mountet simultan)
+const { data } = useQuery({ queryKey: ['quests'], queryFn: fetchQuests })
+
+// Resultat: Nur 1 HTTP Request, beide Components erhalten Response
+\end{lstlisting}
+
+\textbf{Automatic Background Refetching:} TanStack Query implementiert intelligente Refetch-Strategien~\cite{TanStackQuery2024Overview}:
+
+\begin{itemize}
+    \item \textbf{Window Focus Refetching:} Queries refetchen, wenn User zur Tab zurückkehrt
+    \item \textbf{Network Reconnection:} Automatic Refetch nach Netzwerk-Wiederverbindung
+    \item \textbf{Polling:} Konfigurierbare Interval-basierte Refetches
+\end{itemize}
+
+Diese Features garantieren Data Freshness ohne manuelle Orchestration~\cite{Codemancers2024TanStackQuery}.
+
+\textbf{Mutations und Optimistic Updates:} Für Data-Modification bietet TanStack Query \texttt{useMutation} mit Optimistic Update Support~\cite{TanStackQueryDocs2024OptimisticUpdates}:
+
+\begin{lstlisting}
+const updateQuestMutation = useMutation({
+  mutationFn: (updates) => fetch(`/api/quests/${updates.id}`, {
+    method: 'PATCH',
+    body: JSON.stringify(updates)
+  }),
+  
+  // Optimistic Update
+  onMutate: async (updates) => {
+    // Cancel outgoing refetches
+    await queryClient.cancelQueries({ queryKey: ['quests', updates.id] })
+    
+    // Snapshot previous value
+    const previous = queryClient.getQueryData(['quests', updates.id])
+    
+    // Optimistically update cache
+    queryClient.setQueryData(['quests', updates.id], updates)
+    
+    // Return context for rollback
+    return { previous }
+  },
+  
+  // Rollback on error
+  onError: (err, updates, context) => {
+    queryClient.setQueryData(['quests', updates.id], context.previous)
+  },
+  
+  // Refetch after success/error
+  onSettled: (data, error, updates) => {
+    queryClient.invalidateQueries({ queryKey: ['quests', updates.id] })
+  }
+})
+\end{lstlisting}
+
+Optimistic Updates ermöglichen instant \ac{UI}-Feedback: Der Cache wird sofort mit der antizipierten Response aktualisiert, bevor die Server-Response eintrifft~\cite{TanStackQueryDocs2024OptimisticUpdates}. Bei Fehlern erfolgt automatisches Rollback zur vorherigen Cache-Version.
+
+\textbf{Cache Invalidation Strategien:} TanStack Query bietet granulare Cache Invalidation~\cite{TanStackQuery2024Overview}:
+
+\begin{lstlisting}
+// Invalidate specific query
+queryClient.invalidateQueries({ queryKey: ['quests', questId] })
+
+// Invalidate all quest queries
+queryClient.invalidateQueries({ queryKey: ['quests'] })
+
+// Invalidate with predicate
+queryClient.invalidateQueries({
+  predicate: (query) => query.queryKey[0] === 'quests' && query.state.data?.status === 'active'
+})
+\end{lstlisting}
+
+\textbf{Integration mit Server-Side Rendering:} TanStack Query unterstützt \ac{SSR} durch Dehydration/Hydration Patterns~\cite{TanStackQuery2024Overview}. Queries können serverseitig prefetched, dehydriert und im Client rehydriert werden, was \ac{FCP} optimiert:
+
+\begin{lstlisting}
+// Next.js getServerSideProps
+export async function getServerSideProps() {
+  const queryClient = new QueryClient()
+  
+  await queryClient.prefetchQuery({
+    queryKey: ['quests'],
+    queryFn: fetchQuests
+  })
+  
+  return {
+    props: {
+      dehydratedState: dehydrate(queryClient)
+    }
+  }
+}
+\end{lstlisting}
 
 \section{Datenbank und Backend Design}
 

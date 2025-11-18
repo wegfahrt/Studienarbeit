@@ -219,6 +219,38 @@
       \field{title}{Best Companion Apps In Video Games}
       \field{year}{2023}
     \endentry
+    \entry{Codemancers2024TanStackQuery}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b2479076366ed3cf424c4a458b6c23e2}{%
+           family={{Codemancers}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{fullhash}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{fullhashraw}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{bibnamehash}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{authorbibnamehash}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{authornamehash}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{authorfullhash}{b2479076366ed3cf424c4a458b6c23e2}
+      \strng{authorfullhashraw}{b2479076366ed3cf424c4a458b6c23e2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Praktischer Guide zu Server State Management mit TanStack Query}
+      \field{title}{Managing Server State in React Application using TanStack React Query}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.codemancers.com/blog/2024-managing-server-state-in-react-app-using-react-query
+      \endverb
+      \verb{url}
+      \verb https://www.codemancers.com/blog/2024-managing-server-state-in-react-app-using-react-query
+      \endverb
+    \endentry
     \entry{Djirdeh2024TypeScriptBestPractices}{article}{}{}
       \name{author}{1}{}{%
         {{hash=c66df1b4932c4897ad8bf07ad1e9cfdc}{%
@@ -252,6 +284,41 @@
       \endverb
       \verb{url}
       \verb https://www.telerik.com/blogs/mastering-typescript-benefits-best-practices
+      \endverb
+    \endentry
+    \entry{Atlantbh2024TanStackQuery}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c1eb171bcde60e5109fdd0103dce68dd}{%
+           family={Džebo},
+           familyi={D\bibinitperiod},
+           given={Filip},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{fullhash}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{fullhashraw}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{bibnamehash}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{authorbibnamehash}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{authornamehash}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{authorfullhash}{c1eb171bcde60e5109fdd0103dce68dd}
+      \strng{authorfullhashraw}{c1eb171bcde60e5109fdd0103dce68dd}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{note}{Technische Erklärung von TanStack Query Caching-Mechanismen und Cache-Parametern}
+      \field{title}{Asynchronous State Management with TanStack Query}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.atlantbh.com/asynchronous-state-management-with-tanstack-query/
+      \endverb
+      \verb{url}
+      \verb https://www.atlantbh.com/asynchronous-state-management-with-tanstack-query/
       \endverb
     \endentry
     \entry{Ebirim2024}{article}{}{}
@@ -384,6 +451,38 @@
       \endverb
       \verb{url}
       \verb https://legacy.reactjs.org/docs/composition-vs-inheritance.html
+      \endverb
+    \endentry
+    \entry{FrontendUndefined2024ReactStateHistory}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f93064daff55bc0b8e4d97ec2403233}{%
+           family={{Frontend Undefined}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{fullhash}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{fullhashraw}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{bibnamehash}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{authorbibnamehash}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{authornamehash}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{authorfullhash}{1f93064daff55bc0b8e4d97ec2403233}
+      \strng{authorfullhashraw}{1f93064daff55bc0b8e4d97ec2403233}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Historische Analyse der Evolution von React State Management Libraries von Flux bis moderne Lösungen}
+      \field{title}{A brief history of state management libraries for React}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.frontendundefined.com/posts/monthly/react-state-management-libraries-history/
+      \endverb
+      \verb{url}
+      \verb https://www.frontendundefined.com/posts/monthly/react-state-management-libraries-history/
       \endverb
     \endentry
     \entry{Frost2016AtomicDesign}{book}{}{}
@@ -940,6 +1039,38 @@
       \verb https://thiraphat-ps-dev.medium.com/mastering-next-js-app-router-best-practices-for-structuring-your-application-3f8cf0c76580
       \endverb
     \endentry
+    \entry{ZustandGitHub2024}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=446aee09709ac64d31c31dcda41d6b8e}{%
+           family={{Poimandres}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{fullhash}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{fullhashraw}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{bibnamehash}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{authorbibnamehash}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{authornamehash}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{authorfullhash}{446aee09709ac64d31c31dcda41d6b8e}
+      \strng{authorfullhashraw}{446aee09709ac64d31c31dcda41d6b8e}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Offizielle Zustand GitHub Repository mit Dokumentation und Beispielen}
+      \field{title}{Zustand -- Bear necessities for state management in React}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/pmndrs/zustand
+      \endverb
+      \verb{url}
+      \verb https://github.com/pmndrs/zustand
+      \endverb
+    \endentry
     \entry{ProNextJS2024FileRouting}{online}{}{}
       \name{author}{1}{}{%
         {{hash=b7b7a212e2eb7a4707f474dc63c12073}{%
@@ -972,6 +1103,71 @@
       \endverb
       \verb{url}
       \verb https://www.pronextjs.dev/workshops/next-js-foundations-for-professional-web-development~lxb18/file-based-routing-with-app-router~dtnrx
+      \endverb
+    \endentry
+    \entry{Redux2024History}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=aecf779bb3d525122b1185d8a5c12b34}{%
+           family={{Redux Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{fullhash}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{fullhashraw}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{bibnamehash}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{authorbibnamehash}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{authornamehash}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{authorfullhash}{aecf779bb3d525122b1185d8a5c12b34}
+      \strng{authorfullhashraw}{aecf779bb3d525122b1185d8a5c12b34}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Offizielle Dokumentation zur Entstehungsgeschichte und Design-Entscheidungen von Redux}
+      \field{title}{The History of Redux}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://redux.js.org/understanding/history-and-design/history-of-redux
+      \endverb
+      \verb{url}
+      \verb https://redux.js.org/understanding/history-and-design/history-of-redux
+      \endverb
+    \endentry
+    \entry{Refine2024Zustand}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9f79b65055f2201292e5f79666bf2579}{%
+           family={{Refine}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f79b65055f2201292e5f79666bf2579}
+      \strng{fullhash}{9f79b65055f2201292e5f79666bf2579}
+      \strng{fullhashraw}{9f79b65055f2201292e5f79666bf2579}
+      \strng{bibnamehash}{9f79b65055f2201292e5f79666bf2579}
+      \strng{authorbibnamehash}{9f79b65055f2201292e5f79666bf2579}
+      \strng{authornamehash}{9f79b65055f2201292e5f79666bf2579}
+      \strng{authorfullhash}{9f79b65055f2201292e5f79666bf2579}
+      \strng{authorfullhashraw}{9f79b65055f2201292e5f79666bf2579}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{7}
+      \field{note}{Umfassender Guide zu Zustand State Management mit Best Practices}
+      \field{title}{How to use Zustand}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://refine.dev/blog/zustand-react-state/
+      \endverb
+      \verb{url}
+      \verb https://refine.dev/blog/zustand-react-state/
       \endverb
     \endentry
     \entry{VideoGameMarket}{report}{}{}
@@ -1134,6 +1330,72 @@
       \endverb
       \verb{url}
       \verb https://tailwindcss.com/docs/utility-first
+      \endverb
+    \endentry
+    \entry{TanStackQueryDocs2024OptimisticUpdates}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9dd55379b93ec80f16ff6253eb004a35}{%
+           family={{TanStack}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{fullhash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{fullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{bibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorbibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authornamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorfullhash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorfullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Offizielle Dokumentation zu Optimistic Update Patterns in TanStack Query}
+      \field{title}{Optimistic Updates | TanStack Query React Docs}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://tanstack.com/query/latest/docs/framework/react/guides/optimistic-updates
+      \endverb
+      \verb{url}
+      \verb https://tanstack.com/query/latest/docs/framework/react/guides/optimistic-updates
+      \endverb
+    \endentry
+    \entry{TanStackQuery2024Overview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9dd55379b93ec80f16ff6253eb004a35}{%
+           family={{TanStack}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{fullhash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{fullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{bibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorbibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authornamehash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorfullhash}{9dd55379b93ec80f16ff6253eb004a35}
+      \strng{authorfullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Offizielle Dokumentation zu TanStack Query Konzepten und Architektur}
+      \field{title}{Overview | TanStack Query React Docs}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://tanstack.com/query/latest/docs/framework/react/overview
+      \endverb
+      \verb{url}
+      \verb https://tanstack.com/query/latest/docs/framework/react/overview
       \endverb
     \endentry
     \entry{TarkovDev2024}{online}{}{}
@@ -1442,6 +1704,41 @@
       \endverb
       \verb{url}
       \verb https://visuresolutions.com/alm-guide/requirements-gathering-techniques-for-agile
+      \endverb
+    \endentry
+    \entry{DevCommunity2023ServerClientState}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e481e118f27b718833281de9a4c9a851}{%
+           family={Vora},
+           familyi={V\bibinitperiod},
+           given={Jeet},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e481e118f27b718833281de9a4c9a851}
+      \strng{fullhash}{e481e118f27b718833281de9a4c9a851}
+      \strng{fullhashraw}{e481e118f27b718833281de9a4c9a851}
+      \strng{bibnamehash}{e481e118f27b718833281de9a4c9a851}
+      \strng{authorbibnamehash}{e481e118f27b718833281de9a4c9a851}
+      \strng{authornamehash}{e481e118f27b718833281de9a4c9a851}
+      \strng{authorfullhash}{e481e118f27b718833281de9a4c9a851}
+      \strng{authorfullhashraw}{e481e118f27b718833281de9a4c9a851}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{note}{Einführung in die Unterscheidung zwischen Server State und Client State mit praktischen Beispielen}
+      \field{title}{Server State vs Client State in React for Beginners}
+      \field{urlday}{18}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.to/jeetvora331/server-state-vs-client-state-in-react-for-beginners-3pl6
+      \endverb
+      \verb{url}
+      \verb https://dev.to/jeetvora331/server-state-vs-client-state-in-react-for-beginners-3pl6
       \endverb
     \endentry
     \entry{SplunkEngineering2022CustomGraphViz}{article}{}{}
