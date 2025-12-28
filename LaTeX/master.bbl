@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
-    \entry{Abukhalaf2025}{article}{}{}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Abukhalaf2025}{article}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
@@ -31,12 +31,10 @@
       }
       \strng{namehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
       \strng{fullhash}{879f34bc3ce7bf721da01ff7cc2e07f0}
-      \strng{fullhashraw}{879f34bc3ce7bf721da01ff7cc2e07f0}
       \strng{bibnamehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
       \strng{authorbibnamehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
       \strng{authornamehash}{879f34bc3ce7bf721da01ff7cc2e07f0}
       \strng{authorfullhash}{879f34bc3ce7bf721da01ff7cc2e07f0}
-      \strng{authorfullhashraw}{879f34bc3ce7bf721da01ff7cc2e07f0}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -49,7 +47,40 @@
       \verb 10.3389/fcomp.2025.1537100
       \endverb
     \endentry
-    \entry{Ambler2023}{online}{}{}
+    \entry{LogRocketDrizzle2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=42f6e390f7f7a2d046eafa98f71510a7}{%
+           family={Akinyemi},
+           familyi={A\bibinitperiod},
+           given={Ikeh},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{42f6e390f7f7a2d046eafa98f71510a7}
+      \strng{fullhash}{42f6e390f7f7a2d046eafa98f71510a7}
+      \strng{bibnamehash}{42f6e390f7f7a2d046eafa98f71510a7}
+      \strng{authorbibnamehash}{42f6e390f7f7a2d046eafa98f71510a7}
+      \strng{authornamehash}{42f6e390f7f7a2d046eafa98f71510a7}
+      \strng{authorfullhash}{42f6e390f7f7a2d046eafa98f71510a7}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{LogRocket Blog}
+      \field{note}{Comprehensive technical analysis of Drizzle ORM}
+      \field{title}{Drizzle ORM adoption guide: Overview, examples, and alternatives}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://blog.logrocket.com/drizzle-orm-adoption-guide/
+      \endverb
+      \verb{url}
+      \verb https://blog.logrocket.com/drizzle-orm-adoption-guide/
+      \endverb
+    \endentry
+    \entry{Ambler2023}{online}{}
       \name{author}{1}{}{%
         {{hash=fc1f56563a26d9659940dfe2082b6700}{%
            family={Ambler},
@@ -62,12 +93,10 @@
       }
       \strng{namehash}{fc1f56563a26d9659940dfe2082b6700}
       \strng{fullhash}{fc1f56563a26d9659940dfe2082b6700}
-      \strng{fullhashraw}{fc1f56563a26d9659940dfe2082b6700}
       \strng{bibnamehash}{fc1f56563a26d9659940dfe2082b6700}
       \strng{authorbibnamehash}{fc1f56563a26d9659940dfe2082b6700}
       \strng{authornamehash}{fc1f56563a26d9659940dfe2082b6700}
       \strng{authorfullhash}{fc1f56563a26d9659940dfe2082b6700}
-      \strng{authorfullhashraw}{fc1f56563a26d9659940dfe2082b6700}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -85,7 +114,7 @@
       \verb http://agilemodeling.com/essays/agileRequirements.htm
       \endverb
     \endentry
-    \entry{Ansari2024NextJSAppRouter}{article}{}{}
+    \entry{Ansari2024NextJSAppRouter}{article}{}
       \name{author}{1}{}{%
         {{hash=1ce7d032dd2039954be39c039e07a34e}{%
            family={Ansari},
@@ -98,12 +127,10 @@
       }
       \strng{namehash}{1ce7d032dd2039954be39c039e07a34e}
       \strng{fullhash}{1ce7d032dd2039954be39c039e07a34e}
-      \strng{fullhashraw}{1ce7d032dd2039954be39c039e07a34e}
       \strng{bibnamehash}{1ce7d032dd2039954be39c039e07a34e}
       \strng{authorbibnamehash}{1ce7d032dd2039954be39c039e07a34e}
       \strng{authornamehash}{1ce7d032dd2039954be39c039e07a34e}
       \strng{authorfullhash}{1ce7d032dd2039954be39c039e07a34e}
-      \strng{authorfullhashraw}{1ce7d032dd2039954be39c039e07a34e}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}
@@ -122,7 +149,7 @@
       \verb https://medium.com/@kulsumansari4/next-js-app-router-routing-8d795dbe324c
       \endverb
     \endentry
-    \entry{Bhatu2024TypeScript}{article}{}{}
+    \entry{Bhatu2024TypeScript}{article}{}
       \name{author}{1}{}{%
         {{hash=b51657ef73d9300ba15dee9c84336fc6}{%
            family={Bhatu},
@@ -135,12 +162,10 @@
       }
       \strng{namehash}{b51657ef73d9300ba15dee9c84336fc6}
       \strng{fullhash}{b51657ef73d9300ba15dee9c84336fc6}
-      \strng{fullhashraw}{b51657ef73d9300ba15dee9c84336fc6}
       \strng{bibnamehash}{b51657ef73d9300ba15dee9c84336fc6}
       \strng{authorbibnamehash}{b51657ef73d9300ba15dee9c84336fc6}
       \strng{authornamehash}{b51657ef73d9300ba15dee9c84336fc6}
       \strng{authorfullhash}{b51657ef73d9300ba15dee9c84336fc6}
-      \strng{authorfullhashraw}{b51657ef73d9300ba15dee9c84336fc6}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -159,7 +184,7 @@
       \verb https://medium.com/@bhaturohit/why-choose-typescript-in-2024-the-evolution-of-javascript-development-fdf77dd56a62
       \endverb
     \endentry
-    \entry{Statista2024ConsoleApps}{online}{}{}
+    \entry{Statista2024ConsoleApps}{online}{}
       \name{author}{1}{}{%
         {{hash=b9ad742be475e490663762c287a736c9}{%
            family={Clement},
@@ -172,12 +197,10 @@
       }
       \strng{namehash}{b9ad742be475e490663762c287a736c9}
       \strng{fullhash}{b9ad742be475e490663762c287a736c9}
-      \strng{fullhashraw}{b9ad742be475e490663762c287a736c9}
       \strng{bibnamehash}{b9ad742be475e490663762c287a736c9}
       \strng{authorbibnamehash}{b9ad742be475e490663762c287a736c9}
       \strng{authornamehash}{b9ad742be475e490663762c287a736c9}
       \strng{authorfullhash}{b9ad742be475e490663762c287a736c9}
-      \strng{authorfullhashraw}{b9ad742be475e490663762c287a736c9}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -196,7 +219,37 @@
       \verb https://www.statista.com/statistics/1266736/game-console-companion-app-downloads/
       \endverb
     \endentry
-    \entry{TheGamer}{article}{}{}
+    \entry{Cloudflare2024BaaS}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3f07179a07b2a7661e37a3fd0e652a07}{%
+           family={{Cloudflare}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{fullhash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{bibnamehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authorbibnamehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authornamehash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \strng{authorfullhash}{3f07179a07b2a7661e37a3fd0e652a07}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Authoritative industry definition of Backend-as-a-Service concepts}
+      \field{title}{What is BaaS? | Backend-as-a-Service vs. serverless}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.cloudflare.com/learning/serverless/glossary/backend-as-a-service-baas/
+      \endverb
+      \verb{url}
+      \verb https://www.cloudflare.com/learning/serverless/glossary/backend-as-a-service-baas/
+      \endverb
+    \endentry
+    \entry{TheGamer}{article}{}
       \name{author}{1}{}{%
         {{hash=0f05d1e45f1742a971eb8fee5eeb64fa}{%
            family={Cochran},
@@ -206,12 +259,10 @@
       }
       \strng{namehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
       \strng{fullhash}{0f05d1e45f1742a971eb8fee5eeb64fa}
-      \strng{fullhashraw}{0f05d1e45f1742a971eb8fee5eeb64fa}
       \strng{bibnamehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
       \strng{authorbibnamehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
       \strng{authornamehash}{0f05d1e45f1742a971eb8fee5eeb64fa}
       \strng{authorfullhash}{0f05d1e45f1742a971eb8fee5eeb64fa}
-      \strng{authorfullhashraw}{0f05d1e45f1742a971eb8fee5eeb64fa}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -219,7 +270,7 @@
       \field{title}{Best Companion Apps In Video Games}
       \field{year}{2023}
     \endentry
-    \entry{Codemancers2024TanStackQuery}{online}{}{}
+    \entry{Codemancers2024TanStackQuery}{online}{}
       \name{author}{1}{}{%
         {{hash=b2479076366ed3cf424c4a458b6c23e2}{%
            family={{Codemancers}},
@@ -227,12 +278,10 @@
       }
       \strng{namehash}{b2479076366ed3cf424c4a458b6c23e2}
       \strng{fullhash}{b2479076366ed3cf424c4a458b6c23e2}
-      \strng{fullhashraw}{b2479076366ed3cf424c4a458b6c23e2}
       \strng{bibnamehash}{b2479076366ed3cf424c4a458b6c23e2}
       \strng{authorbibnamehash}{b2479076366ed3cf424c4a458b6c23e2}
       \strng{authornamehash}{b2479076366ed3cf424c4a458b6c23e2}
       \strng{authorfullhash}{b2479076366ed3cf424c4a458b6c23e2}
-      \strng{authorfullhashraw}{b2479076366ed3cf424c4a458b6c23e2}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -251,7 +300,7 @@
       \verb https://www.codemancers.com/blog/2024-managing-server-state-in-react-app-using-react-query
       \endverb
     \endentry
-    \entry{Djirdeh2024TypeScriptBestPractices}{article}{}{}
+    \entry{Djirdeh2024TypeScriptBestPractices}{article}{}
       \name{author}{1}{}{%
         {{hash=c66df1b4932c4897ad8bf07ad1e9cfdc}{%
            family={Djirdeh},
@@ -261,12 +310,10 @@
       }
       \strng{namehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
       \strng{fullhash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
-      \strng{fullhashraw}{c66df1b4932c4897ad8bf07ad1e9cfdc}
       \strng{bibnamehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
       \strng{authorbibnamehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
       \strng{authornamehash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
       \strng{authorfullhash}{c66df1b4932c4897ad8bf07ad1e9cfdc}
-      \strng{authorfullhashraw}{c66df1b4932c4897ad8bf07ad1e9cfdc}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -286,7 +333,67 @@
       \verb https://www.telerik.com/blogs/mastering-typescript-benefits-best-practices
       \endverb
     \endentry
-    \entry{Atlantbh2024TanStackQuery}{online}{}{}
+    \entry{DORAMetrics2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=464dbba2e8b2b503a8a0782fe5ad1655}{%
+           family={{DORA Team}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{464dbba2e8b2b503a8a0782fe5ad1655}
+      \strng{fullhash}{464dbba2e8b2b503a8a0782fe5ad1655}
+      \strng{bibnamehash}{464dbba2e8b2b503a8a0782fe5ad1655}
+      \strng{authorbibnamehash}{464dbba2e8b2b503a8a0782fe5ad1655}
+      \strng{authornamehash}{464dbba2e8b2b503a8a0782fe5ad1655}
+      \strng{authorfullhash}{464dbba2e8b2b503a8a0782fe5ad1655}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official DORA metrics documentation from Google}
+      \field{title}{DORA's software delivery metrics: the four keys}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dora.dev/guides/dora-metrics-four-keys/
+      \endverb
+      \verb{url}
+      \verb https://dora.dev/guides/dora-metrics-four-keys/
+      \endverb
+    \endentry
+    \entry{DrizzleORMDocs2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ab445a6d3690ce7ec76562abd8f24d08}{%
+           family={{Drizzle Team}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab445a6d3690ce7ec76562abd8f24d08}
+      \strng{fullhash}{ab445a6d3690ce7ec76562abd8f24d08}
+      \strng{bibnamehash}{ab445a6d3690ce7ec76562abd8f24d08}
+      \strng{authorbibnamehash}{ab445a6d3690ce7ec76562abd8f24d08}
+      \strng{authornamehash}{ab445a6d3690ce7ec76562abd8f24d08}
+      \strng{authorfullhash}{ab445a6d3690ce7ec76562abd8f24d08}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Drizzle ORM documentation}
+      \field{title}{Drizzle ORM - next gen TypeScript ORM}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://orm.drizzle.team/
+      \endverb
+      \verb{url}
+      \verb https://orm.drizzle.team/
+      \endverb
+    \endentry
+    \entry{Atlantbh2024TanStackQuery}{online}{}
       \name{author}{1}{}{%
         {{hash=c1eb171bcde60e5109fdd0103dce68dd}{%
            family={Džebo},
@@ -296,12 +403,10 @@
       }
       \strng{namehash}{c1eb171bcde60e5109fdd0103dce68dd}
       \strng{fullhash}{c1eb171bcde60e5109fdd0103dce68dd}
-      \strng{fullhashraw}{c1eb171bcde60e5109fdd0103dce68dd}
       \strng{bibnamehash}{c1eb171bcde60e5109fdd0103dce68dd}
       \strng{authorbibnamehash}{c1eb171bcde60e5109fdd0103dce68dd}
       \strng{authornamehash}{c1eb171bcde60e5109fdd0103dce68dd}
       \strng{authorfullhash}{c1eb171bcde60e5109fdd0103dce68dd}
-      \strng{authorfullhashraw}{c1eb171bcde60e5109fdd0103dce68dd}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
@@ -321,7 +426,7 @@
       \verb https://www.atlantbh.com/asynchronous-state-management-with-tanstack-query/
       \endverb
     \endentry
-    \entry{Ebirim2024}{article}{}{}
+    \entry{Ebirim2024}{article}{}
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
@@ -333,12 +438,10 @@
       }
       \strng{namehash}{44303a8766ec8fc5c9345f116d9309b9}
       \strng{fullhash}{44303a8766ec8fc5c9345f116d9309b9}
-      \strng{fullhashraw}{44303a8766ec8fc5c9345f116d9309b9}
       \strng{bibnamehash}{44303a8766ec8fc5c9345f116d9309b9}
       \strng{authorbibnamehash}{44303a8766ec8fc5c9345f116d9309b9}
       \strng{authornamehash}{44303a8766ec8fc5c9345f116d9309b9}
       \strng{authorfullhash}{44303a8766ec8fc5c9345f116d9309b9}
-      \strng{authorfullhashraw}{44303a8766ec8fc5c9345f116d9309b9}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -351,7 +454,7 @@
       \field{pages}{1209\bibrangedash 1220}
       \range{pages}{12}
     \endentry
-    \entry{SteamARCRaiders2025}{online}{}{}
+    \entry{SteamARCRaiders2025}{online}{}
       \name{author}{1}{}{%
         {{hash=fe0a5d88d274937d975672748113af40}{%
            family={{Embark Studios}},
@@ -362,12 +465,10 @@
       }
       \strng{namehash}{fe0a5d88d274937d975672748113af40}
       \strng{fullhash}{fe0a5d88d274937d975672748113af40}
-      \strng{fullhashraw}{fe0a5d88d274937d975672748113af40}
       \strng{bibnamehash}{fe0a5d88d274937d975672748113af40}
       \strng{authorbibnamehash}{fe0a5d88d274937d975672748113af40}
       \strng{authornamehash}{fe0a5d88d274937d975672748113af40}
       \strng{authorfullhash}{fe0a5d88d274937d975672748113af40}
-      \strng{authorfullhashraw}{fe0a5d88d274937d975672748113af40}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -385,7 +486,7 @@
       \verb https://store.steampowered.com/app/1808500/ARC_Raiders/
       \endverb
     \endentry
-    \entry{Expedite2024TypeScript}{online}{}{}
+    \entry{Expedite2024TypeScript}{online}{}
       \name{author}{1}{}{%
         {{hash=b62763926f29d89aa7e835a065b657e7}{%
            family={{Expedite Informatics}},
@@ -396,12 +497,10 @@
       }
       \strng{namehash}{b62763926f29d89aa7e835a065b657e7}
       \strng{fullhash}{b62763926f29d89aa7e835a065b657e7}
-      \strng{fullhashraw}{b62763926f29d89aa7e835a065b657e7}
       \strng{bibnamehash}{b62763926f29d89aa7e835a065b657e7}
       \strng{authorbibnamehash}{b62763926f29d89aa7e835a065b657e7}
       \strng{authornamehash}{b62763926f29d89aa7e835a065b657e7}
       \strng{authorfullhash}{b62763926f29d89aa7e835a065b657e7}
-      \strng{authorfullhashraw}{b62763926f29d89aa7e835a065b657e7}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -419,7 +518,7 @@
       \verb https://expediteinformatics.com/typescript-in-2024-trends-standards-benefits-challenges-and-commitments/
       \endverb
     \endentry
-    \entry{ReactDocs2024Composition}{online}{}{}
+    \entry{ReactDocs2024Composition}{online}{}
       \name{author}{1}{}{%
         {{hash=bb28d0ea561a82f24cc2500627ff9fd0}{%
            family={{Facebook Open Source}},
@@ -430,12 +529,10 @@
       }
       \strng{namehash}{bb28d0ea561a82f24cc2500627ff9fd0}
       \strng{fullhash}{bb28d0ea561a82f24cc2500627ff9fd0}
-      \strng{fullhashraw}{bb28d0ea561a82f24cc2500627ff9fd0}
       \strng{bibnamehash}{bb28d0ea561a82f24cc2500627ff9fd0}
       \strng{authorbibnamehash}{bb28d0ea561a82f24cc2500627ff9fd0}
       \strng{authornamehash}{bb28d0ea561a82f24cc2500627ff9fd0}
       \strng{authorfullhash}{bb28d0ea561a82f24cc2500627ff9fd0}
-      \strng{authorfullhashraw}{bb28d0ea561a82f24cc2500627ff9fd0}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
@@ -453,7 +550,43 @@
       \verb https://legacy.reactjs.org/docs/composition-vs-inheritance.html
       \endverb
     \endentry
-    \entry{FrontendUndefined2024ReactStateHistory}{online}{}{}
+    \entry{ForsGrenHumbleKim2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=0dc9ac8a967e13c60fcfaedde74976f2}{%
+           family={Forsgren},
+           familyi={F\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9e89d796d06f74d6551850b1c3bff900}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Jez},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8e1c949be5801a6f56b7ac5df47a58a9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IT Revolution Press}%
+      }
+      \strng{namehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{fullhash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{bibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authorbibnamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authornamehash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \strng{authorfullhash}{b3a03bdb03f26ee6030a135e12ea135c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1942788331}
+      \field{note}{Shingo Publication Award winner, establishes DORA metrics through rigorous research}
+      \field{title}{Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations}
+      \field{year}{2018}
+    \endentry
+    \entry{FrontendUndefined2024ReactStateHistory}{online}{}
       \name{author}{1}{}{%
         {{hash=1f93064daff55bc0b8e4d97ec2403233}{%
            family={{Frontend Undefined}},
@@ -461,12 +594,10 @@
       }
       \strng{namehash}{1f93064daff55bc0b8e4d97ec2403233}
       \strng{fullhash}{1f93064daff55bc0b8e4d97ec2403233}
-      \strng{fullhashraw}{1f93064daff55bc0b8e4d97ec2403233}
       \strng{bibnamehash}{1f93064daff55bc0b8e4d97ec2403233}
       \strng{authorbibnamehash}{1f93064daff55bc0b8e4d97ec2403233}
       \strng{authornamehash}{1f93064daff55bc0b8e4d97ec2403233}
       \strng{authorfullhash}{1f93064daff55bc0b8e4d97ec2403233}
-      \strng{authorfullhashraw}{1f93064daff55bc0b8e4d97ec2403233}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
@@ -485,7 +616,7 @@
       \verb https://www.frontendundefined.com/posts/monthly/react-state-management-libraries-history/
       \endverb
     \endentry
-    \entry{Frost2016AtomicDesign}{book}{}{}
+    \entry{Frost2016AtomicDesign}{book}{}
       \name{author}{1}{}{%
         {{hash=689a1fbcd0c358d7a4a4b35ccbbb28c9}{%
            family={Frost},
@@ -498,12 +629,10 @@
       }
       \strng{namehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
       \strng{fullhash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
-      \strng{fullhashraw}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
       \strng{bibnamehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
       \strng{authorbibnamehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
       \strng{authornamehash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
       \strng{authorfullhash}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
-      \strng{authorfullhashraw}{689a1fbcd0c358d7a4a4b35ccbbb28c9}
       \field{sortinit}{F}
       \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
       \field{labelnamesource}{author}
@@ -522,7 +651,7 @@
       \verb https://atomicdesign.bradfrost.com/
       \endverb
     \endentry
-    \entry{GeeksForGeeks2025ReactComponent}{online}{}{}
+    \entry{GeeksForGeeks2025ReactComponent}{online}{}
       \name{author}{1}{}{%
         {{hash=f1e069787ece74531d112559945c6871}{%
            family={{GeeksforGeeks}},
@@ -533,12 +662,10 @@
       }
       \strng{namehash}{f1e069787ece74531d112559945c6871}
       \strng{fullhash}{f1e069787ece74531d112559945c6871}
-      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
       \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
       \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
       \strng{authornamehash}{f1e069787ece74531d112559945c6871}
       \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
-      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
@@ -557,7 +684,7 @@
       \verb https://www.geeksforgeeks.org/reactjs/react-component-based-architecture/
       \endverb
     \endentry
-    \entry{Brainhub}{article}{}{}
+    \entry{Brainhub}{article}{}
       \name{author}{1}{}{%
         {{hash=ad8547e96ce08818afc1ab41de0b2084}{%
            family={Giersza},
@@ -570,12 +697,10 @@
       }
       \strng{namehash}{ad8547e96ce08818afc1ab41de0b2084}
       \strng{fullhash}{ad8547e96ce08818afc1ab41de0b2084}
-      \strng{fullhashraw}{ad8547e96ce08818afc1ab41de0b2084}
       \strng{bibnamehash}{ad8547e96ce08818afc1ab41de0b2084}
       \strng{authorbibnamehash}{ad8547e96ce08818afc1ab41de0b2084}
       \strng{authornamehash}{ad8547e96ce08818afc1ab41de0b2084}
       \strng{authorfullhash}{ad8547e96ce08818afc1ab41de0b2084}
-      \strng{authorfullhashraw}{ad8547e96ce08818afc1ab41de0b2084}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
@@ -583,7 +708,37 @@
       \field{title}{Companion Apps are Taking Video Games to the Next Level}
       \field{year}{2024}
     \endentry
-    \entry{TheHideoutApp2024}{online}{}{}
+    \entry{GitHubActions2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d3b7c913cd04ebfec0e9ec32cb6fd58c}{%
+           family={{GitHub}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{fullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{bibnamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorbibnamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authornamehash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \strng{authorfullhash}{d3b7c913cd04ebfec0e9ec32cb6fd58c}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official GitHub Actions documentation for CI/CD automation}
+      \field{title}{GitHub Actions: Automate your workflow}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/features/actions
+      \endverb
+      \verb{url}
+      \verb https://github.com/features/actions
+      \endverb
+    \endentry
+    \entry{TheHideoutApp2024}{online}{}
       \name{author}{1}{}{%
         {{hash=619b90bde71c0e492e909de754301dd9}{%
            family={Hodak},
@@ -596,12 +751,10 @@
       }
       \strng{namehash}{619b90bde71c0e492e909de754301dd9}
       \strng{fullhash}{619b90bde71c0e492e909de754301dd9}
-      \strng{fullhashraw}{619b90bde71c0e492e909de754301dd9}
       \strng{bibnamehash}{619b90bde71c0e492e909de754301dd9}
       \strng{authorbibnamehash}{619b90bde71c0e492e909de754301dd9}
       \strng{authornamehash}{619b90bde71c0e492e909de754301dd9}
       \strng{authorfullhash}{619b90bde71c0e492e909de754301dd9}
-      \strng{authorfullhashraw}{619b90bde71c0e492e909de754301dd9}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
@@ -619,7 +772,38 @@
       \verb https://play.google.com/store/apps/details?id=com.austinhodak.thehideout
       \endverb
     \endentry
-    \entry{IconEra2024ExtractionMarket}{online}{}{}
+    \entry{HumbleFarley2010}{book}{}
+      \name{author}{2}{}{%
+        {{hash=9e89d796d06f74d6551850b1c3bff900}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Jez},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e88f486e16133b897ffb346a75f56d96}{%
+           family={Farley},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{06b8a2e32b3cda03592e143a7f761e36}
+      \strng{fullhash}{06b8a2e32b3cda03592e143a7f761e36}
+      \strng{bibnamehash}{06b8a2e32b3cda03592e143a7f761e36}
+      \strng{authorbibnamehash}{06b8a2e32b3cda03592e143a7f761e36}
+      \strng{authornamehash}{06b8a2e32b3cda03592e143a7f761e36}
+      \strng{authorfullhash}{06b8a2e32b3cda03592e143a7f761e36}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0321601919}
+      \field{note}{Jolt Award winner, seminal work on continuous delivery practices}
+      \field{title}{Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation}
+      \field{year}{2010}
+    \endentry
+    \entry{IconEra2024ExtractionMarket}{online}{}
       \name{author}{1}{}{%
         {{hash=244c5111c0baef469ae3aac97e28a7ba}{%
            family={{IconEra Community}},
@@ -630,12 +814,10 @@
       }
       \strng{namehash}{244c5111c0baef469ae3aac97e28a7ba}
       \strng{fullhash}{244c5111c0baef469ae3aac97e28a7ba}
-      \strng{fullhashraw}{244c5111c0baef469ae3aac97e28a7ba}
       \strng{bibnamehash}{244c5111c0baef469ae3aac97e28a7ba}
       \strng{authorbibnamehash}{244c5111c0baef469ae3aac97e28a7ba}
       \strng{authornamehash}{244c5111c0baef469ae3aac97e28a7ba}
       \strng{authorfullhash}{244c5111c0baef469ae3aac97e28a7ba}
-      \strng{authorfullhashraw}{244c5111c0baef469ae3aac97e28a7ba}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
@@ -654,7 +836,7 @@
       \verb https://icon-era.com/threads/what-will-the-extraction-shooter-market-look-like-in-two-years-market-size.14825/
       \endverb
     \endentry
-    \entry{InsiderGaming2025ExtractionShooters}{article}{}{}
+    \entry{InsiderGaming2025ExtractionShooters}{article}{}
       \name{author}{1}{}{%
         {{hash=103f7034cd5bf67956d7fdaf668ab5a5}{%
            family={{Insider Gaming}},
@@ -665,12 +847,10 @@
       }
       \strng{namehash}{103f7034cd5bf67956d7fdaf668ab5a5}
       \strng{fullhash}{103f7034cd5bf67956d7fdaf668ab5a5}
-      \strng{fullhashraw}{103f7034cd5bf67956d7fdaf668ab5a5}
       \strng{bibnamehash}{103f7034cd5bf67956d7fdaf668ab5a5}
       \strng{authorbibnamehash}{103f7034cd5bf67956d7fdaf668ab5a5}
       \strng{authornamehash}{103f7034cd5bf67956d7fdaf668ab5a5}
       \strng{authorfullhash}{103f7034cd5bf67956d7fdaf668ab5a5}
-      \strng{authorfullhashraw}{103f7034cd5bf67956d7fdaf668ab5a5}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
@@ -689,7 +869,7 @@
       \verb https://insider-gaming.com/love-or-hate-extraction-shooters-wild/
       \endverb
     \endentry
-    \entry{Invicta2024TypeScriptLargeScale}{online}{}{}
+    \entry{Invicta2024TypeScriptLargeScale}{online}{}
       \name{author}{1}{}{%
         {{hash=1c116e9d55cc7ee4b284e0a5e0944885}{%
            family={{Invictarasolutions}},
@@ -700,12 +880,10 @@
       }
       \strng{namehash}{1c116e9d55cc7ee4b284e0a5e0944885}
       \strng{fullhash}{1c116e9d55cc7ee4b284e0a5e0944885}
-      \strng{fullhashraw}{1c116e9d55cc7ee4b284e0a5e0944885}
       \strng{bibnamehash}{1c116e9d55cc7ee4b284e0a5e0944885}
       \strng{authorbibnamehash}{1c116e9d55cc7ee4b284e0a5e0944885}
       \strng{authornamehash}{1c116e9d55cc7ee4b284e0a5e0944885}
       \strng{authorfullhash}{1c116e9d55cc7ee4b284e0a5e0944885}
-      \strng{authorfullhashraw}{1c116e9d55cc7ee4b284e0a5e0944885}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labelnamesource}{author}
@@ -724,7 +902,7 @@
       \verb https://medium.com/@invictarasolutions/why-typescript-is-becoming-the-go-to-for-large-scale-javascript-projects-5439aabf4bb7
       \endverb
     \endentry
-    \entry{DevCommunity2025HeadlessVsTraditional}{article}{}{}
+    \entry{DevCommunity2025HeadlessVsTraditional}{article}{}
       \name{author}{1}{}{%
         {{hash=766f823eddcaa82d7f6633f467b3f2f4}{%
            family={Khaled},
@@ -734,12 +912,10 @@
       }
       \strng{namehash}{766f823eddcaa82d7f6633f467b3f2f4}
       \strng{fullhash}{766f823eddcaa82d7f6633f467b3f2f4}
-      \strng{fullhashraw}{766f823eddcaa82d7f6633f467b3f2f4}
       \strng{bibnamehash}{766f823eddcaa82d7f6633f467b3f2f4}
       \strng{authorbibnamehash}{766f823eddcaa82d7f6633f467b3f2f4}
       \strng{authornamehash}{766f823eddcaa82d7f6633f467b3f2f4}
       \strng{authorfullhash}{766f823eddcaa82d7f6633f467b3f2f4}
-      \strng{authorfullhashraw}{766f823eddcaa82d7f6633f467b3f2f4}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
@@ -759,7 +935,48 @@
       \verb https://dev.to/mohammad_kh4441/headless-vs-traditional-ui-libraries-when-and-why-to-choose-each-1c5b
       \endverb
     \endentry
-    \entry{vanLamsweerde2000}{inproceedings}{}{}
+    \entry{KimHumbleDeboisWillis2016}{book}{}
+      \name{author}{4}{}{%
+        {{hash=8e1c949be5801a6f56b7ac5df47a58a9}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Gene},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9e89d796d06f74d6551850b1c3bff900}{%
+           family={Humble},
+           familyi={H\bibinitperiod},
+           given={Jez},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a0f7c9b6bc980e2a3126cc043f559c07}{%
+           family={Debois},
+           familyi={D\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=a09b6fdd8891cc3ae443eb45fd16799b}{%
+           family={Willis},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IT Revolution Press}%
+      }
+      \strng{namehash}{cda42d3f8ab5c70c86ed7bed1e19371e}
+      \strng{fullhash}{e19356705821795cb7ef5c55dbfc2d0a}
+      \strng{bibnamehash}{cda42d3f8ab5c70c86ed7bed1e19371e}
+      \strng{authorbibnamehash}{cda42d3f8ab5c70c86ed7bed1e19371e}
+      \strng{authornamehash}{cda42d3f8ab5c70c86ed7bed1e19371e}
+      \strng{authorfullhash}{e19356705821795cb7ef5c55dbfc2d0a}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1942788003}
+      \field{note}{Foundational DevOps reference establishing The Three Ways framework}
+      \field{title}{The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations}
+      \field{year}{2016}
+    \endentry
+    \entry{vanLamsweerde2000}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=6ac904da73bf9a2a94a328cd63950e37}{%
            family={Lamsweerde},
@@ -774,12 +991,10 @@
       }
       \strng{namehash}{6ac904da73bf9a2a94a328cd63950e37}
       \strng{fullhash}{6ac904da73bf9a2a94a328cd63950e37}
-      \strng{fullhashraw}{6ac904da73bf9a2a94a328cd63950e37}
       \strng{bibnamehash}{6ac904da73bf9a2a94a328cd63950e37}
       \strng{authorbibnamehash}{6ac904da73bf9a2a94a328cd63950e37}
       \strng{authornamehash}{6ac904da73bf9a2a94a328cd63950e37}
       \strng{authorfullhash}{6ac904da73bf9a2a94a328cd63950e37}
-      \strng{authorfullhashraw}{6ac904da73bf9a2a94a328cd63950e37}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -793,7 +1008,7 @@
       \verb 10.1145/337180.337184
       \endverb
     \endentry
-    \entry{LogRocket2024HeadlessShift}{article}{}{}
+    \entry{LogRocket2024HeadlessShift}{article}{}
       \name{author}{1}{}{%
         {{hash=c10d85658a76abac452c5ddffcb30c09}{%
            family={{LogRocket}},
@@ -804,12 +1019,10 @@
       }
       \strng{namehash}{c10d85658a76abac452c5ddffcb30c09}
       \strng{fullhash}{c10d85658a76abac452c5ddffcb30c09}
-      \strng{fullhashraw}{c10d85658a76abac452c5ddffcb30c09}
       \strng{bibnamehash}{c10d85658a76abac452c5ddffcb30c09}
       \strng{authorbibnamehash}{c10d85658a76abac452c5ddffcb30c09}
       \strng{authornamehash}{c10d85658a76abac452c5ddffcb30c09}
       \strng{authorfullhash}{c10d85658a76abac452c5ddffcb30c09}
-      \strng{authorfullhashraw}{c10d85658a76abac452c5ddffcb30c09}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labelnamesource}{author}
@@ -828,7 +1041,7 @@
       \verb https://blog.logrocket.com/exploring-shift-css-in-js-headless-ui-libraries/
       \endverb
     \endentry
-    \entry{Mishra2024CompositionReact}{article}{}{}
+    \entry{Mishra2024CompositionReact}{article}{}
       \name{author}{1}{}{%
         {{hash=4c47f5af7a2db11da5a9867a51d9be5c}{%
            family={Mishra},
@@ -841,12 +1054,10 @@
       }
       \strng{namehash}{4c47f5af7a2db11da5a9867a51d9be5c}
       \strng{fullhash}{4c47f5af7a2db11da5a9867a51d9be5c}
-      \strng{fullhashraw}{4c47f5af7a2db11da5a9867a51d9be5c}
       \strng{bibnamehash}{4c47f5af7a2db11da5a9867a51d9be5c}
       \strng{authorbibnamehash}{4c47f5af7a2db11da5a9867a51d9be5c}
       \strng{authornamehash}{4c47f5af7a2db11da5a9867a51d9be5c}
       \strng{authorfullhash}{4c47f5af7a2db11da5a9867a51d9be5c}
-      \strng{authorfullhashraw}{4c47f5af7a2db11da5a9867a51d9be5c}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -865,7 +1076,7 @@
       \verb https://medium.com/@mohimishra016/composition-vs-inheritance-in-react-simplifying-component-reusability-f978363bacf6
       \endverb
     \endentry
-    \entry{MUIBlog2022IntroducingBase}{online}{}{}
+    \entry{MUIBlog2022IntroducingBase}{online}{}
       \name{author}{1}{}{%
         {{hash=e9ab773e09cd1bf790c5d5ffc3014605}{%
            family={{MUI}},
@@ -876,12 +1087,10 @@
       }
       \strng{namehash}{e9ab773e09cd1bf790c5d5ffc3014605}
       \strng{fullhash}{e9ab773e09cd1bf790c5d5ffc3014605}
-      \strng{fullhashraw}{e9ab773e09cd1bf790c5d5ffc3014605}
       \strng{bibnamehash}{e9ab773e09cd1bf790c5d5ffc3014605}
       \strng{authorbibnamehash}{e9ab773e09cd1bf790c5d5ffc3014605}
       \strng{authornamehash}{e9ab773e09cd1bf790c5d5ffc3014605}
       \strng{authorfullhash}{e9ab773e09cd1bf790c5d5ffc3014605}
-      \strng{authorfullhashraw}{e9ab773e09cd1bf790c5d5ffc3014605}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{labelnamesource}{author}
@@ -900,7 +1109,7 @@
       \verb https://mui.com/blog/introducing-base-ui/
       \endverb
     \endentry
-    \entry{HandbookEFT2024}{online}{}{}
+    \entry{HandbookEFT2024}{online}{}
       \name{author}{1}{}{%
         {{hash=80a2f947b0b2b152c1d12d1abbbb2d6b}{%
            family={NehalemX},
@@ -911,12 +1120,10 @@
       }
       \strng{namehash}{80a2f947b0b2b152c1d12d1abbbb2d6b}
       \strng{fullhash}{80a2f947b0b2b152c1d12d1abbbb2d6b}
-      \strng{fullhashraw}{80a2f947b0b2b152c1d12d1abbbb2d6b}
       \strng{bibnamehash}{80a2f947b0b2b152c1d12d1abbbb2d6b}
       \strng{authorbibnamehash}{80a2f947b0b2b152c1d12d1abbbb2d6b}
       \strng{authornamehash}{80a2f947b0b2b152c1d12d1abbbb2d6b}
       \strng{authorfullhash}{80a2f947b0b2b152c1d12d1abbbb2d6b}
-      \strng{authorfullhashraw}{80a2f947b0b2b152c1d12d1abbbb2d6b}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labelnamesource}{author}
@@ -934,7 +1141,7 @@
       \verb https://play.google.com/store/apps/details?id=com.nehalemx.tarkovwiki2
       \endverb
     \endentry
-    \entry{GameMapsOverwolf2024}{online}{}{}
+    \entry{GameMapsOverwolf2024}{online}{}
       \name{author}{1}{}{%
         {{hash=d4ab3e1817a7f0c4341328857587cfe6}{%
            family={{Oakcode}},
@@ -945,12 +1152,10 @@
       }
       \strng{namehash}{d4ab3e1817a7f0c4341328857587cfe6}
       \strng{fullhash}{d4ab3e1817a7f0c4341328857587cfe6}
-      \strng{fullhashraw}{d4ab3e1817a7f0c4341328857587cfe6}
       \strng{bibnamehash}{d4ab3e1817a7f0c4341328857587cfe6}
       \strng{authorbibnamehash}{d4ab3e1817a7f0c4341328857587cfe6}
       \strng{authornamehash}{d4ab3e1817a7f0c4341328857587cfe6}
       \strng{authorfullhash}{d4ab3e1817a7f0c4341328857587cfe6}
-      \strng{authorfullhashraw}{d4ab3e1817a7f0c4341328857587cfe6}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
@@ -968,7 +1173,7 @@
       \verb https://www.overwolf.com/app/W4rGo-Game_Maps_Escape_from_Tarkov
       \endverb
     \endentry
-    \entry{OpenReplay2024ShadcnReact}{article}{}{}
+    \entry{OpenReplay2024ShadcnReact}{article}{}
       \name{author}{1}{}{%
         {{hash=0f03620da97b27fbb87c5e6772bacd61}{%
            family={{OpenReplay}},
@@ -979,12 +1184,10 @@
       }
       \strng{namehash}{0f03620da97b27fbb87c5e6772bacd61}
       \strng{fullhash}{0f03620da97b27fbb87c5e6772bacd61}
-      \strng{fullhashraw}{0f03620da97b27fbb87c5e6772bacd61}
       \strng{bibnamehash}{0f03620da97b27fbb87c5e6772bacd61}
       \strng{authorbibnamehash}{0f03620da97b27fbb87c5e6772bacd61}
       \strng{authornamehash}{0f03620da97b27fbb87c5e6772bacd61}
       \strng{authorfullhash}{0f03620da97b27fbb87c5e6772bacd61}
-      \strng{authorfullhashraw}{0f03620da97b27fbb87c5e6772bacd61}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labelnamesource}{author}
@@ -1002,7 +1205,7 @@
       \verb https://blog.openreplay.com/developers-switching-shadcn-ui-react/
       \endverb
     \endentry
-    \entry{Phutson2024NextJSStructure}{article}{}{}
+    \entry{Phutson2024NextJSStructure}{article}{}
       \name{author}{1}{}{%
         {{hash=060bf272b77642d80c9002fe05dc6825}{%
            family={Phutson},
@@ -1015,12 +1218,10 @@
       }
       \strng{namehash}{060bf272b77642d80c9002fe05dc6825}
       \strng{fullhash}{060bf272b77642d80c9002fe05dc6825}
-      \strng{fullhashraw}{060bf272b77642d80c9002fe05dc6825}
       \strng{bibnamehash}{060bf272b77642d80c9002fe05dc6825}
       \strng{authorbibnamehash}{060bf272b77642d80c9002fe05dc6825}
       \strng{authornamehash}{060bf272b77642d80c9002fe05dc6825}
       \strng{authorfullhash}{060bf272b77642d80c9002fe05dc6825}
-      \strng{authorfullhashraw}{060bf272b77642d80c9002fe05dc6825}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1039,7 +1240,7 @@
       \verb https://thiraphat-ps-dev.medium.com/mastering-next-js-app-router-best-practices-for-structuring-your-application-3f8cf0c76580
       \endverb
     \endentry
-    \entry{ZustandGitHub2024}{online}{}{}
+    \entry{ZustandGitHub2024}{online}{}
       \name{author}{1}{}{%
         {{hash=446aee09709ac64d31c31dcda41d6b8e}{%
            family={{Poimandres}},
@@ -1047,12 +1248,10 @@
       }
       \strng{namehash}{446aee09709ac64d31c31dcda41d6b8e}
       \strng{fullhash}{446aee09709ac64d31c31dcda41d6b8e}
-      \strng{fullhashraw}{446aee09709ac64d31c31dcda41d6b8e}
       \strng{bibnamehash}{446aee09709ac64d31c31dcda41d6b8e}
       \strng{authorbibnamehash}{446aee09709ac64d31c31dcda41d6b8e}
       \strng{authornamehash}{446aee09709ac64d31c31dcda41d6b8e}
       \strng{authorfullhash}{446aee09709ac64d31c31dcda41d6b8e}
-      \strng{authorfullhashraw}{446aee09709ac64d31c31dcda41d6b8e}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1071,7 +1270,37 @@
       \verb https://github.com/pmndrs/zustand
       \endverb
     \endentry
-    \entry{ProNextJS2024FileRouting}{online}{}{}
+    \entry{PostgreSQLDocsRLS2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=36423acfb135ffe286ea438eafcb0bc6}{%
+           family={{PostgreSQL Global Development Group}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{fullhash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{bibnamehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authorbibnamehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authornamehash}{36423acfb135ffe286ea438eafcb0bc6}
+      \strng{authorfullhash}{36423acfb135ffe286ea438eafcb0bc6}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official PostgreSQL documentation for Row Level Security}
+      \field{title}{PostgreSQL Documentation: Row Security Policies}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+      \endverb
+      \verb{url}
+      \verb https://www.postgresql.org/docs/current/ddl-rowsecurity.html
+      \endverb
+    \endentry
+    \entry{ProNextJS2024FileRouting}{online}{}
       \name{author}{1}{}{%
         {{hash=b7b7a212e2eb7a4707f474dc63c12073}{%
            family={{ProNextJS}},
@@ -1082,12 +1311,10 @@
       }
       \strng{namehash}{b7b7a212e2eb7a4707f474dc63c12073}
       \strng{fullhash}{b7b7a212e2eb7a4707f474dc63c12073}
-      \strng{fullhashraw}{b7b7a212e2eb7a4707f474dc63c12073}
       \strng{bibnamehash}{b7b7a212e2eb7a4707f474dc63c12073}
       \strng{authorbibnamehash}{b7b7a212e2eb7a4707f474dc63c12073}
       \strng{authornamehash}{b7b7a212e2eb7a4707f474dc63c12073}
       \strng{authorfullhash}{b7b7a212e2eb7a4707f474dc63c12073}
-      \strng{authorfullhashraw}{b7b7a212e2eb7a4707f474dc63c12073}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
@@ -1105,7 +1332,7 @@
       \verb https://www.pronextjs.dev/workshops/next-js-foundations-for-professional-web-development~lxb18/file-based-routing-with-app-router~dtnrx
       \endverb
     \endentry
-    \entry{Redux2024History}{online}{}{}
+    \entry{Redux2024History}{online}{}
       \name{author}{1}{}{%
         {{hash=aecf779bb3d525122b1185d8a5c12b34}{%
            family={{Redux Team}},
@@ -1113,12 +1340,10 @@
       }
       \strng{namehash}{aecf779bb3d525122b1185d8a5c12b34}
       \strng{fullhash}{aecf779bb3d525122b1185d8a5c12b34}
-      \strng{fullhashraw}{aecf779bb3d525122b1185d8a5c12b34}
       \strng{bibnamehash}{aecf779bb3d525122b1185d8a5c12b34}
       \strng{authorbibnamehash}{aecf779bb3d525122b1185d8a5c12b34}
       \strng{authornamehash}{aecf779bb3d525122b1185d8a5c12b34}
       \strng{authorfullhash}{aecf779bb3d525122b1185d8a5c12b34}
-      \strng{authorfullhashraw}{aecf779bb3d525122b1185d8a5c12b34}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -1137,7 +1362,7 @@
       \verb https://redux.js.org/understanding/history-and-design/history-of-redux
       \endverb
     \endentry
-    \entry{Refine2024Zustand}{online}{}{}
+    \entry{Refine2024Zustand}{online}{}
       \name{author}{1}{}{%
         {{hash=9f79b65055f2201292e5f79666bf2579}{%
            family={{Refine}},
@@ -1145,12 +1370,10 @@
       }
       \strng{namehash}{9f79b65055f2201292e5f79666bf2579}
       \strng{fullhash}{9f79b65055f2201292e5f79666bf2579}
-      \strng{fullhashraw}{9f79b65055f2201292e5f79666bf2579}
       \strng{bibnamehash}{9f79b65055f2201292e5f79666bf2579}
       \strng{authorbibnamehash}{9f79b65055f2201292e5f79666bf2579}
       \strng{authornamehash}{9f79b65055f2201292e5f79666bf2579}
       \strng{authorfullhash}{9f79b65055f2201292e5f79666bf2579}
-      \strng{authorfullhashraw}{9f79b65055f2201292e5f79666bf2579}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -1170,7 +1393,7 @@
       \verb https://refine.dev/blog/zustand-react-state/
       \endverb
     \endentry
-    \entry{VideoGameMarket}{report}{}{}
+    \entry{VideoGameMarket}{report}{}
       \name{author}{1}{}{%
         {{hash=b969eb2b40666d51b62eb8e1f6416c21}{%
            family={Research},
@@ -1180,12 +1403,10 @@
       }
       \strng{namehash}{b969eb2b40666d51b62eb8e1f6416c21}
       \strng{fullhash}{b969eb2b40666d51b62eb8e1f6416c21}
-      \strng{fullhashraw}{b969eb2b40666d51b62eb8e1f6416c21}
       \strng{bibnamehash}{b969eb2b40666d51b62eb8e1f6416c21}
       \strng{authorbibnamehash}{b969eb2b40666d51b62eb8e1f6416c21}
       \strng{authornamehash}{b969eb2b40666d51b62eb8e1f6416c21}
       \strng{authorfullhash}{b969eb2b40666d51b62eb8e1f6416c21}
-      \strng{authorfullhashraw}{b969eb2b40666d51b62eb8e1f6416c21}
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{labelnamesource}{author}
@@ -1193,7 +1414,7 @@
       \field{title}{Video Game Market Size, Share And Growth Report}
       \field{year}{2024}
     \endentry
-    \entry{Snayak2024DissectingPPR}{article}{}{}
+    \entry{Snayak2024DissectingPPR}{article}{}
       \name{author}{1}{}{%
         {{hash=64da869569ec2d095042fcc2bbe00f3a}{%
            family={Snayak},
@@ -1203,12 +1424,10 @@
       }
       \strng{namehash}{64da869569ec2d095042fcc2bbe00f3a}
       \strng{fullhash}{64da869569ec2d095042fcc2bbe00f3a}
-      \strng{fullhashraw}{64da869569ec2d095042fcc2bbe00f3a}
       \strng{bibnamehash}{64da869569ec2d095042fcc2bbe00f3a}
       \strng{authorbibnamehash}{64da869569ec2d095042fcc2bbe00f3a}
       \strng{authornamehash}{64da869569ec2d095042fcc2bbe00f3a}
       \strng{authorfullhash}{64da869569ec2d095042fcc2bbe00f3a}
-      \strng{authorfullhashraw}{64da869569ec2d095042fcc2bbe00f3a}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1227,7 +1446,7 @@
       \verb https://www.nikhilsnayak.dev/blogs/dissecting-partial-pre-rendering
       \endverb
     \endentry
-    \entry{Srivastava2025NextJSRendering}{article}{}{}
+    \entry{Srivastava2025NextJSRendering}{article}{}
       \name{author}{1}{}{%
         {{hash=87742ffc6c9c6cbb89a28f959e6ea049}{%
            family={Srivastava},
@@ -1240,12 +1459,10 @@
       }
       \strng{namehash}{87742ffc6c9c6cbb89a28f959e6ea049}
       \strng{fullhash}{87742ffc6c9c6cbb89a28f959e6ea049}
-      \strng{fullhashraw}{87742ffc6c9c6cbb89a28f959e6ea049}
       \strng{bibnamehash}{87742ffc6c9c6cbb89a28f959e6ea049}
       \strng{authorbibnamehash}{87742ffc6c9c6cbb89a28f959e6ea049}
       \strng{authornamehash}{87742ffc6c9c6cbb89a28f959e6ea049}
       \strng{authorfullhash}{87742ffc6c9c6cbb89a28f959e6ea049}
-      \strng{authorfullhashraw}{87742ffc6c9c6cbb89a28f959e6ea049}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1264,7 +1481,7 @@
       \verb https://medium.com/@ritsrivastava/next-js-rendering-strategies-ssg-ssr-csr-and-ppr-d6243ec0ce72
       \endverb
     \endentry
-    \entry{StudyRaid2024Composition}{online}{}{}
+    \entry{StudyRaid2024Composition}{online}{}
       \name{author}{1}{}{%
         {{hash=6ab8d9d38d5abf9973257722a2e65d63}{%
            family={{StudyRaid}},
@@ -1275,12 +1492,10 @@
       }
       \strng{namehash}{6ab8d9d38d5abf9973257722a2e65d63}
       \strng{fullhash}{6ab8d9d38d5abf9973257722a2e65d63}
-      \strng{fullhashraw}{6ab8d9d38d5abf9973257722a2e65d63}
       \strng{bibnamehash}{6ab8d9d38d5abf9973257722a2e65d63}
       \strng{authorbibnamehash}{6ab8d9d38d5abf9973257722a2e65d63}
       \strng{authornamehash}{6ab8d9d38d5abf9973257722a2e65d63}
       \strng{authorfullhash}{6ab8d9d38d5abf9973257722a2e65d63}
-      \strng{authorfullhashraw}{6ab8d9d38d5abf9973257722a2e65d63}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
@@ -1298,7 +1513,131 @@
       \verb https://app.studyraid.com/en/read/1665/22475/composition-vs-inheritance
       \endverb
     \endentry
-    \entry{TailwindDocs2024UtilityFirst}{online}{}{}
+    \entry{SupabaseDocsEdgeFunctions2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={{Supabase}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Supabase Edge Functions documentation}
+      \field{title}{Edge Functions | Supabase Docs}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://supabase.com/docs/guides/functions
+      \endverb
+      \verb{url}
+      \verb https://supabase.com/docs/guides/functions
+      \endverb
+    \endentry
+    \entry{SupabaseGitHubRealtime2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={{Supabase}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Supabase Realtime server repository}
+      \field{title}{Realtime: Broadcast, Presence, and Postgres Changes via WebSockets}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/supabase/realtime
+      \endverb
+      \verb{url}
+      \verb https://github.com/supabase/realtime
+      \endverb
+    \endentry
+    \entry{SupabaseDocsRLS2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={{Supabase}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Supabase RLS integration documentation}
+      \field{title}{Row Level Security | Supabase Docs}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://supabase.com/docs/guides/database/postgres/row-level-security
+      \endverb
+      \verb{url}
+      \verb https://supabase.com/docs/guides/database/postgres/row-level-security
+      \endverb
+    \endentry
+    \entry{SupabaseGitHub2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=af07a053f31f1c94fcf389327c68f6dd}{%
+           family={{Supabase}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{fullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{bibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorbibnamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authornamehash}{af07a053f31f1c94fcf389327c68f6dd}
+      \strng{authorfullhash}{af07a053f31f1c94fcf389327c68f6dd}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Supabase repository with architecture documentation}
+      \field{title}{Supabase: The Postgres development platform}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/supabase/supabase
+      \endverb
+      \verb{url}
+      \verb https://github.com/supabase/supabase
+      \endverb
+    \endentry
+    \entry{TailwindDocs2024UtilityFirst}{online}{}
       \name{author}{1}{}{%
         {{hash=115eb058b42d5a622d39c9383748c476}{%
            family={{Tailwind Labs}},
@@ -1309,12 +1648,10 @@
       }
       \strng{namehash}{115eb058b42d5a622d39c9383748c476}
       \strng{fullhash}{115eb058b42d5a622d39c9383748c476}
-      \strng{fullhashraw}{115eb058b42d5a622d39c9383748c476}
       \strng{bibnamehash}{115eb058b42d5a622d39c9383748c476}
       \strng{authorbibnamehash}{115eb058b42d5a622d39c9383748c476}
       \strng{authornamehash}{115eb058b42d5a622d39c9383748c476}
       \strng{authorfullhash}{115eb058b42d5a622d39c9383748c476}
-      \strng{authorfullhashraw}{115eb058b42d5a622d39c9383748c476}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1332,7 +1669,7 @@
       \verb https://tailwindcss.com/docs/utility-first
       \endverb
     \endentry
-    \entry{TanStackQueryDocs2024OptimisticUpdates}{online}{}{}
+    \entry{TanStackQueryDocs2024OptimisticUpdates}{online}{}
       \name{author}{1}{}{%
         {{hash=9dd55379b93ec80f16ff6253eb004a35}{%
            family={{TanStack}},
@@ -1340,12 +1677,10 @@
       }
       \strng{namehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{fullhash}{9dd55379b93ec80f16ff6253eb004a35}
-      \strng{fullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{bibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{authorbibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{authornamehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{authorfullhash}{9dd55379b93ec80f16ff6253eb004a35}
-      \strng{authorfullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
       \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
@@ -1365,7 +1700,7 @@
       \verb https://tanstack.com/query/latest/docs/framework/react/guides/optimistic-updates
       \endverb
     \endentry
-    \entry{TanStackQuery2024Overview}{online}{}{}
+    \entry{TanStackQuery2024Overview}{online}{}
       \name{author}{1}{}{%
         {{hash=9dd55379b93ec80f16ff6253eb004a35}{%
            family={{TanStack}},
@@ -1373,12 +1708,10 @@
       }
       \strng{namehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{fullhash}{9dd55379b93ec80f16ff6253eb004a35}
-      \strng{fullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{bibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{authorbibnamehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{authornamehash}{9dd55379b93ec80f16ff6253eb004a35}
       \strng{authorfullhash}{9dd55379b93ec80f16ff6253eb004a35}
-      \strng{authorfullhashraw}{9dd55379b93ec80f16ff6253eb004a35}
       \field{extraname}{2}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
@@ -1398,7 +1731,7 @@
       \verb https://tanstack.com/query/latest/docs/framework/react/overview
       \endverb
     \endentry
-    \entry{TarkovDev2024}{online}{}{}
+    \entry{TarkovDev2024}{online}{}
       \name{author}{1}{}{%
         {{hash=7639dc34de23585958fd9019e2012760}{%
            family={{Tarkov.dev Community}},
@@ -1406,12 +1739,10 @@
       }
       \strng{namehash}{7639dc34de23585958fd9019e2012760}
       \strng{fullhash}{7639dc34de23585958fd9019e2012760}
-      \strng{fullhashraw}{7639dc34de23585958fd9019e2012760}
       \strng{bibnamehash}{7639dc34de23585958fd9019e2012760}
       \strng{authorbibnamehash}{7639dc34de23585958fd9019e2012760}
       \strng{authornamehash}{7639dc34de23585958fd9019e2012760}
       \strng{authorfullhash}{7639dc34de23585958fd9019e2012760}
-      \strng{authorfullhashraw}{7639dc34de23585958fd9019e2012760}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1429,7 +1760,7 @@
       \verb https://tarkov.dev/
       \endverb
     \endentry
-    \entry{Toxigon2025TypeScriptTrends}{online}{}{}
+    \entry{Toxigon2025TypeScriptTrends}{online}{}
       \name{author}{1}{}{%
         {{hash=306e04cc88699267ba20568ec222e3d3}{%
            family={{Toxigon}},
@@ -1440,12 +1771,10 @@
       }
       \strng{namehash}{306e04cc88699267ba20568ec222e3d3}
       \strng{fullhash}{306e04cc88699267ba20568ec222e3d3}
-      \strng{fullhashraw}{306e04cc88699267ba20568ec222e3d3}
       \strng{bibnamehash}{306e04cc88699267ba20568ec222e3d3}
       \strng{authorbibnamehash}{306e04cc88699267ba20568ec222e3d3}
       \strng{authornamehash}{306e04cc88699267ba20568ec222e3d3}
       \strng{authorfullhash}{306e04cc88699267ba20568ec222e3d3}
-      \strng{authorfullhashraw}{306e04cc88699267ba20568ec222e3d3}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1464,7 +1793,7 @@
       \verb https://toxigon.com/typescript-trend-2024
       \endverb
     \endentry
-    \entry{OverwolfTarkovCompanion2024}{online}{}{}
+    \entry{OverwolfTarkovCompanion2024}{online}{}
       \name{author}{1}{}{%
         {{hash=9f5dd7efd9e564328562c1c227f41e47}{%
            family={TreeStn},
@@ -1475,12 +1804,10 @@
       }
       \strng{namehash}{9f5dd7efd9e564328562c1c227f41e47}
       \strng{fullhash}{9f5dd7efd9e564328562c1c227f41e47}
-      \strng{fullhashraw}{9f5dd7efd9e564328562c1c227f41e47}
       \strng{bibnamehash}{9f5dd7efd9e564328562c1c227f41e47}
       \strng{authorbibnamehash}{9f5dd7efd9e564328562c1c227f41e47}
       \strng{authornamehash}{9f5dd7efd9e564328562c1c227f41e47}
       \strng{authorfullhash}{9f5dd7efd9e564328562c1c227f41e47}
-      \strng{authorfullhashraw}{9f5dd7efd9e564328562c1c227f41e47}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
@@ -1498,7 +1825,7 @@
       \verb https://www.overwolf.com/app/treestn-tarkov_companion
       \endverb
     \endentry
-    \entry{Udeji2024NextJS15Rendering}{article}{}{}
+    \entry{Udeji2024NextJS15Rendering}{article}{}
       \name{author}{1}{}{%
         {{hash=6ead3b65d45a008e54dec4434cfedd48}{%
            family={Udeji},
@@ -1511,12 +1838,10 @@
       }
       \strng{namehash}{6ead3b65d45a008e54dec4434cfedd48}
       \strng{fullhash}{6ead3b65d45a008e54dec4434cfedd48}
-      \strng{fullhashraw}{6ead3b65d45a008e54dec4434cfedd48}
       \strng{bibnamehash}{6ead3b65d45a008e54dec4434cfedd48}
       \strng{authorbibnamehash}{6ead3b65d45a008e54dec4434cfedd48}
       \strng{authornamehash}{6ead3b65d45a008e54dec4434cfedd48}
       \strng{authorfullhash}{6ead3b65d45a008e54dec4434cfedd48}
-      \strng{authorfullhashraw}{6ead3b65d45a008e54dec4434cfedd48}
       \field{sortinit}{U}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
       \field{labelnamesource}{author}
@@ -1535,7 +1860,7 @@
       \verb https://medium.com/@emmaudeji/mastering-next-js-15-a-guide-to-app-router-rendering-strategies-for-modern-web-applications-8a6683d8c348
       \endverb
     \endentry
-    \entry{Vercel2024RenderingStrategy}{online}{}{}
+    \entry{Vercel2024RenderingStrategy}{online}{}
       \name{author}{1}{}{%
         {{hash=dc173d57136dbe619cbccee88ee6421c}{%
            family={{Vercel}},
@@ -1546,12 +1871,10 @@
       }
       \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
       \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
       \field{extraname}{1}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
@@ -1570,7 +1893,7 @@
       \verb https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app
       \endverb
     \endentry
-    \entry{NextJS2024AppRouter}{online}{}{}
+    \entry{NextJS2024AppRouter}{online}{}
       \name{author}{1}{}{%
         {{hash=dc173d57136dbe619cbccee88ee6421c}{%
            family={{Vercel}},
@@ -1581,12 +1904,10 @@
       }
       \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
       \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
       \field{extraname}{2}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
@@ -1605,7 +1926,38 @@
       \verb https://nextjs.org/docs/app
       \endverb
     \endentry
-    \entry{Vercel2024PartialPrerendering}{online}{}{}
+    \entry{VercelDocs2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Vercel documentation for Next.js deployment}
+      \field{title}{Next.js on Vercel}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vercel.com/docs/frameworks/nextjs
+      \endverb
+      \verb{url}
+      \verb https://vercel.com/docs/frameworks/nextjs
+      \endverb
+    \endentry
+    \entry{Vercel2024PartialPrerendering}{online}{}
       \name{author}{1}{}{%
         {{hash=dc173d57136dbe619cbccee88ee6421c}{%
            family={{Vercel}},
@@ -1616,13 +1968,11 @@
       }
       \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
       \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -1640,7 +1990,38 @@
       \verb https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model
       \endverb
     \endentry
-    \entry{NextJS2024DefiningRoutes}{online}{}{}
+    \entry{VercelPreviewDocs2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{5}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Official Vercel documentation on preview deployment features}
+      \field{title}{Preview Deployments}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vercel.com/docs/deployments/preview-deployments
+      \endverb
+      \verb{url}
+      \verb https://vercel.com/docs/deployments/preview-deployments
+      \endverb
+    \endentry
+    \entry{NextJS2024DefiningRoutes}{online}{}
       \name{author}{1}{}{%
         {{hash=dc173d57136dbe619cbccee88ee6421c}{%
            family={{Vercel}},
@@ -1651,13 +2032,11 @@
       }
       \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{fullhashraw}{dc173d57136dbe619cbccee88ee6421c}
       \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \strng{authorfullhashraw}{dc173d57136dbe619cbccee88ee6421c}
-      \field{extraname}{4}
+      \field{extraname}{6}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -1675,7 +2054,7 @@
       \verb https://nextjs.org/docs/14/app/building-your-application/routing/defining-routes
       \endverb
     \endentry
-    \entry{Visure2025}{online}{}{}
+    \entry{Visure2025}{online}{}
       \name{author}{1}{}{%
         {{hash=bafadb13d8c40ebabecd9cd66af7a79f}{%
            family={{Visure Solutions}},
@@ -1683,12 +2062,10 @@
       }
       \strng{namehash}{bafadb13d8c40ebabecd9cd66af7a79f}
       \strng{fullhash}{bafadb13d8c40ebabecd9cd66af7a79f}
-      \strng{fullhashraw}{bafadb13d8c40ebabecd9cd66af7a79f}
       \strng{bibnamehash}{bafadb13d8c40ebabecd9cd66af7a79f}
       \strng{authorbibnamehash}{bafadb13d8c40ebabecd9cd66af7a79f}
       \strng{authornamehash}{bafadb13d8c40ebabecd9cd66af7a79f}
       \strng{authorfullhash}{bafadb13d8c40ebabecd9cd66af7a79f}
-      \strng{authorfullhashraw}{bafadb13d8c40ebabecd9cd66af7a79f}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -1706,7 +2083,7 @@
       \verb https://visuresolutions.com/alm-guide/requirements-gathering-techniques-for-agile
       \endverb
     \endentry
-    \entry{DevCommunity2023ServerClientState}{online}{}{}
+    \entry{DevCommunity2023ServerClientState}{online}{}
       \name{author}{1}{}{%
         {{hash=e481e118f27b718833281de9a4c9a851}{%
            family={Vora},
@@ -1716,12 +2093,10 @@
       }
       \strng{namehash}{e481e118f27b718833281de9a4c9a851}
       \strng{fullhash}{e481e118f27b718833281de9a4c9a851}
-      \strng{fullhashraw}{e481e118f27b718833281de9a4c9a851}
       \strng{bibnamehash}{e481e118f27b718833281de9a4c9a851}
       \strng{authorbibnamehash}{e481e118f27b718833281de9a4c9a851}
       \strng{authornamehash}{e481e118f27b718833281de9a4c9a851}
       \strng{authorfullhash}{e481e118f27b718833281de9a4c9a851}
-      \strng{authorfullhashraw}{e481e118f27b718833281de9a4c9a851}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -1741,7 +2116,7 @@
       \verb https://dev.to/jeetvora331/server-state-vs-client-state-in-react-for-beginners-3pl6
       \endverb
     \endentry
-    \entry{SplunkEngineering2022CustomGraphViz}{article}{}{}
+    \entry{SplunkEngineering2022CustomGraphViz}{article}{}
       \name{author}{2}{}{%
         {{hash=2fdd3ada629ae15dc823e03c67a6b860}{%
            family={Werner},
@@ -1759,12 +2134,10 @@
       }
       \strng{namehash}{27773b3eb985d88c41e1e2411e9ea7e0}
       \strng{fullhash}{27773b3eb985d88c41e1e2411e9ea7e0}
-      \strng{fullhashraw}{27773b3eb985d88c41e1e2411e9ea7e0}
       \strng{bibnamehash}{27773b3eb985d88c41e1e2411e9ea7e0}
       \strng{authorbibnamehash}{27773b3eb985d88c41e1e2411e9ea7e0}
       \strng{authornamehash}{27773b3eb985d88c41e1e2411e9ea7e0}
       \strng{authorfullhash}{27773b3eb985d88c41e1e2411e9ea7e0}
-      \strng{authorfullhashraw}{27773b3eb985d88c41e1e2411e9ea7e0}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -1784,7 +2157,37 @@
       \verb https://medium.com/splunk-engineering/lessons-learned-from-creating-a-custom-graph-visualization-in-react-9a667ba799d1
       \endverb
     \endentry
-    \entry{WikipediaARCRaiders2025}{misc}{}{}
+    \entry{WikipediaORM2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{%
+           family={{Wikipedia}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Comprehensive overview of ORM concepts and patterns}
+      \field{title}{Object--relational mapping}
+      \field{urlday}{28}
+      \field{urlmonth}{12}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Object-relational_mapping
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Object-relational_mapping
+      \endverb
+    \endentry
+    \entry{WikipediaARCRaiders2025}{misc}{}
       \name{author}{1}{}{%
         {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
            family={{Wikipedia contributors}},
@@ -1792,12 +2195,10 @@
       }
       \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
       \field{extraname}{1}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
@@ -1818,7 +2219,7 @@
       \verb https://en.wikipedia.org/wiki/ARC_Raiders
       \endverb
     \endentry
-    \entry{WikipediaTailwindCSS}{misc}{}{}
+    \entry{WikipediaTailwindCSS}{misc}{}
       \name{author}{1}{}{%
         {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
            family={{Wikipedia contributors}},
@@ -1826,12 +2227,10 @@
       }
       \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
       \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
-      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
       \field{extraname}{2}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
@@ -1852,7 +2251,7 @@
       \verb https://en.wikipedia.org/wiki/Tailwind_CSS
       \endverb
     \endentry
-    \entry{WorkOS2025RadixVsShadcn}{online}{}{}
+    \entry{WorkOS2025RadixVsShadcn}{online}{}
       \name{author}{1}{}{%
         {{hash=4af44ed0e42dc586f14591c4e92cbea7}{%
            family={{WorkOS}},
@@ -1863,12 +2262,10 @@
       }
       \strng{namehash}{4af44ed0e42dc586f14591c4e92cbea7}
       \strng{fullhash}{4af44ed0e42dc586f14591c4e92cbea7}
-      \strng{fullhashraw}{4af44ed0e42dc586f14591c4e92cbea7}
       \strng{bibnamehash}{4af44ed0e42dc586f14591c4e92cbea7}
       \strng{authorbibnamehash}{4af44ed0e42dc586f14591c4e92cbea7}
       \strng{authornamehash}{4af44ed0e42dc586f14591c4e92cbea7}
       \strng{authorfullhash}{4af44ed0e42dc586f14591c4e92cbea7}
-      \strng{authorfullhashraw}{4af44ed0e42dc586f14591c4e92cbea7}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
       \field{labelnamesource}{author}
@@ -1887,7 +2284,7 @@
       \verb https://workos.com/blog/what-is-the-difference-between-radix-and-shadcn-ui
       \endverb
     \endentry
-    \entry{ReactFlowDocs2024Layouting}{online}{}{}
+    \entry{ReactFlowDocs2024Layouting}{online}{}
       \name{author}{1}{}{%
         {{hash=2d1c0e7036e9b0589b36cf0b1e50d3b8}{%
            family={{xyflow}},
@@ -1898,12 +2295,10 @@
       }
       \strng{namehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
       \strng{fullhash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
-      \strng{fullhashraw}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
       \strng{bibnamehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
       \strng{authorbibnamehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
       \strng{authornamehash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
       \strng{authorfullhash}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
-      \strng{authorfullhashraw}{2d1c0e7036e9b0589b36cf0b1e50d3b8}
       \field{sortinit}{x}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
       \field{labelnamesource}{author}

@@ -3,7 +3,6 @@
 \section{Arc Raiders \& Gaming Tools}
 
 \subsection{Companion Applications im digitalen Ökosystem}
-
 Companion Applications haben sich als eigenständige Software-Kategorie etabliert, die primäre Anwendungen durch zusätzliche Funktionalität ergänzt, ohne das Hauptprodukt zu ersetzen. Im Gaming-Kontext erfüllen diese Anwendungen mehrere Schlüsselfunktionen: Sie erweitern die Spielerfahrung über die Session hinaus, bieten Planungs- und Analysewerkzeuge und ermöglichen Social Features außerhalb der Spielumgebung.
 
 Companion Apps für Gaming-Konsolen verzeichneten seit 2020 ein signifikantes Wachstum, wobei die PC-Gaming-Plattform Steam mit etwa 33,4 Millionen Downloads im zuletzt gemessenen Quartal führend war~\cite{Statista2024ConsoleApps}. Diese Entwicklung zeigt, dass Spieler bereit sind, zusätzliche Tools zu nutzen, um ihre Gaming-Erfahrung zu optimieren.
@@ -130,7 +129,7 @@ Eine spezielle \texttt{page.ts}-Datei wird verwendet, um Routen-Segmente öffent
 
 \textbf{Rendering-Strategien:} Next.js ist zu einem führenden Framework geworden, indem es verschiedene Rendering-Strategien anbietet: \ac{SSG}, \ac{SSR}, \ac{CSR}, \ac{ISR} und das experimentelle \ac{PPR}~\cite{Vercel2024RenderingStrategy}. Diese wurden entwickelt, um Performance, \ac{SEO} und User Experience in verschiedenen Situationen zu optimieren~\cite{Vercel2024RenderingStrategy}.
 
-\textbf{\ac{SSG}:} Bei \ac{SSG} wird die initiale \ac{HTML} zur Build-Zeit generiertltra-schnellen Ladezeiten führt~\cite{Srivastava2025NextJSRendering}. \ac{SSG} ist ideal für Inhalte, die sich nicht häufig ändern, wie Blog-Posts, Dokumentation oder Marketing-Seiten~\cite{Srivastava2025NextJSRendering}. Im App Router-Modell rendert \ac{SSG} automatisch jede Komponente statisch, die keine server-spezifischen Funktionen nutzt~\cite{Udeji2024NextJS15Rendering}.
+\textbf{\ac{SSG}:} Bei \ac{SSG} wird die initiale \ac{HTML} zur Build-Zeit generiert, was zu schnellen Ladezeiten führt~\cite{Srivastava2025NextJSRendering}. \ac{SSG} ist ideal für Inhalte, die sich nicht häufig ändern, wie Blog-Posts, Dokumentation oder Marketing-Seiten~\cite{Srivastava2025NextJSRendering}. Im App Router-Modell rendert \ac{SSG} automatisch jede Komponente statisch, die keine server-spezifischen Funktionen nutzt~\cite{Udeji2024NextJS15Rendering}.
 
 \textbf{\ac{SSR}:} \ac{SSR} generiert \ac{HTML} auf dem Server für jede Anfrage~\cite{Srivastava2025NextJSRendering}. Diese Strategie ist optimal für echtzeitbezogene, nutzerspezifische Inhalte wie personalisierte Dashboards, Account-Profile oder News-Feeds~\cite{Udeji2024NextJS15Rendering}. \ac{SSR} garantiert, dass jeder Besucher bei jedem Laden der Seite die neuesten Daten sieht~\cite{Udeji2024NextJS15Rendering}.
 
@@ -434,6 +433,7 @@ TanStack Query (vormals React Query) revolutionierte Server State Management dur
 import { useQuery } from '@tanstack/react-query'
 
 function QuestList() {
+  // Deklarative Query-Definition
   const { data, isLoading, error } = useQuery({
     queryKey: ['quests'],
     queryFn: () => fetch('/api/quests').then(r => r.json())
@@ -535,7 +535,8 @@ queryClient.invalidateQueries({ queryKey: ['quests'] })
 
 // Invalidate with predicate
 queryClient.invalidateQueries({
-  predicate: (query) => query.queryKey[0] === 'quests' && query.state.data?.status === 'active'
+  predicate: (query) => query.queryKey[0] === 'quests' &&
+   query.state.data?.status === 'active'
 })
 \end{lstlisting}
 
@@ -561,32 +562,149 @@ export async function getServerSideProps() {
 
 \section{Datenbank und Backend Design}
 
-  \subsection{Supabase}
-  PostgreSQL-basiert
+Die Entwicklung moderner Webanwendungen erfordert fundierte Entscheidungen bezüglich der Backend-Architektur und Datenbankanbindung. Für die Arc Raiders Companion App stellt sich die Frage, welche Infrastruktur den optimalen Trade-off zwischen Entwicklungsgeschwindigkeit, Skalierbarkeit und langfristiger Wartbarkeit bietet. Die folgenden Abschnitte analysieren den Stand der Technik im Bereich Backend-as-a-Service-Plattformen und Object-Relational Mapping Lösungen.
 
-  Real-time Capabilities
+\subsection{Backend-as-a-Service: Paradigmenwechsel in der Backend-Entwicklung}
 
-  Row Level Security
+\ac{BaaS} repräsentiert ein Cloud-Service-Modell, bei dem Entwickler alle serverseitigen Aspekte einer Web- oder Mobile-Anwendung auslagern können, um sich ausschließlich auf die Frontend-Entwicklung zu konzentrieren~\cite{Cloudflare2024BaaS}. \ac{BaaS}-Anbieter stellen vorgefertigte Software für serverseitige Aktivitäten bereit, darunter Benutzerauthentifizierung, Datenbankverwaltung, Remote-Updates und Push-Benachrichtigungen sowie Cloud-Speicher und Hosting~\cite{Cloudflare2024BaaS}.
 
-  edge functions (Serverless Functions)
+\textbf{Konzeptuelle Grundlagen:} Das \ac{BaaS}-Paradigma abstrahiert die Komplexität der Backend-Infrastrukturverwaltung, einschließlich Serverwartung, Datenbankadministration und Skalierungsherausforderungen. Die modulare Architektur kombiniert einfach zu verwaltende Funktionalitäten, um komplexe Backend-Operationen für Entwickler zu vereinfachen. Typische \ac{BaaS}-Plattformen bieten \ac{REST} \ac{API}s, die die Verwaltung und Konfiguration von Architekturmodulen vereinfachen, einschließlich Authentifizierung und Datenbankänderungen.
 
-  \subsection{Orm - Drizzle}
-  ORM's
+\textbf{Strukturelle Vorteile und Limitierungen:} Mit vorgefertigten Backend-Services können Anwendungen schnell prototypisiert, entwickelt und deployed werden. Bei plötzlichem Nutzerwachstum skaliert die Infrastruktur im Hintergrund, was ein reibungsloses Benutzererlebnis gewährleistet. \ac{BaaS} eliminiert die Notwendigkeit großer Anfangsinvestitionen in Backend-Infrastruktur und ermöglicht Pay-as-you-use-Modelle~\cite{Cloudflare2024BaaS}. Als strukturelle Limitierung gilt jedoch das Risiko des Vendor Lock-In: Wenn eine \ac{BaaS}-Plattform genutzt wird, ist das Backend der Anwendung tief mit deren Infrastruktur und Services integriert, was einen späteren Anbieterwechsel erschwert. Während \ac{BaaS} Komfort und Effizienz bietet, kann das Niveau an Customization und Kontrolle geringer sein als bei maßgeschneiderter Entwicklung.
 
-  Type-Safety
+\textbf{Abgrenzung zu Serverless und \ac{FaaS}:} Es existiert eine gewisse Überschneidung zwischen \ac{BaaS} und Serverless Computing, da bei beiden der Entwickler nur den Anwendungscode schreiben muss~\cite{Cloudflare2024BaaS}. Die Backends von Serverless-Anwendungen sind jedoch in Funktionen aufgeteilt, die jeweils auf spezifische Events reagieren und nur eine Aktion ausführen. \ac{BaaS}-serverseitige Funktionalitäten sind dagegen nach Belieben des Anbieters konstruiert, und Entwickler müssen sich nur um das Frontend kümmern~\cite{Cloudflare2024BaaS}. \ac{BaaS} adressiert Backend-Funktionalität als Ganzes, während \ac{FaaS} nur Microservices in Anwendungen bedient, die auf auftretende Events reagieren.
 
-  code-first approach
+\subsection{Supabase als Open-Source Backend-Plattform}
 
-\section{Deployment \& DevOps}
+Supabase positioniert sich als Open-Source-Alternative zu Firebase und bietet eine Suite von Tools für sichere, skalierbare Web- und Mobile-Anwendungen~\cite{SupabaseGitHub2024}. Im Gegensatz zu Firebase, das primär NoSQL (Firestore) verwendet, basiert Supabase auf PostgreSQL und bringt ein standardbasiertes, relationales Datenmodell mit, während es die intuitive Entwicklererfahrung beibehält, die Firebase-Nutzer gewohnt sind.
 
-  \subsection{Git basierter Workflow}
+\textbf{Architektonische Grundlagen:} Supabase kombiniert bewährte Open-Source-Tools wie PostgreSQL, Realtime, PostgREST, GoTrue, pg\_graphql und Kong zu einer modernen Entwicklungsplattform~\cite{SupabaseGitHub2024}. Die Philosophie lautet: Wenn Werkzeuge und Communities mit MIT-, Apache-2- oder äquivalenter Open-License existieren, werden diese genutzt und unterstützt. Wenn ein Werkzeug nicht existiert, wird es selbst entwickelt und als Open Source veröffentlicht~\cite{SupabaseGitHub2024}.
 
-  \subsection{Vercel}
-  Deployment von Nextjs Applikationen
+\textbf{PostgreSQL als Fundament:} PostgreSQL ist ein objektrelationales Datenbanksystem mit über 30 Jahren aktiver Entwicklung, das sich einen starken Ruf für Zuverlässigkeit, Feature-Robustheit und Performance erarbeitet hat~\cite{SupabaseGitHub2024}. Die Nutzung von PostgreSQL ermöglicht erweiterte SQL-Abfragen, \ac{RLS}, Transaktionen und strukturierte Datenschemata mit relationalen Constraints. Für viele Enterprise-Entwickler und erfahrene Ingenieure ist SQL essentiell, weshalb Supabase den optimalen Punkt zwischen einfachem Start und der Möglichkeit zur Skalierung trifft.
 
-  weitere features
+\subsubsection{Row Level Security: Datenbankseitige Zugriffskontrolle}
 
-  CI/CD Pipelines
+\ac{RLS} ist ein PostgreSQL-Sicherheitsfeature, das Datenbankadministratoren ermöglicht, Policies zu definieren, die kontrollieren, welche Zeilen Benutzer sehen oder modifizieren können~\cite{PostgreSQLDocsRLS2024}. RLS ist im Wesentlichen ein zusätzlicher Filter, der auf eine PostgreSQL-Datenbanktabelle angewendet wird. Wenn ein Benutzer versucht, eine Aktion auf einer Tabelle auszuführen, wird dieser Filter vor den Abfragekriterien angewendet, und die Daten werden gemäß der Sicherheitsrichtlinie eingeschränkt oder abgelehnt.
+
+\textbf{Funktionsprinzip:} In PostgreSQL arbeiten RLS-Policies mit Rollen und Bedingungen~\cite{PostgreSQLDocsRLS2024}. Der allgemeine Prozess umfasst: Aktivierung von RLS auf Tabellenebene mit \texttt{ALTER TABLE ... ENABLE ROW LEVEL SECURITY}, Definition von Policies für spezifische Befehle (SELECT, INSERT, UPDATE, DELETE), Verwendung von Boolean-Ausdrücken zur Bestimmung sichtbarer/modifizierbarer Zeilen. Mehrere Policies können kombiniert werden: permissive Policies mit OR, restriktive Policies mit AND. Standardmäßig unterliegen Tabelleneigentümer nicht der Row-Level-Security, es sei denn, die Tabelle wird mit der Option \texttt{FORCE ROW LEVEL SECURITY} modifiziert~\cite{PostgreSQLDocsRLS2024}.
+
+\textbf{Relevanz für Multi-Tenancy:} Für SaaS-Plattformen ist RLS als Grundlage für Multi-Tenancy absolut erwägenswert. Anstatt sich darauf zu verlassen, dass jeder Entwickler Tenant-Bedingungen in Code hinzufügt, garantiert RLS auf Datenbankebene, dass mandantenübergreifender Datenzugriff nicht passieren kann. Dies ermöglicht Defense in Depth: Selbst wenn der Anwendungscode einen Bug enthält, wird die Datenbank keine Daten außerhalb des Tenant-Bereichs zurückgeben oder modifizieren.
+
+\textbf{Supabase-Integration:} Wenn granulare Autorisierungsregeln benötigt werden, ist PostgreSQL's Row Level Security unübertroffen~\cite{SupabaseDocsRLS2024}. Supabase ermöglicht bequemen und sicheren Datenzugriff vom Browser aus, solange RLS aktiviert ist. RLS muss immer auf Tabellen aktiviert sein, die in einem exponierten Schema gespeichert sind~\cite{SupabaseDocsRLS2024}. RLS ist unglaublich leistungsfähig und flexibel und ermöglicht das Schreiben komplexer SQL-Regeln, die einzigartigen Geschäftsanforderungen entsprechen. In Kombination mit Supabase Auth bietet es End-to-End-Benutzersicherheit vom Browser bis zur Datenbank~\cite{SupabaseDocsRLS2024}.
+
+\textbf{Performance-Implikationen:} Jedes Autorisierungssystem hat Auswirkungen auf die Performance~\cite{SupabaseDocsRLS2024}. Dies gilt besonders für Abfragen, die jede Zeile einer Tabelle scannen, einschließlich vieler Select-Operationen mit Limit, Offset und Ordering. RLS-Policies werden für jede einzelne Zeile während der Abfrageausführung evaluiert. Best Practices umfassen: Hinzufügen von Indizes auf Spalten, die in Policies verwendet werden, Verwendung von \texttt{SECURITY DEFINER}-Funktionen zur Vermeidung verketteter RLS-Policies, und strategische Denormalisierung für konsistente RLS-Performance.
+
+\subsubsection{Realtime: Echtzeit-Datensynchronisation}
+
+Supabase Realtime ist ein Server, der mit Elixir unter Verwendung des Phoenix Frameworks entwickelt wurde und ermöglicht, auf Änderungen in der PostgreSQL-Datenbank via Logical Replication zu lauschen und diese dann über WebSockets zu broadcasten~\cite{SupabaseGitHubRealtime2024}.
+
+\textbf{Architektur:} Supabase Realtime ist ein global verteilter Elixir-Cluster~\cite{SupabaseGitHubRealtime2024}. Clients können sich über WebSockets mit jedem Node im Cluster verbinden und Nachrichten an jeden anderen verbundenen Client senden. Phoenix ist schnell und kann Millionen gleichzeitiger Verbindungen handhaben, da Elixir leichtgewichtige Prozesse (keine OS-Prozesse) bereitstellt. Channels werden mit Phoenix Channels implementiert, die Phoenix.PubSub mit dem Standard-PG2-Adapter nutzen. Der PG2-Adapter verwendet Erlang-Prozessgruppen zur Implementierung des PubSub-Modells~\cite{SupabaseGitHubRealtime2024}.
+
+\textbf{Funktionale Komponenten:} Das Realtime-System bietet drei Hauptfunktionen~\cite{SupabaseGitHubRealtime2024}:
+\begin{itemize}
+    \item \textbf{Broadcast:} Senden ephemerer Nachrichten von Client zu Clients mit niedriger Latenz
+    \item \textbf{Presence:} Tracking und Synchronisation von geteiltem State zwischen Clients
+    \item \textbf{Postgres Changes:} Lauschen auf PostgreSQL-Datenbankänderungen und Senden an autorisierte Clients
+\end{itemize}
+
+\textbf{Technische Implementation:} Bei der Kernfunktionalität pollt Supabase Realtime die integrierte Replikationsfunktionalität von PostgreSQL auf Datenbankänderungen, konvertiert Änderungen zu JSON und broadcastet das JSON über WebSockets an autorisierte Clients~\cite{SupabaseGitHub2024}. Diese Architektur ermöglicht Event-basiertes Lauschen auf INSERT, UPDATE, DELETE oder alle Events, Schema- und Tabellen-Targeting sowie granulares Filtering.
+
+\subsubsection{Edge Functions: Serverless Computing am Netzwerkrand}
+
+Supabase Edge Functions sind serverseitige TypeScript-Funktionen, die on-demand ausgeführt werden und global verteilt sind, was niedrige Latenzzeiten nahe der Nutzer gewährleistet~\cite{SupabaseDocsEdgeFunctions2024}. Sie werden mit Deno entwickelt, einem Open-Source-JavaScript-Runtime, das maximale Leistung und Flexibilität gewährleistet.
+
+\textbf{Technische Grundlagen:} Edge Functions nutzen das Supabase Edge Runtime (ein Deno-kompatibles Runtime) mit TypeScript-First-Ansatz~\cite{SupabaseDocsEdgeFunctions2024}. Funktionen sind einfache .ts-Dateien, die einen Handler exportieren. Der Workflow umfasst: Bundling der Funktion mit Abhängigkeiten in ein ESZip-File, Upload zum Supabase-Backend, Generierung einer eindeutigen URL für globalen Zugriff. Selbst initiale Ausführungen sind schnell (Millisekunden) dank des kompakten ESZip-Formats und des minimalen Deno-Runtime-Overheads. Isolates können für einen Zeitraum aktiv bleiben, um nachfolgende Requests ohne Neustart zu handhaben, und mehrere Isolates können gleichzeitig am selben Edge-Standort laufen~\cite{SupabaseDocsEdgeFunctions2024}.
+
+\textbf{Vorteile des Edge-Computing-Modells:} Die Nähe zu Nutzern reduziert Round-Trip-Zeiten erheblich. Das System handhabt variable Lasten ohne Server-Provisionierung automatisch. Native TypeScript-Unterstützung erhöht die Entwicklererfahrung, und die Open-Source-Natur ermöglicht Ausführung auf jeder Deno-kompatiblen Plattform~\cite{SupabaseDocsEdgeFunctions2024}.
+
+\subsection{Object-Relational Mapping: Brücke zwischen Objekten und Relationen}
+
+\ac{ORM} ist eine Programmiertechnik zur Konvertierung von Daten zwischen einer relationalen Datenbank und dem Speicher einer objektorientierten Programmiersprache~\cite{WikipediaORM2024}. Dies erzeugt effektiv eine virtuelle Objektdatenbank, die innerhalb des Programms verwendet werden kann.
+
+\textbf{Das Object-Relational Impedance Mismatch:} Eine Vielzahl von Schwierigkeiten entsteht bei der Überlegung, wie ein Objektsystem mit einer relationalen Datenbank abgeglichen werden kann~\cite{WikipediaORM2024}. Diese Schwierigkeiten werden als Object-Relational Impedance Mismatch bezeichnet. Während Objekte Daten und Methoden enthalten, können relationale Datenbanken nur Daten speichern. Objekte sind oft aus anderen Objekten zusammengesetzt und Klassen erben Strukturen von anderen Klassen, aber relationalen Modellen fehlt ein eingebauter hierarchischer Mechanismus. Sie flachen die natürliche hierarchische Struktur eines Objekts in separate Tabellen mit atomaren Werten und eindeutigen Zeilen ab.
+
+\textbf{Mapping-Patterns:} ORMs verwenden primär zwei Patterns zur Abbildung von Anwendungsobjekten auf Datenbankstrukturen: Das \textit{Active Record Pattern} verknüpft eine Anwendung mit einem Datenbankschema, setzt Tabellen mit Klassen, Zeilen mit Objekten und Spalten mit Attributen gleich. Jede Klasse stellt die grundlegenden Methoden für CRUD-Operationen bereit. Das \textit{Data Mapper Pattern} versucht hingegen, die Geschäftslogik in den Objekten von der Datenbank zu entkoppeln, was den Wechsel von Datenbanken erleichtert und die Wiederverwendung derselben Programmierlogik ermöglicht.
+
+\textbf{Vorteile von \ac{ORM}-Werkzeugen:} Verglichen mit traditionellen Techniken des Austauschs zwischen objektorientierter Sprache und relationaler Datenbank reduziert ORM oft die Menge an Code, die geschrieben werden muss~\cite{WikipediaORM2024}. ORM verbirgt und kapselt Änderungen in der Datenquelle, sodass wenn sich Datenquellen oder ihre APIs ändern, nur ORM geändert werden muss. ORM-Tools sind darauf ausgelegt, die Möglichkeit von SQL-Injection-Angriffen zu eliminieren, da Queries prepared und sanitized werden.
+
+\textbf{Nachteile von \ac{ORM}-Werkzeugen:} Nachteile von ORM-Tools resultieren generell aus dem hohen Abstraktionsgrad, der verbirgt, was tatsächlich im Implementierungscode passiert~\cite{WikipediaORM2024}. Aufgrund der Abstraktionsschicht kann Software mit ORM langsamer laufen als mit rohem SQL, besonders bei komplexen Queries gegen große Datensätze. Ein bekanntes Problem ist das N+1-Problem: Wenn über eine Collection iteriert und für jeden Eintrag dynamisch verwandte Zeilen gefetcht werden, queried das ORM jede einzelne Zeile separat.
+
+\subsection{Drizzle ORM: TypeScript-native Datenbankabstraktion}
+
+Drizzle ORM ist ein modernes TypeScript-First-Werkzeug, das die Arbeit mit Datenbanken einfacher und weniger fehleranfällig macht~\cite{DrizzleORMDocs2024}. Es positioniert sich komfortabel zwischen rohem SQL und TypeScripts Typsystem: Entwickler schreiben ihr Schema nach eigenem Stil, und Drizzle generiert automatisch Typen, sodass der Code sicher, sauber und konsistent bleibt.
+
+\textbf{Philosophische Grundprinzipien:} Die Hauptphilosophie hinter Drizzle lautet: ``If you know SQL, you know Drizzle''~\cite{DrizzleORMDocs2024}. Im Gegensatz zur Abstraktion von SQL spiegelt Drizzle SQL in seiner API wider und bietet gleichzeitig einen höheren Abstraktionsgrad für Relational Queries. Drizzle nimmt einen anderen Ansatz als traditionelle ORMs: Es bietet einen typisierten SQL-Builder anstatt SQL hinter Abstraktionsschichten zu verstecken. Das Schema wird in TypeScript definiert, Queries geschrieben, die wie SQL aussehen (aber vollständig typsicher sind), und die Notwendigkeit für Runtime-Clients oder CLI-Generatoren entfällt.
+
+\textbf{Architektonische Komponenten:} Statt eines monolithischen Designs folgt Drizzle einem dezentralisierten, composition-first Ansatz, bei dem jeder Teil eine klare, einzelne Verantwortung hat und unabhängig verwendet werden kann~\cite{DrizzleORMDocs2024}:
+
+\begin{itemize}
+    \item \textbf{Schema Definition:} Eine deklarative, TypeScript-basierte API zur Definition der Datenbankstruktur
+    \item \textbf{SQL Driver Adapters:} Leichtgewichtige Wrapper um Datenbanktreiber, die standardisieren, wie Drizzle mit ihnen kommuniziert
+    \item \textbf{Query Builder:} Ein Set komposierbarer Funktionen, die SQL generieren und dabei vollständige Type-Safety bewahren
+    \item \textbf{Type Inference:} Ein leistungsstarkes System, das TypeScript-Typen direkt aus dem Schema extrahiert
+    \item \textbf{Migration Tools:} Bereitgestellt durch drizzle-kit, helfen diese bei der Generierung und Ausführung von Datenbankmigrationen
+\end{itemize}
+
+\textbf{Type Safety und Developer Experience:} Eines der herausragenden Merkmale von Drizzle ORM ist Type Safety~\cite{LogRocketDrizzle2024}. TypeScripts statische Typprüfung stellt sicher, dass die Daten, die aus der Datenbank abgerufen werden, und die geschriebenen Queries konsistent mit dem definierten Datenbankschema sind. Dies hilft, Fehler früh im Entwicklungsprozess statt zur Laufzeit zu erkennen~\cite{LogRocketDrizzle2024}. Die Dinge, die Entwickler an Drizzle besonders schätzen, umfassen: Type Safety mit sehr starkem Typsystem, Performance-Optimierung, reichhaltige SQL-Dialekte, zero Dependencies, kein Code-Generation-Erfordernis, und Edge-Readiness.
+
+\textbf{Code-First-Methodologie:} Drizzle ermutigt zu einer Code-First-Methodologie, bei der das TypeScript-Schema als Single Source of Truth dient. Das bedeutet, dass das Datenbankschema direkt im Codebase definiert wird, was Konsistenz und Versionskontrolle gewährleistet. Da Drizzle keinen Generate-Step wie Prisma nach jeder Schema-Änderung erfordert, funktionieren die Typen live und sind nicht von der Ausführung eines Befehls abhängig.
+
+\section{Deployment und DevOps}
+
+Die Bereitstellung moderner Webanwendungen erfordert ein fundiertes Verständnis der zugrundeliegenden Deployment-Strategien und DevOps-Praktiken. Die Arc Raiders Companion App steht vor der Herausforderung, einen effizienten, zuverlässigen und skalierbaren Deployment-Prozess zu etablieren. Die folgenden Abschnitte analysieren die theoretischen Grundlagen und den Stand der Technik im Bereich DevOps und modernes Web-Deployment.
+
+\subsection{DevOps: Theoretische Fundierung und Kernprinzipien}
+
+DevOps beschreibt die Integration und Automatisierung von Softwareentwicklung und IT-Operations mit dem Ziel, den Entwicklungszyklus zu verkürzen und eine kontinuierliche Auslieferung hochwertiger Software zu ermöglichen~\cite{KimHumbleDeboisWillis2016}. Obwohl keine einheitliche Definition existiert, wird DevOps allgemein als Bewegung verstanden, die darauf abzielt, die traditionelle Kluft zwischen Entwicklung (Dev) und Betrieb (Ops) zu überbrücken und schnellere, agilere Software-Deployments zu ermöglichen.
+
+\textbf{Die Three Ways als theoretisches Fundament:} Kim et al. identifizieren in ``The DevOps Handbook'' drei fundamentale Prinzipien, aus denen sich alle DevOps-Patterns ableiten lassen~\cite{KimHumbleDeboisWillis2016}. Der \textit{First Way} (Flow) betont die Performance des gesamten Systems und fokussiert auf den schnellen Links-nach-Rechts-Fluss der Arbeit von Development über Operations zum Kunden. Dies beinhaltet, niemals bekannte Defekte an nachgelagerte Arbeitszentren weiterzugeben und stets ein tiefes Systemverständnis anzustreben. Der \textit{Second Way} (Feedback) etabliert Rechts-nach-Links-Feedback-Loops mit dem Ziel, diese zu verkürzen und zu verstärken, sodass notwendige Korrekturen kontinuierlich vorgenommen werden können. Der \textit{Third Way} (Continual Learning and Experimentation) kultiviert kontinuierliches Experimentieren, Risikobereitschaft und Lernen aus Fehlern sowie das Verständnis, dass Wiederholung und Übung die Voraussetzung für Meisterschaft sind~\cite{KimHumbleDeboisWillis2016}.
+
+\textbf{Continuous Delivery als Enabler:} Humble und Farley definieren Continuous Delivery als die Fähigkeit, Änderungen aller Art -- einschließlich neuer Features, Konfigurationsänderungen, Bugfixes und Experimente -- sicher, schnell und nachhaltig in die Produktion zu bringen~\cite{HumbleFarley2010}. Die Autoren betonen, dass Wiederholbarkeit und Zuverlässigkeit aus zwei Prinzipien resultieren: der Automatisierung nahezu aller Prozesse und der Versionskontrolle aller Artefakte, die für Build, Deploy, Test und Release benötigt werden. Continuous Delivery unterscheidet sich von Continuous Deployment dadurch, dass bei ersterem die Automatisierung vor der Produktionsfreigabe pausiert und eine manuelle Freigabe erfordert, während letzteres den gesamten Release-Prozess vollständig automatisiert.
+
+\subsection{DORA-Metriken: Empirische Messung von Software Delivery Performance}
+
+Die wissenschaftliche Fundierung von DevOps-Praktiken wurde maßgeblich durch die Forschung von Forsgren, Humble und Kim vorangetrieben, deren vierjährige Studie in ``Accelerate'' die Grundlage für die heute weitverbreiteten DORA-Metriken bildet~\cite{ForsGrenHumbleKim2018}. Die Autoren entwickelten mittels rigoroser statistischer Methoden vier Schlüsselmetriken zur Messung der Software Delivery Performance.
+
+\textbf{Throughput-Metriken:} Die \textit{Deployment Frequency} misst, wie häufig eine Organisation Code erfolgreich in Produktion deployt. Elite-Performer erreichen On-Demand-Deployments, oft mehrmals täglich, während Low-Performer monatlich oder seltener deployen~\cite{ForsGrenHumbleKim2018}. Die \textit{Lead Time for Changes} erfasst die durchschnittliche Zeit von einem Code-Commit bis zur produktiven Bereitstellung. Diese Metrik reflektiert die Effizienz des gesamten Software-Delivery-Prozesses und die Fähigkeit eines Teams, auf neue Anforderungen zu reagieren.
+
+\textbf{Stability-Metriken:} Die \textit{Change Failure Rate} misst den Prozentsatz der Deployments, die zu Produktionsfehlern führen und Hotfixes oder Rollbacks erfordern. Eine niedrigere Rate indiziert einen zuverlässigeren Delivery-Prozess. Die \textit{Failed Deployment Recovery Time} (früher Mean Time to Recovery) erfasst die Zeit, die benötigt wird, um sich von einem fehlgeschlagenen Deployment zu erholen. Kürzere Recovery-Zeiten indizieren resilientere und reaktionsfähigere Systeme~\cite{DORAMetrics2024}.
+
+\textbf{Zentrale Forschungsergebnisse:} Die DORA-Forschung belegt empirisch, dass Geschwindigkeit und Stabilität keine Trade-offs darstellen. Elite-Performer erreichen sowohl höhere Deployment-Frequenzen als auch niedrigere Fehlerraten~\cite{ForsGrenHumbleKim2018}. Organisationen, die Elite-Status in den DORA-Metriken erreichen, haben eine doppelt so hohe Wahrscheinlichkeit, ihre organisatorischen Leistungsziele zu erreichen. Die Studie identifiziert zudem 24 technische und kulturelle Capabilities, die höhere Performance treiben, darunter Versionskontrolle, automatisiertes Testing, Trunk-based Development und eine Kultur des kontinuierlichen Lernens.
+
+\subsection{CI/CD-Pipelines: Automatisierung des Software-Lebenszyklus}
+
+\ac{CI}/\ac{CD} bildet das technische Rückgrat moderner DevOps-Praktiken und automatisiert den gesamten Prozess von der Code-Integration bis zum Deployment. Continuous Integration bezeichnet die Praxis, neue Code-Änderungen automatisch zu bauen, zu testen und in ein Repository zu integrieren. Continuous Delivery bzw. Deployment automatisiert den nachfolgenden Bereitstellungsprozess~\cite{GitHubActions2024}.
+
+\textbf{Strukturelle Komponenten:} Eine typische CI/CD-Pipeline umfasst mehrere Phasen: In der \textit{Build-Phase} werden Code und Abhängigkeiten zu einem ausführbaren Artefakt kompiliert. Die \textit{Test-Phase} validiert durch automatisierte Tests, dass der Code erwartungsgemäß funktioniert. In der \textit{Staging-Phase} wird die Anwendung in einer produktionsähnlichen Umgebung ausgeführt. Die \textit{Deployment-Phase} stellt die Anwendung automatisch den Endnutzern bereit~\cite{GitHubActions2024}.
+
+\textbf{GitHub Actions als Implementierungsbeispiel:} GitHub Actions ist ein in GitHub integriertes Automatisierungswerkzeug, das Entwicklern ermöglicht, Workflows direkt in ihren Git-Repositories zu definieren. Workflows werden in YAML-Dateien spezifiziert und können durch verschiedene Events wie Push, Pull Request oder Schedule getriggert werden. Die Plattform unterstützt Linux, macOS, Windows und Container-Umgebungen und bietet Zugang zu einem umfangreichen Marketplace vorgefertigter Actions~\cite{GitHubActions2024}. Der State of DevOps Report zeigt, dass Organisationen mit ausgereiften CI/CD-Praktiken 208-mal häufiger deployen und eine 106-mal kürzere Lead Time aufweisen als der Rest~\cite{ForsGrenHumbleKim2018}.
+
+\textbf{Vorteile automatisierter Pipelines:} CI/CD-Pipelines ermöglichen erhöhte Entwicklungsgeschwindigkeit durch schnelleres Feedback und häufigere, kleinere Commits. Die Stabilität und Zuverlässigkeit steigt, da automatisiertes Testing sicherstellt, dass Codebases jederzeit release-ready bleiben. Die Integration von Security-Checks (DevSecOps) ermöglicht frühzeitige Erkennung von Sicherheitsproblemen. Skalierbarkeit wird gewährleistet, da robuste CI/CD-Setups mühelos mit wachsenden Teams und Projektkomplexität expandieren können~\cite{GitHubActions2024}.
+
+\subsection{Frontend-Deployment-Plattformen: Vercel als Framework-aware Infrastructure}
+
+Moderne Frontend-Deployment-Plattformen wie Vercel repräsentieren einen Paradigmenwechsel in der Art, wie Webanwendungen bereitgestellt und betrieben werden. Vercel bietet eine auf Frontend-Entwicklung optimierte Cloud-Infrastruktur, die insbesondere für Next.js-Anwendungen entwickelt wurde~\cite{VercelDocs2024}.
+
+\textbf{Framework-Defined Infrastructure:} Vercel implementiert das Konzept der Framework-Defined Infrastructure, bei dem die Infrastruktur automatisch basierend auf dem gewählten Framework konfiguriert wird. Bei einem Deploy analysiert Vercel die Anwendung, erkennt das Framework und richtet automatisch die optimalen Tools und Optimierungen ein~\cite{VercelDocs2024}. Für Next.js umfasst dies die automatische Konfiguration von Server-Side Rendering, Static Site Generation, Incremental Static Regeneration und Edge Functions.
+
+\textbf{Serverless Functions und Edge Computing:} Vercel Functions ermöglichen die Ausführung serverseitigen Codes ohne Serververwaltung. Die Funktionen skalieren automatisch basierend auf der Nutzernachfrage. Im Gegensatz zu traditionellen Serverless Functions, die in spezifischen Regionen laufen, werden Edge Functions global an Edge-Standorten ausgeführt und reagieren signifikant schneller durch die Nähe zu den Nutzern~\cite{VercelDocs2024}. Edge Functions nutzen ein leichtgewichtiges Runtime basierend auf der V8-Engine und können bis zu 40\% schneller als herkömmliche Serverless Functions bei einem Bruchteil der Kosten sein.
+
+\textbf{Fluid Compute:} Vercel's Fluid Compute-Technologie ermöglicht die gleichzeitige Ausführung mehrerer Requests innerhalb derselben Serverless-Instanz. Durch die Nutzung von Leerlaufzeiten für Compute werden Cold Starts reduziert, die Latenz gesenkt und Compute-Kosten gespart. Dies verhindert die Notwendigkeit, multiple isolierte Instanzen hochzufahren, wenn Tasks die meiste Zeit auf externe Operationen warten~\cite{VercelDocs2024}.
+
+\subsection{Preview Deployments: Kollaborative Entwicklung durch Branch-basierte Umgebungen}
+
+Preview Deployments repräsentieren einen fundamentalen Fortschritt in der kollaborativen Webentwicklung. Sie ermöglichen die automatische Erstellung einer Live-URL für jeden Branch oder Pull Request, sodass Änderungen in Isolation getestet und reviewed werden können, bevor sie in den Hauptbranch gemergt werden~\cite{VercelPreviewDocs2024}.
+
+\textbf{Funktionsprinzip:} Standardmäßig erstellt Vercel ein Preview Deployment, wenn ein Commit zu einem Branch gepusht wird, der nicht der Production-Branch ist. Jedes Deployment erhält eine automatisch generierte URL, und Links erscheinen typischerweise in den PR-Kommentaren des Git-Providers. Dies ermöglicht instantanes visuelles Feedback für Reviewer, die Features ohne technisches Setup betrachten können, sichere Testumgebungen als einzigartige Sandboxes für jeden PR und schnellere, bessere Code-Reviews durch Einbeziehung von Design-Teams, QA und nicht-technischen Stakeholdern~\cite{VercelPreviewDocs2024}.
+
+\textbf{Kollaborationsvorteile:} Preview Deployments reduzieren das ``It worked on my machine''-Problem und ermöglichen Teams, mit höherer Konfidenz zu shippen. Bugs oder Design-Probleme werden früher und im Kontext bemerkt, da jeder PR isoliert ist. Die Separation von Entwicklungs-, Staging- und Produktionsumgebungen verbessert die Zusammenarbeit und minimiert Risiken für Endnutzer während des gesamten Software Development Lifecycles~\cite{VercelPreviewDocs2024}.
+
+
+\subsection{Theoretische Synthese für die Arc Raiders Companion App, (falsches kapitel?)}
+
+Die Integration der beschriebenen Konzepte ermöglicht ein fundiertes theoretisches Framework für die Deployment-Strategie der Arc Raiders Companion App. Die Three Ways nach Kim et al. bilden das kulturelle und prozessuale Fundament, während die DORA-Metriken empirisch validierte Erfolgsindikatoren bereitstellen. Die Kombination von Vercel als Framework-aware Platform mit GitHub Actions für CI/CD implementiert die technischen Prinzipien von Continuous Delivery.
+
+Für eine studentische Companion-App-Entwicklung bietet dieser Stack mehrere Vorteile: Die automatische Infrastrukturkonfiguration durch Framework-Defined Infrastructure eliminiert komplexe DevOps-Aufgaben. Preview Deployments ermöglichen kollaboratives Feedback ohne separate Staging-Infrastruktur. Die serverlose Architektur skaliert automatisch und minimiert Betriebskosten bei variablen Nutzungsmustern. Die Git-Integration gewährleistet Traceability und ermöglicht die Messung von Lead Time und Deployment Frequency als zentrale DORA-Metriken.
 
 \section{Testing Frameworks \& Strategien}
 

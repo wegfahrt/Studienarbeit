@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bcf:controlfile version="3.11" bltxversion="3.21" xmlns:bcf="https://sourceforge.net/projects/biblatex">
+<bcf:controlfile version="3.10" bltxversion="3.19" xmlns:bcf="https://sourceforge.net/projects/biblatex">
   <!-- BIBER OPTIONS -->
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
@@ -502,7 +502,6 @@
     <bcf:option datatype="xml">inheritance</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">uniquenametemplate</bcf:option>
-    <bcf:option datatype="xml">namehashtemplate</bcf:option>
     <bcf:option datatype="xml">sortingnamekeytemplate</bcf:option>
     <bcf:option datatype="xml">sortingtemplate</bcf:option>
     <bcf:option datatype="xml">extradatespec</bcf:option>
@@ -514,7 +513,6 @@
     <bcf:option datatype="string">alphaothers</bcf:option>
     <bcf:option datatype="string">sortalphaothers</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
-    <bcf:option datatype="string">citepagerange</bcf:option>
     <bcf:option datatype="string">texencoding</bcf:option>
     <bcf:option datatype="string">bibencoding</bcf:option>
     <bcf:option datatype="string">sortingtemplatename</bcf:option>
@@ -750,10 +748,9 @@
   </bcf:optionscope>
   <bcf:optionscope type="ENTRY">
     <bcf:option datatype="string">noinherit</bcf:option>
-    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename,namehashtemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
     <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
-    <bcf:option datatype="string" backendout="1">namehashtemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">presort</bcf:option>
     <bcf:option datatype="string" backendout="1">indexing</bcf:option>
@@ -830,10 +827,9 @@
     <bcf:option datatype="integer" backendout="1">minalphanames</bcf:option>
   </bcf:optionscope>
   <bcf:optionscope type="NAMELIST">
-    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename,namehashtemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
     <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
-    <bcf:option datatype="string" backendout="1">namehashtemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">uniquelist</bcf:option>
     <bcf:option datatype="string">uniquename</bcf:option>
@@ -847,10 +843,9 @@
     <bcf:option datatype="boolean" backendout="1">useprefix</bcf:option>
   </bcf:optionscope>
   <bcf:optionscope type="NAME">
-    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename,namehashtemplatename">nametemplates</bcf:option>
+    <bcf:option datatype="string" backendin="sortingnamekeytemplatename,uniquenametemplatename,labelalphanametemplatename">nametemplates</bcf:option>
     <bcf:option datatype="string" backendout="1">labelalphanametemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">uniquenametemplatename</bcf:option>
-    <bcf:option datatype="string" backendout="1">namehashtemplatename</bcf:option>
     <bcf:option datatype="string" backendout="1">sortingnamekeytemplatename</bcf:option>
     <bcf:option datatype="string">uniquename</bcf:option>
     <bcf:option datatype="boolean" backendout="1">familyinits</bcf:option>
@@ -1064,13 +1059,6 @@
     <bcf:namepart order="2" base="1">family</bcf:namepart>
     <bcf:namepart order="3">given</bcf:namepart>
   </bcf:uniquenametemplate>
-  <!-- NAME HASH TEMPLATES -->
-  <bcf:namehashtemplate name="global">
-    <bcf:namepart order="1" hashscope="full">family</bcf:namepart>
-    <bcf:namepart order="2" hashscope="full">given</bcf:namepart>
-    <bcf:namepart order="3" hashscope="full">prefix</bcf:namepart>
-    <bcf:namepart order="4" hashscope="full">suffix</bcf:namepart>
-  </bcf:namehashtemplate>
   <!-- SORTING NAME KEY TEMPLATES -->
   <bcf:sortingnamekeytemplate name="global" visibility="sort">
     <bcf:keypart order="1">
@@ -2536,6 +2524,60 @@
     <bcf:citekey order="161" intorder="1">TanStackQueryDocs2024OptimisticUpdates</bcf:citekey>
     <bcf:citekey order="162" intorder="1">TanStackQuery2024Overview</bcf:citekey>
     <bcf:citekey order="163" intorder="1">TanStackQuery2024Overview</bcf:citekey>
+    <bcf:citekey order="164" intorder="1">Cloudflare2024BaaS</bcf:citekey>
+    <bcf:citekey order="165" intorder="1">Cloudflare2024BaaS</bcf:citekey>
+    <bcf:citekey order="166" intorder="1">Cloudflare2024BaaS</bcf:citekey>
+    <bcf:citekey order="167" intorder="1">Cloudflare2024BaaS</bcf:citekey>
+    <bcf:citekey order="168" intorder="1">Cloudflare2024BaaS</bcf:citekey>
+    <bcf:citekey order="169" intorder="1">SupabaseGitHub2024</bcf:citekey>
+    <bcf:citekey order="170" intorder="1">SupabaseGitHub2024</bcf:citekey>
+    <bcf:citekey order="171" intorder="1">SupabaseGitHub2024</bcf:citekey>
+    <bcf:citekey order="172" intorder="1">SupabaseGitHub2024</bcf:citekey>
+    <bcf:citekey order="173" intorder="1">PostgreSQLDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="174" intorder="1">PostgreSQLDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="175" intorder="1">PostgreSQLDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="176" intorder="1">SupabaseDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="177" intorder="1">SupabaseDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="178" intorder="1">SupabaseDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="179" intorder="1">SupabaseDocsRLS2024</bcf:citekey>
+    <bcf:citekey order="180" intorder="1">SupabaseGitHubRealtime2024</bcf:citekey>
+    <bcf:citekey order="181" intorder="1">SupabaseGitHubRealtime2024</bcf:citekey>
+    <bcf:citekey order="182" intorder="1">SupabaseGitHubRealtime2024</bcf:citekey>
+    <bcf:citekey order="183" intorder="1">SupabaseGitHubRealtime2024</bcf:citekey>
+    <bcf:citekey order="184" intorder="1">SupabaseGitHub2024</bcf:citekey>
+    <bcf:citekey order="185" intorder="1">SupabaseDocsEdgeFunctions2024</bcf:citekey>
+    <bcf:citekey order="186" intorder="1">SupabaseDocsEdgeFunctions2024</bcf:citekey>
+    <bcf:citekey order="187" intorder="1">SupabaseDocsEdgeFunctions2024</bcf:citekey>
+    <bcf:citekey order="188" intorder="1">SupabaseDocsEdgeFunctions2024</bcf:citekey>
+    <bcf:citekey order="189" intorder="1">WikipediaORM2024</bcf:citekey>
+    <bcf:citekey order="190" intorder="1">WikipediaORM2024</bcf:citekey>
+    <bcf:citekey order="191" intorder="1">WikipediaORM2024</bcf:citekey>
+    <bcf:citekey order="192" intorder="1">WikipediaORM2024</bcf:citekey>
+    <bcf:citekey order="193" intorder="1">DrizzleORMDocs2024</bcf:citekey>
+    <bcf:citekey order="194" intorder="1">DrizzleORMDocs2024</bcf:citekey>
+    <bcf:citekey order="195" intorder="1">DrizzleORMDocs2024</bcf:citekey>
+    <bcf:citekey order="196" intorder="1">LogRocketDrizzle2024</bcf:citekey>
+    <bcf:citekey order="197" intorder="1">LogRocketDrizzle2024</bcf:citekey>
+    <bcf:citekey order="198" intorder="1">KimHumbleDeboisWillis2016</bcf:citekey>
+    <bcf:citekey order="199" intorder="1">KimHumbleDeboisWillis2016</bcf:citekey>
+    <bcf:citekey order="200" intorder="1">KimHumbleDeboisWillis2016</bcf:citekey>
+    <bcf:citekey order="201" intorder="1">HumbleFarley2010</bcf:citekey>
+    <bcf:citekey order="202" intorder="1">ForsGrenHumbleKim2018</bcf:citekey>
+    <bcf:citekey order="203" intorder="1">ForsGrenHumbleKim2018</bcf:citekey>
+    <bcf:citekey order="204" intorder="1">DORAMetrics2024</bcf:citekey>
+    <bcf:citekey order="205" intorder="1">ForsGrenHumbleKim2018</bcf:citekey>
+    <bcf:citekey order="206" intorder="1">GitHubActions2024</bcf:citekey>
+    <bcf:citekey order="207" intorder="1">GitHubActions2024</bcf:citekey>
+    <bcf:citekey order="208" intorder="1">GitHubActions2024</bcf:citekey>
+    <bcf:citekey order="209" intorder="1">ForsGrenHumbleKim2018</bcf:citekey>
+    <bcf:citekey order="210" intorder="1">GitHubActions2024</bcf:citekey>
+    <bcf:citekey order="211" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="212" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="213" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="214" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="215" intorder="1">VercelPreviewDocs2024</bcf:citekey>
+    <bcf:citekey order="216" intorder="1">VercelPreviewDocs2024</bcf:citekey>
+    <bcf:citekey order="217" intorder="1">VercelPreviewDocs2024</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
@@ -2568,13 +2610,12 @@
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="nty/global//global/global/global"
+                name="nty/global//global/global"
                 type="entry"
                 sortingtemplatename="nty"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
-                labelalphanametemplatename="global"
-                namehashtemplatename="global">
+                labelalphanametemplatename="global">
   </bcf:datalist>
 </bcf:controlfile>

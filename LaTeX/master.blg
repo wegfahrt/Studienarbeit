@@ -1,15 +1,26 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'master.blg'
-[92] biber-MSWIN64:342> INFO - === 
-[124] Biber.pm:421> INFO - Reading 'master.bcf'
-[234] Biber.pm:1002> INFO - Found 56 citekeys in bib section 0
-[249] Biber.pm:4487> INFO - Processing section 0
-[259] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[313] bibtex.pm:1713> INFO - LaTeX decoding ...
-[379] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[607] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[607] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[608] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[608] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
-[655] bbl.pm:676> INFO - Writing 'master.bbl' with encoding 'UTF-8'
-[676] bbl.pm:779> INFO - Output to master.bbl
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'master.blg'
+[137] biber:340> INFO - === Sun Dec 28, 2025, 18:30:45
+[160] Biber.pm:419> INFO - Reading 'master.bcf'
+[281] Biber.pm:979> INFO - Found 72 citekeys in bib section 0
+[298] Biber.pm:4419> INFO - Processing section 0
+[312] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[316] bibtex.pm:1713> INFO - LaTeX decoding ...
+[399] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[905] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[905] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[905] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[905] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[974] bbl.pm:660> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[998] bbl.pm:763> INFO - Output to master.bbl
+[999] Biber.pm:131> WARN - Duplicate entry key: 'Cloudflare2024BaaS' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseGitHub2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'PostgreSQLDocsRLS2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseDocsRLS2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseGitHubRealtime2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseDocsEdgeFunctions2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'WikipediaORM2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'DrizzleORMDocs2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'LogRocketDrizzle2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:131> WARN - Duplicate entry key: 'PrismaVsDrizzle2024' in file 'bibliography.bib', skipping ...
+[999] Biber.pm:133> INFO - WARNINGS: 10

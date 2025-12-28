@@ -51,24 +51,32 @@
 \contentsline {subsection}{\numberline {3.4.3}Zustand als minimalistischer Client State Manager}{25}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}TanStack Query als Server State Spezialist}{27}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}Datenbank und Backend Design}{30}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Supabase}{30}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Orm - Drizzle}{30}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Deployment \& DevOps}{30}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Git basierter Workflow}{30}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Vercel}{30}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Testing Frameworks \& Strategien}{31}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Vitest}{31}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Cypress}{31}{subsection.3.7.2}%
-\contentsline {chapter}{\numberline {4}Durchführung}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Anforderungsanalyse}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Vorbereitung}{32}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Implementierung}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Testen}{32}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion?}{33}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{33}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{34}{chapter.6}%
-\def \@chapapp {\appendixname }
+\contentsline {subsection}{\numberline {3.5.1}Backend-as-a-Service: Paradigmenwechsel in der Backend-Entwicklung}{30}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Supabase als Open-Source Backend-Plattform}{31}{subsection.3.5.2}%
+\contentsline {subsubsection}{\nonumberline Row Level Security: Datenbankseitige Zugriffskontrolle}{32}{subsubsection*.68}%
+\contentsline {subsubsection}{\nonumberline Realtime: Echtzeit-Datensynchronisation}{33}{subsubsection*.70}%
+\contentsline {subsubsection}{\nonumberline Edge Functions: Serverless Computing am Netzwerkrand}{33}{subsubsection*.72}%
+\contentsline {subsection}{\numberline {3.5.3}Object-Relational Mapping: Brücke zwischen Objekten und Relationen}{34}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Drizzle ORM: TypeScript-native Datenbankabstraktion}{35}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Deployment und DevOps}{36}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}DevOps: Theoretische Fundierung und Kernprinzipien}{36}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}DORA-Metriken: Empirische Messung von Software Delivery Performance}{37}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}CI/CD-Pipelines: Automatisierung des Software-Lebenszyklus}{38}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Frontend-Deployment-Plattformen: Vercel als Framework-aware Infrastructure}{39}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Preview Deployments: Kollaborative Entwicklung durch Branch-basierte Umgebungen}{39}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Theoretische Synthese für die Arc Raiders Companion App, (falsches kapitel?)}{40}{subsection.3.6.6}%
+\contentsline {section}{\numberline {3.7}Testing Frameworks \& Strategien}{40}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Vitest}{40}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Cypress}{41}{subsection.3.7.2}%
+\contentsline {chapter}{\numberline {4}Durchführung}{42}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Anforderungsanalyse}{42}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Vorbereitung}{42}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Implementierung}{42}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Testen}{42}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{43}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion?}{43}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{43}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{44}{chapter.6}%
 \contentsline {chapter}{Anhang}{}{chapter.6}
-\contentsline {chapter}{\nonumberline Literatur}{35}{chapter*.63}%
+\contentsline {chapter}{\nonumberline Literatur}{45}{chapter*.76}%
