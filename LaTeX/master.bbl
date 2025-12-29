@@ -149,6 +149,36 @@
       \verb https://medium.com/@kulsumansari4/next-js-app-router-routing-8d795dbe324c
       \endverb
     \endentry
+    \entry{astro2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=70f8e908c2e5abfc8faf0bc49911f420}{%
+           family={{Astro Technology Company}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{70f8e908c2e5abfc8faf0bc49911f420}
+      \strng{fullhash}{70f8e908c2e5abfc8faf0bc49911f420}
+      \strng{bibnamehash}{70f8e908c2e5abfc8faf0bc49911f420}
+      \strng{authorbibnamehash}{70f8e908c2e5abfc8faf0bc49911f420}
+      \strng{authornamehash}{70f8e908c2e5abfc8faf0bc49911f420}
+      \strng{authorfullhash}{70f8e908c2e5abfc8faf0bc49911f420}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Island Architecture für optimale Performance}
+      \field{title}{Astro Documentation - Build faster websites}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.astro.build/
+      \endverb
+      \verb{url}
+      \verb https://docs.astro.build/
+      \endverb
+    \endentry
     \entry{agilemanifesto2001}{online}{}
       \name{author}{1}{}{%
         {{hash=bf56b418df9dd1a563edccf304c1072e}{%
@@ -177,6 +207,36 @@
       \verb{url}
       \verb https://agilemanifesto.org/
       \endverb
+    \endentry
+    \entry{belton2002multiple}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f2060ca14fe6fe810ac8b32075fc69d4}{%
+           family={Belton},
+           familyi={B\bibinitperiod},
+           given={Valerie},
+           giveni={V\bibinitperiod}}}%
+        {{hash=99a50def8119fa9213680c0074b64091}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={Theodor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{18e1c1665d29148b02cd8150bebd7bcf}
+      \strng{fullhash}{18e1c1665d29148b02cd8150bebd7bcf}
+      \strng{bibnamehash}{18e1c1665d29148b02cd8150bebd7bcf}
+      \strng{authorbibnamehash}{18e1c1665d29148b02cd8150bebd7bcf}
+      \strng{authornamehash}{18e1c1665d29148b02cd8150bebd7bcf}
+      \strng{authorfullhash}{18e1c1665d29148b02cd8150bebd7bcf}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0792375050}
+      \field{title}{Multiple Criteria Decision Analysis: An Integrated Approach}
+      \field{year}{2002}
     \endentry
     \entry{Bhatu2024TypeScript}{article}{}
       \name{author}{1}{}{%
@@ -546,6 +606,35 @@
       \verb https://store.steampowered.com/app/1808500/ARC_Raiders/
       \endverb
     \endentry
+    \entry{vite2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b20053fa058fd70426f4b04f6213eee7}{%
+           family={{Evan You}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b20053fa058fd70426f4b04f6213eee7}
+      \strng{fullhash}{b20053fa058fd70426f4b04f6213eee7}
+      \strng{bibnamehash}{b20053fa058fd70426f4b04f6213eee7}
+      \strng{authorbibnamehash}{b20053fa058fd70426f4b04f6213eee7}
+      \strng{authornamehash}{b20053fa058fd70426f4b04f6213eee7}
+      \strng{authorfullhash}{b20053fa058fd70426f4b04f6213eee7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vite - Next Generation Frontend Tooling}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vitejs.dev/
+      \endverb
+      \verb{url}
+      \verb https://vitejs.dev/
+      \endverb
+    \endentry
     \entry{Expedite2024TypeScript}{online}{}
       \name{author}{1}{}{%
         {{hash=b62763926f29d89aa7e835a065b657e7}{%
@@ -796,6 +885,35 @@
       \endverb
       \verb{url}
       \verb https://github.com/features/actions
+      \endverb
+    \endentry
+    \entry{angular2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={{Google}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Angular Documentation}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://angular.dev/
+      \endverb
+      \verb{url}
+      \verb https://angular.dev/
       \endverb
     \endentry
     \entry{TheHideoutApp2024}{online}{}
@@ -1697,6 +1815,35 @@
       \verb https://github.com/supabase/supabase
       \endverb
     \endentry
+    \entry{supabase2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1e970d5115956a1d1b5f767ff88d6a54}{%
+           family={{Supabase Inc.}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e970d5115956a1d1b5f767ff88d6a54}
+      \strng{fullhash}{1e970d5115956a1d1b5f767ff88d6a54}
+      \strng{bibnamehash}{1e970d5115956a1d1b5f767ff88d6a54}
+      \strng{authorbibnamehash}{1e970d5115956a1d1b5f767ff88d6a54}
+      \strng{authornamehash}{1e970d5115956a1d1b5f767ff88d6a54}
+      \strng{authorfullhash}{1e970d5115956a1d1b5f767ff88d6a54}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Supabase - The Open Source Firebase Alternative}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://supabase.com/docs
+      \endverb
+      \verb{url}
+      \verb https://supabase.com/docs
+      \endverb
+    \endentry
     \entry{TailwindDocs2024UtilityFirst}{online}{}
       \name{author}{1}{}{%
         {{hash=115eb058b42d5a622d39c9383748c476}{%
@@ -1986,7 +2133,7 @@
       \verb https://nextjs.org/docs/app
       \endverb
     \endentry
-    \entry{VercelDocs2024}{online}{}
+    \entry{nextjsdocs2024}{online}{}
       \name{author}{1}{}{%
         {{hash=dc173d57136dbe619cbccee88ee6421c}{%
            family={{Vercel}},
@@ -1999,6 +2146,36 @@
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
       \field{extraname}{3}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Next.js Documentation}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nextjs.org/docs
+      \endverb
+      \verb{url}
+      \verb https://nextjs.org/docs
+      \endverb
+    \endentry
+    \entry{VercelDocs2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc173d57136dbe619cbccee88ee6421c}{%
+           family={{Vercel}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{fullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{bibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
+      \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
+      \field{extraname}{4}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -2032,7 +2209,7 @@
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -2062,7 +2239,7 @@
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \field{extraname}{5}
+      \field{extraname}{6}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -2096,7 +2273,7 @@
       \strng{authorbibnamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authornamehash}{dc173d57136dbe619cbccee88ee6421c}
       \strng{authorfullhash}{dc173d57136dbe619cbccee88ee6421c}
-      \field{extraname}{6}
+      \field{extraname}{7}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
       \field{labelnamesource}{author}
@@ -2112,6 +2289,35 @@
       \endverb
       \verb{url}
       \verb https://nextjs.org/docs/14/app/building-your-application/routing/defining-routes
+      \endverb
+    \endentry
+    \entry{vercel2024}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a5ffd881cacb3404ccac7e94415ab626}{%
+           family={{Vercel Inc.}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5ffd881cacb3404ccac7e94415ab626}
+      \strng{fullhash}{a5ffd881cacb3404ccac7e94415ab626}
+      \strng{bibnamehash}{a5ffd881cacb3404ccac7e94415ab626}
+      \strng{authorbibnamehash}{a5ffd881cacb3404ccac7e94415ab626}
+      \strng{authornamehash}{a5ffd881cacb3404ccac7e94415ab626}
+      \strng{authorfullhash}{a5ffd881cacb3404ccac7e94415ab626}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Vercel Documentation}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://vercel.com/docs
+      \endverb
+      \verb{url}
+      \verb https://vercel.com/docs
       \endverb
     \endentry
     \entry{Visure2025}{online}{}

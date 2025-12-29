@@ -234,21 +234,263 @@ Die Could-Have- und Won't-Have-Features wurden bewusst zurückgestellt, um den F
 % Die \ac{MoSCoW}-Priorisierung strukturiert die Anforderungen nach ihrer Relevanz für das \ac{MVP}. Sieben Features wurden als Must-Have klassifiziert und bilden die Grundlage für die in den folgenden Abschnitten beschriebene Architektur- und Implementierungsphase.
 
 % Die definierten Akzeptanzkriterien nach dem \ac{SMART}-Schema ermöglichen eine objektive Validierung der Implementierung und bilden die Basis für die in Abschnitt~\ref{sec:testen} beschriebene Testphase.
-\section{Technologie- und Architekturentscheidungen}
-\subsection{Methodisches Vorgehen (MCDA)}
-\subsection{Frontend-Technologie-Evaluation}
+
+\section{Technologieentscheidungen}
+\label{sec:technologieentscheidungen}
+
+Die Auswahl geeigneter Technologien bildet das Fundament für eine erfolgreiche Implementierung. Anstelle einer ad-hoc-Entscheidung wird ein systematischer Evaluationsansatz mittels \ac{MCDA} angewandt, der die Nachvollziehbarkeit und Objektivität der Technologiewahl gewährleistet. Dabei werden bewusst unterschiedliche Architekturansätze verglichen: von vollständig verwalteten \ac{PaaS}-Lösungen über klassische \ac{IaaS}-Infrastruktur bis hin zu Self-Hosting-Optionen.
+
+\subsection{Methodisches Vorgehen: Multi-Criteria Decision Analysis}
+\label{sec:mcda-methodik}
+
+Die \ac{MCDA} ist ein strukturiertes Verfahren zur Entscheidungsfindung bei mehreren, teilweise konkurrierenden Kriterien~\cite{belton2002multiple}. Das Vorgehen umfasst vier Schritte:
+
+\begin{enumerate}
+    \item \textbf{Kriteriendefinition:} Identifikation relevanter Bewertungskriterien basierend auf den Projektanforderungen
+    \item \textbf{Gewichtung:} Zuweisung von Gewichtungsfaktoren entsprechend der relativen Bedeutung (Summe = 100\%)
+    \item \textbf{Bewertung:} Qualitative Einschätzung jeder Alternative pro Kriterium auf einer Skala von 1 (ungenügend) bis 5 (exzellent)
+    \item \textbf{Aggregation:} Berechnung gewichteter Gesamtpunktzahlen zur Identifikation der optimalen Lösung
+\end{enumerate}
+
+Die qualitative Bewertungsskala ist in Tabelle~\ref{tab:bewertungsskala} definiert.
+
+\begin{table}[htbp]
+\centering
+\caption{Qualitative Bewertungsskala für MCDA}
+\label{tab:bewertungsskala}
+\begin{tabular}{clp{7cm}}
+\toprule
+\textbf{Wert} & \textbf{Symbol} & \textbf{Bedeutung} \\
+\midrule
+5 & \texttt{++} & Exzellent – übertrifft Anforderungen deutlich \\
+4 & \texttt{+} & Gut – erfüllt Anforderungen vollständig \\
+3 & \texttt{o} & Ausreichend – erfüllt Mindestanforderungen \\
+2 & \texttt{-} & Mangelhaft – erfüllt Anforderungen nur teilweise \\
+1 & \texttt{-{}-} & Ungenügend – erfüllt Anforderungen nicht \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Frontend-Framework-Evaluation}
+\label{sec:frontend-evaluation}
+
+Die Wahl des Frontend-Frameworks bestimmt maßgeblich die Entwicklungseffizienz, Performance und Wartbarkeit der Anwendung. Die Evaluation vergleicht vier fundamental unterschiedliche Ansätze: ein Full-Stack-Framework mit Server-Side Rendering, eine klassische \ac{SPA}-Architektur, einen Multi-Page-Application-Ansatz mit minimaler JavaScript-Abhängigkeit sowie ein alternatives Ökosystem.
+
+\subsubsection{Evaluierte Alternativen}
+
+\textbf{Next.js 14 (App Router):} Full-Stack React-Framework mit Server-Side Rendering, Static Site Generation und dem App Router mit React Server Components. Optimiert für \ac{PaaS}-Deployment auf Vercel, aber auch self-hostbar~\cite{nextjsdocs2024}.
+
+\textbf{Vite + React (SPA):} Klassische Single-Page-Application-Architektur mit modernem Build-Tool. Framework-agnostisch und auf beliebiger Infrastruktur deploybar – von einem einfachen nginx-Server bis zu \ac{CDN}-Hosting~\cite{vite2024}.
+
+\textbf{Astro + React Islands:} Multi-Page-Application-Framework mit Island Architecture. Generiert primär statisches HTML und hydriert nur interaktive Komponenten (\glqq Islands\grqq{}). Minimaler JavaScript-Footprint bei voller React-Kompatibilität~\cite{astro2024}.
+
+\textbf{Angular 17:} Googles opinioniertes Full-Stack-Framework mit eigenem Ökosystem. Bietet SSR via Angular Universal, strikte Architekturvorgaben und umfassende Enterprise-Features~\cite{angular2024}.
+
+\subsubsection{Kriteriendefinition und Gewichtung}
+
+Die Kriterien und deren Gewichtung ergeben sich aus den projektspezifischen Anforderungen:
+
 \begin{itemize}
-    \item MCDA-Matrix mit Gewichtung
+    \item \textbf{SSR/SEO-Fähigkeit (20\%):} Für eine öffentlich zugängliche Companion App ist Suchmaschinenoptimierung relevant, um organischen Traffic zu generieren.
+    \item \textbf{Developer Experience (20\%):} Die Entwicklungseffizienz ist bei begrenzter Projektlaufzeit kritisch. Hierzu zählen Hot Module Replacement, Debugging-Tools und Dokumentationsqualität.
+    \item \textbf{Ecosystem \& Bibliotheken (15\%):} Verfügbarkeit von Bibliotheken für Graph-Visualisierung (React Flow, D3.js) und Charting.
+    \item \textbf{Performance (15\%):} Ladezeiten, Bundle-Größe und Runtime-Performance beeinflussen die User Experience direkt.
+    \item \textbf{TypeScript-Integration (10\%):} Durchgängige Typsicherheit reduziert Fehler und verbessert die Wartbarkeit.
+    \item \textbf{Hosting-Flexibilität (10\%):} Unabhängigkeit von spezifischen Hosting-Plattformen; Möglichkeit zum Self-Hosting.
+    \item \textbf{Lernkurve (10\%):} Einarbeitungsaufwand bei vorhandenen JavaScript/TypeScript-Kenntnissen.
 \end{itemize}
-\subsection{Backend- und Datenbankevaluation}
+
+\subsubsection{Entscheidungsmatrix Frontend-Framework}
+
+Tabelle~\ref{tab:mcda-frontend} zeigt die Bewertung der Alternativen.
+
+\begin{table}[htbp]
+\centering
+\caption{MCDA-Entscheidungsmatrix: Frontend-Framework}
+\label{tab:mcda-frontend}
+\begin{tabular}{lc|cccc|c}
+\toprule
+\textbf{Kriterium} & \textbf{Gew.} & \textbf{Next.js} & \textbf{Vite+React} & \textbf{Astro} & \textbf{Angular} & \textbf{Max} \\
+\midrule
+SSR/SEO-Fähigkeit & 20\% & 5 & 2 & 5 & 4 & 5 \\
+Developer Experience & 20\% & 5 & 5 & 4 & 3 & 5 \\
+Ecosystem \& Bibliotheken & 15\% & 5 & 5 & 4 & 3 & 5 \\
+Performance & 15\% & 4 & 4 & 5 & 3 & 5 \\
+TypeScript-Integration & 10\% & 5 & 4 & 4 & 5 & 5 \\
+Hosting-Flexibilität & 10\% & 3 & 5 & 5 & 4 & 5 \\
+Lernkurve & 10\% & 4 & 5 & 4 & 2 & 5 \\
+\midrule
+\textbf{Gewichtete Summe} & & \textbf{4,50} & \textbf{4,05} & \textbf{4,35} & \textbf{3,30} & 5,00 \\
+\textbf{Rang} & & \textbf{1} & 3 & 2 & 4 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Begründung der Bewertungen}
+
+\textbf{Next.js 14} erreicht die höchste Gesamtpunktzahl (4,50) und wird als Frontend-Framework ausgewählt. Die Stärken liegen in der exzellenten SSR-Unterstützung durch den App Router, dem umfangreichen React-Ökosystem mit direkter Unterstützung für React Flow und Recharts sowie der nahtlosen TypeScript-Integration. Die eingeschränkte Hosting-Flexibilität (Bewertung 3) reflektiert die Tatsache, dass Next.js zwar self-hostbar ist, jedoch ohne Vercel auf einige Optimierungen verzichtet werden muss.
+
+\textbf{Astro} (4,35) erreicht den zweiten Rang und wäre eine valide Alternative. Die Island Architecture liefert exzellente Performance durch minimalen JavaScript-Footprint. Für eine datenintensive Companion App mit komplexen interaktiven Visualisierungen würde jedoch ein Großteil der Seite aus \glqq Islands\grqq{} bestehen, was den architektonischen Vorteil relativiert.
+
+\textbf{Vite + React} (4,05) exzelliert bei Developer Experience und Hosting-Flexibilität – die resultierende SPA kann auf jedem statischen Webserver deployed werden. Die fehlende native SSR-Unterstützung ist jedoch für eine SEO-relevante Companion App ein signifikanter Nachteil, der zusätzliche Infrastruktur (z.B. Prerendering-Service) erfordern würde.
+
+\textbf{Angular 17} (3,30) bietet ein vollständiges Enterprise-Framework mit strikten Architekturvorgaben. Die steile Lernkurve, das separate Ökosystem (keine direkte Nutzung von React-Bibliotheken) und die vergleichsweise schwergewichtige Runtime machen es für ein Einzelentwickler-Projekt weniger geeignet.
+
+\subsection{Backend- und Datenbank-Evaluation}
+\label{sec:backend-evaluation}
+
+Die Backend-Architektur muss die Speicherung von Spieldaten, Benutzerfortschritt und perspektivisch User-Generated Content unterstützen. Die Evaluation vergleicht vier fundamental unterschiedliche Ansätze: eine \ac{BaaS}-Plattform, eine selbst gehostete Lösung auf einem \ac{VPS}, eine klassische \ac{IaaS}-Architektur auf AWS sowie eine containerisierte Self-Hosting-Lösung.
+
+\subsubsection{Evaluierte Alternativen}
+
+\textbf{Supabase :} Open-Source Plattform mit PostgreSQL als Fundament, Realtime-Subscriptions, Row Level Security und Edge Functions. Managed Hosting mit großzügigem Free Tier~\cite{supabase2024}.
+
+\textbf{Self-Hosted PostgreSQL + Node.js API (VPS):} Klassische Drei-Schichten-Architektur auf einem Virtual Private Server (z.B. Hetzner, DigitalOcean). PostgreSQL-Datenbank, Express/Fastify-API und nginx als Reverse Proxy. Vollständige Kontrolle bei moderatem Administrationsaufwand.
+
+\textbf{AWS (RDS + Lambda + API Gateway):} Enterprise-Grade \ac{IaaS}-Lösung mit managed PostgreSQL (RDS), serverless Compute (Lambda) und API Gateway. Hochskalierbar mit Pay-per-Use-Modell, jedoch komplexe Konfiguration und potenziell hohe Kosten.
+
+\textbf{Self-Hosted mit Coolify/Dokku (PaaS-on-VPS):} Selbst gehostete \ac{PaaS}-Lösung auf eigenem Server. Coolify oder Dokku abstrahieren die Infrastruktur ähnlich wie Heroku, laufen aber auf eigener Hardware. Kombiniert Kontrolle mit reduziertem Ops-Aufwand.
+
+\subsubsection{Kriteriendefinition und Gewichtung}
+
 \begin{itemize}
-    \item MCDA-Matrix
+    \item \textbf{Relationales Datenmodell (20\%):} Die komplexen Beziehungen zwischen Quests, Items, Workstations und deren Abhängigkeiten erfordern ein relationales Schema mit Foreign Keys und Joins.
+    \item \textbf{Kosteneffizienz (20\%):} Als Hobby-Projekt ohne Monetarisierung ist ein niedriges Kostenmodell essentiell.
+    \item \textbf{Administrationsaufwand (20\%):} Zeit für Setup, Wartung, Backups und Security-Updates reduziert die verfügbare Entwicklungszeit.
+    \item \textbf{Realtime-Fähigkeit (10\%):} Für zukünftige Squad-Features ist Echtzeit-Synchronisation relevant.
+    \item \textbf{TypeScript/ORM-Integration (10\%):} Kompatibilität mit Type-Safe ORMs wie Drizzle oder Prisma.
+    \item \textbf{Skalierbarkeit (10\%):} Fähigkeit zur Bewältigung von Nutzerwachstum ohne Architekturänderung.
+    \item \textbf{Kontrolle \& Flexibilität (10\%):} Anpassbarkeit, Zugriff auf Konfiguration, Unabhängigkeit von Anbieter-Entscheidungen.
 \end{itemize}
-\subsection{Hosting- und Deployment-Entscheidung}
+
+\subsubsection{Entscheidungsmatrix Backend/Datenbank}
+
+\begin{table}[htbp]
+\centering
+\caption{MCDA-Entscheidungsmatrix: Backend und Datenbank}
+\label{tab:mcda-backend}
+\begin{tabular}{lc|cccc|c}
+\toprule
+\textbf{Kriterium} & \textbf{Gew.} & \textbf{Supabase} & \textbf{VPS} & \textbf{AWS} & \textbf{Coolify} & \textbf{Max} \\
+\midrule
+Relationales Datenmodell & 20\% & 5 & 5 & 5 & 5 & 5 \\
+Kosteneffizienz & 20\% & 5 & 4 & 2 & 4 & 5 \\
+Administrationsaufwand & 20\% & 5 & 2 & 3 & 4 & 5 \\
+Realtime-Fähigkeit & 10\% & 5 & 3 & 3 & 3 & 5 \\
+TypeScript/ORM-Integration & 10\% & 5 & 5 & 4 & 5 & 5 \\
+Skalierbarkeit & 10\% & 4 & 2 & 5 & 3 & 5 \\
+Kontrolle \& Flexibilität & 10\% & 3 & 5 & 4 & 5 & 5 \\
+\midrule
+\textbf{Gewichtete Summe} & & \textbf{4,60} & \textbf{3,50} & \textbf{3,50} & \textbf{4,10} & 5,00 \\
+\textbf{Rang} & & \textbf{1} & 3 & 3 & 2 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Begründung der Bewertungen}
+
+\textbf{Supabase} erreicht mit 4,60 die höchste Punktzahl und wird als Backend-Lösung ausgewählt. Die Kombination aus vollwertigem PostgreSQL, integrierter Realtime-Funktionalität und minimalem Administrationsaufwand ermöglicht die Fokussierung auf die Frontend-Entwicklung. Das großzügige Free Tier (500 MB Datenbank, 1 GB Dateispeicher, 50.000 monatliche API-Requests) deckt den Bedarf eines Hobby-Projekts ab. Die reduzierte Bewertung bei Kontrolle (3) reflektiert die Abhängigkeit von Supabase-spezifischen Features wie Row Level Security Policies.
+
+\textbf{Coolify/Dokku} (4,10) erreicht den zweiten Rang und stellt eine attraktive Mittelweg-Lösung dar. Die selbst gehostete \ac{PaaS} auf einem günstigen VPS (ab ca. 5€/Monat bei Hetzner) kombiniert die Einfachheit eines managed Service mit voller Datenkontrolle. Der initiale Setup-Aufwand ist jedoch höher als bei Supabase.
+
+\textbf{Self-Hosted VPS} (3,50) bietet maximale Kontrolle und Flexibilität, erfordert jedoch erheblichen Administrationsaufwand für PostgreSQL-Konfiguration, Backups, SSL-Zertifikate, Firewall-Regeln und Security-Updates. Für einen Einzelentwickler mit Fokus auf Frontend-Features ist dieser Overhead signifikant.
+
+\textbf{AWS} (3,50) bietet Enterprise-Grade-Infrastruktur mit exzellenter Skalierbarkeit, jedoch zu Lasten der Kosteneffizienz und Komplexität. Selbst bei minimaler Nutzung entstehen Kosten für RDS, Lambda, API Gateway, CloudWatch und Netzwerk-Traffic. Die Lernkurve für die AWS-Konsole und \ac{IAM}-Konfiguration ist beträchtlich.
+
+\subsection{Deployment-Plattform-Evaluation}
+\label{sec:deployment-evaluation}
+
+Die Deployment-Plattform muss eine reibungslose \ac{CI}/\ac{CD}-Integration, Preview Deployments für iterative Entwicklung und kosteneffizientes Hosting ermöglichen. Die Evaluation vergleicht eine spezialisierte \ac{PaaS}-Lösung, eine klassische \ac{IaaS}-Architektur auf AWS, ein Self-Hosting-Setup auf einem VPS sowie eine containerisierte Lösung.
+
+\subsubsection{Evaluierte Alternativen}
+
+\textbf{Vercel:} Framework-aware Deployment-Plattform mit nativer Next.js-Optimierung, Edge Functions, globalem \ac{CDN} und automatischen Preview Deployments. Spezialisiert auf Frontend-Frameworks~\cite{vercel2024}.
+
+\textbf{AWS (S3 + CloudFront + EC2):} Klassische \ac{IaaS}-Architektur mit S3 für statische Assets, CloudFront als \ac{CDN}, EC2 für SSR-Funktionen und Route53 für DNS. Maximale Kontrolle bei hoher Komplexität.
+
+\textbf{Self-Hosted VPS (nginx + PM2):} Traditionelles Deployment auf einem Virtual Private Server mit nginx als Reverse Proxy und PM2 als Node.js Process Manager. Günstig und vollständig kontrollierbar.
+
+\textbf{Docker + Kubernetes (Self-Managed):} Container-basiertes Deployment mit Docker-Images und Kubernetes-Orchestrierung (z.B. k3s auf eigenem Server oder managed K8s). Maximale Portabilität und Skalierbarkeit.
+
+\subsubsection{Kriteriendefinition und Gewichtung}
+
 \begin{itemize}
-    \item MCDA-Matrix
+    \item \textbf{Next.js-Kompatibilität (25\%):} Unterstützung für App Router, Server Components, \ac{ISR} und Edge Runtime.
+    \item \textbf{Kosteneffizienz (25\%):} Gesamtkosten für Hosting eines Hobby-Projekts mit moderatem Traffic.
+    \item \textbf{Administrationsaufwand (20\%):} Zeit für Setup, Wartung und Troubleshooting.
+    \item \textbf{CI/CD \& Preview Deployments (15\%):} Automatisierte Builds und Branch-basierte Preview-Umgebungen.
+    \item \textbf{Kontrolle \& Portabilität (15\%):} Unabhängigkeit von Plattform-Lock-In, Möglichkeit zur Migration.
 \end{itemize}
-\subsection{Resultierende Technologie-Stack-Übersicht}
+
+\subsubsection{Entscheidungsmatrix Deployment}
+
+\begin{table}[htbp]
+\centering
+\caption{MCDA-Entscheidungsmatrix: Deployment-Plattform}
+\label{tab:mcda-deployment}
+\begin{tabular}{lc|cccc|c}
+\toprule
+\textbf{Kriterium} & \textbf{Gew.} & \textbf{Vercel} & \textbf{AWS} & \textbf{VPS} & \textbf{K8s} & \textbf{Max} \\
+\midrule
+Next.js-Kompatibilität & 25\% & 5 & 3 & 3 & 4 & 5 \\
+Kosteneffizienz & 25\% & 4 & 2 & 5 & 3 & 5 \\
+Administrationsaufwand & 20\% & 5 & 2 & 2 & 1 & 5 \\
+CI/CD \& Preview & 15\% & 5 & 3 & 2 & 4 & 5 \\
+Kontrolle \& Portabilität & 15\% & 2 & 4 & 5 & 5 & 5 \\
+\midrule
+\textbf{Gewichtete Summe} & & \textbf{4,25} & \textbf{2,75} & \textbf{3,45} & \textbf{3,30} & 5,00 \\
+\textbf{Rang} & & \textbf{1} & 4 & 2 & 3 & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Begründung der Bewertungen}
+
+\textbf{Vercel} erreicht mit 4,25 die höchste Punktzahl und wird als Deployment-Plattform ausgewählt. Als Entwickler von Next.js bietet Vercel die beste Framework-Integration mit automatischer Erkennung und Optimierung aller Next.js-Features. Die Preview-Deployment-Funktionalität unterstützt den agilen Entwicklungsprozess durch automatische Deployments für jeden Pull Request. Die niedrige Bewertung bei Kontrolle (2) reflektiert das Vendor Lock-In: Eine Migration weg von Vercel würde den Verlust von Optimierungen wie Edge Functions und \ac{ISR} bedeuten.
+
+\textbf{Self-Hosted VPS} (3,45) erreicht den zweiten Rang und wäre eine kosteneffiziente Alternative. Ein Hetzner Cloud Server (CX11, ca. 4€/Monat) kann eine Next.js-Anwendung mit moderatem Traffic problemlos hosten. Der manuelle Setup von nginx, SSL-Zertifikaten (Let's Encrypt), CI/CD (GitHub Actions + SSH Deploy) und Monitoring erfordert jedoch Initial- und Wartungsaufwand.
+
+\textbf{Docker + Kubernetes} (3,30) bietet maximale Portabilität – das Docker-Image kann auf beliebiger Infrastruktur deployed werden. Für ein Einzelentwickler-Projekt ist der Overhead von Kubernetes (selbst k3s) jedoch unverhältnismäßig. Die Komplexität von Ingress-Konfiguration, Persistent Volumes und Cluster-Maintenance übersteigt den Nutzen.
+
+\textbf{AWS} (2,75) bietet Enterprise-Grade-Features, jedoch mit erheblicher Komplexität und Kosten. Die manuelle Konfiguration von S3-Buckets, CloudFront-Distributions, EC2-Instanzen, Load Balancern und \ac{IAM}-Policies erfordert signifikantes AWS-Expertise. Für Next.js-SSR müssten zusätzlich Lambda@Edge oder EC2-Instanzen konfiguriert werden.
+
+\subsection{Resultierender Technologie-Stack}
+\label{sec:tech-stack-zusammenfassung}
+
+Die MCDA-Evaluation identifiziert folgenden optimalen Technologie-Stack für die Arc Raiders Companion App:
+
+\begin{table}[htbp]
+\centering
+\caption{Resultierender Technologie-Stack}
+\label{tab:tech-stack}
+\begin{tabular}{llcl}
+\toprule
+\textbf{Kategorie} & \textbf{Technologie} & \textbf{Score} & \textbf{Kernargument} \\
+\midrule
+Frontend-Framework & Next.js 14 (App Router) & 4,50 & SSR + React-Ecosystem \\
+Backend/Datenbank & Supabase + PostgreSQL & 4,60 & Minimaler Ops-Aufwand + Realtime \\
+Deployment & Vercel & 4,25 & Native Next.js-Optimierung \\
+\midrule
+ORM & Drizzle & -- & TypeScript-native, performant \\
+State Management & Zustand & -- & Minimalistisch, localStorage-Sync \\
+UI-Framework & Radix UI + Tailwind CSS & -- & Accessible + Utility-First \\
+Visualisierung & React Flow + Recharts & -- & Graph-Visualisierung + Charts \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Entscheidung für den \glqq Managed Stack\grqq{} (Next.js + Supabase + Vercel) priorisiert Entwicklungseffizienz und minimalen Administrationsaufwand gegenüber maximaler Kontrolle. Diese Priorisierung ist projektspezifisch begründet: Als Einzelentwickler-Projekt mit begrenzter Laufzeit und Fokus auf Frontend-Features überwiegt der Nutzen reduzierter Infrastruktur-Komplexität die Nachteile des Vendor Lock-In.
+
+Für Projekte mit anderen Rahmenbedingungen – etwa einem dedizierten DevOps-Team, höheren Anforderungen an Datensouveränität oder langfristiger Kostensensitivität – könnte Beispielsweise die Kombination aus \textbf{Astro + Self-Hosted PostgreSQL + VPS} eine valide Alternative darstellen.
+
+\subsection{Kritische Würdigung der Methodik, in Evaluation und Ergebnisse verschieben?}
+\label{sec:mcda-kritik}
+
+Die angewandte MCDA-Methodik unterliegt inhärenten Limitierungen. Die Gewichtung der Kriterien erfolgt subjektiv und projektspezifisch; andere Projekte könnten bei abweichenden Anforderungen zu unterschiedlichen Ergebnissen gelangen. Insbesondere die hohe Gewichtung von \glqq Administrationsaufwand\grqq{} (20\% bei Backend, 20\% bei Deployment) reflektiert die Einzel\-entwickler-Situation und würde in einem Team-Kontext anders ausfallen.
+
+Die qualitativen Bewertungen basieren auf der Evaluation zum Zeitpunkt der Entscheidungsfindung (Oktober 2025) und können sich durch Technologie-Updates ändern. Beispielsweise könnte eine zukünftige Verbesserung der Self-Hosting-Dokumentation von Next.js die Hosting-Flexibilität-Bewertung erhöhen.
+
+Dennoch bietet die strukturierte Evaluation gegenüber einer Ad-hoc-Entscheidung mehrere Vorteile: Die explizite Kriteriendefinition zwingt zur Reflexion der tatsächlichen Anforderungen, die dokumentierte Bewertung ermöglicht Nachvollziehbarkeit, und die Gegenüberstellung unterschiedlicher Architekturansätze (Managed vs. Self-Hosted vs. IaaS) macht Trade-offs explizit.
 
 \section{Systemarchitektur und -design}
 \subsection{Systemkontext und Abgrenzung}
