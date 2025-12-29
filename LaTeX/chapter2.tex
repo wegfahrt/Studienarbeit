@@ -1,29 +1,293 @@
 % !TEX root =  master.tex
 \chapter{Durchführung}
-an T2000 orientieren?
-  "Zeige, wie du von der Problemstellung zu Requirements kommst"
-  "Traceability Matrix: Verknüpfe Anforderungen → Issues → Tests → Code"
-\section{Anforderungsanalyse}
+
+\section{Anforderungserhebung}
+\label{sec:anforderungserhebung}
+
+Die Anforderungserhebung bildet den Ausgangspunkt der Entwicklung und folgt dem in Abschnitt~\ref{sec:phase1} definierten Phasenmodell. Ziel ist die systematische Transformation impliziter Nutzerbedürfnisse in explizite, implementierbare Anforderungen. Dabei kommen drei komplementäre Erhebungsmethoden zum Einsatz, deren Ergebnisse im Folgenden dargestellt werden.
+
+\subsection{Methodische Grundlagen der Erhebung}
+\label{sec:erhebungsmethodik}
+
+Die Anforderungserhebung stützt sich auf eine methodische Triangulation, die unterschiedliche Perspektiven auf die Problemdomäne vereint. Tabelle~\ref{tab:anforderungsquellen} gibt einen Überblick über die eingesetzten Methoden und deren spezifischen Beitrag zum Anforderungskatalog.
+
+\begin{table}[htbp]
+\centering
+\caption{Übersicht der Anforderungsquellen und deren Beitrag}
+\label{tab:anforderungsquellen}
+\begin{tabular}{p{3.5cm}p{5cm}p{5cm}}
+\toprule
+\textbf{Methode} & \textbf{Durchführung} & \textbf{Identifizierte Anforderungen} \\
+\midrule
+Empirische Datenerhebung & Technischer Spieltest mit systematischer Protokollierung & Quest-Tracking, Item-Datenbank, Material-Kalkulation, Workstation-Planung \\
+\addlinespace
+Stakeholder-Interviews & Strukturierte Gespräche mit Spielern verschiedener Erfahrungsstufen & Recycling-Kalkulator (nachträglich priorisiert) \\
+\addlinespace
+Comparative Analysis & Heuristische Evaluation etablierter Companion Apps & Kanban-Board, Flow-Chart- und weitere Visualisierungen \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die empirische Datenerhebung während des Spieltests ermöglichte die Identifikation konkreter Pain Points aus der Nutzerperspektive. Dabei kristallisierten sich drei zentrale Problemfelder heraus, die bereits in Abschnitt~\ref{sec:problemstellung} beschrieben wurden: die mangelnde Übersicht über Quest-Abhängigkeiten, die Komplexität der Ressourcenplanung sowie fehlende Unterstützung bei der Squad-Koordination.
+
+Die Stakeholder-Interviews ergänzten diese Erkenntnisse um Anforderungen, die durch reine Selbstbeobachtung nicht erfasst werden konnten. Insbesondere das Recycling-Feature wurde erst durch ein Interview mit einem erfahrenen Spieler als kritischer Bedarf identifiziert, wie in Abschnitt~\ref{sec:fallbeispiel-recycling} detailliert dargestellt wird.
+
+Die Comparative Analysis etablierter Companion Apps lieferte Best Practices für \ac{UI}/\ac{UX}-Patterns bei der Darstellung komplexer Spielinformationen. Hieraus wurden insbesondere das Kanban-Board-Konzept für die Quest-Übersicht sowie die Flow-Chart-Visualisierung für Abhängigkeitsdarstellungen abgeleitet.
+
+\subsection{Transformation in User Stories}
+\label{sec:userstories}
+
+Die identifizierten Nutzerbedürfnisse werden nach dem \ac{INVEST}-Schema in User Stories transformiert~\cite{wake2003invest}. Jede User Story folgt dem etablierten Format:
+
+\begin{quote}
+\textit{\glqq Als [Rolle] möchte ich [Funktion], um [Nutzen] zu erreichen.\grqq{}}
+\end{quote}
+
+Das \ac{INVEST}-Akronym definiert dabei die Qualitätskriterien für gut formulierte User Stories: \textbf{I}ndependent (unabhängig voneinander umsetzbar), \textbf{N}egotiable (verhandelbar im Scope), \textbf{V}aluable (Wertvoll für den Nutzer), \textbf{E}stimable (schätzbar im Aufwand), \textbf{S}mall (klein genug für eine Iteration) und \textbf{T}estable (durch Akzeptanzkriterien validierbar).
+
+Exemplarisch werden im Folgenden drei User Stories aus unterschiedlichen Feature-Bereichen vorgestellt, die die Bandbreite der funktionalen Anforderungen repräsentieren.
+
+\subsubsection{US-QM-01: Quest-Übersicht als Kanban-Board}
+
+\textbf{Quelle:} Issue ARC-24 \quad \textbf{Phase:} P1-Visualization \quad \textbf{Priorität:} Must-Have
+
+\begin{quote}
+\textit{\glqq Als Spieler möchte ich alle Quests in einem Kanban-Board mit den Spalten \glqq Active\grqq{}, \glqq Locked\grqq{} und \glqq Completed\grqq{} sehen, um meinen aktuellen Fortschritt auf einen Blick zu erfassen.\grqq{}}
+\end{quote}
+
+Diese User Story adressiert den in der Problemstellung identifizierten Mangel an Übersichtlichkeit bei der Quest-Verwaltung. Das Kanban-Board-Pattern wurde aus der Comparative Analysis als bewährtes Konzept für die Statusvisualisierung übernommen und auf den Gaming-Kontext adaptiert.
+
+\subsubsection{US-RC-02: Reverse-Engineering von Recycling-Pfaden}
+
+\textbf{Quelle:} Stakeholder-Interview \quad \textbf{Phase:} P1-Visualization (repriorisiert) \quad \textbf{Priorität:} Must-Have
+
+\begin{quote}
+\textit{\glqq Als Spieler möchte ich für ein Zielmaterial alle möglichen Recycling-Pfade sehen, um zu verstehen, welche Items ich recyceln kann, um das benötigte Material zu erhalten.\grqq{}}
+\end{quote}
+
+Diese User Story entstand aus einem Stakeholder-Interview und wurde aufgrund ihres hohen Nutzwerts nachträglich in die erste Entwicklungsphase aufgenommen. Die Entstehungsgeschichte wird in Abschnitt~\ref{sec:fallbeispiel-recycling} als Fallbeispiel für adaptives Anforderungsmanagement dokumentiert.
+
+\subsubsection{US-MC-01: Material-Aggregation für Planung}
+
+\textbf{Quelle:} Issue ARC-34 \quad \textbf{Phase:} P1-Visualization \quad \textbf{Priorität:} Must-Have
+
+\begin{quote}
+\textit{\glqq Als Spieler möchte ich basierend auf ausgewählten Quests und Workstation-Upgrades die Gesamtmenge benötigter Materialien berechnen, um mein begrenztes Inventar optimal zu nutzen.\grqq{}}
+\end{quote}
+
+Diese User Story adressiert direkt das Problem der ineffizienten Ressourcenplanung. Die Aggregationsfunktion ermöglicht eine vorausschauende Planung, die im Spielkontext durch das begrenzte Inventar besonders relevant ist.
+
+\subsection{Definition von Akzeptanzkriterien}
+\label{sec:akzeptanzkriterien}
+
+Jede User Story wird durch messbare Akzeptanzkriterien konkretisiert, die eine objektive Validierung der Implementierung ermöglichen. Die Kriterien folgen dem \ac{SMART}-Schema, dessen Dimensionen in Abbildung~\ref{fig:smart-mindmap} visualisiert sind.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{./img/smart_kriterien_mindmap.png}
+\caption{Dimensionen der SMART-Kriterien für Akzeptanzkriterien}
+\label{fig:smart-mindmap}
+\end{figure}
+
+Die \ac{SMART}-Kriterien stellen sicher, dass Akzeptanzkriterien \textbf{S}pezifisch (eindeutig und abgegrenzt), \textbf{M}essbar (quantifizierbar), \textbf{A}chievable (technisch umsetzbar), \textbf{R}elevant (beitragend zum Nutzwert) und \textbf{T}ime-bound (zeitlich einordenbar) formuliert sind.
+
+Exemplarisch zeigt Tabelle~\ref{tab:ac-qm-01} die Akzeptanzkriterien für die User Story US-QM-01 (Kanban-Board für Quest-Übersicht).
+
+\begin{table}[htbp]
+\centering
+\caption{Akzeptanzkriterien für US-QM-01 (Quest-Kanban-Board)}
+\label{tab:ac-qm-01}
+\begin{tabular}{clp{4cm}l}
+\toprule
+\textbf{ID} & \textbf{Kriterium} & \textbf{Messbar} & \textbf{Zeitpunkt} \\
+\midrule
+AC-QM-01.1 & Alle Quests in drei Spalten kategorisiert & Spaltenanzahl = 3 & Bei Seitenladung \\
+\addlinespace
+AC-QM-01.2 & Echtzeit-Filterung nach Quest-Name & Latenz $<$ 100ms & Bei Tastatureingabe \\
+\addlinespace
+AC-QM-01.3 & Numerische Quest-Anzahl pro Spalte & Counter sichtbar & Permanent \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Akzeptanzkriterien definieren präzise Metriken (Spaltenanzahl, Latenz in Millisekunden) und den Zeitpunkt der Validierung (bei Seitenladung, bei Interaktion). Diese Präzision ermöglicht eine eindeutige Überprüfung im Rahmen der Testphase.
+
+\subsection{Fallbeispiel: Adaptives Anforderungsmanagement}
+\label{sec:fallbeispiel-recycling}
+
+Das Recycling-Feature demonstriert exemplarisch die Anwendung agiler Prinzipien im Anforderungsmanagement. Es illustriert, wie durch kontinuierliche Stakeholder-Einbindung Features mit hohem Nutzwert identifiziert werden können, die durch reine Selbstbeobachtung nicht erkannt wurden.
+
+\subsubsection{Ausgangssituation}
+
+Das initiale Backlog, abgeleitet aus dem Spieltest und der Comparative Analysis, sah die Interaktiven Karten (Issue ARC-37) als nächstes Feature der Phase P1-Visualization vor. Diese Priorisierung basierte auf der Annahme, dass Kartenvisualisierungen einen hohen Nutzwert für die Squad-Koordination bieten würden.
+
+\subsubsection{Identifikation durch Stakeholder-Interview}
+
+Während eines strukturierten Interviews in der zweiten Entwicklungsiteration artikulierte ein erfahrener Arc Raiders-Spieler folgenden Pain Point:
+
+\begin{quote}
+\textit{\glqq Ich brauche immer ewig um die richtigen Gegenstände zum recyclen zu finden, da man bei jedem Gegenstand einzeln das Menü öffnen muss, um zu erfahren in welche Materialien er zerlegt werden kann.\grqq{}}
+\end{quote}
+
+Diese Aussage offenbarte ein fundamentales Problem der Ressourcenverwaltung, das im Spieltest nicht als solches erkannt wurde. Das fehlende Verständnis der Recycling-Mechaniken führt zu suboptimalen Entscheidungen und damit zu ineffizienter Nutzung des ohnehin begrenzten Inventarplatzes.
+
+\subsubsection{Analyse und Entscheidungsfindung}
+
+Die Bewertung des neu identifizierten Bedarfs erfolgte anhand von vier Kriterien, die in Tabelle~\ref{tab:repriorisierung} den ursprünglich geplanten Interaktiven Karten gegenübergestellt werden.
+
+\begin{table}[htbp]
+\centering
+\caption{Entscheidungsmatrix zur Repriorisierung}
+\label{tab:repriorisierung}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Kriterium} & \textbf{Recycling-Kalkulator} & \textbf{Interaktive Karten} \\
+\midrule
+Identifizierter Nutzerbedarf & Hoch (validiert durch Interview) & Mittel (Annahme) \\
+Technische Komplexität & Mittel & Hoch (externe Kartendaten) \\
+Geschätzte Entwicklungszeit & $\sim$40 Stunden & $\sim$60 Stunden \\
+Wissenschaftlicher Mehrwert & Hoch (Graph-Algorithmen) & Mittel \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Der Recycling-Kalkulator überzeugte durch einen validierten Nutzerbedarf, geringere technische Komplexität und kürzere Entwicklungszeit. Zusätzlich bot die Implementierung von Graph-Algorithmen für das Reverse-Engineering der Recycling-Pfade einen höheren wissenschaftlichen Mehrwert im Kontext dieser Arbeit.
+
+\subsubsection{Resultierende Repriorisierung}
+
+Basierend auf dieser Analyse wurde der Recycling-Kalkulator über die Interaktiven Karten priorisiert. Diese Entscheidung folgt dem agilen Grundprinzip: \textit{\glqq Reagieren auf Veränderung ist wertvoller als das Befolgen eines Plans\grqq{}}~\cite{agilemanifesto2001}.
+
+Das Recycling-Feature wurde in drei User Stories unterteilt:
 \begin{itemize}
-    \item Zielgruppenanalyse
-    \item Funktionale Anforderungen
-    \item Nicht-funktionale Anforderungen
+    \item \textbf{US-RC-01:} Recycling-Datenbank mit Effizienzberechnung
+    \item \textbf{US-RC-02:} Reverse-Engineering von Recycling-Pfaden
+    \item \textbf{US-RC-03:} Visualisierung der Recycling-Ketten als Graph
 \end{itemize}
-\section{Vorbereitung}
+
+Die Implementierung erfolgte in der ersten Entwicklungsphase (P1-Visualization), während die Interaktiven Karten auf eine spätere Iteration verschoben wurden.
+
+\subsubsection{Erkenntnisse für den Entwicklungsprozess}
+
+Das Fallbeispiel verdeutlicht drei zentrale Aspekte agilen Anforderungsmanagements:
+
+Erstens kann kontinuierliche Stakeholder-Einbindung Features mit hohem Nutzwert identifizieren, die durch isolierte Analyse nicht erkannt werden. Die Recycling-Problematik war während des eigenen Spieltests nicht als kritisch wahrgenommen worden, da sie erst bei fortgeschrittenem Spielfortschritt relevant wird.
+
+Zweitens ermöglicht flexible Priorisierung die Reaktion auf neue Erkenntnisse, ohne den Gesamtplan zu gefährden. Die Verschiebung der Interaktiven Karten hatte keine negativen Auswirkungen auf das \ac{MVP}, da keine anderen Features von ihnen abhängig waren.
+
+Drittens erhöht die Dokumentation der Entscheidungsgrundlage die Nachvollziehbarkeit im wissenschaftlichen Kontext. Die explizite Gegenüberstellung der Optionen legitimiert die Repriorisierung und macht den agilen Entscheidungsprozess transparent.
+
+\subsection{Priorisierung nach MoSCoW}
+\label{sec:moscow}
+
+Die \ac{MoSCoW}-Methode ermöglicht eine systematische Kategorisierung der Anforderungen nach ihrer Relevanz für das \ac{MVP}~\cite{clegg1994case}. Die Priorisierung berücksichtigt sowohl den erwarteten Nutzwert als auch den geschätzten Implementierungsaufwand.
+
+Abbildung~\ref{fig:moscow-quadrant} visualisiert die Einordnung der identifizierten Features in einem Quadranten-Diagramm mit den Achsen \glqq Nutzwert\grqq{} und \glqq Aufwand\grqq{}. Features im oberen linken Quadranten (hoher Wert, niedriger Aufwand) werden als Must-Have klassifiziert, während Features im unteren rechten Quadranten (niedriger Wert, hoher Aufwand) auf spätere Releases verschoben werden.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{./img/moscow_quadrant.png}
+\caption{MoSCoW-Priorisierung der Features nach Nutzwert und Aufwand}
+\label{fig:moscow-quadrant}
+\end{figure}
+
+Tabelle~\ref{tab:moscow} fasst die resultierende Kategorisierung zusammen und begründet die Zuordnung der einzelnen Feature-Gruppen.
+
+\begin{table}[htbp]
+\centering
+\caption{MoSCoW-Kategorisierung der Anforderungen}
+\label{tab:moscow}
+\begin{tabular}{lp{5.5cm}p{5.5cm}}
+\toprule
+\textbf{Kategorie} & \textbf{Features} & \textbf{Begründung} \\
+\midrule
+Must-Have & Quest-Kanban, Flow-Chart, Quest-Details, Item-Katalog, Workstation-Übersicht, Material-Calculator, Recycling & Adressieren die in Abschnitt~\ref{sec:problemstellung} definierten Kernprobleme; bilden funktionales \ac{MVP} \\
+\addlinespace
+Should-Have & Quest-Progress und -Details, Dashboard-Statistiken, Wishlist-Integration & Erhöhen den Nutzwert signifikant; Anwendung funktional auch ohne diese Features \\
+\addlinespace
+Could-Have & Squad-Features, Pathfinding-Algorithmen, OCR-basierter Screenshot-Import, Interaktive Karten & Hoher Aufwand; für spätere Releases nach Validierung des \ac{MVP} geplant \\
+\addlinespace
+Won't-Have & Creature-Datenbank & Zusatzfeatures mit geringerer Dringlichkeit\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Must-Have-Features bilden das \ac{MVP} und adressieren direkt die drei Kernprobleme aus der Problemstellung: Informationsasymmetrie bei Quests (Kanban, Flow-Chart, Details), ineffizientes Ressourcenmanagement (Material-Calculator, Recycling-Features) und fehlende Planungsgrundlage (Item-Katalog, Workstation-Übersicht).
+
+Die Should-Have-Features erweitern die Kernfunktionalität um Komfortfunktionen wie die Persistierung des Spielerfortschritts und aggregierte Statistiken. Diese Features erhöhen den Nutzwert erheblich, sind jedoch für die grundlegende Funktionsfähigkeit der Anwendung nicht zwingend erforderlich.
+
+Die Could-Have- und Won't-Have-Features wurden bewusst zurückgestellt, um den Fokus auf die Kernfunktionalität zu wahren. Insbesondere die Squad-Features und Pathfinding-Algorithmen erfordern erheblichen Entwicklungsaufwand und sind erst nach erfolgreicher Validierung des \ac{MVP} sinnvoll zu implementieren.
+
+% \subsection{Zusammenfassung und Überleitung}
+% \label{sec:anforderung-zusammenfassung}
+
+% Die Anforderungserhebung hat durch methodische Triangulation einen umfassenden Anforderungskatalog generiert. Aus dem Spieltest, den Stakeholder-Interviews und der Comparative Analysis wurden insgesamt 16 User Stories in vier Feature-Bereichen abgeleitet:
+
+% \begin{itemize}
+%     \item \textbf{Quest-Management:} 4 User Stories (US-QM-01 bis US-QM-04)
+%     \item \textbf{Item-Datenbank:} 2 User Stories (US-ID-01, US-ID-02)
+%     \item \textbf{Ressourcen-Management:} 6 User Stories (US-WP-01/02, US-MC-01/02, US-RC-01 bis US-RC-03)
+%     \item \textbf{Dashboard:} 2 User Stories (US-DB-01, US-DB-02)
+% \end{itemize}
+
+% Das Fallbeispiel des Recycling-Kalkulators demonstrierte die praktische Anwendung agiler Prinzipien: Ein durch Stakeholder-Interview identifiziertes Feature wurde aufgrund seines validierten Nutzwerts über ursprünglich geplante Features priorisiert.
+
+% Die \ac{MoSCoW}-Priorisierung strukturiert die Anforderungen nach ihrer Relevanz für das \ac{MVP}. Sieben Features wurden als Must-Have klassifiziert und bilden die Grundlage für die in den folgenden Abschnitten beschriebene Architektur- und Implementierungsphase.
+
+% Die definierten Akzeptanzkriterien nach dem \ac{SMART}-Schema ermöglichen eine objektive Validierung der Implementierung und bilden die Basis für die in Abschnitt~\ref{sec:testen} beschriebene Testphase.
+\section{Technologie- und Architekturentscheidungen}
+\subsection{Methodisches Vorgehen (MCDA)}
+\subsection{Frontend-Technologie-Evaluation}
 \begin{itemize}
-    \item Modellierung
-    \item Technologieentscheidungen (kurz)
+    \item MCDA-Matrix mit Gewichtung
 \end{itemize}
-\section{Implementierung}
+\subsection{Backend- und Datenbankevaluation}
 \begin{itemize}
-    \item Architektur
-    \item Beispiel Datenbankmodell, edge function
-    \item Beispiel API Endpunkte
-    \item Beispiel Frontend Komponenten
+    \item MCDA-Matrix
 \end{itemize}
-\section{Testen}
+\subsection{Hosting- und Deployment-Entscheidung}
 \begin{itemize}
-    \item Teststrategie/-umgebung
-    \item Beispiel Test
-    \item Ergebnisse
+    \item MCDA-Matrix
 \end{itemize}
+\subsection{Resultierende Technologie-Stack-Übersicht}
+
+\section{Systemarchitektur und -design}
+\subsection{Systemkontext und Abgrenzung}
+\begin{itemize}
+    \item Kontextdiagramm
+\end{itemize}
+\subsection{Datenbankdesign}
+\begin{itemize}
+    \item ER-Diagramm
+\end{itemize}
+\subsection{Komponentenarchitektur}
+\begin{itemize}
+    \item Komponentendiagramm
+\end{itemize}
+\subsection{Datenfluss-Analyse}
+\begin{itemize}
+    \item DFD Level 0 und 1
+\end{itemize}
+
+\section{Implementierung ausgewählter Features}
+\subsection{Quest-Management-System}
+\begin{itemize}
+    \item Anforderung zu Issue-Mapping
+    \item Akzeptanzkriterien
+    \item Implementierungsdetails
+\end{itemize}
+\subsection{Graph-basierter Recycling-Kalkulator}
+\begin{itemize}
+    \item Algorithmischer Ansatz
+    \item Implementierung mit React Flow
+\end{itemize}
+\subsection{Zentrales State Management}
+\begin{itemize}
+    \item Zustand-Store-Architektur
+\end{itemize}
+\subsection{Material-Aggregation}
+
+\subsection{Testen}\label{sec:testen}
+
+\section{Deployment und Betrieb}
+\subsection{CI/CD-Pipeline-Konfiguration}
+\subsection{Monitoring und Logging}

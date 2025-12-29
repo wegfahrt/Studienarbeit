@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber master"] 1766943043.97421 "master.bcf" "master.bbl" "master" 1766943065.0362 0
-  "bibliography.bib" 1766941815.64994 37017 99b367565c858d4cf77f71f7a8e45f94 ""
-  "master.bcf" 1766943064.82835 125051 26bb53cb77c7cbe5e6bd5b16356c4862 "pdflatex"
+["biber master"] 1767009636.29033 "master.bcf" "master.bbl" "master" 1767010048.05286 0
+  "bibliography.bib" 1767000630.27006 38415 479951c9d8a7c3c11fb31c649db81917 ""
+  "master.bcf" 1767010047.8599 125267 960da11228dabc87ae39cc6c326c012f "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
   (rewritten before read)
-["makeindex master.idx"] 1766942621.0544 "master.idx" "master.ind" "master" 1766943065.03599 0
-  "master.idx" 1766943060.06017 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1767009636.03795 "master.idx" "master.ind" "master" 1767010048.05254 0
+  "master.idx" 1767010042.22373 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
   (rewritten before read)
-["pdflatex"] 1766943057.53806 "/home/paul/src/repos/Studienarbeit/LaTeX/master.tex" "master.pdf" "master" 1766943065.03675 0
+["pdflatex"] 1767010039.75767 "/home/paul/src/repos/Studienarbeit/LaTeX/master.tex" "master.pdf" "master" 1767010048.05353 0
   "/etc/texmf/web2c/texmf.cnf" 1766316939.99165 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/paul/src/repos/Studienarbeit/LaTeX/master.tex" 1766315990.28226 8196 045de409352e35b7de505faac99bbedd ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -40,6 +40,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -170,24 +171,26 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1766316964.15391 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1766317050 8213347 65e018e9c04244e6111b2c04cc916b57 ""
   "abstract.tex" 1766315990.26726 247 349af85aa9f3a0e2475a8e0fcd312838 ""
-  "acronyms.tex" 1766942638.99885 1584 9e80ef4f74f670cd46737d9a8199ba5c ""
+  "acronyms.tex" 1767000588.65181 1793 cd4aff0ed3088193032d6224df8e035c ""
   "chapter1.tex" 1766943052.55988 80847 569814b7babacb424f7da8380523a4a8 ""
-  "chapter2.tex" 1766315990.26826 830 e16d43afebfb12f9a49e089209dab45d ""
+  "chapter2.tex" 1767010029.05832 17882 4052292c68077905822536dc8627f593 ""
   "chapter3.tex" 1766315990.26826 422 8ab1ca93e870492da0616c3b0e5927fd ""
   "conclusion.tex" 1766315990.26826 111 0f4d8ef5ea80bf7a7c7f514922cf8375 ""
   "config.tex" 1766315990.26826 5271 1d2db6e2ab77bf7822e34baa528b38a6 ""
   "ewerkl.tex" 1766315990.26926 610 affea768f2d29da6183c6ed560333890 ""
   "img/logo.jpg" 1766315990.27026 101728 8b7062117d8003a85ed34a864631beb3 ""
-  "introduction.tex" 1766315990.27026 18565 101bb86980f1590b1f2e8a37dbc02795 ""
-  "master.aux" 1766943064.73935 74636 a30462c275d20061f81cc107da905126 "pdflatex"
-  "master.bbl" 1766943046.68666 93202 74b994460ee0304d8a60ca6b8ec10458 "biber master"
-  "master.ind" 1766942621.29375 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.lof" 1766943064.83035 190 1ad6679e34e095d75a193449b01956b2 "pdflatex"
-  "master.lol" 1766943064.83035 160 3d779cc98b6f299ec43eb90ebb04f45f "pdflatex"
-  "master.out" 1766943060.64319 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "master.run.xml" 1766943064.83035 2351 37d1dfc1f194b0e6026df8ffebb3b5ea "pdflatex"
+  "img/moscow_quadrant.png" 1767009722.90675 445254 3e0e9c1c5904a6b91677df4002fe272e ""
+  "img/smart_kriterien_mindmap.png" 1766998886.69313 852296 d090a606bc84559f8f8ac943e4f3ba20 ""
+  "introduction.tex" 1767007512.12846 18583 eaeb05495d6fe285c797fc9027660cd4 ""
+  "master.aux" 1767010047.78089 91884 534f64e8df14f2857ecc4141ffea2b51 "pdflatex"
+  "master.bbl" 1767009638.7753 96918 5e5e8dfa6652d3726d5b388fbe0d4b76 "biber master"
+  "master.ind" 1767009636.28519 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
+  "master.lof" 1767010047.8609 469 7bc2f9113a80a97fb4a61c4ae7aa9e4b "pdflatex"
+  "master.lol" 1767010047.8609 160 3d779cc98b6f299ec43eb90ebb04f45f "pdflatex"
+  "master.out" 1767010042.78174 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "master.run.xml" 1767010047.8609 2351 37d1dfc1f194b0e6026df8ffebb3b5ea "pdflatex"
   "master.tex" 1766315990.28226 8196 045de409352e35b7de505faac99bbedd ""
-  "master.toc" 1766943064.83035 7962 8ba6bfade0c83d7bdb9a7779113c449f "pdflatex"
+  "master.toc" 1767010047.8609 11056 2ca93ee14d0b41e734cc2cf739daa193 "pdflatex"
   "nondisclosurenotice.tex" 1766315990.28226 311 7820f02983fed39c04b978e52dfe2a1f ""
   "titlepage.tex" 1766315990.28226 1094 76a569851c6052ef52053824c8fd30f7 ""
   (generated)

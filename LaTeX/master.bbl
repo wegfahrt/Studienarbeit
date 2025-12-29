@@ -149,6 +149,35 @@
       \verb https://medium.com/@kulsumansari4/next-js-app-router-routing-8d795dbe324c
       \endverb
     \endentry
+    \entry{agilemanifesto2001}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bf56b418df9dd1a563edccf304c1072e}{%
+           family={{Beck, Kent and Beedle, Mike and van Bennekum, Arie and Cockburn, Alistair and Cunningham, Ward and Fowler, Martin and others}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf56b418df9dd1a563edccf304c1072e}
+      \strng{fullhash}{bf56b418df9dd1a563edccf304c1072e}
+      \strng{bibnamehash}{bf56b418df9dd1a563edccf304c1072e}
+      \strng{authorbibnamehash}{bf56b418df9dd1a563edccf304c1072e}
+      \strng{authornamehash}{bf56b418df9dd1a563edccf304c1072e}
+      \strng{authorfullhash}{bf56b418df9dd1a563edccf304c1072e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manifesto for Agile Software Development}
+      \field{urlday}{1}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{year}{2001}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://agilemanifesto.org/
+      \endverb
+      \verb{url}
+      \verb https://agilemanifesto.org/
+      \endverb
+    \endentry
     \entry{Bhatu2024TypeScript}{article}{}
       \name{author}{1}{}{%
         {{hash=b51657ef73d9300ba15dee9c84336fc6}{%
@@ -183,6 +212,37 @@
       \verb{url}
       \verb https://medium.com/@bhaturohit/why-choose-typescript-in-2024-the-evolution-of-javascript-development-fdf77dd56a62
       \endverb
+    \endentry
+    \entry{clegg1994case}{book}{}
+      \name{author}{2}{}{%
+        {{hash=3b57db6ca3b7b15d76dab79168bdfe58}{%
+           family={Clegg},
+           familyi={C\bibinitperiod},
+           given={Dai},
+           giveni={D\bibinitperiod}}}%
+        {{hash=c3cf5b243ad9985eeb1850fa750748bc}{%
+           family={Barker},
+           familyi={B\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{fcda9ec56cc8836bfbe6761345737bc4}
+      \strng{fullhash}{fcda9ec56cc8836bfbe6761345737bc4}
+      \strng{bibnamehash}{fcda9ec56cc8836bfbe6761345737bc4}
+      \strng{authorbibnamehash}{fcda9ec56cc8836bfbe6761345737bc4}
+      \strng{authornamehash}{fcda9ec56cc8836bfbe6761345737bc4}
+      \strng{authorfullhash}{fcda9ec56cc8836bfbe6761345737bc4}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0201624328}
+      \field{note}{Ursprung der MoSCoW-Priorisierungsmethode}
+      \field{title}{Case Method Fast-Track: A RAD Approach}
+      \field{year}{1994}
     \endentry
     \entry{Statista2024ConsoleApps}{online}{}
       \name{author}{1}{}{%
@@ -2114,6 +2174,38 @@
       \endverb
       \verb{url}
       \verb https://dev.to/jeetvora331/server-state-vs-client-state-in-react-for-beginners-3pl6
+      \endverb
+    \endentry
+    \entry{wake2003invest}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2cde1f78c306e9196d93c3248cbfb5ab}{%
+           family={Wake},
+           familyi={W\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2cde1f78c306e9196d93c3248cbfb5ab}
+      \strng{fullhash}{2cde1f78c306e9196d93c3248cbfb5ab}
+      \strng{bibnamehash}{2cde1f78c306e9196d93c3248cbfb5ab}
+      \strng{authorbibnamehash}{2cde1f78c306e9196d93c3248cbfb5ab}
+      \strng{authornamehash}{2cde1f78c306e9196d93c3248cbfb5ab}
+      \strng{authorfullhash}{2cde1f78c306e9196d93c3248cbfb5ab}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Ursprüngliche Definition des INVEST-Akronyms für User Stories}
+      \field{title}{INVEST in Good Stories, and SMART Tasks}
+      \field{urlday}{1}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2003}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/
+      \endverb
+      \verb{url}
+      \verb https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/
       \endverb
     \endentry
     \entry{SplunkEngineering2022CustomGraphViz}{article}{}

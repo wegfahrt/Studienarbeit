@@ -1,9 +1,9 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{Abbildungsverzeichnis}{v}{section*.3}%
-\contentsline {chapter}{\nonumberline Quelltextverzeichnis}{vi}{chapter*.4}%
-\contentsline {chapter}{Abkürzungsverzeichnis}{vii}{chapter*.5}%
-\contentsline {chapter}{Abstract}{ix}{chapter*.6}%
-\contentsline {chapter}{Zusammenfassung}{x}{chapter*.7}%
+\contentsline {chapter}{Abbildungsverzeichnis}{vi}{section*.3}%
+\contentsline {chapter}{\nonumberline Quelltextverzeichnis}{vii}{chapter*.4}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{viii}{chapter*.5}%
+\contentsline {chapter}{Abstract}{x}{chapter*.6}%
+\contentsline {chapter}{Zusammenfassung}{xi}{chapter*.7}%
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problemstellung}{2}{section.1.2}%
@@ -69,14 +69,44 @@
 \contentsline {subsection}{\numberline {3.7.1}Vitest}{40}{subsection.3.7.1}%
 \contentsline {subsection}{\numberline {3.7.2}Cypress}{41}{subsection.3.7.2}%
 \contentsline {chapter}{\numberline {4}Durchführung}{42}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Anforderungsanalyse}{42}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Vorbereitung}{42}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Implementierung}{42}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Testen}{42}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{43}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion?}{43}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{43}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{44}{chapter.6}%
+\contentsline {section}{\numberline {4.1}Anforderungserhebung}{42}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Methodische Grundlagen der Erhebung}{42}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Transformation in User Stories}{43}{subsection.4.1.2}%
+\contentsline {subsubsection}{\nonumberline US-QM-01: Quest-Übersicht als Kanban-Board}{43}{subsubsection*.80}%
+\contentsline {subsubsection}{\nonumberline US-RC-02: Reverse-Engineering von Recycling-Pfaden}{44}{subsubsection*.82}%
+\contentsline {subsubsection}{\nonumberline US-MC-01: Material-Aggregation für Planung}{44}{subsubsection*.84}%
+\contentsline {subsection}{\numberline {4.1.3}Definition von Akzeptanzkriterien}{44}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fallbeispiel: Adaptives Anforderungsmanagement}{45}{subsection.4.1.4}%
+\contentsline {subsubsection}{\nonumberline Ausgangssituation}{45}{subsubsection*.89}%
+\contentsline {subsubsection}{\nonumberline Identifikation durch Stakeholder-Interview}{45}{subsubsection*.91}%
+\contentsline {subsubsection}{\nonumberline Analyse und Entscheidungsfindung}{46}{subsubsection*.93}%
+\contentsline {subsubsection}{\nonumberline Resultierende Repriorisierung}{46}{subsubsection*.96}%
+\contentsline {subsubsection}{\nonumberline Erkenntnisse für den Entwicklungsprozess}{47}{subsubsection*.98}%
+\contentsline {subsection}{\numberline {4.1.5}Priorisierung nach MoSCoW}{47}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Technologie- und Architekturentscheidungen}{49}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Methodisches Vorgehen (MCDA)}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Frontend-Technologie-Evaluation}{49}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Backend- und Datenbankevaluation}{49}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Hosting- und Deployment-Entscheidung}{49}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Resultierende Technologie-Stack-Übersicht}{50}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}Systemarchitektur und -design}{50}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Systemkontext und Abgrenzung}{50}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Datenbankdesign}{50}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Komponentenarchitektur}{50}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Datenfluss-Analyse}{50}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Implementierung ausgewählter Features}{50}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Quest-Management-System}{50}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Graph-basierter Recycling-Kalkulator}{50}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Zentrales State Management}{51}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Material-Aggregation}{51}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Testen}{51}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}Deployment und Betrieb}{51}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}CI/CD-Pipeline-Konfiguration}{51}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Monitoring und Logging}{51}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion?}{52}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{52}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{53}{chapter.6}%
 \contentsline {chapter}{Anhang}{}{chapter.6}
-\contentsline {chapter}{\nonumberline Literatur}{45}{chapter*.76}%
+\contentsline {chapter}{\nonumberline Literatur}{54}{chapter*.102}%

@@ -16,11 +16,9 @@ Description: Users input the materials they need (e.g., "20x metal_parts, 5x che
 
 # Bericht
 ## Diagramme 2.1
-- C4 Diagramme
 - MCDA Entscheidungsmatrix Frontend Frameworks und Backend Lösungen, Kombinationen?
 - Entscheidungsmatrix Datenbank
 - Entscheidungsmatrix Deployment
-- Risikoanalyse Datenquellen
 
 ## Diagramme 2.2
 - ER Diagramm Datenbank

@@ -366,6 +366,16 @@ INPUT ./chapter2.tex
 INPUT ./chapter2.tex
 INPUT ./chapter2.tex
 INPUT chapter2.tex
+INPUT ./img/smart_kriterien_mindmap.png
+INPUT ./img/smart_kriterien_mindmap.png
+INPUT ./img/smart_kriterien_mindmap.png
+INPUT ./img/smart_kriterien_mindmap.png
+INPUT ./img/smart_kriterien_mindmap.png
+INPUT ./img/moscow_quadrant.png
+INPUT ./img/moscow_quadrant.png
+INPUT ./img/moscow_quadrant.png
+INPUT ./img/moscow_quadrant.png
+INPUT ./img/moscow_quadrant.png
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
 INPUT ./chapter3.tex
@@ -385,6 +395,7 @@ INPUT ./master.out
 INPUT ./master.out
 INPUT master.run.xml
 OUTPUT master.run.xml
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb
 INPUT /usr/share/texmf/fonts/type1/public/cm-super/sfsi1200.pfb
