@@ -86,40 +86,40 @@
 \contentsline {section}{\numberline {4.2}Technologieentscheidungen}{49}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Methodisches Vorgehen: Multi-Criteria Decision Analysis}{49}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Frontend-Framework-Evaluation}{50}{subsection.4.2.2}%
-\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{50}{subsubsection*.106}%
-\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{51}{subsubsection*.109}%
-\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Frontend-Framework}{51}{subsubsection*.111}%
-\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{52}{subsubsection*.114}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{50}{subsubsection*.105}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{50}{subsubsection*.108}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Frontend-Framework}{51}{subsubsection*.110}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{51}{subsubsection*.113}%
 \contentsline {subsection}{\numberline {4.2.3}Backend- und Datenbank-Evaluation}{52}{subsection.4.2.3}%
-\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{53}{subsubsection*.117}%
-\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{53}{subsubsection*.119}%
-\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Backend/Datenbank}{54}{subsubsection*.121}%
-\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{54}{subsubsection*.124}%
-\contentsline {subsection}{\numberline {4.2.4}Deployment-Plattform-Evaluation}{55}{subsection.4.2.4}%
-\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{55}{subsubsection*.127}%
-\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{55}{subsubsection*.129}%
-\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Deployment}{56}{subsubsection*.131}%
-\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{56}{subsubsection*.134}%
-\contentsline {subsection}{\numberline {4.2.5}Resultierender Technologie-Stack}{57}{subsection.4.2.5}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{52}{subsubsection*.116}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{53}{subsubsection*.118}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Backend/Datenbank}{53}{subsubsection*.120}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{53}{subsubsection*.123}%
+\contentsline {subsection}{\numberline {4.2.4}Deployment-Plattform-Evaluation}{54}{subsection.4.2.4}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{54}{subsubsection*.126}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{55}{subsubsection*.128}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Deployment}{55}{subsubsection*.130}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{55}{subsubsection*.133}%
+\contentsline {subsection}{\numberline {4.2.5}Resultierender Technologie-Stack}{56}{subsection.4.2.5}%
 \contentsline {subsection}{\numberline {4.2.6}Kritische Würdigung der Methodik, in Evaluation und Ergebnisse verschieben?}{57}{subsection.4.2.6}%
-\contentsline {section}{\numberline {4.3}Systemarchitektur und -design}{58}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Systemkontext und Abgrenzung}{58}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Datenbankdesign}{58}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Komponentenarchitektur}{58}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Datenfluss-Analyse}{58}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.3}Systemarchitektur und -design}{57}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Systemkontext und Abgrenzung}{57}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Datenbankdesign}{57}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Komponentenarchitektur}{57}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Datenfluss-Analyse}{57}{subsection.4.3.4}%
 \contentsline {section}{\numberline {4.4}Implementierung ausgewählter Features}{58}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Quest-Management-System}{58}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Graph-basierter Recycling-Kalkulator}{59}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Zentrales State Management}{59}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Material-Aggregation}{59}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Testen}{59}{subsection.4.4.5}%
-\contentsline {section}{\numberline {4.5}Deployment und Betrieb}{59}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}CI/CD-Pipeline-Konfiguration}{59}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Monitoring und Logging}{59}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{60}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{60}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diskussion?}{60}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{60}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{61}{chapter.6}%
+\contentsline {subsection}{\numberline {4.4.2}Graph-basierter Recycling-Kalkulator}{58}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Zentrales State Management}{58}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Material-Aggregation}{58}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Testen}{58}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}Deployment und Betrieb}{58}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}CI/CD-Pipeline-Konfiguration}{58}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Monitoring und Logging}{58}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion?}{59}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{59}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{60}{chapter.6}%
 \contentsline {chapter}{Anhang}{}{chapter.6}
-\contentsline {chapter}{\nonumberline Literatur}{62}{chapter*.136}%
+\contentsline {chapter}{\nonumberline Literatur}{61}{chapter*.135}%
