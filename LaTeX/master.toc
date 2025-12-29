@@ -1,0 +1,125 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{vi}{section*.3}%
+\contentsline {chapter}{\nonumberline Quelltextverzeichnis}{vii}{chapter*.4}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{viii}{chapter*.5}%
+\contentsline {chapter}{Abstract}{x}{chapter*.6}%
+\contentsline {chapter}{Zusammenfassung}{xi}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Problemstellung}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Aufgabenstellung und Entwicklungsmethodik}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Operationalisierung der Problemstellung}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Entwicklungsmethodik und Phasenmodell}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Phase 1: Requirements Engineering}{4}{subsection.2.2.1}%
+\contentsline {subsubsection}{\nonumberline 1.1 Anforderungserhebung (Requirements Elicitation)}{4}{subsubsection*.11}%
+\contentsline {subsubsection}{\nonumberline 1.2 Anforderungsanalyse (Requirements Analysis)}{5}{subsubsection*.13}%
+\contentsline {subsubsection}{\nonumberline 1.3 Anforderungsvalidierung}{5}{subsubsection*.16}%
+\contentsline {subsection}{\numberline {2.2.2}Phase 2: Architektur und Design}{6}{subsection.2.2.2}%
+\contentsline {subsubsection}{\nonumberline 2.1 Systemarchitektur}{6}{subsubsection*.19}%
+\contentsline {subsubsection}{\nonumberline 2.2 Datenmodellierung}{6}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {2.2.3}Phase 3: Implementierung in Iterationen}{7}{subsection.2.2.3}%
+\contentsline {subsubsection}{\nonumberline 3.1 Entwicklung}{7}{subsubsection*.26}%
+\contentsline {subsubsection}{\nonumberline 3.2 Review und Retrospektive}{7}{subsubsection*.28}%
+\contentsline {subsection}{\numberline {2.2.4}Phase 4: Evaluation und Reflexion}{7}{subsection.2.2.4}%
+\contentsline {subsubsection}{\nonumberline 4.1 Quantitative Evaluation}{7}{subsubsection*.30}%
+\contentsline {subsubsection}{\nonumberline 4.2 Qualitative Evaluation}{8}{subsubsection*.32}%
+\contentsline {subsubsection}{\nonumberline 4.3 Kritische Reflexion}{8}{subsubsection*.34}%
+\contentsline {section}{\numberline {2.3}Methoden und Verfahren}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Verwendete Tools und Technologien}{9}{subsection.2.3.1}%
+\contentsline {chapter}{\numberline {3}Grundlagen}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Arc Raiders \& Gaming Tools}{10}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Companion Applications im digitalen Ökosystem}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Gaming Companion Apps: Funktionale Kategorisierung}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Extraction Shooter: Genre-spezifische Anforderungen}{11}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Arc Raiders: Technische Charakteristika und Systeme}{11}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Referenzimplementierungen: Tarkov Companion Ecosystem}{12}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}Moderne Web-Technologien}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}TypeScript}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}React}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Full Stack React Frameworks}{15}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}UI/UX Frameworks \& Design System}{17}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Grundlagen modularer Design-Systeme}{17}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Utility-First CSS: Paradigmenwechsel im Styling}{18}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Evolution der Komponenten-Bibliotheken}{20}{subsection.3.3.3}%
+\contentsline {subsubsection}{\nonumberline Generation 1: Opinionated Component Libraries}{20}{subsubsection*.50}%
+\contentsline {subsubsection}{\nonumberline Generation 2: Headless \ac {UI} Components}{21}{subsubsection*.54}%
+\contentsline {subsubsection}{\nonumberline Generation 3: Hybrid-Ansatz Shadcn/ui}{21}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {3.3.4}Graph-Visualisierung und automatische Layouts}{22}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}State Management \& Data Fetching}{23}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Evolution der State Management Paradigmen}{23}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Die Client-Server State Dichotomie}{25}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Zustand als minimalistischer Client State Manager}{25}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}TanStack Query als Server State Spezialist}{27}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Datenbank und Backend Design}{30}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Backend-as-a-Service: Paradigmenwechsel in der Backend-Entwicklung}{30}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Supabase als Open-Source Backend-Plattform}{31}{subsection.3.5.2}%
+\contentsline {subsubsection}{\nonumberline Row Level Security: Datenbankseitige Zugriffskontrolle}{32}{subsubsection*.68}%
+\contentsline {subsubsection}{\nonumberline Realtime: Echtzeit-Datensynchronisation}{33}{subsubsection*.70}%
+\contentsline {subsubsection}{\nonumberline Edge Functions: Serverless Computing am Netzwerkrand}{33}{subsubsection*.72}%
+\contentsline {subsection}{\numberline {3.5.3}Object-Relational Mapping: Brücke zwischen Objekten und Relationen}{34}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Drizzle ORM: TypeScript-native Datenbankabstraktion}{35}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Deployment und DevOps}{36}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}DevOps: Theoretische Fundierung und Kernprinzipien}{36}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}DORA-Metriken: Empirische Messung von Software Delivery Performance}{37}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}CI/CD-Pipelines: Automatisierung des Software-Lebenszyklus}{38}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Frontend-Deployment-Plattformen: Vercel als Framework-aware Infrastructure}{39}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Preview Deployments: Kollaborative Entwicklung durch Branch-basierte Umgebungen}{39}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}Theoretische Synthese für die Arc Raiders Companion App, (falsches kapitel?)}{40}{subsection.3.6.6}%
+\contentsline {section}{\numberline {3.7}Testing Frameworks \& Strategien}{40}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Vitest}{40}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Cypress}{41}{subsection.3.7.2}%
+\contentsline {chapter}{\numberline {4}Durchführung}{42}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Anforderungserhebung}{42}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Methodische Grundlagen der Erhebung}{42}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Transformation in User Stories}{43}{subsection.4.1.2}%
+\contentsline {subsubsection}{\nonumberline US-QM-01: Quest-Übersicht als Kanban-Board}{43}{subsubsection*.80}%
+\contentsline {subsubsection}{\nonumberline US-RC-02: Reverse-Engineering von Recycling-Pfaden}{44}{subsubsection*.82}%
+\contentsline {subsubsection}{\nonumberline US-MC-01: Material-Aggregation für Planung}{44}{subsubsection*.84}%
+\contentsline {subsection}{\numberline {4.1.3}Definition von Akzeptanzkriterien}{44}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fallbeispiel: Adaptives Anforderungsmanagement}{45}{subsection.4.1.4}%
+\contentsline {subsubsection}{\nonumberline Ausgangssituation}{45}{subsubsection*.89}%
+\contentsline {subsubsection}{\nonumberline Identifikation durch Stakeholder-Interview}{45}{subsubsection*.91}%
+\contentsline {subsubsection}{\nonumberline Analyse und Entscheidungsfindung}{46}{subsubsection*.93}%
+\contentsline {subsubsection}{\nonumberline Resultierende Repriorisierung}{46}{subsubsection*.96}%
+\contentsline {subsubsection}{\nonumberline Erkenntnisse für den Entwicklungsprozess}{47}{subsubsection*.98}%
+\contentsline {subsection}{\numberline {4.1.5}Priorisierung nach MoSCoW}{47}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Technologieentscheidungen}{49}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Methodisches Vorgehen: Multi-Criteria Decision Analysis}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Frontend-Framework-Evaluation}{50}{subsection.4.2.2}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{50}{subsubsection*.106}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{51}{subsubsection*.109}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Frontend-Framework}{51}{subsubsection*.111}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{52}{subsubsection*.114}%
+\contentsline {subsection}{\numberline {4.2.3}Backend- und Datenbank-Evaluation}{52}{subsection.4.2.3}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{53}{subsubsection*.117}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{53}{subsubsection*.119}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Backend/Datenbank}{54}{subsubsection*.121}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{54}{subsubsection*.124}%
+\contentsline {subsection}{\numberline {4.2.4}Deployment-Plattform-Evaluation}{55}{subsection.4.2.4}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{55}{subsubsection*.127}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{55}{subsubsection*.129}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Deployment}{56}{subsubsection*.131}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{56}{subsubsection*.134}%
+\contentsline {subsection}{\numberline {4.2.5}Resultierender Technologie-Stack}{57}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Kritische Würdigung der Methodik, in Evaluation und Ergebnisse verschieben?}{57}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Systemarchitektur und -design}{58}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Systemkontext und Abgrenzung}{58}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Datenbankdesign}{58}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Komponentenarchitektur}{58}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Datenfluss-Analyse}{58}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Implementierung ausgewählter Features}{58}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Quest-Management-System}{58}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Graph-basierter Recycling-Kalkulator}{59}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Zentrales State Management}{59}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Material-Aggregation}{59}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Testen}{59}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}Deployment und Betrieb}{59}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}CI/CD-Pipeline-Konfiguration}{59}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Monitoring und Logging}{59}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objektivierung der Ergebnisse}{60}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diskussion?}{60}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Marktanalyse, vorhandene Tools/Anwendungen}{60}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{61}{chapter.6}%
+\contentsline {chapter}{Anhang}{}{chapter.6}
+\contentsline {chapter}{\nonumberline Literatur}{62}{chapter*.136}%
