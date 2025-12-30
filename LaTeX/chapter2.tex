@@ -684,4 +684,134 @@ Derived State & Berechnung zur Laufzeit statt Speicherung & Vermeidung von Inkon
 
 Die Architektur priorisiert Wartbarkeit und Entwicklungseffizienz über maximale Performance. Für eine Companion App mit primär lesenden Zugriffen und moderatem Traffic ist dieser Trade-off angemessen. Bei signifikantem Nutzerwachstum könnten Optimierungen wie Denormalisierung häufig abgefragter Daten oder serverseitige Status-Berechnung evaluiert werden.
 
-\section{Testen}\label{sec:testen}
+\section{Evaluation und Testdurchführung}
+\label{sec:evaluation}
+
+Dieses Kapitel beschreibt die Durchführung der Evaluationsphase gemäß dem in Abschnitt~\ref{sec:entwicklungsmethodik} definierten Phasenmodell. Die Phase 4 gliedert sich in eine quantitative Evaluation der funktionalen Anforderungen und Performance-Metriken sowie eine qualitative Evaluation der User Experience. Die Ergebnisse dieser Evaluation werden in Kapitel~\ref{chap:ergebnisse} präsentiert und diskutiert.
+
+\subsection{Quantitative Evaluation}
+\label{sec:quant-eval-durchfuehrung}
+
+Die quantitative Evaluation verfolgt zwei Ziele: die Validierung der in Abschnitt~\ref{sec:akzeptanzkriterien} definierten Akzeptanzkriterien sowie die Messung von Performance-Metriken unter realistischen Bedingungen.
+
+\subsubsection{Methodische Differenzierung der Testansätze}
+
+Nicht alle Akzeptanzkriterien erfordern automatisierte Tests. Die Evaluation unterscheidet daher zwischen zwei Kategorien:
+
+\textbf{Automatisierte E2E-Tests} werden für Akzeptanzkriterien mit expliziten Performance-Vorgaben eingesetzt. Diese Kriterien enthalten messbare Zeitangaben (z.B. \glqq Latenz < 100ms\grqq{}) oder quantifizierbare Schwellwerte, deren Einhaltung nur durch instrumentierte Tests objektiv nachweisbar ist. Tabelle~\ref{tab:e2e-test-scope} zeigt die für automatisierte Tests selektierten Kriterien.
+
+\begin{table}[htbp]
+\centering
+\caption{Akzeptanzkriterien mit automatisierten E2E-Tests}
+\label{tab:e2e-test-scope}
+\begin{tabular}{llp{5cm}}
+\toprule
+\textbf{ID} & \textbf{Metrik} & \textbf{Zielwert} \\
+\midrule
+AC-QM-01.2 & Swimlane-Toggle-Reaktionszeit & < 200ms \\
+AC-QM-01.3 & Filter-Latenz bei Texteingabe & < 100ms \\
+AC-QM-02.3 & Flow-Chart-Render-Zeit & < 2000ms \\
+AC-RC-02.2 & Rekursive Pfadberechnung & Tiefe $\geq$ 3, < 2000ms \\
+AC-MC-01.3 & Material-Aggregation & < 500ms \\
+\midrule
+-- & \ac{TTI} aller Hauptseiten & < 3000ms \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Manuelle Evaluation} erfolgt für funktionale Akzeptanzkriterien ohne Performance-Vorgaben. Diese Kriterien beschreiben Funktionalitäten, deren Erfüllung durch Inspektion der implementierten Features feststellbar ist (z.B. \glqq Kanban-Board zeigt drei Spalten\grqq{}). Die Bewertung erfolgt durch den Entwickler anhand einer dreistufigen Skala: \textit{vollständig erfüllt}, \textit{teilweise erfüllt} oder \textit{nicht erfüllt}, jeweils mit Begründung.
+
+Diese Differenzierung reduziert den Testaufwand auf die Kriterien, bei denen automatisierte Messung tatsächlichen Mehrwert liefert, ohne die Validierungsabdeckung zu kompromittieren.
+
+\subsubsection{Testumgebung und -werkzeuge}
+
+Die automatisierten Tests werden mit Cypress durchgeführt, einem E2E-Testing-Framework für Webanwendungen. Cypress ermöglicht die Simulation realer Nutzerinteraktionen und bietet integrierte Möglichkeiten zur Performance-Messung über die Browser Performance API.
+
+\begin{lstlisting}[caption={Performance-Messung in Cypress}, label={lst:cypress-performance}]
+cy.get('[data-testid="quest-search"]')
+  .then(() => { startTime = performance.now(); })
+  .type(searchTerm);
+
+cy.get('[data-testid="quest-card"]')
+  .should('contain', searchTerm)
+  .then(() => {
+    const duration = performance.now() - startTime;
+    expect(duration).to.be.lessThan(100);
+  });
+\end{lstlisting}
+
+Die Tests werden gegen die Produktivumgebung auf Vercel ausgeführt, um realistische Netzwerkbedingungen und Edge-Function-Latenzen abzubilden. Jeder Test wird mehrfach ausgeführt, um Varianz durch Netzwerkschwankungen zu reduzieren.
+
+\subsubsection{Erfassungsschema für Akzeptanzkriterien}
+
+Die Gesamtheit der Akzeptanzkriterien wird in einer strukturierten Matrix erfasst (Tabelle~\ref{tab:ac-erfassung-schema}). Für automatisiert getestete Kriterien werden die gemessenen Werte dokumentiert; für manuell evaluierte Kriterien erfolgt eine begründete Einordnung.
+
+\begin{table}[htbp]
+\centering
+\caption{Erfassungsschema für Akzeptanzkriterien}
+\label{tab:ac-erfassung-schema}
+\begin{tabular}{lp{3cm}p{2cm}p{4cm}}
+\toprule
+\textbf{ID} & \textbf{Testmethode} & \textbf{Status} & \textbf{Evidenz/Begründung} \\
+\midrule
+AC-QM-01.1 & Manuell & $\checkmark$ / $\sim$ / $\times$ & [Beschreibung] \\
+AC-QM-01.2 & E2E (Cypress) & $\checkmark$ / $\times$ & Gemessen: --ms \\
+... & ... & ... & ... \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Qualitative Evaluation}
+\label{sec:qual-eval-durchfuehrung}
+
+Die qualitative Evaluation erhebt die subjektive Nutzererfahrung und bewertet, inwieweit die in Abschnitt~\ref{sec:problemstellung} identifizierten Probleme aus Nutzersicht gelöst wurden. Da die Anwendung zum Zeitpunkt der Evaluation nicht öffentlich verfügbar ist, entfallen nutzungsbasierte Metriken wie \ac{DAU}. Stattdessen erfolgt die Evaluation durch einen strukturierten Online-Fragebogen.
+
+\subsubsection{Fragebogendesign}
+
+Der Fragebogen wurde als Google Form implementiert und gliedert sich in drei Teile, die unterschiedliche Dimensionen der User Experience erfassen:
+
+\textbf{Teil B: System Usability Scale (SUS)} umfasst die zehn standardisierten Items nach Brooke \cite{brooke1996sus}. Der \ac{SUS} ist ein etabliertes Instrument zur Messung der wahrgenommenen Usability und ermöglicht durch seinen standardisierten Score (0--100) den Vergleich mit Benchmark-Werten. Die Fragen werden auf einer fünfstufigen Likert-Skala beantwortet.
+
+\textbf{Teil C: Problemlösungs-Bewertung} evaluiert direkt die in der Problemstellung identifizierten Kernprobleme sowie das im nachinein enstandene Recycling-Feature. Dieser Abschnitt ist in drei Dimensionen unterteilt:
+\begin{enumerate}
+    \item Quest-Übersicht und -Planung (Fragen C1--C3)
+    \item Ressourcenmanagement (Fragen C4--C6)
+    \item Recycling-Verständnis (Fragen C7--C9)
+\end{enumerate}
+
+Jede Dimension wird durch drei Fragen operationalisiert, die auf einer fünfstufigen Skala von \glqq überhaupt nicht gelöst\grqq{} (1) bis \glqq vollständig gelöst\grqq{} (5) beantwortet werden. Diese Struktur ermöglicht eine direkte Rückkopplung zur ursprünglichen Problemdefinition.
+
+\textbf{Teil D: Feature-Bewertung} erfasst die Bewertung der zwölf implementierten Hauptfeatures auf einer fünfstufigen Skala. Zusätzlich steht die Option \glqq nicht genutzt\grqq{} zur Verfügung, um Features zu identifizieren, die von Nutzern möglicherweise nicht entdeckt wurden.
+
+\subsubsection{Stichprobe und Durchführung}
+
+Die Zielgruppe des Fragebogens sind Arc Raiders-Spieler, die die Anwendung vor dem Ausfüllen mindestens 30 Minuten genutzt haben. Diese Mindestnutzungsdauer stellt sicher, dass die Teilnehmer mit den Kernfeatures vertraut sind und eine fundierte Bewertung abgeben können.
+
+Der Fragebogen wird asynchron über einen Zeitraum von zwei Wochen erhoben. Die Teilnehmer erhalten Zugang zur Anwendung sowie einen Link zum Fragebogen. Die Teilnahme ist freiwillig und anonym; es werden keine personenbezogenen Daten erfasst.
+
+\subsubsection{Auswertungsmethodik}
+
+Die quantitativen Fragebogendaten werden deskriptiv ausgewertet:
+
+\begin{itemize}
+    \item \textbf{SUS-Score:} Berechnung nach der standardisierten Formel (Summe der adjustierten Item-Scores multipliziert mit 2,5). Der resultierende Score wird anhand der Adjektivskala nach Bangor et al.~\cite{bangor2009determining} interpretiert.
+    \item \textbf{Problemlösungs-Scores:} Berechnung des arithmetischen Mittels pro Problemdimension sowie über alle neun Items.
+    \item \textbf{Feature-Scores:} Berechnung des arithmetischen Mittels pro Feature, Ranking nach Bewertung, Analyse der N/A-Raten zur Identifikation von Discovery-Problemen.
+\end{itemize}
+
+\subsection{Traceability und Ergebniszuordnung}
+\label{sec:traceability-eval}
+
+Die Evaluation schließt den Entwicklungszyklus: Problemstellung
+→ User Stories → Akzeptanzkriterien → Implementierung → Test/Fragebogen
+→ Ergebnisse. Diese Nachverfolgbarkeit ermöglicht in Kapitel 5 eine
+direkte Gegenüberstellung von technischer Erfüllung (AC) und
+wahrgenommener Problemlösung (UX-Score).
+
+\begin{itemize}
+    \item Erfüllungsgrad der Akzeptanzkriterien (quantitativ, entwicklerseitig)
+    \item Problemlösungs-Bewertung (qualitativ, nutzerseitig)
+\end{itemize}
+
+Diese duale Perspektive ermöglicht eine differenzierte Bewertung: Ein Feature kann technisch alle Akzeptanzkriterien erfüllen, aber dennoch aus Nutzersicht das zugrundeliegende Problem nur teilweise lösen -- oder umgekehrt. Die kritische Reflexion dieser Diskrepanzen ist Gegenstand von Abschnitt~\ref{sec:kritische-reflexion}.
+

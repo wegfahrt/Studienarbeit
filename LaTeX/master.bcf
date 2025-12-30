@@ -2568,4 +2568,67 @@
     <bcf:citekey order="205" intorder="1">ForsGrenHumbleKim2018</bcf:citekey>
     <bcf:citekey order="206" intorder="1">GitHubActions2024</bcf:citekey>
     <bcf:citekey order="207" intorder="1">GitHubActions2024</bcf:citekey>
-    <bcf:citekey order="208" intorder="1">GitHubActions2024</bcf:citekey
+    <bcf:citekey order="208" intorder="1">GitHubActions2024</bcf:citekey>
+    <bcf:citekey order="209" intorder="1">ForsGrenHumbleKim2018</bcf:citekey>
+    <bcf:citekey order="210" intorder="1">GitHubActions2024</bcf:citekey>
+    <bcf:citekey order="211" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="212" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="213" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="214" intorder="1">VercelDocs2024</bcf:citekey>
+    <bcf:citekey order="215" intorder="1">VercelPreviewDocs2024</bcf:citekey>
+    <bcf:citekey order="216" intorder="1">VercelPreviewDocs2024</bcf:citekey>
+    <bcf:citekey order="217" intorder="1">VercelPreviewDocs2024</bcf:citekey>
+    <bcf:citekey order="218" intorder="1">wake2003invest</bcf:citekey>
+    <bcf:citekey order="219" intorder="1">agilemanifesto2001</bcf:citekey>
+    <bcf:citekey order="220" intorder="1">clegg1994case</bcf:citekey>
+    <bcf:citekey order="221" intorder="1">belton2002multiple</bcf:citekey>
+    <bcf:citekey order="222" intorder="1">nextjsdocs2024</bcf:citekey>
+    <bcf:citekey order="223" intorder="1">vite2024</bcf:citekey>
+    <bcf:citekey order="224" intorder="1">astro2024</bcf:citekey>
+    <bcf:citekey order="225" intorder="1">angular2024</bcf:citekey>
+    <bcf:citekey order="226" intorder="1">supabase2024</bcf:citekey>
+    <bcf:citekey order="227" intorder="1">vercel2024</bcf:citekey>
+    <bcf:citekey order="228" intorder="1">arc42</bcf:citekey>
+    <bcf:citekey order="229" intorder="1">brooke1996sus</bcf:citekey>
+    <bcf:citekey order="230" intorder="1">bangor2009determining</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="nty">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nty/global//global/global"
+                type="entry"
+                sortingtemplatename="nty"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>

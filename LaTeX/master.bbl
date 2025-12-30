@@ -179,6 +179,42 @@
       \verb https://docs.astro.build/
       \endverb
     \endentry
+    \entry{bangor2009determining}{article}{}
+      \name{author}{3}{}{%
+        {{hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=221e957dde9bcf783fdee858cf2b365e}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bff0e87eeab4ba1e74ae3e776e15d490}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{fullhash}{069c4734e30da9449cee720f93eda80e}
+      \strng{bibnamehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{authorbibnamehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{authornamehash}{069c4734e30da9449cee720f93eda80e}
+      \strng{authorfullhash}{069c4734e30da9449cee720f93eda80e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining What Individual SUS Scores Mean: Adding an Adjective Rating Scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
     \entry{agilemanifesto2001}{online}{}
       \name{author}{1}{}{%
         {{hash=bf56b418df9dd1a563edccf304c1072e}{%
@@ -272,6 +308,34 @@
       \verb{url}
       \verb https://medium.com/@bhaturohit/why-choose-typescript-in-2024-the-evolution-of-javascript-development-fdf77dd56a62
       \endverb
+    \endentry
+    \entry{brooke1996sus}{article}{}
+      \name{author}{1}{}{%
+        {{hash=813064283275c281401d7a7483420c67}{%
+           family={Brooke},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{813064283275c281401d7a7483420c67}
+      \strng{fullhash}{813064283275c281401d7a7483420c67}
+      \strng{bibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorbibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authornamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorfullhash}{813064283275c281401d7a7483420c67}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Usability Evaluation in Industry}
+      \field{note}{Standardisierte Methodik zur Usability-Messung}
+      \field{title}{SUS: A `Quick and Dirty' Usability Scale}
+      \field{year}{1996}
+      \field{pages}{189\bibrangedash 194}
+      \range{pages}{6}
     \endentry
     \entry{clegg1994case}{book}{}
       \name{author}{2}{}{%

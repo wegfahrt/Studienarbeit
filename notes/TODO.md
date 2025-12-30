@@ -15,12 +15,3 @@ Description: Users input the materials they need (e.g., "20x metal_parts, 5x che
 # arcdex page (add bots data)
 
 # Bericht
-## Diagramme 2.1
-- MCDA Entscheidungsmatrix Frontend Frameworks und Backend Lösungen, Kombinationen?
-- Entscheidungsmatrix Datenbank
-- Entscheidungsmatrix Deployment
-
-## Diagramme 2.2
-- ER Diagramm Datenbank
-- Context Diagramm Systemübersicht (Nutzerinteraktion?)
-- Datenfluss Diagramm (DFD) für Hauptprozesse (Spieldaten und/oder User Progress store?)

@@ -49,7 +49,7 @@ Die identifizierten Probleme lassen sich wie folgt operationalisieren:
 
 Diese Operationalisierung adressiert das in Abschnitt \ref{sec:problemstellung} beschriebene Fehlen offizieller Planungstools und nutzt die von der Community bereitgestellten Daten als Grundlage. Sie bildet die methodische Basis für die nachfolgend beschriebene Entwicklung einer Companion App, die als Referenzimplementierung für ähnliche Extraction Shooter dienen kann.
 
-\section{Entwicklungsmethodik und Phasenmodell}
+\section{Entwicklungsmethodik und Phasenmodell}\label{sec:entwicklungsmethodik}
 
 \subsection{Phase 1: Requirements Engineering}\label{sec:phase1}
 In agilen Entwicklungsumgebungen ist Requirements Engineering integraler Bestandteil zur Sicherstellung, dass sich entwickelnde Bedürfnisse und Erwartungen der Stakeholder während des gesamten Entwicklungsprozesses erfasst werden \cite{Abukhalaf2025}.
@@ -100,9 +100,10 @@ In agilen Entwicklungsumgebungen ist Requirements Engineering integraler Bestand
 \subsubsection{2.1 Systemarchitektur}
 
 \begin{itemize}
-  \item \textbf{2.1.1 Architekturentwurf:} Definition der Systemgrenzen und Komponenten (Frontend, Backend, Datenbank, externe Datenquellen) sowie Auswahl geeigneter Architekturmuster unter Berücksichtigung der Komplexität. Die Dokumentation erfolgt durch Architekturdiagramme nach dem C4-Modell (Context, Container, Component, Code), um verschiedene Abstraktionsebenen abzubilden und Stakeholdern unterschiedliche Detailgrade zu ermöglichen.
+
+  \item \textbf{2.1.1 Technologie-Assessment:} Wie in Abschnitt~\ref{sec:motivation} erwähnt, rechtfertigt das enorme Wachstumspotenzial des Gaming-Marktes die Wahl skalierbarer Technologien. Die systematische Evaluation umfasst Frontend-Frameworks (React, Vue, Angular), Backend-Technologien (Next.js API Routes, separate Backend-Lösung), Datenbank-Systeme (PostgreSQL, MongoDB, Firebase) sowie Hosting-Plattformen (Vercel, Netlify, AWS) unter Berücksichtigung von Kosteneffizienz für Hobby-Projekte. \ac{MCDA} ermöglicht die Technologieauswahl basierend auf Kriterien wie Performance, Entwicklerfreundlichkeit, Skalierbarkeit und Kosten.
   
-  \item \textbf{2.1.2 Technologie-Assessment:} Wie in Abschnitt~\ref{sec:motivation} erwähnt, rechtfertigt das enorme Wachstumspotenzial des Gaming-Marktes die Wahl skalierbarer Technologien. Die systematische Evaluation umfasst Frontend-Frameworks (React, Vue, Angular), Backend-Technologien (Next.js API Routes, separate Backend-Lösung), Datenbank-Systeme (PostgreSQL, MongoDB, Firebase) sowie Hosting-Plattformen (Vercel, Netlify, AWS) unter Berücksichtigung von Kosteneffizienz für Hobby-Projekte. \ac{MCDA} ermöglicht die Technologieauswahl basierend auf Kriterien wie Performance, Entwicklerfreundlichkeit, Skalierbarkeit und Kosten.
+  \item \textbf{2.1.2 Architekturentwurf:} Definition der Systemgrenzen und Komponenten (Frontend, Backend, Datenbank, externe Datenquellen) sowie Auswahl geeigneter Architekturmuster unter Berücksichtigung der Komplexität. Die Dokumentation erfolgt durch Architekturdiagramme nach dem C4-Modell (Context, Container, Component, Code), um verschiedene Abstraktionsebenen abzubilden und Stakeholdern unterschiedliche Detailgrade zu ermöglichen.
   
   \item \textbf{2.1.3 Risikoanalyse:} Identifikation technischer Risiken, insbesondere die in Abschnitt~\ref{sec:problemstellung} erwähnte Abhängigkeit von Community-bereitgestellten Daten statt offizieller \ac{API}. Bewertung nach Eintrittswahrscheinlichkeit und Impact sowie Definition von Mitigationsstrategien: Backup-Strategien für Datenquellen (Web-Scraping des offiziellen Fandoms gemäß robots.txt, User-Generated Content mit Qualitätssicherung), Caching-Mechanismen zur Reduzierung der Abhängigkeit von externen Quellen sowie Validierung und Qualitätssicherung von Community-Daten.
 \end{itemize}
@@ -156,9 +157,9 @@ Agile Entwicklung betont die iterative Natur mit kontinuierlicher Verfeinerung u
 \subsubsection{4.3 Kritische Reflexion}
 
 \begin{itemize}
-  \item \textbf{4.3.1 Architektur-Bewertung:} Bewertung der gewählten Architektur hinsichtlich Eignung für die Anforderungen, Entwicklungseffizienz, Skalierbarkeit und Wartbarkeit sowie Diskussion von Trade-offs und alternativen Ansätzen. Reflexion, ob die Architekturentscheidungen im Kontext des in Abschnitt~\ref{sec:motivation} beschriebenen Marktwachstums zukunftsfähig sind.
+  \item \textbf{4.3.1 Technologie-Entscheidungen:} Diskussion des gewählten Technologie-Stacks (React/Next.js, Supabase/PostgreSQL, Vercel) mit Fokus auf Stärken, Schwächen und Lessons Learned. Reflexion der Datenhaltungsstrategie (Community-Daten, Caching, Synchronisation) und der in Abschnitt~\ref{sec:problemstellung} beschriebenen Herausforderung einer fehlenden offiziellen \ac{API}.
   
-  \item \textbf{4.3.2 Technologie-Entscheidungen:} Diskussion des gewählten Technologie-Stacks (React/Next.js, Supabase/PostgreSQL, Vercel) mit Fokus auf Stärken, Schwächen und Lessons Learned. Reflexion der Datenhaltungsstrategie (Community-Daten, Caching, Synchronisation) und der in Abschnitt~\ref{sec:problemstellung} beschriebenen Herausforderung einer fehlenden offiziellen \ac{API}.
+  \item \textbf{4.3.2 Architektur-Bewertung:} Bewertung der gewählten Architektur hinsichtlich Eignung für die Anforderungen, Entwicklungseffizienz, Skalierbarkeit und Wartbarkeit sowie Diskussion von Trade-offs und alternativen Ansätzen. Reflexion, ob die Architekturentscheidungen im Kontext des in Abschnitt~\ref{sec:motivation} beschriebenen Marktwachstums zukunftsfähig sind.
   
   \item \textbf{4.3.3 Lessons Learned:} Dokumentation gewonnener Erkenntnisse aus dem Entwicklungsprozess: erfolgreiche Praktiken, aufgetretene Herausforderungen und deren Lösungen sowie Empfehlungen für zukünftige Projekte. Reflexion der agilen Methodik und deren Eignung für die Entwicklung einer Gaming Companion App.
   
