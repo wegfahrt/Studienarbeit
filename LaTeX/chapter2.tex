@@ -474,43 +474,214 @@ Die qualitativen Bewertungen basieren auf der Evaluation zum Zeitpunkt der Entsc
 Dennoch bietet die strukturierte Evaluation gegenüber einer Ad-hoc-Entscheidung mehrere Vorteile: Die explizite Kriteriendefinition zwingt zur Reflexion der tatsächlichen Anforderungen, die dokumentierte Bewertung ermöglicht Nachvollziehbarkeit, und die Gegenüberstellung unterschiedlicher Architekturansätze (Managed vs. Self-Hosted vs. IaaS) macht Trade-offs explizit.
 
 \section{Systemarchitektur und -design}
-\subsection{Systemkontext und Abgrenzung}
-\begin{itemize}
-    \item Kontextdiagramm
-\end{itemize}
+\label{sec:systemarchitektur}
+
+Dieses Kapitel beschreibt die Architektur der Arc Raiders Companion App aus verschiedenen Perspektiven. Ausgehend von einer Kontextabgrenzung auf Systemebene wird das Datenbankdesign erläutert, bevor die Komponentenarchitektur und der Datenfluss am Beispiel des Quest-Management-Systems detailliert werden.
+
+\subsection{Systemkontext und externe Schnittstellen}
+\label{sec:systemkontext}
+
+Das Kontextdiagramm in Abbildung~\ref{fig:context-diagram} visualisiert die Systemgrenzen der ArcDéx-Anwendung sowie deren Interaktion mit externen Akteuren und Diensten. Die Darstellung folgt dem arc42-Template, das eine standardisierte Dokumentation von Softwarearchitekturen ermöglicht~\cite{arc42}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{./img/context_diagram.png}
+\caption{Kontextdiagramm der ArcDéx Companion App}
+\label{fig:context-diagram}
+\end{figure}
+
+\subsubsection{Externe Akteure und Systeme}
+
+\textbf{Player (Primärer Akteur):} Der Spieler interagiert über einen Webbrowser via HTTPS mit der Anwendung. Die Kommunikation erfolgt über das globale \ac{CDN} von Vercel, das statische Assets cached und dynamische Anfragen an Serverless Functions weiterleitet.
+
+\textbf{Vercel (Hosting-Infrastruktur):} Die Next.js-Anwendung wird auf Vercels Edge-Netzwerk gehostet. Vercel übernimmt das automatische Deployment, SSL-Terminierung, \ac{CDN}-Distribution und die Ausführung von Serverless Functions für \ac{SSR} und Server Actions.
+
+\textbf{Supabase (Backend-as-a-Service):} Die PostgreSQL-Datenbank wird von Supabase gehostet und verwaltet. Die Kommunikation erfolgt über Drizzle \ac{ORM}, das type-safe Datenbankabfragen in TypeScript ermöglicht. Supabase stellt zusätzlich Realtime-Subscriptions für zukünftige Squad-Features bereit.
+
+\textbf{Clerk (Authentication Provider):} Die Benutzerauthentifizierung wird an Clerk ausgelagert, einen spezialisierten Auth-Provider mit OAuth-Integration. Dies externalisiert die sicherheitskritische Authentifizierungslogik und ermöglicht Social Login via Discord, Google und anderen Providern.
+
+\textbf{Game Data (Datenquelle):} Die Spieldaten von Arc Raiders werden über einen automatisierten Pipeline-Prozess synchronisiert. Eine GitHub Action triggert periodisch eine Supabase Edge Function, die aktualisierte Spieldaten aus der Community-Datenquelle importiert und in die PostgreSQL-Datenbank schreibt.
+
+\subsubsection{Architektonische Entscheidungen auf Kontextebene}
+
+Die Architektur folgt dem \glqq Managed Stack\grqq{}-Ansatz, der in Abschnitt~\ref{sec:technologieentscheidungen} evaluiert wurde. Die Externalisierung von Authentifizierung (Clerk), Datenhaltung (Supabase) und Hosting (Vercel) reduziert den operativen Overhead und ermöglicht die Fokussierung auf die Anwendungslogik.
+
+Die lose Kopplung zwischen den externen Diensten wird durch standardisierte Schnittstellen erreicht: OAuth 2.0 für Authentifizierung, REST/PostgreSQL-Protokoll für Datenbankzugriffe und HTTPS für alle Client-Server-Kommunikation.
+
 \subsection{Datenbankdesign}
+\label{sec:datenbankdesign}
+
+Das relationale Datenbankschema bildet die Domänenobjekte des Spiels Arc Raiders ab und unterstützt die in Abschnitt~\ref{sec:anforderungserhebung} definierten funktionalen Anforderungen. Abbildung~\ref{fig:er-diagram} zeigt das \ac{ER}-Diagramm der PostgreSQL-Datenbank.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{img/er_diagram_light_legend.png}
+\caption{Entity-Relationship-Diagramm der ArcDéx-Datenbank}
+\label{fig:er-diagram}
+\end{figure}
+
+\subsubsection{Domänenmodell und Entitäten}
+
+Das Schema gliedert sich in vier funktionale Bereiche, die den Feature-Bereichen der Anwendung entsprechen:
+
+\textbf{Quest-Management:} Die Entität \texttt{quests} speichert die Grunddaten einer Quest (Name, Händler, Ziele, Erfahrungspunkte). Quest-Abhängigkeiten werden über die Assoziationstabelle \texttt{quest\_chain} als gerichteter Graph modelliert, wobei \texttt{previous\_quest\_id} auf die Voraussetzungs-Quest verweist. Die Tabellen \texttt{quest\_requirements} und \texttt{quest\_rewards} verknüpfen Quests mit den benötigten bzw. erhaltenen Items.
+
+\textbf{Item-Datenbank:} Die zentrale Entität \texttt{items} enthält alle Spielgegenstände mit Attributen wie Typ, Seltenheit, Wert und Gewicht. Komplexe, variable Datenstrukturen wie Effekte (\texttt{effects}) werden als \texttt{JSONB}-Spalten gespeichert, was flexible Schemata innerhalb des relationalen Modells ermöglicht.
+
+\textbf{Hideout-System:} Das Workstation-Upgrade-System wird durch drei Tabellen abgebildet: \texttt{hideout\_modules} definiert die verfügbaren Workstations mit maximalem Level, \texttt{hideout\_levels} spezifiziert die einzelnen Upgrade-Stufen mit sonstigen Voraussetzungen, und \texttt{hideout\_requirements} verknüpft jedes Level mit den benötigten Items.
+
+\textbf{Skill-System:} Die Entität \texttt{skill\_nodes} repräsentiert die Fähigkeiten im Skill-Baum mit Attributen wie Kategorie, maximale Punkte und Position im Baum. Die Tabelle \texttt{skill\_prerequisites} modelliert die Abhängigkeiten zwischen Skills als gerichteten azyklischen Graphen.
+
+\subsubsection{Mehrsprachigkeit durch JSONB}
+
+Ein zentrales Designmerkmal ist die Unterstützung von Mehrsprachigkeit ohne zusätzliche Übersetzungstabellen. Textfelder wie \texttt{name} und \texttt{description} werden als \texttt{JSONB}-Objekte gespeichert:
+
+\begin{lstlisting}[language=SQL, caption={Mehrsprachige Textspeicherung in JSONB}]
+{
+  "de": "Kameraobjektiv",
+  "en": "Camera Lens",
+  "hr": "Objektiv Kamere",
+  "it": "Obiettivo fotografico",
+}
+\end{lstlisting}
+
+Dieser Ansatz ermöglicht die dynamische Erweiterung um zusätzliche Sprachen ohne Schemaänderung und effiziente Abfragen über PostgreSQLs native JSONB-Operatoren. Die Anwendung extrahiert zur Laufzeit den Text für die aktuelle Benutzersprache.
+
+\subsubsection{Graph-Strukturen für Abhängigkeiten}
+
+Sowohl Quest-Ketten (\texttt{quest\_chain}) als auch Skill-Voraussetzungen (\texttt{skill\_prerequisites}) werden als Adjazenzlisten modelliert. Diese Struktur ermöglicht:
+
 \begin{itemize}
-    \item ER-Diagramm
+    \item Effiziente Abfragen direkter Vorgänger/Nachfolger via Foreign Key Join
+    \item Rekursive Pfadberechnung mit PostgreSQLs \texttt{WITH RECURSIVE} \ac{CTE}
+    \item Zykluserkennung zur Sicherstellung der Datenintegrität
 \end{itemize}
+
+Die Wahl der Adjazenzliste gegenüber alternativen Ansätzen (Nested Sets, Materialized Paths) basiert auf dem Anwendungsprofil: Die Graphen sind relativ flach (typisch 3--5 Ebenen), Schreiboperationen sind selten (nur bei Datenimport), und die primären Lesezugriffe benötigen direkte Nachbarn, nicht vollständige Teilbäume.
+
 \subsection{Komponentenarchitektur}
-\begin{itemize}
-    \item Komponentendiagramm
-\end{itemize}
-\subsection{Datenfluss-Analyse}
-\begin{itemize}
-    \item DFD Level 0 und 1
-\end{itemize}
+\label{sec:komponentenarchitektur}
 
-\section{Implementierung ausgewählter Features}
-\subsection{Quest-Management-System}
-\begin{itemize}
-    \item Anforderung zu Issue-Mapping
-    \item Akzeptanzkriterien
-    \item Implementierungsdetails
-\end{itemize}
-\subsection{Graph-basierter Recycling-Kalkulator}
-\begin{itemize}
-    \item Algorithmischer Ansatz
-    \item Implementierung mit React Flow
-\end{itemize}
-\subsection{Zentrales State Management}
-\begin{itemize}
-    \item Zustand-Store-Architektur
-\end{itemize}
-\subsection{Material-Aggregation}
+Die Komponentenarchitektur folgt dem Schichtenmodell moderner React-Anwendungen mit klarer Trennung von Präsentation, Zustandsverwaltung und Datenzugriff. Abbildung~\ref{fig:component-diagram} illustriert die Architektur am Beispiel der Quest-Seite.
 
-\subsection{Testen}\label{sec:testen}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{img/quest_page_component_diagram.png}
+\caption{Komponentendiagramm der Quest-Seite}
+\label{fig:component-diagram}
+\end{figure}
 
-\section{Deployment und Betrieb}
-\subsection{CI/CD-Pipeline-Konfiguration}
-\subsection{Monitoring und Logging}
+\subsubsection{UI Layer}
+
+Die \texttt{QuestsPage}-Komponente fungiert als Orchestrator und koordiniert die untergeordneten View-Komponenten. Sie ist verantwortlich für das Layout, die Initialisierung des Datenabrufs und die Weiterleitung von Benutzerinteraktionen an die State-Schicht.
+
+\subsubsection{View Components}
+
+Drei spezialisierte View-Komponenten realisieren die unterschiedlichen Darstellungsformen der Quest-Daten:
+
+\textbf{QuestCard:} Kartenbasierte Darstellung einer einzelnen Quest mit Status-Indikator, Händler-Badge und Kurzinformationen. Die Komponente liest den Completion-Status aus dem GameStore und visualisiert ihn durch Farbcodierung.
+
+\textbf{QuestFlowChart:} Interaktive Graph-Visualisierung der Quest-Abhängigkeiten basierend auf React Flow. Die Komponente transformiert die Quest-Chain-Daten in Nodes und Edges und wendet den Dagre-Layout-Algorithmus für automatische Positionierung an. Jede Quest wird durch eine \texttt{QuestNode}-Komponente gerendert.
+
+\textbf{QuestDetailModal:} Modale Detailansicht mit vollständigen Quest-Informationen, Requirements, Rewards und Navigation zu verknüpften Quests. Die Komponente ermöglicht das Markieren einer Quest als abgeschlossen.
+
+\subsubsection{State Layer}
+
+Die Zustandsverwaltung implementiert die in Abschnitt~\ref{sec:state-management-grundlagen} beschriebene Client-Server-State-Dichotomie:
+
+\textbf{GameStore (Zustand):} Verwaltet den Client State, insbesondere die vom Benutzer markierten abgeschlossenen Quests (\texttt{completedQuests}). Der Store persistiert seine Daten automatisch im \texttt{localStorage} des Browsers, sodass der Fortschritt über Sessions hinweg erhalten bleibt.
+
+\textbf{React Query Cache:} Verwaltet den Server State, d.h. die von der Datenbank geladenen Quest-Daten. Der Cache implementiert Stale-While-Revalidate-Semantik: Gecachte Daten werden sofort angezeigt, während im Hintergrund eine Aktualisierung geprüft wird.
+
+\subsubsection{Data Layer}
+
+\textbf{QuestQueries (Server Actions):} Next.js Server Actions kapseln die Datenbankabfragen und werden auf dem Server ausgeführt. Sie nutzen Drizzle \ac{ORM} für type-safe Queries und geben typisierte Ergebnisse an den Client zurück. Die Server Actions sind nicht direkt von Client-Komponenten aufrufbar, sondern werden über React Query orchestriert.
+
+\textbf{Supabase (PostgreSQL):} Die Datenbank liefert die persistenten Daten. Der Zugriff erfolgt ausschließlich über die Server Actions, nie direkt vom Client, was die Sicherheit durch Kapselung gewährleistet.
+
+\subsection{Datenfluss und State Management}
+\label{sec:datenfluss}
+
+Der Datenfluss in der Anwendung folgt einem unidirektionalen Muster, das die Nachvollziehbarkeit von Zustandsänderungen gewährleistet. Abbildung~\ref{fig:data-flow} zeigt den vereinfachten Datenfluss zwischen Client, Edge und Datenbank.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{img/simple_data_flow_diagram.png}
+\caption{Vereinfachtes Datenflussdiagramm}
+\label{fig:data-flow}
+\end{figure}
+
+\subsubsection{Client-seitiger Datenfluss}
+
+React-Komponenten interagieren mit zwei Datenquellen: dem Zustand Store für lokale Benutzerdaten und dem Query Cache für Serverdaten. Die Komponenten sind \glqq dumme\grqq{} Präsentationskomponenten, die ihren Zustand nicht selbst verwalten, sondern aus den Stores beziehen. Zustandsänderungen erfolgen ausschließlich über definierte Actions, was das Debugging durch zentrale Logging-Punkte vereinfacht.
+
+\subsubsection{Server-seitiger Datenfluss}
+
+Datenbankabfragen werden durch React Query initiiert, das Server Actions auf Vercels Edge-Infrastruktur aufruft. Die Server Actions nutzen Drizzle \ac{ORM} für typsichere Queries gegen die Supabase-PostgreSQL-Datenbank. Die Ergebnisse werden serialisiert, an den Client übertragen und im Query Cache gespeichert.
+
+\subsubsection{State-Derivation am Beispiel Quest-Status}
+
+Abbildung~\ref{fig:state-flow} illustriert, wie der Quest-Status aus der Kombination von Server State (Quest-Daten) und Client State (Completion-Markierungen) abgeleitet wird.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{img/quest_page_state_diagram.png}
+\caption{State-Flow-Diagramm der Quest-Seite}
+\label{fig:state-flow}
+\end{figure}
+
+Der Quest-Status (\texttt{active}, \texttt{locked}, \texttt{completed}) ist ein abgeleiteter Zustand (Derived State), der aus zwei Quellen berechnet wird:
+
+\begin{enumerate}
+    \item \textbf{Quest-Daten (React Query):} Enthält die Quest-Chain-Informationen, d.h. welche Quests Voraussetzung für andere sind.
+    \item \textbf{Completed Quests (Zustand Store):} Enthält die IDs der vom Benutzer als abgeschlossen markierten Quests.
+\end{enumerate}
+
+Die Statusberechnung erfolgt bei jedem Render durch eine Selektorfunktion:
+
+\begin{lstlisting}[caption={Quest-Status-Berechnung als Derived State}]
+const getQuestStatus = (quest, completedQuests, questChain) => {
+  if (completedQuests.includes(quest.id)) return 'completed';
+  
+  const prerequisites = questChain
+    .filter(chain => chain.questId === quest.id)
+    .map(chain => chain.previousQuestId);
+  
+  const allPrerequisitesMet = prerequisites
+    .every(preId => completedQuests.includes(preId));
+  
+  return allPrerequisitesMet ? 'active' : 'locked';
+};
+\end{lstlisting}
+
+Dieser Ansatz vermeidet redundante Datenhaltung: Der Status wird nicht gespeichert, sondern zur Laufzeit berechnet. Änderungen am \texttt{completedQuests}-Array propagieren automatisch zu allen abhängigen Komponenten durch Reacts Reaktivitätssystem.
+
+\subsection{Zusammenfassung der Architekturentscheidungen}
+\label{sec:architektur-zusammenfassung}
+
+Die Systemarchitektur der ArcDéx Companion App basiert auf folgenden zentralen Entscheidungen:
+
+\begin{table}[htbp]
+\centering
+\caption{Zusammenfassung der Architekturentscheidungen}
+\label{tab:architektur-entscheidungen}
+\begin{tabular}{lp{5cm}p{5.5cm}}
+\toprule
+\textbf{Aspekt} & \textbf{Entscheidung} & \textbf{Begründung} \\
+\midrule
+Systemgrenzen & Managed Services für Auth, DB, Hosting & Reduzierter Ops-Aufwand für Einzelentwickler \\
+\addlinespace
+Datenmodell & Relationales Schema mit JSONB für flexible Strukturen & Starke Konsistenz + Flexibilität für Mehrsprachigkeit \\
+\addlinespace
+Graph-Strukturen & Adjazenzlisten für Quest-Chains und Skill-Trees & Optimiert für flache Graphen mit seltenen Schreiboperationen \\
+\addlinespace
+State Management & Client/Server-State-Trennung (Zustand + React Query) & Klare Verantwortlichkeiten, optimierte Caching-Strategien \\
+\addlinespace
+Derived State & Berechnung zur Laufzeit statt Speicherung & Vermeidung von Inkonsistenzen, Single Source of Truth \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Architektur priorisiert Wartbarkeit und Entwicklungseffizienz über maximale Performance. Für eine Companion App mit primär lesenden Zugriffen und moderatem Traffic ist dieser Trade-off angemessen. Bei signifikantem Nutzerwachstum könnten Optimierungen wie Denormalisierung häufig abgefragter Daten oder serverseitige Status-Berechnung evaluiert werden.
+
+\section{Testen}\label{sec:testen}
