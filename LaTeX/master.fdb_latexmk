@@ -1,18 +1,18 @@
 # Fdb version 4
-["biber master"] 1767118945.25368 "master.bcf" "master.bbl" "master" 1767118948.13021 0
-  "bibliography.bib" 1767118931.02881 43619 ca4ad50d9c1b9f2beff0c730fa30fc5c ""
-  "master.bcf" 1767118944.92007 125958 3e30cb9d18015f462eb55cbdcad5e85a "pdflatex"
+["biber master"] 1767119476.56783 "master.bcf" "master.bbl" "master" 1767119510.92433 0
+  "bibliography.bib" 1767119476.16869 25411 696f2f3036d401e2ac6bcb393eacfba6 ""
+  "master.bcf" 1767119510.63227 125958 3e30cb9d18015f462eb55cbdcad5e85a "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
   (rewritten before read)
-["makeindex master.idx"] 1767114640.62052 "master.idx" "master.ind" "master" 1767118948.13008 0
-  "master.idx" 1767118930.4118 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1767114640.62052 "master.idx" "master.ind" "master" 1767119510.92409 0
+  "master.idx" 1767119499.13307 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
   (rewritten before read)
-["pdflatex"] 1767118926.64813 "/home/paul/src/repos/Studienarbeit/LaTeX/master.tex" "master.pdf" "master" 1767118948.1303 0
+["pdflatex"] 1767119496.04276 "/home/paul/src/repos/Studienarbeit/LaTeX/master.tex" "master.pdf" "master" 1767119510.92496 0
   "/etc/texmf/web2c/texmf.cnf" 1766316939.99165 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/paul/src/repos/Studienarbeit/LaTeX/master.tex" 1766315990.28226 8196 045de409352e35b7de505faac99bbedd ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -199,15 +199,15 @@
   "img/simple_data_flow_diagram.png" 1767093193.82852 369145 cbbaea9e93e4a9f75e929cfc3b3079b9 ""
   "img/smart_kriterien_mindmap.png" 1766998886.69313 852296 d090a606bc84559f8f8ac943e4f3ba20 ""
   "introduction.tex" 1767114744.06156 18616 36046300aba8ae70623460f7ff290958 ""
-  "master.aux" 1767118944.81806 104975 1cd68388c5f090e9bb6ea8fff8121eda "pdflatex"
-  "master.bbl" 1767118948.06612 108579 89837101414b04aeb02557259026068e "biber master"
+  "master.aux" 1767119510.53927 104975 8a0c33ed343795e30d6940cbfac4f1bc "pdflatex"
+  "master.bbl" 1767119479.07974 110789 d27b353a57fa186febf83a3c8bb05a2f "biber master"
   "master.ind" 1767114640.89161 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.lof" 1767118944.92207 1077 42275536663f20450b75cfeb98567a60 "pdflatex"
-  "master.lol" 1767118944.92207 518 6aca46b8d3057103cf3910e1e12c32e7 "pdflatex"
-  "master.out" 1767118931.42782 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "master.run.xml" 1767118944.92207 2351 37d1dfc1f194b0e6026df8ffebb3b5ea "pdflatex"
+  "master.lof" 1767119510.63427 1077 42275536663f20450b75cfeb98567a60 "pdflatex"
+  "master.lol" 1767119510.63427 518 6aca46b8d3057103cf3910e1e12c32e7 "pdflatex"
+  "master.out" 1767119499.93409 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "master.run.xml" 1767119510.63327 2351 37d1dfc1f194b0e6026df8ffebb3b5ea "pdflatex"
   "master.tex" 1766315990.28226 8196 045de409352e35b7de505faac99bbedd ""
-  "master.toc" 1767118944.92207 13756 13c298f5f56f135b3be0997fa4bf5822 "pdflatex"
+  "master.toc" 1767119510.63427 13756 13c298f5f56f135b3be0997fa4bf5822 "pdflatex"
   "nondisclosurenotice.tex" 1766315990.28226 311 7820f02983fed39c04b978e52dfe2a1f ""
   "titlepage.tex" 1766315990.28226 1094 76a569851c6052ef52053824c8fd30f7 ""
   (generated)

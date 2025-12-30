@@ -43,6 +43,7 @@
       \field{title}{Automated requirements engineering framework for agile model-driven development}
       \field{volume}{7}
       \field{year}{2025}
+      \field{dateera}{ce}
       \verb{doi}
       \verb 10.3389/fcomp.2025.1537100
       \endverb
@@ -72,6 +73,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://blog.logrocket.com/drizzle-orm-adoption-guide/
@@ -106,6 +108,7 @@
       \field{urlmonth}{1}
       \field{urlyear}{2025}
       \field{year}{2023}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb http://agilemodeling.com/essays/agileRequirements.htm
@@ -141,6 +144,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/@kulsumansari4/next-js-app-router-routing-8d795dbe324c
@@ -171,6 +175,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://docs.astro.build/
@@ -212,6 +217,7 @@
       \field{title}{Determining What Individual SUS Scores Mean: Adding an Adjective Rating Scale}
       \field{volume}{4}
       \field{year}{2009}
+      \field{dateera}{ce}
       \field{pages}{114\bibrangedash 123}
       \range{pages}{10}
     \endentry
@@ -236,6 +242,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2001}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://agilemanifesto.org/
@@ -273,6 +280,7 @@
       \field{isbn}{978-0792375050}
       \field{title}{Multiple Criteria Decision Analysis: An Integrated Approach}
       \field{year}{2002}
+      \field{dateera}{ce}
     \endentry
     \entry{Bhatu2024TypeScript}{article}{}
       \name{author}{1}{}{%
@@ -301,6 +309,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/@bhaturohit/why-choose-typescript-in-2024-the-evolution-of-javascript-development-fdf77dd56a62
@@ -334,6 +343,7 @@
       \field{note}{Standardisierte Methodik zur Usability-Messung}
       \field{title}{SUS: A `Quick and Dirty' Usability Scale}
       \field{year}{1996}
+      \field{dateera}{ce}
       \field{pages}{189\bibrangedash 194}
       \range{pages}{6}
     \endentry
@@ -367,6 +377,7 @@
       \field{note}{Ursprung der MoSCoW-Priorisierungsmethode}
       \field{title}{Case Method Fast-Track: A RAD Approach}
       \field{year}{1994}
+      \field{dateera}{ce}
     \endentry
     \entry{Statista2024ConsoleApps}{online}{}
       \name{author}{1}{}{%
@@ -395,6 +406,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.statista.com/statistics/1266736/game-console-companion-app-downloads/
@@ -425,6 +437,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.cloudflare.com/learning/serverless/glossary/backend-as-a-service-baas/
@@ -453,6 +466,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Best Companion Apps In Video Games}
       \field{year}{2023}
+      \field{dateera}{ce}
     \endentry
     \entry{Codemancers2024TanStackQuery}{online}{}
       \name{author}{1}{}{%
@@ -476,6 +490,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.codemancers.com/blog/2024-managing-server-state-in-react-app-using-react-query
@@ -509,6 +524,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.telerik.com/blogs/mastering-typescript-benefits-best-practices
@@ -539,6 +555,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://dora.dev/guides/dora-metrics-four-keys/
@@ -569,6 +586,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://orm.drizzle.team/
@@ -602,6 +620,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.atlantbh.com/asynchronous-state-management-with-tanstack-query/
@@ -635,6 +654,7 @@
       \field{title}{Advancements and innovations in requirements elicitation}
       \field{volume}{22}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{pages}{1209\bibrangedash 1220}
       \range{pages}{12}
     \endentry
@@ -662,6 +682,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://store.steampowered.com/app/1808500/ARC_Raiders/
@@ -691,6 +712,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://vitejs.dev/
@@ -723,6 +745,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://expediteinformatics.com/typescript-in-2024-trends-standards-benefits-challenges-and-commitments/
@@ -755,6 +778,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://legacy.reactjs.org/docs/composition-vs-inheritance.html
@@ -798,6 +822,7 @@
       \field{note}{Shingo Publication Award winner, establishes DORA metrics through rigorous research}
       \field{title}{Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations}
       \field{year}{2018}
+      \field{dateera}{ce}
     \endentry
     \entry{FrontendUndefined2024ReactStateHistory}{online}{}
       \name{author}{1}{}{%
@@ -821,6 +846,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.frontendundefined.com/posts/monthly/react-state-management-libraries-history/
@@ -856,6 +882,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2016}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://atomicdesign.bradfrost.com/
@@ -889,6 +916,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.geeksforgeeks.org/reactjs/react-component-based-architecture/
@@ -920,6 +948,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Companion Apps are Taking Video Games to the Next Level}
       \field{year}{2024}
+      \field{dateera}{ce}
     \endentry
     \entry{GitHubActions2024}{online}{}
       \name{author}{1}{}{%
@@ -943,6 +972,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://github.com/features/actions
@@ -972,6 +1002,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://angular.dev/
@@ -1006,6 +1037,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://play.google.com/store/apps/details?id=com.austinhodak.thehideout
@@ -1044,6 +1076,7 @@
       \field{note}{Jolt Award winner, seminal work on continuous delivery practices}
       \field{title}{Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation}
       \field{year}{2010}
+      \field{dateera}{ce}
     \endentry
     \entry{IconEra2024ExtractionMarket}{online}{}
       \name{author}{1}{}{%
@@ -1070,6 +1103,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://icon-era.com/threads/what-will-the-extraction-shooter-market-look-like-in-two-years-market-size.14825/
@@ -1103,6 +1137,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://insider-gaming.com/love-or-hate-extraction-shooters-wild/
@@ -1136,6 +1171,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/@invictarasolutions/why-typescript-is-becoming-the-go-to-for-large-scale-javascript-projects-5439aabf4bb7
@@ -1169,6 +1205,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://dev.to/mohammad_kh4441/headless-vs-traditional-ui-libraries-when-and-why-to-choose-each-1c5b
@@ -1217,6 +1254,7 @@
       \field{note}{Foundational DevOps reference establishing The Three Ways framework}
       \field{title}{The DevOps Handbook: How to Create World-Class Agility, Reliability, and Security in Technology Organizations}
       \field{year}{2016}
+      \field{dateera}{ce}
     \endentry
     \entry{vanLamsweerde2000}{inproceedings}{}
       \name{author}{1}{}{%
@@ -1244,6 +1282,7 @@
       \field{booktitle}{Proceedings of the 22nd International Conference on Software Engineering (ICSE'00)}
       \field{title}{Requirements Engineering in the Year 00: A Research Perspective}
       \field{year}{2000}
+      \field{dateera}{ce}
       \field{pages}{5\bibrangedash 19}
       \range{pages}{15}
       \verb{doi}
@@ -1275,6 +1314,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://blog.logrocket.com/exploring-shift-css-in-js-headless-ui-libraries/
@@ -1310,6 +1350,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/@mohimishra016/composition-vs-inheritance-in-react-simplifying-component-reusability-f978363bacf6
@@ -1343,6 +1384,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://mui.com/blog/introducing-base-ui/
@@ -1375,6 +1417,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://play.google.com/store/apps/details?id=com.nehalemx.tarkovwiki2
@@ -1407,6 +1450,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.overwolf.com/app/W4rGo-Game_Maps_Escape_from_Tarkov
@@ -1439,6 +1483,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://blog.openreplay.com/developers-switching-shadcn-ui-react/
@@ -1474,6 +1519,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://thiraphat-ps-dev.medium.com/mastering-next-js-app-router-best-practices-for-structuring-your-application-3f8cf0c76580
@@ -1504,6 +1550,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://github.com/pmndrs/zustand
@@ -1534,6 +1581,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.postgresql.org/docs/current/ddl-rowsecurity.html
@@ -1566,6 +1614,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.pronextjs.dev/workshops/next-js-foundations-for-professional-web-development~lxb18/file-based-routing-with-app-router~dtnrx
@@ -1596,6 +1645,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://redux.js.org/understanding/history-and-design/history-of-redux
@@ -1627,6 +1677,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://refine.dev/blog/zustand-react-state/
@@ -1655,6 +1706,7 @@
       \field{labeltitlesource}{title}
       \field{title}{Video Game Market Size, Share And Growth Report}
       \field{year}{2024}
+      \field{dateera}{ce}
     \endentry
     \entry{Snayak2024DissectingPPR}{article}{}
       \name{author}{1}{}{%
@@ -1680,6 +1732,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.nikhilsnayak.dev/blogs/dissecting-partial-pre-rendering
@@ -1715,6 +1768,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/@ritsrivastava/next-js-rendering-strategies-ssg-ssr-csr-and-ppr-d6243ec0ce72
@@ -1752,6 +1806,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://arc42.org/
@@ -1784,6 +1839,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://app.studyraid.com/en/read/1665/22475/composition-vs-inheritance
@@ -1815,6 +1871,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://supabase.com/docs/guides/functions
@@ -1846,6 +1903,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://github.com/supabase/realtime
@@ -1877,6 +1935,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://supabase.com/docs/guides/database/postgres/row-level-security
@@ -1908,6 +1967,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://github.com/supabase/supabase
@@ -1937,6 +1997,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://supabase.com/docs
@@ -1969,6 +2030,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://tailwindcss.com/docs/utility-first
@@ -2000,6 +2062,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://tanstack.com/query/latest/docs/framework/react/guides/optimistic-updates
@@ -2031,6 +2094,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://tanstack.com/query/latest/docs/framework/react/overview
@@ -2060,6 +2124,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://tarkov.dev/
@@ -2093,6 +2158,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://toxigon.com/typescript-trend-2024
@@ -2125,6 +2191,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://www.overwolf.com/app/treestn-tarkov_companion
@@ -2160,6 +2227,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/@emmaudeji/mastering-next-js-15-a-guide-to-app-router-rendering-strategies-for-modern-web-applications-8a6683d8c348
@@ -2193,6 +2261,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://vercel.com/blog/how-to-choose-the-best-rendering-strategy-for-your-app
@@ -2226,6 +2295,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://nextjs.org/docs/app
@@ -2256,6 +2326,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://nextjs.org/docs
@@ -2287,6 +2358,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://vercel.com/docs/frameworks/nextjs
@@ -2320,6 +2392,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model
@@ -2351,6 +2424,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://vercel.com/docs/deployments/preview-deployments
@@ -2384,6 +2458,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://nextjs.org/docs/14/app/building-your-application/routing/defining-routes
@@ -2413,6 +2488,7 @@
       \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://vercel.com/docs
@@ -2442,6 +2518,7 @@
       \field{urlmonth}{1}
       \field{urlyear}{2025}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://visuresolutions.com/alm-guide/requirements-gathering-techniques-for-agile
@@ -2475,6 +2552,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2025}
       \field{year}{2023}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://dev.to/jeetvora331/server-state-vs-client-state-in-react-for-beginners-3pl6
@@ -2507,6 +2585,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2025}
       \field{year}{2003}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/
@@ -2548,6 +2627,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2022}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://medium.com/splunk-engineering/lessons-learned-from-creating-a-custom-graph-visualization-in-react-9a667ba799d1
@@ -2578,6 +2658,7 @@
       \field{urlmonth}{12}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.wikipedia.org/wiki/Object-relational_mapping
@@ -2610,6 +2691,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.wikipedia.org/wiki/ARC_Raiders
@@ -2642,6 +2724,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://en.wikipedia.org/wiki/Tailwind_CSS
@@ -2675,6 +2758,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2025}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://workos.com/blog/what-is-the-difference-between-radix-and-shadcn-ui
@@ -2707,6 +2791,7 @@
       \field{urlmonth}{11}
       \field{urlyear}{2024}
       \field{year}{2024}
+      \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{urlraw}
       \verb https://reactflow.dev/learn/layouting/layouting

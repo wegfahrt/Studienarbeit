@@ -1,26 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [1] Config.pm:310> INFO - Logfile is 'master.blg'
-[135] biber:340> INFO - === Tue Dec 30, 2025, 19:22:26
-[161] Biber.pm:419> INFO - Reading 'master.bcf'
-[310] Biber.pm:979> INFO - Found 85 citekeys in bib section 0
-[329] Biber.pm:4419> INFO - Processing section 0
-[346] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[353] bibtex.pm:1713> INFO - LaTeX decoding ...
-[504] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[1265] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1265] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1265] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1265] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
-[1416] bbl.pm:660> INFO - Writing 'master.bbl' with encoding 'UTF-8'
-[1457] bbl.pm:763> INFO - Output to master.bbl
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'Cloudflare2024BaaS' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseGitHub2024' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'PostgreSQLDocsRLS2024' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseDocsRLS2024' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseGitHubRealtime2024' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'SupabaseDocsEdgeFunctions2024' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'WikipediaORM2024' in file 'bibliography.bib', skipping ...
-[1458] Biber.pm:131> WARN - Duplicate entry key: 'DrizzleORMDocs2024' in file 'bibliography.bib', skipping ...
-[1459] Biber.pm:131> WARN - Duplicate entry key: 'LogRocketDrizzle2024' in file 'bibliography.bib', skipping ...
-[1459] Biber.pm:131> WARN - Duplicate entry key: 'PrismaVsDrizzle2024' in file 'bibliography.bib', skipping ...
-[1459] Biber.pm:133> INFO - WARNINGS: 10
+[159] biber:340> INFO - === Tue Dec 30, 2025, 19:31:18
+[182] Biber.pm:419> INFO - Reading 'master.bcf'
+[321] Biber.pm:979> INFO - Found 85 citekeys in bib section 0
+[341] Biber.pm:4419> INFO - Processing section 0
+[356] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[360] bibtex.pm:1713> INFO - LaTeX decoding ...
+[442] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[1010] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1010] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1010] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1010] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
+[1102] bbl.pm:660> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[1129] bbl.pm:763> INFO - Output to master.bbl
