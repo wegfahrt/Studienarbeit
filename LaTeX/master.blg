@@ -1,15 +1,15 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[1] Config.pm:310> INFO - Logfile is 'master.blg'
-[159] biber:340> INFO - === Tue Dec 30, 2025, 19:31:18
-[182] Biber.pm:419> INFO - Reading 'master.bcf'
-[321] Biber.pm:979> INFO - Found 85 citekeys in bib section 0
-[341] Biber.pm:4419> INFO - Processing section 0
-[356] Biber.pm:4610> INFO - Looking for bibtex file 'bibliography.bib' for section 0
-[360] bibtex.pm:1713> INFO - LaTeX decoding ...
-[442] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
-[1010] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1010] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1010] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[1010] Biber.pm:4245> INFO - No sort tailoring available for locale 'de-DE'
-[1102] bbl.pm:660> INFO - Writing 'master.bbl' with encoding 'UTF-8'
-[1129] bbl.pm:763> INFO - Output to master.bbl
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'master.blg'
+[178] biber-MSWIN64:342> INFO - === 
+[290] Biber.pm:421> INFO - Reading 'master.bcf'
+[459] Biber.pm:1002> INFO - Found 86 citekeys in bib section 0
+[472] Biber.pm:4487> INFO - Processing section 0
+[490] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[542] bibtex.pm:1713> INFO - LaTeX decoding ...
+[628] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[1083] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1083] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1083] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[1084] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
+[1191] bbl.pm:676> INFO - Writing 'master.bbl' with encoding 'UTF-8'
+[1232] bbl.pm:779> INFO - Output to master.bbl

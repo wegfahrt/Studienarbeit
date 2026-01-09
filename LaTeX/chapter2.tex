@@ -725,19 +725,28 @@ Diese Differenzierung reduziert den Testaufwand auf die Kriterien, bei denen aut
 
 \subsubsection{Testumgebung und -werkzeuge}
 
-Die automatisierten Tests werden mit Cypress durchgeführt, einem E2E-Testing-Framework für Webanwendungen. Cypress ermöglicht die Simulation realer Nutzerinteraktionen und bietet integrierte Möglichkeiten zur Performance-Messung über die Browser Performance API.
+Die automatisierten Tests werden mit Playwright durchgeführt, einem 
+modernen E2E-Testing-Framework von Microsoft. Playwright bietet 
+gegenüber alternativen Frameworks wie Playwright mehrere Vorteile: 
+native Unterstützung für parallele Testausführung, automatisches 
+Warten auf Elemente (Auto-Waiting) sowie eine TypeScript-native 
+API mit async/await-Syntax.
 
-\begin{lstlisting}[caption={Performance-Messung in Cypress}, label={lst:cypress-performance}]
-cy.get('[data-testid="quest-search"]')
-  .then(() => { startTime = performance.now(); })
-  .type(searchTerm);
-
-cy.get('[data-testid="quest-card"]')
-  .should('contain', searchTerm)
-  .then(() => {
-    const duration = performance.now() - startTime;
-    expect(duration).to.be.lessThan(100);
-  });
+\begin{lstlisting}[caption={Performance-Messung in Playwright}, label={lst:playwright-performance}]
+test('AC-QM-01.2: Filter-Latenz < 100ms', async ({ page }) => {
+  await page.goto('/quests');
+  
+  const startTime = await page.evaluate(() => performance.now());
+  await page.getByTestId('quest-search').fill(searchTerm);
+  await page.getByTestId('quest-card')
+    .filter({ hasText: searchTerm })
+    .first()
+    .waitFor();
+  const endTime = await page.evaluate(() => performance.now());
+  
+  const duration = endTime - startTime;
+  expect(duration).toBeLessThan(100);
+});
 \end{lstlisting}
 
 Die Tests werden gegen die Produktivumgebung auf Vercel ausgeführt, um realistische Netzwerkbedingungen und Edge-Function-Latenzen abzubilden. Jeder Test wird mehrfach ausgeführt, um Varianz durch Netzwerkschwankungen zu reduzieren.
@@ -755,7 +764,7 @@ Die Gesamtheit der Akzeptanzkriterien wird in einer strukturierten Matrix erfass
 \textbf{ID} & \textbf{Testmethode} & \textbf{Status} & \textbf{Evidenz/Begründung} \\
 \midrule
 AC-QM-01.1 & Manuell & $\checkmark$ / $\sim$ / $\times$ & [Beschreibung] \\
-AC-QM-01.2 & E2E (Cypress) & $\checkmark$ / $\times$ & Gemessen: --ms \\
+AC-QM-01.2 & E2E (Playwright) & $\checkmark$ / $\times$ & Gemessen: --ms \\
 ... & ... & ... & ... \\
 \bottomrule
 \end{tabular}

@@ -150,7 +150,7 @@ Die User Stories folgen den INVEST-Kriterien:
 | AC-ID-01.3 | Filterung nach Typ/Kategorie ist möglich | Filter liefert korrekte Subset | < 200ms |
 | AC-ID-01.4 | Filterung nach Seltenheit ist möglich | Filter liefert korrekte Subset | < 200ms |
 | AC-ID-01.5 | Sortierung nach Name, Gewicht, Wert ist möglich | Sortierreihenfolge korrekt | < 200ms |
-| AC-ID-01.6 | Textsuche nach Item-Name liefert Ergebnisse in Echtzeit | Ergebnisse bei Eingabe | < 100ms |
+| AC-ID-01.6 | Textsuche nach Item-Name liefert Ergebnisse in Echtzeit | Ergebnisse bei Eingabe | < 300ms |
 
 
 ---

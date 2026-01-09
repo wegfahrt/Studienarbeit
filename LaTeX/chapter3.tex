@@ -1,10 +1,279 @@
 % !TEX root =  master.tex
-\chapter{Ergebnisse und Diskussion}\label{chap:ergebnisse}
-Metriken definieren: Wie misst du Erfolg? (Performance, Usability, Code-Qualität)
+\chapter{Ergebnisse und Diskussion}
+\label{chap:ergebnisse}
 
-\section{Objektivierung der Ergebnisse}
-(Tabelle, Aufgabe, erledigt?, verifiziert?)
+Dieses Kapitel präsentiert die Ergebnisse der in Abschnitt~\ref{sec:evaluation} beschriebenen Evaluationsphase. Die Darstellung folgt der methodischen Differenzierung in quantitative und qualitative Evaluation, bevor eine kritische Reflexion die technische Erfüllung der Akzeptanzkriterien mit der nutzerseitigen Problembewertung zusammenführt.
 
-\section{Kritische Reflektion}\label{sec:kritische-reflexion}
-Stellungsnahme zu den Ergebnisse, aufzeigen von Alternativen
+\section{Quantitative Evaluation der Akzeptanzkriterien}
+\label{sec:quant-ergebnisse}
 
+Die quantitative Evaluation validiert die in Abschnitt~\ref{sec:akzeptanzkriterien} definierten Akzeptanzkriterien durch automatisierte \ac{E2E}-Tests sowie manuelle Inspektion. Die Evaluation erfolgt zum Abschluss der Entwicklungsphase P2 (Progression), wodurch alle Must-Have- und Should-Have-Features der Phasen P1 und P2 Gegenstand der Bewertung sind.
+
+\subsection{Erfüllungsgrad der automatisiert getesteten Kriterien}
+\label{sec:e2e-ergebnisse}
+
+Die automatisierten Tests wurden mit Playwright 1.57.0 gegen die Produktivumgebung auf Vercel ausgeführt. Tabelle~\ref{tab:e2e-summary} fasst die Gesamtergebnisse zusammen.
+
+\begin{table}[htbp]
+\centering
+\caption{Zusammenfassung der E2E-Testergebnisse}
+\label{tab:e2e-summary}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metrik} & \textbf{Wert} \\
+\midrule
+Ausgeführte Tests & 60 \\
+Erfolgreich (passed) & 55 \\
+Übersprungen (skipped) & 5 \\
+Fehlgeschlagen (failed) & 0 \\
+Flaky Tests & 0 \\
+Gesamtdauer & 49,04 s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Testabdeckungaa umfasst alle Feature-Bereiche mit Performance-kritischen Akzeptanzkriterien. Tabelle~\ref{tab:performance-results} zeigt die gemessenen Werte für die in Tabelle~\ref{tab:e2e-test-scope} definierten Performance-Kriterien.
+
+\begin{table}[htbp]
+\centering
+\caption{Performance-Messergebnisse der E2E-Tests}
+\label{tab:performance-results}
+\begin{tabular}{llrrl}
+\toprule
+\textbf{ID} & \textbf{Metrik} & \textbf{Ziel} & \textbf{Gemessen} & \textbf{Status} \\
+\midrule
+AC-QM-01.2 & Filter-Latenz Quests & < 100ms & $\approx$ 80ms & $\checkmark$ \\
+AC-QM-02.3 & Flow-Chart Zoom/Pan & < 300ms & $\approx$ 150ms & $\checkmark$ \\
+AC-RC-02.2 & Rekursive Pfadberechnung & < 2000ms & $\approx$ 1200ms & $\checkmark$ \\
+AC-MC-01.4 & Material-Aggregation & < 500ms & $\approx$ 350ms & $\checkmark$ \\
+AC-WP-01.2 & Workstation-Expandierung & < 200ms & $\approx$ 120ms & $\checkmark$ \\
+AC-WP-02.1 & Level-Inkrement & < 100ms & $\approx$ 60ms & $\checkmark$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Sämtliche Performance-Kriterien wurden erfüllt, wobei die gemessenen Werte durchgehend unter den definierten Schwellwerten liegen. Die parallele Testausführung mit acht Workern ermöglichte eine effiziente Validierung bei einer Gesamtlaufzeit von unter einer Minute.
+
+Die funktionalen Akzeptanzkriterien ohne explizite Performance-Vorgaben wurden ebenfalls durch \ac{E2E}-Tests abgedeckt. Tabelle~\ref{tab:functional-e2e} zeigt eine Auswahl der validierten Kriterien nach Feature-Bereich.
+
+\begin{table}[htbp]
+\centering
+\caption{Funktionale Akzeptanzkriterien mit E2E-Testabdeckung (Auswahl)}
+\label{tab:functional-e2e}
+\begin{tabular}{llc}
+\toprule
+\textbf{Feature-Bereich} & \textbf{Validierte Kriterien} & \textbf{Tests} \\
+\midrule
+Quest-Management & AC-QM-01.1, AC-QM-02.1--02.5, AC-QM-03.1--03.5, AC-QM-04.1--04.4 & 14 \\
+Item-Datenbank & AC-ID-01.1--01.6 & 8 \\
+Workstation-Planner & AC-WP-01.1--01.3, AC-WP-02.1--02.3 & 6 \\
+Material-Calculator & AC-MC-01.1--01.2, AC-MC-01.4--01.5, AC-MC-02.1--02.3 & 10 \\
+Recycling-Kalkulator & AC-RC-01.1--01.3, AC-RC-02.1--02.3, AC-RC-03.1--03.4 & 12 \\
+Dashboard & AC-DB-01.1--01.3, AC-DB-02.1--02.4 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Erfüllungsgrad der manuell evaluierten Kriterien}
+\label{sec:manual-ergebnisse}
+
+Fünf Akzeptanzkriterien wurden zum Testzeitpunkt von der automatisierten Ausführung ausgenommen und manuell evaluiert. Tabelle~\ref{tab:manual-eval} dokumentiert die manuelle Bewertung.
+
+\begin{table}[htbp]
+\centering
+\caption{Manuell evaluierte Akzeptanzkriterien}
+\label{tab:manual-eval}
+\begin{tabular}{lp{5cm}cp{4cm}}
+\toprule
+\textbf{ID} & \textbf{Kriterium} & \textbf{Status} & \textbf{Begründung} \\
+\midrule
+AC-MC-01.3 & \glqq Select All\grqq{}-Option für Bulk-Selection & $\sim$ & Funktional über Checkbox-Gruppe, dedizierter Button ausstehend \\
+AC-QM-04.2 & Kaskadierung bei Quest-Completion & $\checkmark$ & Manuelle Verifikation durch Testszenarien bestätigt \\
+AC-QM-04.4 & Reset-Funktion für Fortschritt & $\checkmark$ & Einzeln und global funktional \\
+AC-DB-02.3 & Workstation Quick-Access Cards & $\sim$ & Daten korrekt, UI-Refinement ausstehend \\
+AC-DB-02.4 & Wishlist-Anzeige im Dashboard & $\times$ & Feature für Phase P3 verschoben \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Notation folgt dem in Abschnitt~\ref{sec:quant-eval-durchfuehrung} definierten Schema: $\checkmark$ (vollständig erfüllt), $\sim$ (teilweise erfüllt), $\times$ (nicht erfüllt). Von den fünf manuell evaluierten Kriterien wurden zwei vollständig erfüllt, zwei teilweise erfüllt und eines bewusst auf eine spätere Phase verschoben.
+
+\subsection{Gesamtübersicht der Anforderungserfüllung}
+\label{sec:ac-overview}
+
+Die Aggregation aller Evaluationsergebnisse ergibt folgende Erfüllungsquoten nach Feature-Bereich (Tabelle~\ref{tab:ac-fulfillment}).
+
+\begin{table}[htbp]
+\centering
+\caption{Erfüllungsgrad der Akzeptanzkriterien nach Feature-Bereich}
+\label{tab:ac-fulfillment}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Feature-Bereich} & \textbf{Gesamt} & \textbf{Erfüllt} & \textbf{Quote} \\
+\midrule
+Quest-Management (QM) & 16 & 16 & 100\% \\
+Item-Datenbank (ID) & 6 & 6 & 100\% \\
+Workstation-Planner (WP) & 6 & 6 & 100\% \\
+Material-Calculator (MC) & 8 & 7 & 87,5\% \\
+Recycling-Kalkulator (RC) & 10 & 10 & 100\% \\
+Dashboard (DB) & 7 & 5 & 71,4\% \\
+\midrule
+\textbf{Gesamt} & \textbf{53} & \textbf{50} & \textbf{94,3\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Gesamterfüllungsquote von 94,3\% validiert die erfolgreiche Umsetzung der Kernfunktionalität. Die niedrigere Quote im Dashboard-Bereich (71,4\%) resultiert aus der bewussten Verschiebung des Wishlist-Features sowie dem ausstehenden UI-Refinement der Quick-Access Cards.
+
+\section{Qualitative Evaluation der User Experience}
+\label{sec:qual-ergebnisse}
+
+Die qualitative Evaluation basiert auf dem in Abschnitt~\ref{sec:qual-eval-durchfuehrung} beschriebenen Fragebogen, der von vier Arc-Raiders-Spielern nach einer Testphase mit der Anwendung ausgefüllt wurde. Die Stichprobengröße ist für eine summative Usability-Evaluation begrenzt; die Ergebnisse sind daher als explorative Tendenzaussagen zu interpretieren.
+
+\subsection{System Usability Scale}
+\label{sec:sus-ergebnisse}
+
+Der \ac{SUS}-Score wurde nach der standardisierten Methode von Brooke berechnet~\cite{brooke1996sus}. Tabelle~\ref{tab:sus-items} zeigt die Mittelwerte der zehn Items.
+
+\begin{table}[htbp]
+\centering
+\caption{SUS-Item-Bewertungen (Skala 1--5, n=4)}
+\label{tab:sus-items}
+\begin{tabular}{clc}
+\toprule
+\textbf{Item} & \textbf{Aussage (gekürzt)} & \textbf{$\bar{x}$} \\
+\midrule
+B1 & Regelmäßige Nutzung (+) & 3,25 \\
+B2 & Unnötig komplex (--) & 2,00 \\
+B3 & Einfach zu benutzen (+) & 4,75 \\
+B4 & Technische Hilfe benötigt (--) & 1,00 \\
+B5 & Funktionen gut integriert (+) & 4,50 \\
+B6 & Zu viele Inkonsistenzen (--) & 2,25 \\
+B7 & Schnell zu erlernen (+) & 3,50 \\
+B8 & Umständlich zu benutzen (--) & 2,75 \\
+B9 & Sicher bei der Nutzung (+) & 3,50 \\
+B10 & Viel lernen vor Nutzung (--) & 2,00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die individuellen \ac{SUS}-Scores betragen 55, 77,5, 77,5 und 85 Punkte, was einen Mittelwert von \textbf{73,75} ergibt. Nach der Adjektivskala von Bangor et al.~\cite{bangor2009determining} entspricht dieser Wert der Kategorie \glqq Good\grqq{} (Bereich 68--80,3). Der Score liegt über dem von Bangor ermittelten Durchschnittswert von 68 Punkten für Softwareprodukte.
+
+Die Varianz zwischen den Teilnehmern (Spannweite 30 Punkte) deutet auf unterschiedliche Erfahrungslevel oder Erwartungshaltungen hin. Insbesondere der niedrigste Score (55) resultiert aus inkonsistenten Antworten bei den Items B7--B9, was auf ein mögliches Missverständnis der Skalenrichtung hindeutet.
+
+\subsection{Problemlösungsbewertung nach Problemdimension}
+\label{sec:problem-scores}
+
+Teil C des Fragebogens erfasst die wahrgenommene Problemlösung auf einer Skala von 1 (sehr schlecht) bis 5 (sehr gut). Die Items sind den in Abschnitt~\ref{sec:problemstellung} definierten Problemdimensionen zugeordnet. Tabelle~\ref{tab:problem-scores} zeigt die Ergebnisse.
+
+\begin{table}[htbp]
+\centering
+\caption{Problemlösungsbewertung nach Dimension (Skala 1--5, n=4)}
+\label{tab:problem-scores}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Dimension} & \textbf{Item} & \textbf{$\bar{x}$} & \textbf{Dim.-$\bar{x}$} \\
+\midrule
+\multirow{3}{*}{Quest-Management} & C1: Kanban-Board Übersicht & 4,75 & \multirow{3}{*}{\textbf{4,42}} \\
+ & C2: Flow-Chart Abhängigkeiten & 4,50 & \\
+ & C3: Quest-Planung insgesamt & 4,00 & \\
+\midrule
+\multirow{3}{*}{Ressourcenmanagement} & C4: Material-Calculator & 4,50 & \multirow{3}{*}{\textbf{4,33}} \\
+ & C5: Workstation-Übersicht & 3,75 & \\
+ & C6: Verbesserung Ressourcenmanagement & 4,75 & \\
+\midrule
+\multirow{3}{*}{Recycling-Verständnis} & C7: Recycling-Mechanik & 4,00 & \multirow{3}{*}{\textbf{4,42}} \\
+ & C8: Reverse-Engineering & 4,75 & \\
+ & C9: Bessere Recycling-Entscheidungen & 4,50 & \\
+\midrule
+\multicolumn{2}{l}{\textbf{Gesamtdurchschnitt}} & & \textbf{4,39} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Alle drei Problemdimensionen erreichen Durchschnittswerte über 4,0, was eine positive Wahrnehmung der Problemlösung indiziert. Das Kanban-Board (C1: 4,75) und das Reverse-Engineering (C8: 4,75) erhalten die höchsten Einzelbewertungen. Die Workstation-Übersicht (C5: 3,75) zeigt das größte Verbesserungspotenzial.
+
+\subsection{Feature-Nutzung und Discovery}
+\label{sec:feature-scores}
+
+Teil D des Fragebogens erfasst die Bewertung einzelner Features. Die Option \glqq Nicht genutzt\grqq{} ermöglicht die Identifikation von Discovery-Problemen. Tabelle~\ref{tab:feature-scores} zeigt die Ergebnisse nach Bewertung sortiert.
+
+\begin{table}[htbp]
+\centering
+\caption{Feature-Bewertungen (Skala 1--5, n=4)}
+\label{tab:feature-scores}
+\begin{tabular}{llcc}
+\toprule
+\textbf{ID} & \textbf{Feature} & \textbf{$\bar{x}$} & \textbf{N/A} \\
+\midrule
+D1 & Quest Kanban-Board & 4,75 & 0 \\
+D8 & Material-Calculator & 4,75 & 0 \\
+D2 & Quest Flow-Chart & 4,50 & 0 \\
+D9 & Recycling-Datenbank & 4,50 & 0 \\
+D10 & Recycling Reverse-Engineering & 4,50 & 0 \\
+D12 & Navigation und Design & 4,50 & 0 \\
+D11 & Recycling Chain-Visualisierung & 4,25 & 0 \\
+D4 & Quest-Fortschritt markieren & 4,33 & 1 \\
+D3 & Quest Detail-Ansicht & 4,00 & 0 \\
+D6 & Item-Suche und Filter & 4,00 & 0 \\
+D7 & Workstation-Übersicht & 4,00 & 0 \\
+D5 & Item-Datenbank & 3,50 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Feature-Bewertungen korrelieren mit den Problemlösungs-Scores: Features mit direktem Bezug zu den Kernproblemen (Kanban-Board, Material-Calculator, Flow-Chart) erreichen die höchsten Bewertungen. Die Item-Datenbank (D5: 3,50) erhält die niedrigste Bewertung, was auf Optimierungspotenzial bei der Informationsdarstellung hindeutet.
+
+
+\section{Kritische Reflexion}
+\label{sec:kritische-reflexion}
+
+Die kritische Reflexion synthetisiert die quantitativen und qualitativen Ergebnisse und diskutiert deren Implikationen im Kontext der in Abschnitt~\ref{sec:problemstellung} definierten Zielsetzung.
+
+\subsection{Gegenüberstellung technischer und nutzerseitiger Perspektive}
+\label{sec:perspektiven-vergleich}
+
+Die duale Evaluationsperspektive ermöglicht die Identifikation von Diskrepanzen zwischen technischer Anforderungserfüllung und wahrgenommener Problemlösung. Tabelle~\ref{tab:perspective-comparison} stellt die Ergebnisse gegenüber.
+
+\begin{table}[htbp]
+\centering
+\caption{Gegenüberstellung der Evaluationsperspektiven}
+\label{tab:perspective-comparison}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Feature-Bereich} & \textbf{AC-Erfüllung} & \textbf{UX-Score} \\
+\midrule
+Quest-Management & 100\% & 4,42 / 5 \\
+Ressourcenmanagement & 93,8\% & 4,33 / 5 \\
+Recycling-Kalkulator & 100\% & 4,42 / 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die hohe Korrelation zwischen technischer Erfüllung und Nutzerbewertung validiert die Eignung der definierten Akzeptanzkriterien. Die geringfügig niedrigere UX-Bewertung im Ressourcenmanagement (4,33 bei 93,8\% AC-Erfüllung) korrespondiert mit den teilweise erfüllten Kriterien im Dashboard-Bereich und bestätigt die Sensitivität der qualitativen Evaluation.
+
+Bemerkenswert ist die hohe Bewertung des Recycling-Kalkulators (UX-Score 4,42), der erst durch ein Stakeholder-Interview in Phase P2 als Anforderung identifiziert wurde. Dies validiert die in Abschnitt~\ref{sec:fallbeispiel-recycling} beschriebene agile Repriorisierung und demonstriert den Wert kontinuierlicher Stakeholder-Einbindung.
+
+\subsection{Limitationen der Evaluation}
+\label{sec:limitationen}
+
+Die Evaluation unterliegt mehreren methodischen Einschränkungen, die bei der Interpretation der Ergebnisse berücksichtigt werden müssen.
+
+Die Stichprobengröße von vier Teilnehmern limitiert die statistische Aussagekraft der qualitativen Evaluation. Obwohl Nielsen argumentiert, dass fünf Teilnehmer für formative Usability-Tests ausreichend sind, erfordert eine summative Evaluation mit \ac{SUS} idealerweise größere Stichproben für reliable Schätzungen~\cite{nielsen2000whyyouneed}. Die beobachtete Varianz der \ac{SUS}-Scores (Spannweite 30 Punkte) unterstreicht diese Limitation.
+
+Die Testumgebung auf Vercel repräsentiert zwar realistische Produktionsbedingungen, jedoch können Netzwerklatenzen zwischen Testläufen variieren. Die gemessenen Performance-Werte sind daher als Richtwerte zu interpretieren. Die Abwesenheit von Flaky Tests (0\%) deutet jedoch auf stabile Messbedingungen hin.
+
+Die Evaluation erfolgt zum Abschluss von Phase P2 und umfasst daher nicht die für Phase P3 und P4 geplanten Features (Squad-Koordination, Interaktive Karten, Pathfinding). Die in Abschnitt~\ref{sec:problemstellung} beschriebene Herausforderung der Squad-Koordination konnte im Rahmen dieser Arbeit nicht adressiert werden.
+
+\subsection{Lessons Learned}
+\label{sec:lessons-learned}
+
+Aus dem Entwicklungs- und Evaluationsprozess lassen sich folgende Erkenntnisse ableiten:
+
+Die methodische Differenzierung zwischen automatisierten Tests für Performance-Kriterien und manueller Evaluation für funktionale Kriterien erwies sich als effizient. Der Testaufwand wurde auf die Kriterien konzentriert, bei denen automatisierte Messung tatsächlichen Mehrwert liefert, ohne die Validierungsabdeckung zu kompromittieren.
+
+Der \ac{SUS} als standardisiertes Instrument ermöglichte eine Einordnung der Usability-Bewertung in etablierte Referenzwerte. Die Kombination mit domänenspezifischen Problemlösungs-Items (Teil C) lieferte zusätzliche Erkenntnisse zur Zielerreichung bezüglich der ursprünglichen Problemstellung.
+
+Die Traceability von Problemstellung über User Stories und Akzeptanzkriterien bis zur Evaluation schafft Transparenz und ermöglicht die direkte Bewertung der Zielerreichung. Diese durchgängige Nachverfolgbarkeit sollte in zukünftigen Projekten beibehalten werden.
+
+Die zum \ac{MVP}-Abschluss erreichte Erfüllungsquote von 94,3\% bei einem \ac{SUS}-Score von 73,75 (\glqq Good\grqq{}) validiert die gewählte Architektur und Technologieentscheidungen. Die Priorisierung von Entwicklungseffizienz über maximale Kontrolle (Managed Stack) hat sich für das Einzelentwickler-Projekt als angemessen erwiesen.
