@@ -1618,6 +1618,105 @@
       \verb https://blog.openreplay.com/developers-switching-shadcn-ui-react/
       \endverb
     \endentry
+    \entry{Overwolf2025Platform}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e57db4077b6747cfca054ccdec0158eb}{%
+           family={{Overwolf Ltd.}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{fullhash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{fullhashraw}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{bibnamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorbibnamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authornamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorfullhash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorfullhashraw}{e57db4077b6747cfca054ccdec0158eb}
+      \field{extraname}{1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 10.01.2025}
+      \field{title}{Overwolf -- The Guild of In-Game Creators}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.overwolf.com/
+      \endverb
+      \verb{url}
+      \verb https://www.overwolf.com/
+      \endverb
+    \endentry
+    \entry{Overwolf2025Appstore}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e57db4077b6747cfca054ccdec0158eb}{%
+           family={{Overwolf Ltd.}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{fullhash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{fullhashraw}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{bibnamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorbibnamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authornamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorfullhash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorfullhashraw}{e57db4077b6747cfca054ccdec0158eb}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 10.01.2025}
+      \field{title}{Overwolf Appstore -- Arc Raiders Apps}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.overwolf.com/appstore
+      \endverb
+      \verb{url}
+      \verb https://www.overwolf.com/appstore
+      \endverb
+    \endentry
+    \entry{Overwolf2025GEP}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e57db4077b6747cfca054ccdec0158eb}{%
+           family={{Overwolf Ltd.}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{fullhash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{fullhashraw}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{bibnamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorbibnamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authornamehash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorfullhash}{e57db4077b6747cfca054ccdec0158eb}
+      \strng{authorfullhashraw}{e57db4077b6747cfca054ccdec0158eb}
+      \field{extraname}{3}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Zugriff am 10.01.2025}
+      \field{title}{Real-time Game Events (GEP) -- Overwolf Developers}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dev.overwolf.com/ow-native/live-game-data-gep/live-game-data-gep-intro/
+      \endverb
+      \verb{url}
+      \verb https://dev.overwolf.com/ow-native/live-game-data-gep/live-game-data-gep-intro/
+      \endverb
+    \endentry
     \entry{Phutson2024NextJSStructure}{article}{}{}
       \name{author}{1}{}{%
         {{hash=060bf272b77642d80c9002fe05dc6825}{%

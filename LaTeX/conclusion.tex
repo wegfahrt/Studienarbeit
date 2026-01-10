@@ -1,6 +1,92 @@
 % !TEX root =  master.tex
 \chapter{Fazit und Ausblick}
+\label{chap:fazit}
 
-Was kann man damit anfangen
+Das vorliegende Kapitel bildet den Abschluss der systematischen Entwicklung und Evaluation der ArcDéx Companion App für Arc Raiders. Es werden die zentralen Ergebnisse zusammengefasst und in Bezug zur ursprünglichen Problemstellung gesetzt. Die kritische Würdigung reflektiert die Limitationen der entwickelten Lösung, bevor der Ausblick sowohl kurzfristige Erweiterungen der Web-Applikation als auch langfristige Entwicklungsperspektiven durch native Companion-App-Plattformen skizziert. Eine abschließende Betrachtung ordnet die Arbeit in das Gaming-Companion-Ökosystem ein.
 
-Wie kann man es erweitern
+\section{Zusammenfassung der Ergebnisse}
+\label{sec:zusammenfassung}
+
+Die in Abschnitt~\ref{sec:problemstellung} identifizierten Herausforderungen für Spieler von Arc Raiders -- Informationsasymmetrie bei Quest-Lines, ineffizientes Ressourcenmanagement und unzureichende Squad-Koordination -- bildeten den Ausgangspunkt dieser Arbeit. Die Operationalisierung dieser Problemstellung führte zur Entwicklung einer webbasierten Companion App, deren Evaluation eine differenzierte Bewertung der Zielerreichung ermöglicht.
+
+\textbf{Adressierung der Informationsasymmetrie:} Das implementierte Quest-Management-System mit Kanban-Board und Flow-Chart-Visualisierung adressiert das Problem der mangelnden Übersicht vollständig. Die quantitative Evaluation weist eine Erfüllungsquote von 100\% für alle zugehörigen Akzeptanzkriterien aus, während die qualitative Evaluation mit einem Problemlösungs-Score von 4,42/5 die wahrgenommene Effektivität bestätigt. Insbesondere das Kanban-Board (4,75/5) und die Flow-Chart-Visualisierung (4,50/5) wurden von den Nutzern als besonders hilfreich bewertet.
+
+\textbf{Verbesserung des Ressourcenmanagements:} Der Material-Calculator und der Workstation-Planner ermöglichen die in Abschnitt~\ref{sec:problemstellung} geforderte Kalkulation benötigter Materialien und Priorisierung von Upgrades. Mit einer Erfüllungsquote von 93,8\% und einem UX-Score von 4,33/5 wurde dieses Ziel weitgehend erreicht. Der während der Entwicklung ergänzte Recycling-Kalkulator (UX-Score 4,42/5) demonstriert den Mehrwert kontinuierlicher Stakeholder-Einbindung und erweitert die Ressourcenplanungsfähigkeiten um eine im ursprünglichen Scope nicht vorgesehene Dimension.
+
+\textbf{Squad-Koordination:} Die dritte Problemdimension -- die fehlende zentrale Übersicht über Squad-Ziele und effiziente Routenplanung -- konnte im Rahmen dieser Arbeit nicht adressiert werden. Die für Phase P3 und P4 geplanten Features (Interaktive Karten, Squad-Funktionalität, Pathfinding-Algorithmen) wurden aufgrund des Projektumfangs nicht implementiert. Diese Limitation wird in Abschnitt~\ref{sec:limitationen-fazit} reflektiert und in Abschnitt~\ref{sec:ausblick-web} als Erweiterungspotenzial aufgegriffen.
+
+Die Gesamtbilanz der Evaluation zeigt eine Erfüllungsquote von 94,3\% der definierten Akzeptanzkriterien bei einem \ac{SUS}-Score von 73,75 Punkten, was nach der Adjektivskala von Bangor et al. der Kategorie \glqq Good\grqq{} entspricht~\cite{bangor2009determining}. Die gewählte Technologiekombination aus React/Next.js, Supabase und Vercel hat sich für das Einzelentwickler-Projekt als geeignet erwiesen und ermöglicht eine effiziente Weiterentwicklung.
+
+\section{Kritische Würdigung und Limitationen}
+\label{sec:limitationen-fazit}
+
+Die entwickelte Lösung unterliegt sowohl methodischen als auch konzeptionellen Einschränkungen, die bei der Bewertung der Ergebnisse berücksichtigt werden müssen.
+
+\textbf{Unvollständige Adressierung der Problemstellung:} Die in Abschnitt~\ref{sec:problemstellung} als dritte Herausforderung identifizierte Squad-Koordination bleibt ungelöst. Während Quest-Management und Ressourcenplanung für Einzelspieler vollständig implementiert wurden, fehlen die kollaborativen Komponenten, die das Squad-basierte Gameplay von Arc Raiders unterstützen würden. Dies schränkt den praktischen Nutzen der Anwendung für koordinierte Spielgruppen ein.
+
+\textbf{Manuelle Dateneingabe:} Ein fundamentales Charakteristikum der Web-Applikation ist die Notwendigkeit manueller Fortschrittseingabe durch den Nutzer. Quest-Abschlüsse, Inventarbestände und Workstation-Level müssen aktiv synchronisiert werden, da keine direkte Schnittstelle zum Spiel existiert. Diese zusätzliche kognitive Last widerspricht dem ursprünglichen Ziel der Komplexitätsreduktion und stellt eine potenzielle Nutzungsbarriere dar.
+
+\textbf{Abhängigkeit von Community-Daten:} Wie in Abschnitt~\ref{sec:problemstellung} beschrieben, existiert keine offizielle \ac{API} für Arc Raiders. Die Abhängigkeit von Community-gepflegten Datenquellen birgt Risiken hinsichtlich Aktualität und Vollständigkeit, insbesondere nach Spiel-Updates. Die implementierten Mitigationsstrategien (Cron-Jobs, Validierung) reduzieren diese Risiken, eliminieren sie jedoch nicht.
+
+\textbf{Eingeschränkte Stichprobengröße:} Die qualitative Evaluation mit vier Teilnehmern limitiert die statistische Aussagekraft der \ac{SUS}-Ergebnisse. Die beobachtete Varianz von 30 Punkten zwischen den Teilnehmern unterstreicht die Notwendigkeit größerer Stichproben für eine reliable Bewertung.
+
+\section{Ausblick auf zukünftige Entwicklungen}
+\label{sec:ausblick}
+
+Die identifizierten Limitationen und das verbleibende Entwicklungspotenzial eröffnen zwei komplementäre Erweiterungspfade: die Weiterentwicklung der bestehenden Web-Applikation sowie die Migration zu einer nativen Companion-App-Plattform.
+
+\subsection{Erweiterung der Web-Applikation}
+\label{sec:ausblick-web}
+
+Die in Abschnitt~\ref{sec:entwicklungsmethodik} definierten Projektphasen P3 und P4 umfassen Features, die die verbleibenden Problemdimensionen adressieren und den Funktionsumfang signifikant erweitern würden.
+
+\textbf{Phase P3 -- User Generated Content:} Die Implementierung kooperativer Karten mit Squad-Funktionalität würde die in Abschnitt~\ref{sec:problemstellung} beschriebene Herausforderung der Squad-Koordination direkt adressieren. Die Visualisierung von Quest-Zielen aller Squad-Mitglieder auf einer gemeinsamen Karte ermöglicht koordinierte Routenplanung. Ergänzend würde ein Community-Guide-System mit Voting-Mechanismus (ähnlich Reddit) nutzergenerierte Tipps und Strategien integrieren und die Wissensbasis der Anwendung erweitern.
+
+\textbf{Phase P4 -- Erweiterte Funktionalität:} Die Integration von Pathfinding-Algorithmen (A*, Dijkstra) für selektive Routenoptimierung stellt eine wissenschaftlich interessante Erweiterung dar. Die Berechnung optimaler Routen unter Berücksichtigung multipler Squad-Ziele und deren Priorisierung transformiert das Routenplanungsproblem in ein gewichtetes Traveling-Salesman-Problem mit praktischer Relevanz. Zusätzlich würde ein Screenshot-Import via \ac{OCR} die manuelle Dateneingabe reduzieren, indem Inventar-Screenshots automatisch analysiert und mit der Datenbank abgeglichen werden.
+
+Diese Erweiterungen können innerhalb der bestehenden Architektur realisiert werden. Die modulare Struktur des Next.js-Frontends und die relationale Datenmodellierung in Supabase unterstützen die Integration zusätzlicher Features ohne grundlegende Refaktorierung.
+
+\subsection{Native Companion App mit Overwolf}
+\label{sec:ausblick-overwolf}
+
+Eine fundamentale Alternative zur Web-Applikation bietet die Entwicklung einer nativen Companion App mittels der Overwolf-Plattform. Overwolf ist eine Entwicklungsplattform für In-Game-Anwendungen, die über 45 Millionen monatlich aktive Nutzer erreicht und Entwicklern ermöglicht, Overlays und Desktop-Apps mit Standard-Webtechnologien (HTML, CSS, JavaScript) zu erstellen~\cite{Overwolf2025Platform}.
+
+\textbf{Game Events API:} Der zentrale technische Vorteil von Overwolf liegt im \ac{GEP}, der Echtzeit-Zugriff auf Spielereignisse und -daten ermöglicht~\cite{Overwolf2025GEP}. Für unterstützte Spiele können Events wie Kills, Deaths, Match-Start, Inventaränderungen und Spielerposition automatisch erfasst werden. Dies würde die in Abschnitt~\ref{sec:limitationen-fazit} kritisierte manuelle Dateneingabe vollständig eliminieren -- Quest-Abschlüsse, Inventarbestände und Fortschritte könnten automatisch synchronisiert werden.
+
+\textbf{In-Game-Integration:} Overwolf-Apps können als Overlay direkt im Spiel angezeigt werden, ohne dass ein separates Browser-Fenster erforderlich ist~\cite{Overwolf2025Platform}. Die Integration in \glqq tote Momente\grqq{} wie Ladebildschirme oder die Verwendung als Minimap auf einem zweiten Monitor verbessert die User Experience signifikant gegenüber einer externen Web-Applikation.
+
+\textbf{Existierendes Ökosystem:} Im Overwolf Appstore existieren bereits mehrere Companion Apps für Arc Raiders, darunter \glqq Arc Raiders Companion\grqq{}, \glqq MetaForge\grqq{} und \glqq ArcTerminal\grqq~\cite{Overwolf2025Appstore}. Diese bieten Features wie Item-Scanner, interaktive Karten und Event-Timer. Die in dieser Arbeit entwickelten Alleinstellungsmerkmale -- insbesondere das Kanban-Board, der Flow-Chart für Quest-Abhängigkeiten und der Recycling-Kalkulator mit Reverse-Engineering -- könnten als Differenzierungsmerkmal in eine Overwolf-App überführt werden.
+
+\textbf{Monetarisierung und Distribution:} Die Overwolf-Plattform bietet ein integriertes Monetarisierungsmodell, bei dem Entwickler 70\% der Werbeeinnahmen erhalten~\cite{Overwolf2025Platform}. Die Distribution über den Appstore mit 45 Millionen Nutzern eliminiert die Notwendigkeit eigenständiger Marketingmaßnahmen und ermöglicht eine signifikant größere Reichweite als eine eigenständig betriebene Web-Applikation.
+
+\textbf{Technische Umsetzbarkeit:} Die bestehende React-basierte Codebasis ist prinzipiell mit dem Overwolf-Framework kompatibel, da beide auf Web-Technologien basieren. Die Adaption würde primär die Integration der Overwolf-APIs und die Anpassung des UI für Overlay-Darstellung umfassen. Tabelle~\ref{tab:overwolf-comparison} stellt die wesentlichen Unterschiede zwischen der Web-Applikation und einer potenziellen Overwolf-Implementierung gegenüber.
+
+\begin{table}[htbp]
+\centering
+\caption{Vergleich Web-Applikation vs. Overwolf Companion App}
+\label{tab:overwolf-comparison}
+\begin{tabular}{lll}
+\toprule
+\textbf{Aspekt} & \textbf{Web-App (ArcDéx)} & \textbf{Overwolf App} \\
+\midrule
+Datenerfassung & Manuell durch Nutzer & Automatisch via GEP \\
+Integration & Separater Browser/Tab & In-Game Overlay \\
+Plattform & Plattformunabhängig & Windows \\
+Distribution & Eigenes Hosting & Appstore (45M+ Nutzer) \\
+Monetarisierung & Keine native Option & 70\% Ad-Revenue \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Die Entscheidung zwischen beiden Entwicklungspfaden hängt von strategischen Faktoren ab: Die Web-Applikation bietet Plattformunabhängigkeit und vollständige Kontrolle, während die Overwolf-Integration automatische Datenerfassung und eine etablierte Nutzerbasis ermöglicht. Eine hybride Strategie, bei der die Web-Applikation als Referenzimplementierung dient und die Kernlogik in eine Overwolf-App portiert wird, könnte beide Vorteile vereinen.
+
+\section{Schlussbetrachtung}
+\label{sec:schlussbetrachtung}
+
+Die vorliegende Arbeit demonstriert die systematische Entwicklung einer Companion App für einen Extraction Shooter unter Anwendung moderner Web-Technologien und etablierter Software-Engineering-Praktiken. Die erreichte Erfüllungsquote von 94,3\% bei den Akzeptanzkriterien und der \ac{SUS}-Score von 73,75 (\glqq Good\grqq{}) validieren die gewählten Architektur- und Technologieentscheidungen.
+
+Die in Abschnitt~\ref{sec:motivation} beschriebene Etablierung von Companion Apps als effektive Lösung für die Komplexität moderner Spiele wurde durch diese Arbeit bestätigt. Die entwickelte Anwendung adressiert erfolgreich zwei der drei identifizierten Problemdimensionen und schafft eine solide Grundlage für die Erweiterung um Squad-Koordination und interaktive Karten.
+
+Über den spezifischen Anwendungsfall hinaus liefert die Arbeit übertragbare Erkenntnisse für die Entwicklung von Gaming Companion Apps. Die Kombination aus Kanban-Visualisierung für Quest-Management, Graph-basierter Darstellung von Abhängigkeiten und kalkulatorischen Werkzeugen für Ressourcenplanung adressiert Herausforderungen, die in vielen Spielen mit komplexen Progressionssystemen auftreten. Die modulare Architektur und die Verwendung standardisierter Technologien (React, PostgreSQL) ermöglichen eine Adaption für andere Spiele mit überschaubarem Anpassungsaufwand.
+
+Der Gaming-Markt mit seinem prognostizierten Wachstum auf 600,74 Milliarden USD bis 2030~\cite{VideoGameMarket} bietet erhebliches Potenzial für Companion-App-Entwicklungen. Die zunehmende Komplexität moderner Spiele -- insbesondere in Genres wie Extraction Shootern, \ac{MMO}s und Live-Service-Games -- wird den Bedarf an externen Planungs- und Tracking-Tools weiter steigern. Die in dieser Arbeit entwickelte Lösung und die gewonnenen Erkenntnisse positionieren sich in diesem wachsenden Ökosystem als Referenz für zukünftige Projekte.

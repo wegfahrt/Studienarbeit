@@ -55,3 +55,9 @@ Aufgabenstellung feedback
 
 24.11
 - "Entwicklungsmethodik und Phasenmodell" konkrete Beispiele und Lösungen kürzen und erst im Kapitel über die Durchführung oder in MEthoden und Verfahren spezifizieren?
+
+## 12.01
+Fragen:
+- Durchführung in der From okay, also primär diagramme des systems, wenig spezifische code beispiele?
+- Noch ausführlichere Reflexion der Entscheidungen
+

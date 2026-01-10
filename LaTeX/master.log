@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  9 JAN 2026 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  10 JAN 2026 14:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -920,8 +920,8 @@ Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 135.
 [4]
 Package tocbasic Info: Using my definition of `\numberline' on input line 146.
-Package tocbasic Info: Using my definition of `\numberline' on input line 148.
-Package tocbasic Info: Using my definition of `\numberline' on input line 149.
+Package tocbasic Info: Using my definition of `\numberline' on input line 154.
+Package tocbasic Info: Using my definition of `\numberline' on input line 155.
 )
 \tf@toc=\write5
 \openout5 = `master.toc'.
@@ -1144,7 +1144,7 @@ Overfull \hbox (0.9017pt too wide) in paragraph at lines 178--179
 
 
 Overfull \hbox (2.53435pt too wide) in paragraph at lines 180--181
-\T1/cmss/m/n/12 von Utility-Klassen für Lay-out, Spa-cing, Ty-po-gra-phy, Co-lors und wei-te-re [][]-Properties [[]63[]]. 
+\T1/cmss/m/n/12 von Utility-Klassen für Lay-out, Spa-cing, Ty-po-gra-phy, Co-lors und wei-te-re [][]-Properties [[]66[]]. 
  []
 
 
@@ -1408,7 +1408,7 @@ although it is yet undefined on input line 40.
 [43]
 Package acronym Info: Label `acro:SMART' newly defined as it shall be overridden
 although it is yet undefined on input line 83.
-<./img/smart_kriterien_mindmap.png, id=1310, 4861.16125pt x 1950.28625pt>
+<./img/smart_kriterien_mindmap.png, id=1335, 4861.16125pt x 1950.28625pt>
 File: ./img/smart_kriterien_mindmap.png Graphic file (type png)
 <use ./img/smart_kriterien_mindmap.png>
 Package pdftex.def Info: ./img/smart_kriterien_mindmap.png  used on input line 87.
@@ -1432,7 +1432,7 @@ Overfull \hbox (17.88937pt too wide) in paragraph at lines 142--152
 [46]
 Package acronym Info: Label `acro:MoSCoW' newly defined as it shall be overridden
 although it is yet undefined on input line 182.
-<./img/moscow_quadrant.png, id=1351, 2509.375pt x 2509.375pt>
+<./img/moscow_quadrant.png, id=1375, 2509.375pt x 2509.375pt>
 File: ./img/moscow_quadrant.png Graphic file (type png)
 <use ./img/moscow_quadrant.png>
 Package pdftex.def Info: ./img/moscow_quadrant.png  used on input line 188.
@@ -1566,7 +1566,7 @@ Overfull \hbox (30.13795pt too wide) in paragraph at lines 447--461
 
 
 [56]
-<./img/context_diagram.png, id=1479, 4582.11874pt x 2911.87875pt>
+<./img/context_diagram.png, id=1503, 4582.11874pt x 2911.87875pt>
 File: ./img/context_diagram.png Graphic file (type png)
 <use ./img/context_diagram.png>
 Package pdftex.def Info: ./img/context_diagram.png  used on input line 488.
@@ -1581,7 +1581,7 @@ Overfull \hbox (12.20554pt too wide) in paragraph at lines 497--498
 [57]
 
 [58 <./img/context_diagram.png>]
-<img/er_diagram_light_legend.png, id=1502, 1401.235pt x 780.9175pt>
+<img/er_diagram_light_legend.png, id=1526, 1401.235pt x 780.9175pt>
 File: img/er_diagram_light_legend.png Graphic file (type png)
 <use img/er_diagram_light_legend.png>
 Package pdftex.def Info: img/er_diagram_light_legend.png  used on input line 518.
@@ -1615,7 +1615,7 @@ although it is yet undefined on input line 556.
 
 
 [60]
-<img/quest_page_component_diagram.png, id=1525, 4177.6075pt x 3901.57625pt>
+<img/quest_page_component_diagram.png, id=1550, 4177.6075pt x 3901.57625pt>
 File: img/quest_page_component_diagram.png Graphic file (type png)
 <use img/quest_page_component_diagram.png>
 Package pdftex.def Info: img/quest_page_component_diagram.png  used on input line 569.
@@ -1625,12 +1625,12 @@ Package pdftex.def Info: img/quest_page_component_diagram.png  used on input lin
 [61 <./img/quest_page_component_diagram.png>]
 
 [62]
-<img/simple_data_flow_diagram.png, id=1548, 5016.7425pt x 1495.5875pt>
+<img/simple_data_flow_diagram.png, id=1572, 5016.7425pt x 1495.5875pt>
 File: img/simple_data_flow_diagram.png Graphic file (type png)
 <use img/simple_data_flow_diagram.png>
 Package pdftex.def Info: img/simple_data_flow_diagram.png  used on input line 609.
 (pdftex.def)             Requested size: 407.15616pt x 121.361pt.
-<img/quest_page_state_diagram.png, id=1551, 4112.36375pt x 3152.77875pt>
+<img/quest_page_state_diagram.png, id=1575, 4112.36375pt x 3152.77875pt>
 File: img/quest_page_state_diagram.png Graphic file (type png)
 <use img/quest_page_state_diagram.png>
 Package pdftex.def Info: img/quest_page_state_diagram.png  used on input line 628.
@@ -1785,11 +1785,52 @@ Overfull \hbox (14.8718pt too wide) in paragraph at lines 194--195
 
 [76]
 chapter 6.
-)
+
+Overfull \hbox (13.74144pt too wide) in paragraph at lines 12--13
+[]\T1/cmss/bx/n/12 Adressierung der In-for-ma-ti-ons-a-sym-me-trie: \T1/cmss/m/n/12 Das im-ple-men-tier-te Quest-Management-System
+ []
+
+
+Overfull \hbox (20.39389pt too wide) in paragraph at lines 12--13
+\T1/cmss/m/n/12 zu-ge-hö-ri-gen Ak-zep-tanz-kri-te-ri-en aus, wäh-rend die qua-li-ta-ti-ve Eva-lua-ti-on mit ei-nem Problemlösungs-
+ []
+
+
+Overfull \hbox (10.61847pt too wide) in paragraph at lines 14--15
+[]\T1/cmss/bx/n/12 Verbesserung des Res-sour-cen-ma-na-ge-ments: \T1/cmss/m/n/12 Der Material-Calculator und der Workstation-
+ []
+
+
+Overfull \hbox (2.58864pt too wide) in paragraph at lines 14--15
+\T1/cmss/m/n/12 4,33/5 wur-de die-ses Ziel weit-ge-hend er-reicht. Der wäh-rend der Ent-wick-lung er-gänz-te Recycling-
+ []
+
+
+Overfull \hbox (19.05945pt too wide) in paragraph at lines 14--15
+\T1/cmss/m/n/12 Kalkulator (UX-Score 4,42/5) de-mons-triert den Mehr-wert kon-ti-nu-ier-li-cher Stakeholder-Einbindung
+ []
+
+
 
 [77
 
 ]
+
+[78]
+Package acronym Info: Label `acro:OCR' newly defined as it shall be overridden
+although it is yet undefined on input line 45.
+Package acronym Info: Label `acro:GEP' newly defined as it shall be overridden
+although it is yet undefined on input line 54.
+
+
+[79]
+
+[80]
+Package acronym Info: Label `acro:MMO' newly defined as it shall be overridden
+although it is yet undefined on input line 92.
+)
+
+[81]
 chapter without number
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <12> not available
@@ -1807,11 +1848,11 @@ Overfull \hbox (14.53268pt too wide) in paragraph at lines 275--275
 
 
 
-[78
+[82
 
 ]
 
-[79]
+[83]
 Overfull \hbox (6.75937pt too wide) in paragraph at lines 275--275
 \T1/cmss/m/n/12 ty^^P. In: (2024). Pu-blis-hed: April 2, 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / medium . com / @mohimishra016 /
  []
@@ -1823,21 +1864,26 @@ Overfull \hbox (14.03268pt too wide) in paragraph at lines 275--275
 
 
 
-[80]
+[84]
+Overfull \hbox (17.61722pt too wide) in paragraph at lines 275--275
+[]\T1/cmss/m/n/12 Overwolf Ltd. \T1/cmss/m/sl/12 Real-time Ga-me Events (GEP) -- Over-wolf De-vel-opers\T1/cmss/m/n/12 . Zu-griff am 10.01.2025.
+ []
+
+
 Overfull \hbox (31.05316pt too wide) in paragraph at lines 275--275
 []$\T1/cmtt/m/n/12 https : / / www . pronextjs . dev / workshops / next -[] js -[] foundations -[] for -[] professional -[]
  []
 
 
 
-[81]
+[85]
 Overfull \hbox (3.1106pt too wide) in paragraph at lines 275--275
 \T1/cmss/m/n/12 ci-al Su-pa-ba-se Re-al-ti-me ser-ver re-po-si-to-ry. 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / github . com / supabase /
  []
 
 
 
-[82]
+[86]
 Overfull \hbox (4.02164pt too wide) in paragraph at lines 275--275
 \T1/cmss/m/n/12 tu-res. 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / vercel . com / docs / deployments / preview -[] deployments$[]
  []
@@ -1849,7 +1895,9 @@ Overfull \hbox (12.19682pt too wide) in paragraph at lines 275--275
 
 
 
-[83] (./master.ind) (./master.aux)
+[87]
+
+[88] (./master.ind) (./master.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-10-09>
@@ -1863,18 +1911,18 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32104 strings out of 467747
- 624075 string characters out of 5431120
- 1719276 words of memory out of 5000000
- 59725 multiletter control sequences out of 15000+600000
+ 32166 strings out of 467747
+ 625214 string characters out of 5431120
+ 1722688 words of memory out of 5000000
+ 59766 multiletter control sequences out of 15000+600000
  642519 words of font info for 73 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11254b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on master.pdf (95 pages, 2682829 bytes).
+Output written on master.pdf (100 pages, 2698856 bytes).
 PDF statistics:
- 2394 PDF objects out of 2487 (max. 8388607)
- 2229 compressed objects within 23 object streams
- 698 named destinations out of 1000 (max. 500000)
- 785 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2494 PDF objects out of 2984 (max. 8388607)
+ 2323 compressed objects within 24 object streams
+ 719 named destinations out of 1000 (max. 500000)
+ 833 words of extra memory for PDF output out of 10000 (max. 10000000)
 

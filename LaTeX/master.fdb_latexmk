@@ -1,20 +1,20 @@
 # Fdb version 4
-["biber master"] 1767960090.33584 "master.bcf" "master.bbl" "master" 1767960118.11531 0
-  "bibliography.bib" 1767960089 26512 6d5df6cf586984148a6c41572533e786 ""
-  "master.bcf" 1767960117 127034 d8b8ca8988c623120a78e961702cb88b "pdflatex"
+["biber master"] 1768050974.38542 "master.bcf" "master.bbl" "master" 1768051291.21668 0
+  "bibliography.bib" 1768050972 27423 f5fc966de7e14014dabd2f1c60c6a3b3 ""
+  "master.bcf" 1768051290 127564 e03ef862d8ee550d79efda32f1d57b54 "pdflatex"
   (generated)
   "master.bbl"
   "master.blg"
   (rewritten before read)
-["makeindex master.idx"] 1767956591.74753 "master.idx" "master.ind" "master" 1767960118.11495 0
-  "master.idx" 1767960112 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex master.idx"] 1767956591.74753 "master.idx" "master.ind" "master" 1768051291.21633 0
+  "master.idx" 1768051285 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "master.ilg"
   "master.ind"
   (rewritten before read)
-["pdflatex"] 1767960110.60655 "c:/Users/paul1/src/repos/Studienarbeit/LaTeX/master.tex" "master.pdf" "master" 1767960118.11598 0
+["pdflatex"] 1768051284.05458 "c:/Users/paul1/src/repos/Studienarbeit/LaTeX/master.tex" "master.pdf" "master" 1768051291.21734 0
   "abstract.tex" 1761475516 258 349af85aa9f3a0e2475a8e0fcd312838 ""
-  "acronyms.tex" 1767950135 2394 036c19c34824d16d86f4fd787ec119ec ""
+  "acronyms.tex" 1768050904 2513 47da8f00b84f11b217f6fe8e63af1b46 ""
   "c:/Users/paul1/src/repos/Studienarbeit/LaTeX/master.tex" 1762359992 8484 045de409352e35b7de505faac99bbedd ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1761473945 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1761473945 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -181,7 +181,7 @@
   "chapter1.tex" 1767950135 81605 d574be7777be4d5b40f33c61fb10cf9c ""
   "chapter2.tex" 1767952239 59471 bf3e165c09082a914b8b56a517ce8655 ""
   "chapter3.tex" 1767959764 16080 515ae93d7178d2904f1208107f1e49d6 ""
-  "conclusion.tex" 1761479756 117 0f4d8ef5ea80bf7a7c7f514922cf8375 ""
+  "conclusion.tex" 1768051276 13228 32c28bf1940bc38baff98b4f613d2c55 ""
   "config.tex" 1767956591 5533 f359d32c3511b3ebdfd1969a5fbc95d5 ""
   "ewerkl.tex" 1761473298 624 affea768f2d29da6183c6ed560333890 ""
   "img/context_diagram.png" 1767950135 692997 93fa30bd762c201f0f6cd89cfb68a372 ""
@@ -193,14 +193,14 @@
   "img/simple_data_flow_diagram.png" 1767950135 369145 e33ef0f32bb6b71e39e2f3c0a8ac55c9 ""
   "img/smart_kriterien_mindmap.png" 1767950135 852296 571b5b25ed4a0a79f73f7f50ab8d7484 ""
   "introduction.tex" 1767950135 18793 36046300aba8ae70623460f7ff290958 ""
-  "master.aux" 1767960117 116391 4bb4e9113ac5d3526eb67b2d3a84f738 "pdflatex"
-  "master.bbl" 1767960095 126121 c2cdadf58bcce4034bf20beb6c423531 "biber master"
+  "master.aux" 1768051290 122006 b58b658e4b65d2ed95e96a13b0af482a "pdflatex"
+  "master.bbl" 1768050976 130199 1608d786980e5ff40cf72ac3fab197e1 "biber master"
   "master.ind" 1767956592 0 d41d8cd98f00b204e9800998ecf8427e "makeindex master.idx"
-  "master.lof" 1767960117 1089 a2d254b905dbbf554d282e648bfe5803 "pdflatex"
-  "master.lol" 1767960117 628 f3edf429a5a0e8f5cef24d8d7a1b2537 "pdflatex"
-  "master.run.xml" 1767960117 2351 37d1dfc1f194b0e6026df8ffebb3b5ea "pdflatex"
+  "master.lof" 1768051290 1089 a2d254b905dbbf554d282e648bfe5803 "pdflatex"
+  "master.lol" 1768051290 628 f3edf429a5a0e8f5cef24d8d7a1b2537 "pdflatex"
+  "master.run.xml" 1768051290 2351 37d1dfc1f194b0e6026df8ffebb3b5ea "pdflatex"
   "master.tex" 1762359992 8484 045de409352e35b7de505faac99bbedd ""
-  "master.toc" 1767960117 14892 2e455f32d9a8351658c6df7103c43d10 "pdflatex"
+  "master.toc" 1768051290 15467 a44edfe615a9b3bb27bcb4834eaa1609 "pdflatex"
   "nondisclosurenotice.tex" 1761473298 318 7820f02983fed39c04b978e52dfe2a1f ""
   "titlepage.tex" 1762355633 1124 76a569851c6052ef52053824c8fd30f7 ""
   (generated)
