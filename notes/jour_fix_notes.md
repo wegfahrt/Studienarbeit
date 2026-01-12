@@ -58,10 +58,3 @@ Aufgabenstellung feedback
 
 ## 12.01
 Fragen:
-- Durchführung in der From okay, also primär diagramme des systems, wenig spezifische code beispiele?
-- Noch ausführlichere Reflexion der Entscheidungen
-- Müssen alle Punkte aus dem Phasenmodell der Vorgehensweise in der Arbeit behandelt werden? (Risikoanalyse, Datenquellen Vergleich)
-- Architektur- und Technologiewahl strker reflektieren?
-- methoden und verfahren beispiel?
-- Welche Änderung bezüglich Kapiteln im Phasenmodell?
-

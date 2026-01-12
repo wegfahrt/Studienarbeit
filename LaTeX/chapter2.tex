@@ -52,7 +52,7 @@ Exemplarisch werden im Folgenden drei User Stories aus unterschiedlichen Feature
 \textbf{Quelle:} Issue ARC-24 \quad \textbf{Phase:} P1-Visualization \quad \textbf{Priorität:} Must-Have
 
 \begin{quote}
-\textit{\glqq Als Spieler möchte ich alle Quests in einem Kanban-Board mit den Spalten \glqq Active\grqq{}, \glqq Locked\grqq{} und \glqq Completed\grqq{} sehen, um meinen aktuellen Fortschritt auf einen Blick zu erfassen.\grqq{}}
+\textit{\glqq Als Spieler möchte ich alle Quests in einem Kanban-Board mit den Spalten \glqq All\grqq{}, \glqq Active\grqq{}, \glqq Locked\grqq{} und \glqq Completed\grqq{} sehen, um meinen aktuellen Fortschritt auf einen Blick zu erfassen.\grqq{}}
 \end{quote}
 
 Diese User Story adressiert den in der Problemstellung identifizierten Mangel an Übersichtlichkeit bei der Quest-Verwaltung. Das Kanban-Board-Pattern wurde aus der Comparative Analysis als bewährtes Konzept für die Statusvisualisierung übernommen und auf den Gaming-Kontext adaptiert.
@@ -80,7 +80,7 @@ Diese User Story adressiert direkt das Problem der ineffizienten Ressourcenplanu
 \subsection{Definition von Akzeptanzkriterien}
 \label{sec:akzeptanzkriterien}
 
-Jede User Story wird durch messbare Akzeptanzkriterien konkretisiert, die eine objektive Validierung der Implementierung ermöglichen. Die Kriterien folgen dem \ac{SMART}-Schema, dessen Dimensionen in Abbildung~\ref{fig:smart-mindmap} visualisiert sind.
+Jede User Story wird durch messbare Akzeptanzkriterien konkretisiert, die eine objektive Validierung der Implementierung ermöglichen. Die Kriterien folgen dem SMART-Schema, dessen Dimensionen in Abbildung~\ref{fig:smart-mindmap} visualisiert sind.
 
 \begin{figure}[htbp]
 \centering
@@ -101,7 +101,7 @@ Exemplarisch zeigt Tabelle~\ref{tab:ac-qm-01} die Akzeptanzkriterien für die Us
 \toprule
 \textbf{ID} & \textbf{Kriterium} & \textbf{Messbar} & \textbf{Zeitpunkt} \\
 \midrule
-AC-QM-01.1 & Alle Quests in drei Spalten kategorisiert & Spaltenanzahl = 3 & Bei Seitenladung \\
+AC-QM-01.1 & Alle Quests in drei Spalten kategorisiert & Spaltenanzahl = 4 & Bei Seitenladung \\
 \addlinespace
 AC-QM-01.2 & Echtzeit-Filterung nach Quest-Name & Latenz $<$ 100ms & Bei Tastatureingabe \\
 \addlinespace
@@ -172,7 +172,7 @@ Das Fallbeispiel verdeutlicht drei zentrale Aspekte agilen Anforderungsmanagemen
 
 Erstens kann kontinuierliche Stakeholder-Einbindung Features mit hohem Nutzwert identifizieren, die durch isolierte Analyse nicht erkannt werden. Die Recycling-Problematik war während des eigenen Spieltests nicht als kritisch wahrgenommen worden, da sie erst bei fortgeschrittenem Spielfortschritt relevant wird.
 
-Zweitens ermöglicht flexible Priorisierung die Reaktion auf neue Erkenntnisse, ohne den Gesamtplan zu gefährden. Die Verschiebung der Interaktiven Karten hatte keine negativen Auswirkungen auf das \ac{MVP}, da keine anderen Features von ihnen abhängig waren.
+Zweitens ermöglicht flexible Priorisierung die Reaktion auf neue Erkenntnisse, ohne den Gesamtplan zu gefährden. Die Verschiebung der Interaktiven Karten hatte keine negativen Auswirkungen auf das \ac{MVP}.
 
 Drittens erhöht die Dokumentation der Entscheidungsgrundlage die Nachvollziehbarkeit im wissenschaftlichen Kontext. Die explizite Gegenüberstellung der Optionen legitimiert die Repriorisierung und macht den agilen Entscheidungsprozess transparent.
 

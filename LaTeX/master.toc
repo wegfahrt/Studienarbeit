@@ -51,104 +51,98 @@
 \contentsline {subsection}{\numberline {3.4.3}Zustand als minimalistischer Client State Manager}{25}{subsection.3.4.3}%
 \contentsline {subsection}{\numberline {3.4.4}TanStack Query als Server State Spezialist}{27}{subsection.3.4.4}%
 \contentsline {section}{\numberline {3.5}Datenbank und Backend Design}{30}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Backend-as-a-Service: Paradigmenwechsel in der Backend-Entwicklung}{30}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Supabase als Open-Source Backend-Plattform}{31}{subsection.3.5.2}%
-\contentsline {subsubsection}{\nonumberline Row Level Security: Datenbankseitige Zugriffskontrolle}{32}{subsubsection*.68}%
-\contentsline {subsubsection}{\nonumberline Realtime: Echtzeit-Datensynchronisation}{33}{subsubsection*.70}%
-\contentsline {subsubsection}{\nonumberline Edge Functions: Serverless Computing am Netzwerkrand}{33}{subsubsection*.72}%
-\contentsline {subsection}{\numberline {3.5.3}Object-Relational Mapping: Brücke zwischen Objekten und Relationen}{34}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Drizzle ORM: TypeScript-native Datenbankabstraktion}{35}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Deployment und DevOps}{36}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}DevOps: Theoretische Fundierung und Kernprinzipien}{36}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}DORA-Metriken: Empirische Messung von Software Delivery Performance}{37}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}CI/CD-Pipelines: Automatisierung des Software-Lebenszyklus}{38}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Frontend-Deployment-Plattformen: Vercel als Framework-aware Infrastructure}{39}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Preview Deployments: Kollaborative Entwicklung durch Branch-basierte Umgebungen}{39}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}Theoretische Synthese für die Arc Raiders Companion App, (falsches kapitel?)}{40}{subsection.3.6.6}%
-\contentsline {section}{\numberline {3.7}Testing Frameworks \& Strategien}{40}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Vitest}{40}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Cypress}{41}{subsection.3.7.2}%
-\contentsline {chapter}{\numberline {4}Durchführung}{42}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Anforderungserhebung}{42}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Methodische Grundlagen der Erhebung}{42}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Transformation in User Stories}{43}{subsection.4.1.2}%
-\contentsline {subsubsection}{\nonumberline US-QM-01: Quest-Übersicht als Kanban-Board}{43}{subsubsection*.80}%
-\contentsline {subsubsection}{\nonumberline US-RC-02: Reverse-Engineering von Recycling-Pfaden}{44}{subsubsection*.82}%
-\contentsline {subsubsection}{\nonumberline US-MC-01: Material-Aggregation für Planung}{44}{subsubsection*.84}%
-\contentsline {subsection}{\numberline {4.1.3}Definition von Akzeptanzkriterien}{44}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Fallbeispiel: Adaptives Anforderungsmanagement}{45}{subsection.4.1.4}%
-\contentsline {subsubsection}{\nonumberline Ausgangssituation}{45}{subsubsection*.89}%
-\contentsline {subsubsection}{\nonumberline Identifikation durch Stakeholder-Interview}{45}{subsubsection*.91}%
-\contentsline {subsubsection}{\nonumberline Analyse und Entscheidungsfindung}{46}{subsubsection*.93}%
-\contentsline {subsubsection}{\nonumberline Resultierende Repriorisierung}{46}{subsubsection*.96}%
-\contentsline {subsubsection}{\nonumberline Erkenntnisse für den Entwicklungsprozess}{47}{subsubsection*.98}%
-\contentsline {subsection}{\numberline {4.1.5}Priorisierung nach MoSCoW}{47}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}Technologieentscheidungen}{49}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Methodisches Vorgehen: Multi-Criteria Decision Analysis}{49}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Frontend-Framework-Evaluation}{50}{subsection.4.2.2}%
-\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{50}{subsubsection*.105}%
-\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{50}{subsubsection*.108}%
-\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Frontend-Framework}{51}{subsubsection*.110}%
-\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{51}{subsubsection*.113}%
-\contentsline {subsection}{\numberline {4.2.3}Backend- und Datenbank-Evaluation}{52}{subsection.4.2.3}%
-\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{52}{subsubsection*.116}%
-\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{53}{subsubsection*.118}%
-\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Backend/Datenbank}{53}{subsubsection*.120}%
-\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{53}{subsubsection*.123}%
-\contentsline {subsection}{\numberline {4.2.4}Deployment-Plattform-Evaluation}{54}{subsection.4.2.4}%
-\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{54}{subsubsection*.126}%
-\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{55}{subsubsection*.128}%
-\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Deployment}{55}{subsubsection*.130}%
-\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{55}{subsubsection*.133}%
-\contentsline {subsection}{\numberline {4.2.5}Resultierender Technologie-Stack}{56}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Kritische Würdigung der Methodik, in Evaluation und Ergebnisse verschieben?}{57}{subsection.4.2.6}%
-\contentsline {section}{\numberline {4.3}Systemarchitektur und -design}{57}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Systemkontext und externe Schnittstellen}{57}{subsection.4.3.1}%
-\contentsline {subsubsection}{\nonumberline Externe Akteure und Systeme}{57}{subsubsection*.137}%
-\contentsline {subsubsection}{\nonumberline Architektonische Entscheidungen auf Kontextebene}{58}{subsubsection*.139}%
-\contentsline {subsection}{\numberline {4.3.2}Datenbankdesign}{59}{subsection.4.3.2}%
-\contentsline {subsubsection}{\nonumberline Domänenmodell und Entitäten}{59}{subsubsection*.142}%
-\contentsline {subsubsection}{\nonumberline Mehrsprachigkeit durch JSONB}{60}{subsubsection*.144}%
-\contentsline {subsubsection}{\nonumberline Graph-Strukturen für Abhängigkeiten}{60}{subsubsection*.146}%
-\contentsline {subsection}{\numberline {4.3.3}Komponentenarchitektur}{61}{subsection.4.3.3}%
-\contentsline {subsubsection}{\nonumberline UI Layer}{61}{subsubsection*.150}%
-\contentsline {subsubsection}{\nonumberline View Components}{62}{subsubsection*.152}%
-\contentsline {subsubsection}{\nonumberline State Layer}{62}{subsubsection*.154}%
-\contentsline {subsubsection}{\nonumberline Data Layer}{62}{subsubsection*.156}%
-\contentsline {subsection}{\numberline {4.3.4}Datenfluss und State Management}{63}{subsection.4.3.4}%
-\contentsline {subsubsection}{\nonumberline Client-seitiger Datenfluss}{63}{subsubsection*.159}%
-\contentsline {subsubsection}{\nonumberline Server-seitiger Datenfluss}{63}{subsubsection*.161}%
-\contentsline {subsubsection}{\nonumberline State-Derivation am Beispiel Quest-Status}{63}{subsubsection*.163}%
-\contentsline {subsection}{\numberline {4.3.5}Zusammenfassung der Architekturentscheidungen}{65}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Evaluation und Testdurchführung}{65}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Quantitative Evaluation}{65}{subsection.4.4.1}%
-\contentsline {subsubsection}{\nonumberline Methodische Differenzierung der Testansätze}{66}{subsubsection*.167}%
-\contentsline {subsubsection}{\nonumberline Testumgebung und -werkzeuge}{66}{subsubsection*.170}%
-\contentsline {subsubsection}{\nonumberline Erfassungsschema für Akzeptanzkriterien}{67}{subsubsection*.172}%
-\contentsline {subsection}{\numberline {4.4.2}Qualitative Evaluation}{67}{subsection.4.4.2}%
-\contentsline {subsubsection}{\nonumberline Fragebogendesign}{67}{subsubsection*.176}%
-\contentsline {subsubsection}{\nonumberline Stichprobe und Durchführung}{68}{subsubsection*.179}%
-\contentsline {subsubsection}{\nonumberline Auswertungsmethodik}{68}{subsubsection*.181}%
-\contentsline {subsection}{\numberline {4.4.3}Traceability und Ergebniszuordnung}{69}{subsection.4.4.3}%
-\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{70}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Quantitative Evaluation der Akzeptanzkriterien}{70}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Erfüllungsgrad der automatisiert getesteten Kriterien}{70}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Erfüllungsgrad der manuell evaluierten Kriterien}{71}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Gesamtübersicht der Anforderungserfüllung}{71}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Qualitative Evaluation der User Experience}{73}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}System Usability Scale}{73}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Problemlösungsbewertung nach Problemdimension}{73}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Feature-Nutzung und Discovery}{74}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Kritische Reflexion}{75}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Gegenüberstellung technischer und nutzerseitiger Perspektive}{75}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Limitationen der Evaluation}{75}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Lessons Learned}{76}{subsection.5.3.3}%
-\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{77}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{77}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Kritische Würdigung und Limitationen}{78}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Ausblick auf zukünftige Entwicklungen}{78}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Erweiterung der Web-Applikation}{79}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Native Companion App mit Overwolf}{79}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Schlussbetrachtung}{81}{section.6.4}%
+\contentsline {subsection}{\numberline {3.5.1}PostgreSQL als relationales Datenfundament}{30}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Edge Functions: Serverless Computing am Netzwerkrand}{31}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Realtime: Event-basierte Datensynchronisation}{31}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Object-Relational Mapping mit Drizzle ORM}{32}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Deployment und DevOps}{33}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}DevOps: Theoretische Fundierung und Kernprinzipien}{33}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}DORA-Metriken: Empirische Messung von Software Delivery Performance}{34}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}CI/CD-Pipelines: Automatisierung des Software-Lebenszyklus}{34}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Frontend-Deployment-Plattformen: Vercel als Framework-aware Infrastructure}{35}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Preview Deployments: Kollaborative Entwicklung durch Branch-basierte Umgebungen}{36}{subsection.3.6.5}%
+\contentsline {chapter}{\numberline {4}Durchführung}{37}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Anforderungserhebung}{37}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Methodische Grundlagen der Erhebung}{37}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Transformation in User Stories}{38}{subsection.4.1.2}%
+\contentsline {subsubsection}{\nonumberline US-QM-01: Quest-Übersicht als Kanban-Board}{38}{subsubsection*.70}%
+\contentsline {subsubsection}{\nonumberline US-RC-02: Reverse-Engineering von Recycling-Pfaden}{39}{subsubsection*.72}%
+\contentsline {subsubsection}{\nonumberline US-MC-01: Material-Aggregation für Planung}{39}{subsubsection*.74}%
+\contentsline {subsection}{\numberline {4.1.3}Definition von Akzeptanzkriterien}{39}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Fallbeispiel: Adaptives Anforderungsmanagement}{40}{subsection.4.1.4}%
+\contentsline {subsubsection}{\nonumberline Ausgangssituation}{40}{subsubsection*.79}%
+\contentsline {subsubsection}{\nonumberline Identifikation durch Stakeholder-Interview}{40}{subsubsection*.81}%
+\contentsline {subsubsection}{\nonumberline Analyse und Entscheidungsfindung}{41}{subsubsection*.83}%
+\contentsline {subsubsection}{\nonumberline Resultierende Repriorisierung}{41}{subsubsection*.86}%
+\contentsline {subsubsection}{\nonumberline Erkenntnisse für den Entwicklungsprozess}{42}{subsubsection*.88}%
+\contentsline {subsection}{\numberline {4.1.5}Priorisierung nach MoSCoW}{42}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}Technologieentscheidungen}{44}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Methodisches Vorgehen: Multi-Criteria Decision Analysis}{44}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Frontend-Framework-Evaluation}{45}{subsection.4.2.2}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{45}{subsubsection*.95}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{45}{subsubsection*.98}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Frontend-Framework}{46}{subsubsection*.100}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{46}{subsubsection*.103}%
+\contentsline {subsection}{\numberline {4.2.3}Backend- und Datenbank-Evaluation}{47}{subsection.4.2.3}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{47}{subsubsection*.107}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{48}{subsubsection*.109}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Backend/Datenbank}{48}{subsubsection*.111}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{48}{subsubsection*.114}%
+\contentsline {subsection}{\numberline {4.2.4}Deployment-Plattform-Evaluation}{49}{subsection.4.2.4}%
+\contentsline {subsubsection}{\nonumberline Evaluierte Alternativen}{49}{subsubsection*.117}%
+\contentsline {subsubsection}{\nonumberline Kriteriendefinition und Gewichtung}{50}{subsubsection*.119}%
+\contentsline {subsubsection}{\nonumberline Entscheidungsmatrix Deployment}{50}{subsubsection*.121}%
+\contentsline {subsubsection}{\nonumberline Begründung der Bewertungen}{50}{subsubsection*.124}%
+\contentsline {subsection}{\numberline {4.2.5}Resultierender Technologie-Stack}{51}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Kritische Würdigung der Methodik, in Evaluation und Ergebnisse verschieben?}{52}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Systemarchitektur und -design}{52}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Systemkontext und externe Schnittstellen}{52}{subsection.4.3.1}%
+\contentsline {subsubsection}{\nonumberline Externe Akteure und Systeme}{52}{subsubsection*.128}%
+\contentsline {subsubsection}{\nonumberline Architektonische Entscheidungen auf Kontextebene}{53}{subsubsection*.130}%
+\contentsline {subsection}{\numberline {4.3.2}Datenbankdesign}{54}{subsection.4.3.2}%
+\contentsline {subsubsection}{\nonumberline Domänenmodell und Entitäten}{54}{subsubsection*.133}%
+\contentsline {subsubsection}{\nonumberline Mehrsprachigkeit durch JSONB}{55}{subsubsection*.135}%
+\contentsline {subsubsection}{\nonumberline Graph-Strukturen für Abhängigkeiten}{55}{subsubsection*.137}%
+\contentsline {subsection}{\numberline {4.3.3}Komponentenarchitektur}{56}{subsection.4.3.3}%
+\contentsline {subsubsection}{\nonumberline UI Layer}{56}{subsubsection*.141}%
+\contentsline {subsubsection}{\nonumberline View Components}{57}{subsubsection*.143}%
+\contentsline {subsubsection}{\nonumberline State Layer}{57}{subsubsection*.145}%
+\contentsline {subsubsection}{\nonumberline Data Layer}{57}{subsubsection*.147}%
+\contentsline {subsection}{\numberline {4.3.4}Datenfluss und State Management}{58}{subsection.4.3.4}%
+\contentsline {subsubsection}{\nonumberline Client-seitiger Datenfluss}{58}{subsubsection*.150}%
+\contentsline {subsubsection}{\nonumberline Server-seitiger Datenfluss}{58}{subsubsection*.152}%
+\contentsline {subsubsection}{\nonumberline State-Derivation am Beispiel Quest-Status}{58}{subsubsection*.154}%
+\contentsline {subsection}{\numberline {4.3.5}Zusammenfassung der Architekturentscheidungen}{60}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Evaluation und Testdurchführung}{60}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Quantitative Evaluation}{60}{subsection.4.4.1}%
+\contentsline {subsubsection}{\nonumberline Methodische Differenzierung der Testansätze}{61}{subsubsection*.158}%
+\contentsline {subsubsection}{\nonumberline Testumgebung und -werkzeuge}{61}{subsubsection*.161}%
+\contentsline {subsubsection}{\nonumberline Erfassungsschema für Akzeptanzkriterien}{62}{subsubsection*.163}%
+\contentsline {subsection}{\numberline {4.4.2}Qualitative Evaluation}{62}{subsection.4.4.2}%
+\contentsline {subsubsection}{\nonumberline Fragebogendesign}{62}{subsubsection*.167}%
+\contentsline {subsubsection}{\nonumberline Stichprobe und Durchführung}{63}{subsubsection*.170}%
+\contentsline {subsubsection}{\nonumberline Auswertungsmethodik}{63}{subsubsection*.172}%
+\contentsline {subsection}{\numberline {4.4.3}Traceability und Ergebniszuordnung}{64}{subsection.4.4.3}%
+\contentsline {chapter}{\numberline {5}Ergebnisse und Diskussion}{65}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Quantitative Evaluation der Akzeptanzkriterien}{65}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Erfüllungsgrad der automatisiert getesteten Kriterien}{65}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Erfüllungsgrad der manuell evaluierten Kriterien}{66}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Gesamtübersicht der Anforderungserfüllung}{66}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Qualitative Evaluation der User Experience}{68}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}System Usability Scale}{68}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Problemlösungsbewertung nach Problemdimension}{68}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Feature-Nutzung und Discovery}{69}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Kritische Reflexion}{70}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Gegenüberstellung technischer und nutzerseitiger Perspektive}{70}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Limitationen der Evaluation}{70}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Lessons Learned}{71}{subsection.5.3.3}%
+\contentsline {chapter}{\numberline {6}Fazit und Ausblick}{72}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Zusammenfassung der Ergebnisse}{72}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Kritische Würdigung und Limitationen}{73}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Ausblick auf zukünftige Entwicklungen}{73}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Erweiterung der Web-Applikation}{74}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Native Companion App mit Overwolf}{74}{subsection.6.3.2}%
+\contentsline {section}{\numberline {6.4}Schlussbetrachtung}{76}{section.6.4}%
+\def \@chapapp {\appendixname }
 \contentsline {chapter}{Anhang}{}{section.6.4}
-\contentsline {chapter}{\nonumberline Literatur}{82}{chapter*.196}%
+\contentsline {chapter}{\nonumberline Literatur}{77}{chapter*.187}%

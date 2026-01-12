@@ -3,14 +3,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Dimensionen der SMART-Kriterien für Akzeptanzkriterien}}{40}{figure.caption.75}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MoSCoW-Priorisierung der Features nach Nutzwert und Aufwand}}{43}{figure.caption.90}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Kontextdiagramm der ArcDéx Companion App}}{53}{figure.caption.126}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Entity-Relationship-Diagramm der ArcDéx-Datenbank}}{54}{figure.caption.131}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Komponentendiagramm der Quest-Seite}}{56}{figure.caption.139}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Vereinfachtes Datenflussdiagramm}}{58}{figure.caption.148}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces State-Flow-Diagramm der Quest-Seite}}{59}{figure.caption.155}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Dimensionen der SMART-Kriterien für Akzeptanzkriterien}}{45}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces MoSCoW-Priorisierung der Features nach Nutzwert und Aufwand}}{48}{figure.caption.100}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Kontextdiagramm der ArcDéx Companion App}}{58}{figure.caption.135}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Entity-Relationship-Diagramm der ArcDéx-Datenbank}}{59}{figure.caption.140}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Komponentendiagramm der Quest-Seite}}{61}{figure.caption.148}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Vereinfachtes Datenflussdiagramm}}{63}{figure.caption.157}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces State-Flow-Diagramm der Quest-Seite}}{64}{figure.caption.164}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\def \@chapapp {\appendixname }
 \addvspace {10\p@ }
