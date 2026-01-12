@@ -150,6 +150,5 @@
 \contentsline {subsection}{\numberline {6.3.1}Erweiterung der Web-Applikation}{79}{subsection.6.3.1}%
 \contentsline {subsection}{\numberline {6.3.2}Native Companion App mit Overwolf}{79}{subsection.6.3.2}%
 \contentsline {section}{\numberline {6.4}Schlussbetrachtung}{81}{section.6.4}%
-\def \@chapapp {\appendixname }
 \contentsline {chapter}{Anhang}{}{section.6.4}
 \contentsline {chapter}{\nonumberline Literatur}{82}{chapter*.196}%

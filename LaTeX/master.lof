@@ -3,6 +3,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Dimensionen der SMART-Kriterien für Akzeptanzkriterien}}{45}{figure.caption.86}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces MoSCoW-Priorisierung der Features nach Nutzwert und Aufwand}}{48}{figure.caption.100}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Kontextdiagramm der ArcDéx Companion App}}{58}{figure.caption.135}%
@@ -12,5 +13,4 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces State-Flow-Diagramm der Quest-Seite}}{64}{figure.caption.164}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\def \@chapapp {\appendixname }
 \addvspace {10\p@ }

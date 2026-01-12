@@ -1,4 +1,4 @@
-\babel@toc {ngerman}{}\relax 
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -8,6 +8,4 @@
 \contentsline {lstlisting}{\numberline {4.3}{\ignorespaces Performance-Messung in Playwright}}{66}{lstlisting.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\def \@chapapp {\appendixname }
 \addvspace {10\p@ }
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

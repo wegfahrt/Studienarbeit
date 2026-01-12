@@ -47,7 +47,7 @@ Die identifizierten Probleme lassen sich wie folgt operationalisieren:
   $\rightarrow$ \textbf{Technische Anforderung} ``Darstellung von Zielen und Karten mit Tools zur Routenoptimierung''
 \end{itemize}
 
-Diese Operationalisierung adressiert das in Abschnitt \ref{sec:problemstellung} beschriebene Fehlen offizieller Planungstools und nutzt die von der Community bereitgestellten Daten als Grundlage. Sie bildet die methodische Basis für die nachfolgend beschriebene Entwicklung einer Companion App, die als Referenzimplementierung für ähnliche Extraction Shooter dienen kann.
+Diese Operationalisierung adressiert das in Abschnitt \ref{sec:problemstellung} beschriebene Fehlen offizieller Planungstools und nutzt die von der Community bereitgestellten Daten als Grundlage. Sie bildet die methodische Basis für die nachfolgend beschriebene Entwicklung einer Companion App.
 
 \section{Entwicklungsmethodik und Phasenmodell}\label{sec:entwicklungsmethodik}
 
@@ -57,7 +57,7 @@ In agilen Entwicklungsumgebungen ist Requirements Engineering integraler Bestand
 \subsubsection{1.1 Anforderungserhebung (Requirements Elicitation)}
 
 \begin{itemize}
-  \item \textbf{1.1.1 Empirische Datenerhebung aus Spieltests:} Die in Abschnitt \ref{sec:motivation} erwähnte Teilnahme an einem Spieltest von Arc Raiders bildet die empirische Grundlage für die Anforderungserhebung. Durch systematische Beobachtung und Protokollierung werden konkrete Pain Points bei Quest-Management und Ressourcenplanung identifiziert.
+  \item \textbf{1.1.1 Empirische Datenerhebung aus Spieltests:} Die Teilnahme an einem Spieltest von Arc Raiders bildet die empirische Grundlage für die Anforderungserhebung. Durch systematische Beobachtung und Protokollierung werden konkrete Pain Points bei Quest-Management und Ressourcenplanung identifiziert.
   
   \item \textbf{1.1.2 Stakeholder-Interviews:} Durchführung direkter Gespräche mit Stakeholdern zur Extraktion von Bedürfnissen und Ideen \cite{Visure2025}. Strukturierte Interviews mit Arc Raiders-Spielern verschiedener Erfahrungsstufen sowie gemeinsame Brainstorming-Sessions zur Feature-Ideenfindung ermöglichen die Erfassung spezifischer Anforderungen für Squad-basiertes Gameplay. Die in Abschnitt \ref{sec:problemstellung} identifizierten Problemstellungen werden dabei validiert und präzisiert.
   
@@ -101,7 +101,7 @@ In agilen Entwicklungsumgebungen ist Requirements Engineering integraler Bestand
 
 \begin{itemize}
 
-  \item \textbf{2.1.1 Technologie-Assessment:} Wie in Abschnitt~\ref{sec:motivation} erwähnt, rechtfertigt das enorme Wachstumspotenzial des Gaming-Marktes die Wahl skalierbarer Technologien. Die systematische Evaluation umfasst Frontend-Frameworks (React, Vue, Angular), Backend-Technologien (Next.js API Routes, separate Backend-Lösung), Datenbank-Systeme (PostgreSQL, MongoDB, Firebase) sowie Hosting-Plattformen (Vercel, Netlify, AWS) unter Berücksichtigung von Kosteneffizienz für Hobby-Projekte. \ac{MCDA} ermöglicht die Technologieauswahl basierend auf Kriterien wie Performance, Entwicklerfreundlichkeit, Skalierbarkeit und Kosten.
+  \item \textbf{2.1.1 Technologie-Assessment:} Wie in Abschnitt~\ref{sec:motivation} erwähnt, rechtfertigt das enorme Wachstumspotenzial des Gaming-Marktes die Wahl skalierbarer Technologien. Die systematische Evaluation umfasst Frontend-Frameworks, Backend-Technologien, Datenbank-Systeme sowie Hosting-Plattformen unter Berücksichtigung von Kosteneffizienz für Studienprojekte. \ac{MCDA} ermöglicht die Technologieauswahl basierend auf Kriterien wie Performance, Entwicklerfreundlichkeit, Skalierbarkeit und Kosten.
   
   \item \textbf{2.1.2 Architekturentwurf:} Definition der Systemgrenzen und Komponenten (Frontend, Backend, Datenbank, externe Datenquellen) sowie Auswahl geeigneter Architekturmuster unter Berücksichtigung der Komplexität. Die Dokumentation erfolgt durch Architekturdiagramme nach dem C4-Modell (Context, Container, Component, Code), um verschiedene Abstraktionsebenen abzubilden und Stakeholdern unterschiedliche Detailgrade zu ermöglichen.
   
@@ -125,7 +125,7 @@ Agile Entwicklung betont die iterative Natur mit kontinuierlicher Verfeinerung u
 \begin{itemize}
 	\item \textbf{3.1.1 Iterative Entwicklung:} Umsetzung der priorisierten User Stories in Iterationen unter Berücksichtigung von Clean-Code Prinzipien. Jede Iteration umfasst Planung, Implementierung, Testing und Review. Kontinuierliche Integration von Feedback aus Reviews zur Anpassung des Backlogs und Verbesserung der Implementierung.
 	
-  \item \textbf{3.1.2 Continuous Integration:} Automatisierte Builds bei jedem Commit über GitHub Actions oder ähnliche CI-Tools sowie automatisierte Testausführung der gesamten Test-Suite. Code Quality Checks umfassen Linting (ESLint für JavaScript/TypeScript). Automatisches Deployment auf Staging-Umgebung (z.B. Vercel Preview Deployments) für frühzeitiges Testen.
+  \item \textbf{3.1.2 Continuous Integration:} Automatisierte Builds bei jedem Commit über GitHub Actions oder ähnliche CI-Tools sowie automatisierte Testausführung der gesamten Test-Suite. Code Quality Checks umfassen Linting (ESLint für JavaScript/TypeScript). Automatisches Deployment auf Staging-Umgebung für frühzeitiges Testen.
 \end{itemize}
 
 \subsubsection{3.2 Review und Retrospektive}
