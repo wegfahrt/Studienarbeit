@@ -532,39 +532,6 @@
       \verb https://www.telerik.com/blogs/mastering-typescript-benefits-best-practices
       \endverb
     \endentry
-    \entry{DORAMetrics2024}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=464dbba2e8b2b503a8a0782fe5ad1655}{%
-           family={{DORA Team}},
-           familyi={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{fullhash}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{fullhashraw}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{bibnamehash}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{authorbibnamehash}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{authornamehash}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{authorfullhash}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \strng{authorfullhashraw}{464dbba2e8b2b503a8a0782fe5ad1655}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Official DORA metrics documentation from Google}
-      \field{title}{DORA's software delivery metrics: the four keys}
-      \field{urlday}{28}
-      \field{urlmonth}{12}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://dora.dev/guides/dora-metrics-four-keys/
-      \endverb
-      \verb{url}
-      \verb https://dora.dev/guides/dora-metrics-four-keys/
-      \endverb
-    \endentry
     \entry{DrizzleORMDocs2024}{online}{}{}
       \name{author}{1}{}{%
         {{hash=ab445a6d3690ce7ec76562abd8f24d08}{%

@@ -6,4 +6,3 @@ INPUT c:/Users/paul1/src/repos/Studienarbeit/LaTeX/master.tex
 OUTPUT master.log
 INPUT c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrreprt.cls
 INPUT c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrreprt.cls
-INPUT c:/texlive/2025/texmf-dist/tex/latex/koma-script/scrkbase.sty

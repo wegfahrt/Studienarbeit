@@ -104,16 +104,8 @@ In agilen Entwicklungsumgebungen ist Requirements Engineering integraler Bestand
   \item \textbf{2.1.1 Technologie-Assessment:} Wie in Abschnitt~\ref{sec:motivation} erwähnt, rechtfertigt das enorme Wachstumspotenzial des Gaming-Marktes die Wahl skalierbarer Technologien. Die systematische Evaluation umfasst Frontend-Frameworks, Backend-Technologien, Datenbank-Systeme sowie Hosting-Plattformen unter Berücksichtigung von Kosteneffizienz für Studienprojekte. \ac{MCDA} ermöglicht die Technologieauswahl basierend auf Kriterien wie Performance, Entwicklerfreundlichkeit, Skalierbarkeit und Kosten.
   
   \item \textbf{2.1.2 Architekturentwurf:} Definition der Systemgrenzen und Komponenten (Frontend, Backend, Datenbank, externe Datenquellen) sowie Auswahl geeigneter Architekturmuster unter Berücksichtigung der Komplexität. Die Dokumentation erfolgt durch Architekturdiagramme nach dem C4-Modell (Context, Container, Component, Code), um verschiedene Abstraktionsebenen abzubilden und Stakeholdern unterschiedliche Detailgrade zu ermöglichen.
+  \item \textbf{2.1.3 Konzeptionelle Modellierung:} Erstellung von Modellierungsdiagrammen wie \ac{ER}-Digrammen zur Abbildung der Hauptentitäten (Quests, Workstations, Materialien, Spielerprofile) und deren Beziehungen oder Context Diagrams aus dem \ac{DDD} zur Identifikation von Bounded Contexts. Berücksichtigung der in Abschnitt \ref{sec:problemstellung} beschriebenen Anforderungen an Flexibilität und Erweiterbarkeit für zukünftige Features.
   
-  \item \textbf{2.1.3 Risikoanalyse:} Identifikation technischer Risiken, insbesondere die in Abschnitt~\ref{sec:problemstellung} erwähnte Abhängigkeit von Community-bereitgestellten Daten statt offizieller \ac{API}. Bewertung nach Eintrittswahrscheinlichkeit und Impact sowie Definition von Mitigationsstrategien: Backup-Strategien für Datenquellen (Web-Scraping des offiziellen Fandoms gemäß robots.txt, User-Generated Content mit Qualitätssicherung), Caching-Mechanismen zur Reduzierung der Abhängigkeit von externen Quellen sowie Validierung und Qualitätssicherung von Community-Daten.
-\end{itemize}
-
-\subsubsection{2.2 Datenmodellierung}
-
-\begin{itemize}
-  \item \textbf{2.2.1 Konzeptionelle Modellierung:} Erstellung von Modellierungsdiagrammen wie \ac{ER}-Digrammen zur Abbildung der Hauptentitäten (Quests, Workstations, Materialien, Spielerprofile) und deren Beziehungen oder Context Diagrams aus dem \ac{DDD} zur Identifikation von Bounded Contexts. Berücksichtigung der in Abschnitt \ref{sec:problemstellung} beschriebenen Anforderungen an Flexibilität und Erweiterbarkeit für zukünftige Features.
-  
-  \item \textbf{2.2.2 Datenquellen-Strategie:} Aufgrund des in Abschnitt \ref{sec:problemstellung} beschriebenen Fehlens offizieller Tools müssen mehrere Community-Datenquellen miteinander Verglichen und möglicherweise kombiniert werden. Hierbei wird ähnlich wie bei der Technologie-Assessment-Methode eine \ac{MCDA} angewendet, um die Zuverlässigkeit, Aktualität und Vollständigkeit der Datenquellen zu bewerten. Strategien zur Datenintegration und -synchronisation werden definiert, um eine konsistente und aktuelle Datenbasis sicherzustellen.
 \end{itemize}
 
 \subsection{Phase 3: Implementierung in Iterationen}
@@ -171,7 +163,85 @@ Agile Entwicklung betont die iterative Natur mit kontinuierlicher Verfeinerung u
 
 
 
-\section{Methoden und Verfahren}
-"Welche Methoden und Verfahren werden verwendet?"
-\subsection{Verwendete Tools und Technologien}
-Verwendete Tools und Technologien mit Versionen/Datum (wie z.B. package.json aufbereiten), Ergebnis der Arbeit muss replizierbar sein
+\section{Methoden und Verfahren}\label{sec:methoden-verfahren}
+
+Dieses Kapitel dokumentiert die methodischen Grundlagen sowie den eingesetzten Technologie-Stack der ArcDéx Companion App. Die vollständige Versionierung aller Komponenten gewährleistet die Replizierbarkeit der Ergebnisse.
+
+\subsection{Methodische Grundlagen}
+
+Die Entwicklung folgte einem agilen Vorgehensmodell, das die in Abschnitt~\ref{sec:entwicklungsmethodik} beschriebenen vier Phasen iterativ durchläuft. Die methodischen Kernelemente umfassen:
+
+\textbf{User Stories nach INVEST-Kriterien:} Anforderungen wurden als User Stories formuliert, die den INVEST-Qualitätskriterien entsprechen: Independent (unabhängig priorisierbar), Negotiable (verhandelbar im Detail), Valuable (wertstiftend für Stakeholder), Estimable (schätzbar im Aufwand), Small (in einer Iteration umsetzbar) und Testable (durch Akzeptanzkriterien verifizierbar)~\cite{wake2003invest}. Das standardisierte Format \glqq Als [Rolle] möchte ich [Funktion], um [Nutzen] zu erreichen\grqq{} ermöglichte die konsistente Dokumentation aller funktionalen Anforderungen.
+
+\textbf{Akzeptanzkriterien nach SMART-Prinzip:} Jede User Story wurde mit messbaren Erfolgskriterien versehen, die den SMART-Kriterien genügen (Specific, Measurable, Achievable, Relevant, Time-bound). Diese Akzeptanzkriterien bildeten die Grundlage für die automatisierte Testvalidierung in Phase~4.
+
+\textbf{Iterative Entwicklung mit Continuous Integration:} Die Implementierung erfolgte in Iterationen mit kontinuierlicher Integration über GitHub Actions. Automatisierte Builds, Linting und Test-Ausführung, Preview Deployments über Vercel ermöglichten frühzeitiges Feedback und reduzierten Integrationsrisiken~\cite{VercelPreviewDocs2024}.
+
+\textbf{MoSCoW-Priorisierung:} Die Anforderungen wurden nach der MoSCoW-Methode priorisiert (Must, Should, Could, Won't), wobei die Kernprobleme aus Abschnitt~\ref{sec:problemstellung} als Must-Anforderungen klassifiziert wurden~\cite{clegg1994case}.
+
+\subsection{Verwendete Tools und Technologien}\label{sec:tools-technologien}
+
+Der Technologie-Stack basiert auf dem T3 Stack als vorkonfigurierte Grundlage für typsichere Full-Stack-Entwicklung. Tabelle~\ref{tab:tech-stack} fasst die Kernkomponenten zusammen, die nachfolgenden Abschnitte erläutern die Technologieauswahl.
+
+\begin{table}[htbp]
+\centering
+\caption{Technologie-Stack mit Versionen (Stand: Dezember 2025)}
+\label{tab:tech-stack}
+\begin{tabular}{llll}
+\toprule
+\textbf{Kategorie} & \textbf{Technologie} & \textbf{Version} & \textbf{Zweck} \\
+\midrule
+\multicolumn{4}{l}{\textit{Frontend Framework \& Runtime}} \\
+& Next.js & 15.2.6 & React-Framework mit App Router \\
+& React & 19.0.0 & Komponentenbasierte UI-Library \\
+& TypeScript & 5.8.2 & Statische Typisierung \\
+\midrule
+\multicolumn{4}{l}{\textit{Styling \& UI-Komponenten}} \\
+& Tailwind CSS & 4.0.15 & Utility-First CSS-Framework \\
+& Radix UI & diverse & Barrierefreie UI-Primitives \\
+& Framer Motion & 12.23.24 & Animationen \\
+& Lucide React & 0.546.0 & Icon-Library \\
+\midrule
+\multicolumn{4}{l}{\textit{Visualisierung}} \\
+& React Flow & 11.11.4 & Interaktive Graphen \\
+& Dagre & 0.8.5 & Automatisches Graph-Layout \\
+& Recharts & 2.15.4 & Diagramme und Charts \\
+\midrule
+\multicolumn{4}{l}{\textit{State Management}} \\
+& Zustand & 5.0.8 & Client State mit Persistierung \\
+& TanStack Query & 5.90.5 & Server State und Caching \\
+\midrule
+\multicolumn{4}{l}{\textit{Backend \& Datenbank}} \\
+& Drizzle ORM & 0.40.1 & Typsicheres SQL-ORM \\
+& PostgreSQL & -- & Relationale Datenbank (Supabase) \\
+\midrule
+\multicolumn{4}{l}{\textit{Qualitätssicherung}} \\
+& Playwright & 1.57.0 & End-to-End Testing \\
+& ESLint & 9.23.0 & Code-Linting \\
+& Prettier & 3.5.3 & Code-Formatierung \\
+\midrule
+\multicolumn{4}{l}{\textit{Build \& Deployment}} \\
+& pnpm & 10.14.0 & Package Manager \\
+& Vercel & -- & Hosting mit Preview Deployments \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Frontend-Architektur}
+
+Das Frontend basiert auf Next.js 15 mit dem App Router für dateibasiertes Routing und hybrides Rendering~\cite{nextjsdocs2024}. Die vollständige TypeScript-Typisierung mit strikten Compiler-Optionen (\texttt{strict: true}, \texttt{noUncheckedIndexedAccess}) ermöglicht die frühzeitige Fehlererkennung während der Entwicklung~\cite{Djirdeh2024TypeScriptBestPractices}.
+
+Die UI-Architektur kombiniert Radix UI Primitives für barrierefreie Basiskomponenten mit Tailwind CSS 4 für Utility-First Styling~\cite{WikipediaTailwindCSS}. React Flow realisiert die interaktiven Quest-Flow-Charts und Recycling-Visualisierungen, wobei der Dagre-Algorithmus automatische hierarchische Layouts berechnet~\cite{ReactFlowDocs2024Layouting}.
+
+\subsubsection{State Management und Datenhaltung}
+
+Die Trennung von Client State und Server State folgt etablierten Best Practices~\cite{DevCommunity2023ServerClientState}: Zustand verwaltet lokalen Anwendungszustand mit optionaler Local-Storage-Persistierung, während TanStack React Query serverseitigen State mit automatischem Caching und Revalidierung handhabt~\cite{TanStackQuery2024Overview}.
+
+Die Datenbankanbindung erfolgt über Drizzle \ac{ORM}, das typsichere SQL-Abfragen ermöglicht und TypeScript-Typen automatisch aus dem Datenbankschema generiert~\cite{DrizzleORMDocs2024}. Die PostgreSQL-Datenbank wird über Supabase betrieben.
+
+\subsubsection{Qualitätssicherung und Deployment}
+
+Playwright ermöglicht browser-automatisierte \ac{E2E}-Tests zur Validierung der in Abschnitt~\ref{sec:phase1} definierten Akzeptanzkriterien. Die Code-Qualität wird durch ESLint mit TypeScript-spezifischen Regeln sowie Prettier für konsistente Formatierung sichergestellt.
+
+Das Deployment erfolgt über Vercel mit automatischen Preview Deployments für jeden Git-Branch, was kollaboratives Review ohne separate Staging-Infrastruktur ermöglicht~\cite{VercelPreviewDocs2024}.
+
