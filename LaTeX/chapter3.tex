@@ -32,7 +32,7 @@ Gesamtdauer & 49,04 s \\
 \end{tabular}
 \end{table}
 
-Die Testabdeckungaa umfasst alle Feature-Bereiche mit Performance-kritischen Akzeptanzkriterien. Tabelle~\ref{tab:performance-results} zeigt die gemessenen Werte für die in Tabelle~\ref{tab:e2e-test-scope} definierten Performance-Kriterien.
+Die Testabdeckung umfasst alle Feature-Bereiche mit Performance-kritischen Akzeptanzkriterien. Tabelle~\ref{tab:performance-results} zeigt die gemessenen Werte für die in Tabelle~\ref{tab:e2e-test-scope} definierten Performance-Kriterien.
 
 \begin{table}[htbp]
 \centering
@@ -87,7 +87,7 @@ Fünf Akzeptanzkriterien wurden zum Testzeitpunkt von der automatisierten Ausfü
 \toprule
 \textbf{ID} & \textbf{Kriterium} & \textbf{Status} & \textbf{Begründung} \\
 \midrule
-AC-MC-01.3 & \glqq Select All\grqq{}-Option für Bulk-Selection & $\sim$ & Funktional über Checkbox-Gruppe, dedizierter Button ausstehend \\
+AC-MC-01.3 & \glqq Select All\grqq{}-Option für Bulk-Selection & $\checkmark$ & Funktional für alle sowie nicht-abgeschlossene Items \\
 AC-QM-04.2 & Kaskadierung bei Quest-Completion & $\checkmark$ & Manuelle Verifikation durch Testszenarien bestätigt \\
 AC-QM-04.4 & Reset-Funktion für Fortschritt & $\checkmark$ & Einzeln und global funktional \\
 AC-DB-02.3 & Workstation Quick-Access Cards & $\sim$ & Daten korrekt, UI-Refinement ausstehend \\
@@ -95,8 +95,9 @@ AC-DB-02.4 & Wishlist-Anzeige im Dashboard & $\times$ & Feature für Phase P3 ve
 \bottomrule
 \end{tabular}
 \end{table}
+\pagebreak
 
-Die Notation folgt dem in Abschnitt~\ref{sec:quant-eval-durchfuehrung} definierten Schema: $\checkmark$ (vollständig erfüllt), $\sim$ (teilweise erfüllt), $\times$ (nicht erfüllt). Von den fünf manuell evaluierten Kriterien wurden zwei vollständig erfüllt, zwei teilweise erfüllt und eines bewusst auf eine spätere Phase verschoben.
+Die Notation folgt dem in Abschnitt~\ref{sec:quant-eval-durchfuehrung} definierten Schema: $\checkmark$ (vollständig erfüllt), $\sim$ (teilweise erfüllt), $\times$ (nicht erfüllt). Von den fünf manuell evaluierten Kriterien wurden drei vollständig erfüllt, eines teilweise erfüllt und eines bewusst auf eine spätere Phase verschoben.
 
 \subsection{Gesamtübersicht der Anforderungserfüllung}
 \label{sec:ac-overview}
@@ -114,16 +115,16 @@ Die Aggregation aller Evaluationsergebnisse ergibt folgende Erfüllungsquoten na
 Quest-Management (QM) & 16 & 16 & 100\% \\
 Item-Datenbank (ID) & 6 & 6 & 100\% \\
 Workstation-Planner (WP) & 6 & 6 & 100\% \\
-Material-Calculator (MC) & 8 & 7 & 87,5\% \\
+Material-Calculator (MC) & 8 & 8 & 100\% \\
 Recycling-Kalkulator (RC) & 10 & 10 & 100\% \\
 Dashboard (DB) & 7 & 5 & 71,4\% \\
 \midrule
-\textbf{Gesamt} & \textbf{53} & \textbf{50} & \textbf{94,3\%} \\
+\textbf{Gesamt} & \textbf{53} & \textbf{51} & \textbf{96,2\%} \\
 \bottomrule
 \end{tabular}
 \end{table}
 
-Die Gesamterfüllungsquote von 94,3\% validiert die erfolgreiche Umsetzung der Kernfunktionalität. Die niedrigere Quote im Dashboard-Bereich (71,4\%) resultiert aus der bewussten Verschiebung des Wishlist-Features sowie dem ausstehenden UI-Refinement der Quick-Access Cards.
+Die Gesamterfüllungsquote von 96,2\% validiert die erfolgreiche Umsetzung der Kernfunktionalität. Die niedrigere Quote im Dashboard-Bereich (71,4\%) resultiert aus der bewussten Verschiebung des Wishlist-Features sowie dem ausstehenden UI-Refinement der Quick-Access Cards.
 
 \section{Qualitative Evaluation der User Experience}
 \label{sec:qual-ergebnisse}
@@ -259,7 +260,7 @@ Bemerkenswert ist die hohe Bewertung des Recycling-Kalkulators (UX-Score 4,42), 
 
 Die Evaluation unterliegt mehreren methodischen Einschränkungen, die bei der Interpretation der Ergebnisse berücksichtigt werden müssen.
 
-Die Stichprobengröße von vier Teilnehmern limitiert die statistische Aussagekraft der qualitativen Evaluation. Obwohl Nielsen argumentiert, dass fünf Teilnehmer für formative Usability-Tests ausreichend sind, erfordert eine summative Evaluation mit \ac{SUS} idealerweise größere Stichproben für reliable Schätzungen~\cite{nielsen2000whyyouneed}. Die beobachtete Varianz der \ac{SUS}-Scores (Spannweite 30 Punkte) unterstreicht diese Limitation.
+Die Stichprobengröße von vier Teilnehmern limitiert die statistische Aussagekraft der qualitativen Evaluation. Obwohl Nielsen argumentiert, dass fünf Teilnehmer für formative Usability-Tests ausreichend sind, erfordert eine summative Evaluation mit \ac{SUS} idealerweise größere Stichproben für verlässliche Schätzungen~\cite{nielsen2000whyyouneed}. Die beobachtete Varianz der \ac{SUS}-Scores (Spannweite 30 Punkte) unterstreicht diese Limitation.
 
 Die Testumgebung auf Vercel repräsentiert zwar realistische Produktionsbedingungen, jedoch können Netzwerklatenzen zwischen Testläufen variieren. Die gemessenen Performance-Werte sind daher als Richtwerte zu interpretieren. Die Abwesenheit von Flaky Tests (0\%) deutet jedoch auf stabile Messbedingungen hin.
 
@@ -276,4 +277,4 @@ Der \ac{SUS} als standardisiertes Instrument ermöglichte eine Einordnung der Us
 
 Die Traceability von Problemstellung über User Stories und Akzeptanzkriterien bis zur Evaluation schafft Transparenz und ermöglicht die direkte Bewertung der Zielerreichung. Diese durchgängige Nachverfolgbarkeit sollte in zukünftigen Projekten beibehalten werden.
 
-Die zum \ac{MVP}-Abschluss erreichte Erfüllungsquote von 94,3\% bei einem \ac{SUS}-Score von 73,75 (\glqq Good\grqq{}) validiert die gewählte Architektur und Technologieentscheidungen. Die Priorisierung von Entwicklungseffizienz über maximale Kontrolle (Managed Stack) hat sich für das Einzelentwickler-Projekt als angemessen erwiesen.
+Die zum \ac{MVP}-Abschluss erreichte Erfüllungsquote von 96,2\% bei einem \ac{SUS}-Score von 73,75 (\glqq Good\grqq{}) validiert die gewählte Architektur und Technologieentscheidungen. Die Priorisierung von Entwicklungseffizienz über maximale Kontrolle (Managed Stack) hat sich für das Einzelentwickler-Projekt als angemessen erwiesen.

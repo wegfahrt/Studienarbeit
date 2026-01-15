@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  14 JAN 2026 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  15 JAN 2026 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -903,7 +903,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 5.
 Package tocbasic Info: Using my definition of `\numberline' on input line 6.
 Package tocbasic Info: Using my definition of `\numberline' on input line 7.
 Package tocbasic Info: Using my definition of `\numberline' on input line 10.
-Package tocbasic Info: Using my definition of `\numberline' on input line 32.
+Package tocbasic Info: Using my definition of `\numberline' on input line 31.
 
 
 [3
@@ -912,20 +912,20 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 32.
 
 
 ]
-Overfull \hbox (3.47441pt too wide) in paragraph at lines 65--65
+Overfull \hbox (3.47441pt too wide) in paragraph at lines 64--64
  [][] [][]\T1/cmss/m/n/12 Preview De-ploy-ments: Kol-la-bo-ra-ti-ve Ent-wick-lung durch Branch-basierte 
  []
 
-Package tocbasic Info: Using my definition of `\numberline' on input line 66.
-Package tocbasic Info: Using my definition of `\numberline' on input line 128.
+Package tocbasic Info: Using my definition of `\numberline' on input line 65.
+Package tocbasic Info: Using my definition of `\numberline' on input line 127.
 
 
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
-(babel)             Reported on input line 136.
+(babel)             Reported on input line 135.
 [4]
-Package tocbasic Info: Using my definition of `\numberline' on input line 141.
+Package tocbasic Info: Using my definition of `\numberline' on input line 140.
+Package tocbasic Info: Using my definition of `\numberline' on input line 148.
 Package tocbasic Info: Using my definition of `\numberline' on input line 149.
-Package tocbasic Info: Using my definition of `\numberline' on input line 150.
 )
 \tf@toc=\write5
 \openout5 = `master.toc'.
@@ -989,10 +989,879 @@ LaTeX Warning: Hyper reference `acro:RLS' on page ix undefined on input line 42.
 LaTeX Warning: Hyper reference `acro:RLS' on page ix undefined on input line 42.
 
 
-LaTeX Warning: Hyper reference `acro:MPA' on page ix undefined on input line 49.
+LaTeX Warning: Hyper reference `acro:MPA' on page ix undefined on input line 48.
 
 
-LaTeX Warning: Hyper reference `acro:MPA' on page ix undefined on input line 49.
+LaTeX Warning: Hyper reference `acro:MPA' on page ix undefined on input line 48.
 
 
-LaTeX Warning:
+LaTeX Warning: Hyper reference `acro:RSC' on page ix undefined on input line 49.
+
+
+LaTeX Warning: Hyper reference `acro:RSC' on page ix undefined on input line 49.
+
+
+LaTeX Warning: Hyper reference `acro:SaaS' on page ix undefined on input line 51.
+
+
+LaTeX Warning: Hyper reference `acro:SaaS' on page ix undefined on input line 51.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{ER}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.55 \acro{ER}{Entity-Relationship}
+                                   
+
+LaTeX Warning: Hyper reference `acro:JSONB' on page ix undefined on input line 57.
+
+
+LaTeX Warning: Hyper reference `acro:JSONB' on page ix undefined on input line 57.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{DAG}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.58 \acro{DAG}{Directed Acyclic Graph}
+                                       )
+
+[9] (./abstract.tex
+
+[10
+
+
+
+])
+
+[11
+
+] (./introduction.tex
+chapter 1.
+Package acronym Info: Label `acro:PvPvE' newly defined as it shall be overridden
+although it is yet undefined on input line 7.
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 
+      [1
+
+
+
+
+]
+Package acronym Info: Label `acro:API' newly defined as it shall be overridden
+although it is yet undefined on input line 22.
+
+
+[2]
+chapter 2.
+
+
+[3
+
+{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (3.61778pt too wide) in paragraph at lines 71--72
+[]\T1/cmss/m/n/12 ^^RAls Spie-ler möch-te ich kal-ku-lie-ren, wel-che Ma-te-ria-li-en ich für ge-plan-te Workstation-
+ []
+
+
+
+[4]
+Package acronym Info: Label `acro:TTI' newly defined as it shall be overridden
+although it is yet undefined on input line 85.
+Package acronym Info: Label `acro:MCDA' newly defined as it shall be overridden
+although it is yet undefined on input line 104.
+
+Overfull \hbox (23.89853pt too wide) in paragraph at lines 104--105
+\T1/cmss/m/n/12 sys-te-ma-ti-sche Eva-lua-ti-on um-fasst Frontend-Frameworks, Backend-Technologien, Datenbank-
+ []
+
+
+
+[5]
+Package acronym Info: Label `acro:ER' newly defined as it shall be overridden
+although it is yet undefined on input line 107.
+Package acronym Info: Label `acro:DDD' newly defined as it shall be overridden
+although it is yet undefined on input line 107.
+
+
+[6]
+
+[7]
+Overfull \hbox (2.05272pt too wide) in paragraph at lines 168--169
+\T1/cmss/m/n/12 Dieses Ka-pi-tel do-ku-men-tiert die me-tho-di-schen Grund-la-gen so-wie den ein-ge-setz-ten Technologie-
+ []
+
+
+
+[8]
+
+[9]
+Package acronym Info: Label `acro:ORM' newly defined as it shall be overridden
+although it is yet undefined on input line 240.
+Package acronym Info: Label `acro:E2E' newly defined as it shall be overridden
+although it is yet undefined on input line 244.
+) (./chapter1.tex
+
+[10]
+chapter 3.
+
+
+[11
+
+]
+
+[12]
+
+[13]
+Package acronym Info: Label `acro:SPA' newly defined as it shall be overridden
+although it is yet undefined on input line 89.
+
+
+[14]
+Package acronym Info: Label `acro:UI' newly defined as it shall be overridden
+although it is yet undefined on input line 91.
+
+
+[15]
+Package acronym Info: Label `acro:SEO' newly defined as it shall be overridden
+although it is yet undefined on input line 118.
+
+
+[16]
+Package acronym Info: Label `acro:SSG' newly defined as it shall be overridden
+although it is yet undefined on input line 130.
+Package acronym Info: Label `acro:SSR' newly defined as it shall be overridden
+although it is yet undefined on input line 130.
+Package acronym Info: Label `acro:CSR' newly defined as it shall be overridden
+although it is yet undefined on input line 130.
+Package acronym Info: Label `acro:ISR' newly defined as it shall be overridden
+although it is yet undefined on input line 130.
+Package acronym Info: Label `acro:PPR' newly defined as it shall be overridden
+although it is yet undefined on input line 130.
+Package acronym Info: Label `acro:HTML' newly defined as it shall be overridden
+although it is yet undefined on input line 132.
+
+
+[17]
+
+[18]
+Package acronym Info: Label `acro:CSS' newly defined as it shall be overridden
+although it is yet undefined on input line 178.
+Package acronym Info: Label `acro:BEM' newly defined as it shall be overridden
+although it is yet undefined on input line 178.
+Package acronym Info: Label `acro:OOCSS' newly defined as it shall be overridden
+although it is yet undefined on input line 178.
+
+Overfull \hbox (0.22807pt too wide) in paragraph at lines 178--179
+\T1/cmss/m/n/12 Traditionelle [][][]Cascading Sty-le Sheets ([])[]-Methodologien wie [][][]Block Ele-ment Mo-di-fier ([])[]
+ []
+
+
+Overfull \hbox (0.9017pt too wide) in paragraph at lines 178--179
+\T1/cmss/m/n/12 und [][][]Object Ori-en-ted CSS ([])[] or-ga-ni-sier-ten Sty-les pri-mär um se-man-ti-sche Komponenten-
+ []
+
+
+Overfull \hbox (2.53435pt too wide) in paragraph at lines 180--181
+\T1/cmss/m/n/12 von Utility-Klassen für Lay-out, Spa-cing, Ty-po-gra-phy, Co-lors und wei-te-re [][]-Properties [[]63[]]. 
+ []
+
+
+Overfull \hbox (10.37541pt too wide) in paragraph at lines 195--196
+[]\T1/cmss/bx/n/12 Constraints-basiertes De-sign: \T1/cmss/m/n/12 Ein fun-da-men-ta-ler Vor-teil von Utility-First liegt im constraints-
+ []
+
+
+
+[19]
+Package acronym Info: Label `acro:JIT' newly defined as it shall be overridden
+although it is yet undefined on input line 201.
+
+Overfull \hbox (0.71254pt too wide) in paragraph at lines 201--202
+[]\T1/cmss/bx/n/12 Version 3+ ([][][]Just-In-Time ([])[]-Mode): [][] \T1/cmss/m/n/12 Com-pi-ler ana-ly-siert [][]/JSX/Vue-
+ []
+
+
+Overfull \hbox (27.82831pt too wide) in paragraph at lines 202--203
+[]\T1/cmss/bx/n/12 Version 4 (ak-tu-ell): \T1/cmss/m/n/12 Na-ti-ve [][] Layer Sys-tem (\T1/cmtt/m/n/12 @layer base, components, utilities\T1/cmss/m/n/12 )
+ []
+
+Package acronym Info: Label `acro:FCP' newly defined as it shall be overridden
+although it is yet undefined on input line 205.
+
+
+[20]
+Package acronym Info: Label `acro:MUI' newly defined as it shall be overridden
+although it is yet undefined on input line 226.
+
+Overfull \hbox (6.32649pt too wide) in paragraph at lines 230--231
+[]\T1/cmss/bx/n/12 Rapid Pro-to-ty-ping: \T1/cmss/m/n/12 Out-of-the-box Kom-po-nen-ten er-mög-li-chen schnel-le [][]-Entwicklung
+ []
+
+Package acronym Info: Label `acro:ARIA' newly defined as it shall be overridden
+although it is yet undefined on input line 233.
+
+Overfull \hbox (7.42351pt too wide) in paragraph at lines 240--241
+[]\T1/cmss/bx/n/12 Override-Komplexität: \T1/cmss/m/n/12 Ab-wei-chun-gen vom Default-Design er-for-dern tief-grei-fen-de [][]-
+ []
+
+
+Overfull \hbox (3.6452pt too wide) in paragraph at lines 241--242
+[]\T1/cmss/bx/n/12 Bundle-Gröÿe: \T1/cmss/m/n/12 Com-pre-hen-si-ve Li-bra-ri-es wie [][] lie-fern si-gni-fi-kan-te JavaScript-Bundles
+ []
+
+
+Overfull \hbox (19.0248pt too wide) in paragraph at lines 243--244
+[]\T1/cmss/bx/n/12 Specificity Wars: \T1/cmss/m/n/12 Tief ver-schach-tel-te [][]-Selektoren er-schwe-ren se-lek-ti-ve Style-Overrides. 
+ []
+
+
+
+[21]
+Overfull \hbox (27.49225pt too wide) in paragraph at lines 250--251
+[]\T1/cmss/bx/n/12 Separation of Con-cerns: \T1/cmss/m/n/12 He-ad-less Com-ponents im-ple-men-tie-ren strik-te Tren-nung zwi-schen [[]38[]]: 
+ []
+
+Package acronym Info: Label `acro:WAI' newly defined as it shall be overridden
+although it is yet undefined on input line 257.
+
+Overfull \hbox (0.53343pt too wide) in paragraph at lines 264--265
+[]\T1/cmss/bx/n/12 Accessibility Ga-ran-tiert: \T1/cmss/m/n/12 Pro-fes-sio-nell im-ple-men-tier-te [][]-Patterns oh-ne Developer-
+ []
+
+Package acronym Info: Label `acro:NPM' newly defined as it shall be overridden
+although it is yet undefined on input line 275.
+Package acronym Info: Label `acro:CLI' newly defined as it shall be overridden
+although it is yet undefined on input line 275.
+(c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+) (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+
+[22]
+Package acronym Info: Label `acro:CVA' newly defined as it shall be overridden
+although it is yet undefined on input line 287.
+
+Overfull \hbox (28.5961pt too wide) in paragraph at lines 303--304
+\T1/cmss/m/n/12 Die Vi-sua-li-sie-rung kom-ple-xer re-la-tio-na-ler Da-ten-struk-tu-ren wie Quest-Dependencies oder Ressourcen-
+ []
+
+
+
+[23]
+Package acronym Info: Label `acro:DAG' newly defined as it shall be overridden
+although it is yet undefined on input line 316.
+
+
+[24]
+Package acronym Info: Label `acro:SWR' newly defined as it shall be overridden
+although it is yet undefined on input line 342.
+
+
+[25]
+Overfull \hbox (23.07774pt too wide) in paragraph at lines 351--352
+[]\T1/cmss/bx/n/12 Lokale [][]-Zustände: \T1/cmss/m/n/12 Modal-Visibility, Dropdown-States, Form-Input-Werte, Tab-Selection 
+ []
+
+
+Overfull \hbox (16.26154pt too wide) in paragraph at lines 356--357
+[]\T1/cmss/m/n/12 Die Management-Strategie für Cli-ent State prio-ri-siert Ent-wick-ler-er-go-no-mie und React-Integration,
+ []
+
+
+
+[26]
+
+[27]
+Overfull \hbox (9.328pt too wide) in paragraph at lines 445--446
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[28]
+Overfull \hbox (14.55788pt too wide) in paragraph at lines 464--465
+[]\T1/cmss/bx/n/12 gcTime: \T1/cmss/m/n/12 Du-ra-ti-on, für die un-u-sed Cache-Entries in Me-mo-ry ver-blei-ben (Default: 5min) [[]17[]] 
+ []
+
+
+Overfull \hbox (43.2785pt too wide) in paragraph at lines 471--473
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (43.2785pt too wide) in paragraph at lines 474--476
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (2.5379pt too wide) in paragraph at lines 476--477
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (34.75497pt too wide) in paragraph at lines 489--490
+[]\T1/cmss/bx/n/12 Mutations und Op-ti-mi-stic Up-da-tes: \T1/cmss/m/n/12 Für Data-Modification bie-tet Tan-Stack Que-ry \T1/cmtt/m/n/12 useMutation
+ []
+
+
+Overfull \hbox (43.2785pt too wide) in paragraph at lines 501--503
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.1181pt too wide) in paragraph at lines 504--506
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[29]
+Overfull \hbox (22.9082pt too wide) in paragraph at lines 515--516
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (29.6983pt too wide) in paragraph at lines 520--521
+[][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+
+[30]
+
+[31]
+Overfull \hbox (1.69843pt too wide) in paragraph at lines 591--592
+\T1/cmss/m/n/12 an au-to-ri-sier-te Cli-ents ver-teilt. Phoe-nix Chan-nels im-ple-men-tie-ren ein Publish-Subscribe-Modell,
+ []
+
+
+
+[32]
+Overfull \hbox (7.1652pt too wide) in paragraph at lines 606--607
+[]\T1/cmss/bx/n/12 Performance-Charakteristika: \T1/cmss/m/n/12 Drizz-le ope-riert oh-ne Runtime-Overhead ei-nes Query-Builders
+ []
+
+
+
+[33]
+Package acronym Info: Label `acro:CI' newly defined as it shall be overridden
+although it is yet undefined on input line 632.
+Package acronym Info: Label `acro:CD' newly defined as it shall be overridden
+although it is yet undefined on input line 632.
+
+
+[34]
+
+[35]) (./chapter2.tex
+
+[36]
+
+[37]
+chapter 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+[]|\T1/cmss/m/n/12 Quest-Tracking, Item-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+\T1/cmss/m/n/12 Datenbank, Material-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+\T1/cmss/m/n/12 Kalkulation, Workstation-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/cmss/m/n/12 Stakeholder-
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 24--25
+[]|\T1/cmss/m/n/12 Recycling-Kalkulator (nach-
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 26--27
+[]|\T1/cmss/m/n/12 Kanban-Board, Flow-Chart-
+ []
+
+
+
+[38
+
+]
+Package acronym Info: Label `acro:UX' newly defined as it shall be overridden
+although it is yet undefined on input line 35.
+Package acronym Info: Label `acro:INVEST' newly defined as it shall be overridden
+although it is yet undefined on input line 40.
+
+
+[39]
+<./img/smart_kriterien_mindmap.png, id=1263, 4861.16125pt x 1950.28625pt>
+File: ./img/smart_kriterien_mindmap.png Graphic file (type png)
+<use ./img/smart_kriterien_mindmap.png>
+Package pdftex.def Info: ./img/smart_kriterien_mindmap.png  used on input line 87.
+(pdftex.def)             Requested size: 384.54173pt x 154.27031pt.
+
+Overfull \hbox (63.81436pt too wide) in paragraph at lines 100--111
+ [][] 
+ []
+
+
+
+[40]
+
+[41 <./img/smart_kriterien_mindmap.png>]
+Overfull \hbox (17.88937pt too wide) in paragraph at lines 142--152
+ [][] 
+ []
+
+
+
+[42]
+Package acronym Info: Label `acro:MVP' newly defined as it shall be overridden
+although it is yet undefined on input line 175.
+Package acronym Info: Label `acro:MoSCoW' newly defined as it shall be overridden
+although it is yet undefined on input line 182.
+<./img/moscow_quadrant.png, id=1302, 2509.375pt x 2509.375pt>
+File: ./img/moscow_quadrant.png Graphic file (type png)
+<use ./img/moscow_quadrant.png>
+Package pdftex.def Info: ./img/moscow_quadrant.png  used on input line 188.
+(pdftex.def)             Requested size: 407.15616pt x 407.13683pt.
+
+Overfull \hbox (2.73984pt too wide) in paragraph at lines 193--194
+\T1/cmss/m/n/12 Chart, De-tails), in-ef-fi-zi-en-tes Res-sour-cen-ma-na-ge-ment (Material-Calculator, Recycling-Features)
+ []
+
+Package acronym Info: Label `acro:PaaS' newly defined as it shall be overridden
+although it is yet undefined on input line 218.
+Package acronym Info: Label `acro:IaaS' newly defined as it shall be overridden
+although it is yet undefined on input line 218.
+
+
+[43]
+
+[44 <./img/moscow_quadrant.png>]
+Package acronym Info: Label `acro:CDN' newly defined as it shall be overridden
+although it is yet undefined on input line 241.
+
+
+[45]
+Overfull \hbox (22.00194pt too wide) in paragraph at lines 245--246
+\T1/cmss/m/n/12 SSR via An-gu-lar Uni-ver-sal, strik-te Ar-chi-tek-tur-vor-ga-ben und um-fas-sen-de Enterprise-Features [[]29[]]. 
+ []
+
+
+Overfull \hbox (33.16019pt too wide) in paragraph at lines 254--255
+[]\T1/cmss/bx/n/12 Ecosystem & Bi-blio-the-ken (15%): \T1/cmss/m/n/12 Ver-füg-bar-keit von Bi-blio-the-ken für Graph-Visualisierung
+ []
+
+
+
+[46]
+Overfull \hbox (24.06395pt too wide) in paragraph at lines 295--296
+\T1/cmss/m/n/12 Bibliotheken) und die ver-gleichs-wei-se schwer-ge-wich-ti-ge Run-ti-me ma-chen es für ein Einzelentwickler-
+ []
+
+Package acronym Info: Label `acro:BaaS' newly defined as it shall be overridden
+although it is yet undefined on input line 300.
+Package acronym Info: Label `acro:VPS' newly defined as it shall be overridden
+although it is yet undefined on input line 300.
+
+
+[47]
+Overfull \hbox (46.41246pt too wide) in paragraph at lines 306--307
+\T1/cmss/m/n/12 auf ei-nem Vir-tu-al Pri-va-te Ser-ver (z.B. Hetz-ner, Di-gi-ta-lO-cean). PostgreSQL-Datenbank, Express/Fastify-
+ []
+
+
+Overfull \hbox (12.37495pt too wide) in paragraph at lines 318--319
+[]\T1/cmss/bx/n/12 Realtime-Fähigkeit (10%): \T1/cmss/m/n/12 Für zu-künf-ti-ge Squad-Features ist Echtzeit-Synchronisation
+ []
+
+
+
+[48]
+Package acronym Info: Label `acro:IAM' newly defined as it shall be overridden
+although it is yet undefined on input line 356.
+
+
+[49]
+Overfull \hbox (0.98059pt too wide) in paragraph at lines 365--366
+\T1/cmss/bx/n/12 Vercel: \T1/cmss/m/n/12 Framework-aware Deployment-Plattform mit na-ti-ver Next.js-Optimierung, Ed-ge Func-
+ []
+
+
+
+[50]
+Overfull \hbox (30.13795pt too wide) in paragraph at lines 424--438
+ [][] 
+ []
+
+
+
+[51]
+
+[52]
+<./img/context_diagram.png, id=1422, 4582.11874pt x 2911.87875pt>
+File: ./img/context_diagram.png Graphic file (type png)
+<use ./img/context_diagram.png>
+Package pdftex.def Info: ./img/context_diagram.png  used on input line 465.
+(pdftex.def)             Requested size: 429.77748pt x 273.07683pt.
+
+
+[53 <./img/context_diagram.png>]
+Overfull \hbox (12.20554pt too wide) in paragraph at lines 474--475
+\T1/cmss/m/n/12 ge-hos-tet. Ver-cel über-nimmt das au-to-ma-ti-sche De-ploy-ment, SSL-Terminierung, [][]-Distribution
+ []
+
+
+LaTeX Warning: Reference `fig:er-diagram' on page 54 undefined on input line 491.
+
+<img/er_diagram_light_quests.png, id=1438, 578.66188pt x 339.2675pt>
+File: img/er_diagram_light_quests.png Graphic file (type png)
+<use img/er_diagram_light_quests.png>
+Package pdftex.def Info: img/er_diagram_light_quests.png  used on input line 498.
+(pdftex.def)             Requested size: 452.3988pt x 265.23843pt.
+
+
+[54]
+<img/er_diagram_light_hideout.png, id=1447, 556.0775pt x 367.87437pt>
+File: img/er_diagram_light_hideout.png Graphic file (type png)
+<use img/er_diagram_light_hideout.png>
+Package pdftex.def Info: img/er_diagram_light_hideout.png  used on input line 509.
+(pdftex.def)             Requested size: 452.3988pt x 299.29012pt.
+
+Overfull \hbox (21.36742pt too wide) in paragraph at lines 514--515
+\T1/cmtt/m/n/12 hideout_modules \T1/cmss/m/n/12 de-fi-niert die ver-füg-ba-ren Work-sta-ti-ons mit ma-xi-ma-lem Le-vel, \T1/cmtt/m/n/12 hideout_levels
+ []
+
+
+Overfull \hbox (42.19565pt too wide) in paragraph at lines 514--515
+\T1/cmss/m/n/12 spe-zi-fi-ziert die ein-zel-nen Upgrade-Stufen mit sons-ti-gen Vor-aus-set-zun-gen, und \T1/cmtt/m/n/12 hideout_requirements
+ []
+
+
+Overfull \hbox (31.31909pt too wide) in paragraph at lines 516--517
+\T1/cmss/m/n/12 tri-bu-ten wie Ka-te-go-rie, ma-xi-ma-le Punk-te und Po-si-ti-on im Baum. Die Ta-bel-le \T1/cmtt/m/n/12 skill_prerequisites
+ []
+
+
+
+[55 <./img/er_diagram_light_quests.png>] (c:/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+Overfull \hbox (8.3317pt too wide) in paragraph at lines 535--536
+\T1/cmss/m/n/12 Sowohl Quest-Ketten (\T1/cmtt/m/n/12 quest_chain\T1/cmss/m/n/12 ) als auch Skill-Voraussetzungen (\T1/cmtt/m/n/12 skill_prerequisites\T1/cmss/m/n/12 )
+ []
+
+
+
+[56 <./img/er_diagram_light_hideout.png>]
+Package acronym Info: Label `acro:CTE' newly defined as it shall be overridden
+although it is yet undefined on input line 539.
+<img/quest_page_component_diagram.png, id=1474, 4177.6075pt x 3901.57625pt>
+File: img/quest_page_component_diagram.png Graphic file (type png)
+<use img/quest_page_component_diagram.png>
+Package pdftex.def Info: img/quest_page_component_diagram.png  used on input line 552.
+(pdftex.def)             Requested size: 384.54173pt x 359.10416pt.
+
+
+[57 <./img/quest_page_component_diagram.png>]
+
+[58]
+<img/simple_data_flow_diagram.png, id=1493, 5016.7425pt x 1495.5875pt>
+File: img/simple_data_flow_diagram.png Graphic file (type png)
+<use img/simple_data_flow_diagram.png>
+Package pdftex.def Info: img/simple_data_flow_diagram.png  used on input line 592.
+(pdftex.def)             Requested size: 407.15616pt x 121.361pt.
+<img/quest_page_state_diagram.png, id=1496, 4112.36375pt x 3152.77875pt>
+File: img/quest_page_state_diagram.png Graphic file (type png)
+<use img/quest_page_state_diagram.png>
+Package pdftex.def Info: img/quest_page_state_diagram.png  used on input line 611.
+(pdftex.def)             Requested size: 384.54173pt x 294.80257pt.
+
+
+[59 <./img/simple_data_flow_diagram.png>]
+
+[60 <./img/quest_page_state_diagram.png>]
+Underfull \hbox (badness 4429) in paragraph at lines 655--656
+[]|\T1/cmss/m/n/12 Reduzierter Ops-Aufwand für
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--657
+[]|\T1/cmss/m/n/12 Relationales Sche-ma mit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--659
+[]|\T1/cmss/m/n/12 Adjazenzlisten für Quest-
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 659--660
+[]|\T1/cmss/m/n/12 Optimiert für fla-che Gra-phen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
+[]|\T1/cmss/m/n/12 Client/Server-State-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
+\T1/cmss/m/n/12 Trennung (Zu-stand +
+ []
+
+
+
+[61]
+Overfull \hbox (16.98355pt too wide) in paragraph at lines 684--685
+[]\T1/cmss/bx/n/12 Automatisierte E2E-Tests \T1/cmss/m/n/12 wer-den für Ak-zep-tanz-kri-te-ri-en mit ex-pli-zi-ten Performance-Vorgaben
+ []
+
+
+Overfull \hbox (3.03835pt too wide) in paragraph at lines 705--706
+[]\T1/cmss/bx/n/12 Manuelle Eva-lua-ti-on \T1/cmss/m/n/12 er-folgt für funk-tio-na-le Ak-zep-tanz-kri-te-ri-en oh-ne Performance-Vorgaben.
+ []
+
+
+
+[62]
+Overfull \hbox (4.33371pt too wide) in paragraph at lines 747--748
+[]|\T1/cmss/bx/n/12 Evidenz/Begründung| 
+ []
+
+Package acronym Info: Label `acro:DAU' newly defined as it shall be overridden
+although it is yet undefined on input line 759.
+
+
+[63]
+Package acronym Info: Label `acro:SUS' newly defined as it shall be overridden
+although it is yet undefined on input line 765.
+
+
+[64]) (./chapter3.tex
+
+[65]
+chapter 5.
+
+Overfull \hbox (65.21523pt too wide) in paragraph at lines 63--75
+ [][] 
+ []
+
+
+
+[66
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+[]|\T1/cmss/m/n/12 Funktional für al-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+\T1/cmss/m/n/12 le so-wie nicht-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[]|\T1/cmss/m/n/12 Kaskadierung bei Quest-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+[]|\T1/cmss/m/n/12 Manuelle Ve-ri-fi-ka-ti-on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+\T1/cmss/m/n/12 durch Test-sze-na-ri-en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\T1/cmss/m/n/12 Reset-Funktion für Fort-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+[]|\T1/cmss/m/n/12 Einzeln und glo-bal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--93
+[]|\T1/cmss/m/n/12 Workstation Quick-Access
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+[]|\T1/cmss/m/n/12 Daten kor-rekt, UI-
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 94--94
+[]|\T1/cmss/m/n/12 Wishlist-Anzeige im Das-h-
+ []
+
+
+
+[67]
+
+[68]
+Overfull \hbox (14.8718pt too wide) in paragraph at lines 195--196
+\T1/cmss/m/n/12 neh-mung der Pro-blem-lö-sung in-di-ziert. Das Kanban-Board (C1: 4,75) und das Reverse-Engineering
+ []
+
+
+
+[69]
+
+[70]
+
+[71]) (./conclusion.tex
+
+[72]
+chapter 6.
+
+Overfull \hbox (13.74144pt too wide) in paragraph at lines 12--13
+[]\T1/cmss/bx/n/12 Adressierung der In-for-ma-ti-ons-a-sym-me-trie: \T1/cmss/m/n/12 Das im-ple-men-tier-te Quest-Management-System
+ []
+
+
+Overfull \hbox (30.98854pt too wide) in paragraph at lines 12--13
+\T1/cmss/m/n/12 le zu-ge-hö-ri-gen Ak-zep-tanz-kri-te-ri-en aus, wäh-rend die qua-li-ta-ti-ve Eva-lua-ti-on mit ei-nem Problemlösungs-
+ []
+
+
+Overfull \hbox (10.61847pt too wide) in paragraph at lines 14--15
+[]\T1/cmss/bx/n/12 Verbesserung des Res-sour-cen-ma-na-ge-ments: \T1/cmss/m/n/12 Der Material-Calculator und der Workstation-
+ []
+
+
+
+[73
+
+]
+
+[74]
+Package acronym Info: Label `acro:OCR' newly defined as it shall be overridden
+although it is yet undefined on input line 45.
+Package acronym Info: Label `acro:GEP' newly defined as it shall be overridden
+although it is yet undefined on input line 54.
+
+
+[75]
+
+[76]
+Package acronym Info: Label `acro:MMO' newly defined as it shall be overridden
+although it is yet undefined on input line 92.
+)
+
+[77]
+chapter without number
+
+LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <12> not available
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 274.
+
+
+Overfull \hbox (17.30154pt too wide) in paragraph at lines 275--275
+\T1/cmss/m/n/12 Com-pre-hen-si-ve tech-ni-cal ana-ly-sis of Drizz-le ORM. 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / blog . logrocket .
+ []
+
+
+Overfull \hbox (14.53268pt too wide) in paragraph at lines 275--275
+\T1/cmtt/m/n/12 @bhaturohit / why -[] choose -[] typescript -[] in -[] 2024 -[] the -[] evolution -[] of -[] javascript -[]
+ []
+
+
+
+[78
+
+]
+
+[79]
+Overfull \hbox (6.75937pt too wide) in paragraph at lines 275--275
+\T1/cmss/m/n/12 ty^^P. In: (2024). Pu-blis-hed: April 2, 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / medium . com / @mohimishra016 /
+ []
+
+
+Overfull \hbox (14.03268pt too wide) in paragraph at lines 275--275
+\T1/cmtt/m/n/12 composition -[] vs -[] inheritance -[] in -[] react -[] simplifying -[] component -[] reusability -[]
+ []
+
+
+
+[80]
+Overfull \hbox (17.61722pt too wide) in paragraph at lines 275--275
+[]\T1/cmss/m/n/12 Overwolf Ltd. \T1/cmss/m/sl/12 Real-time Ga-me Events (GEP) -- Over-wolf De-vel-opers\T1/cmss/m/n/12 . Zu-griff am 10.01.2025.
+ []
+
+
+Overfull \hbox (31.05316pt too wide) in paragraph at lines 275--275
+[]$\T1/cmtt/m/n/12 https : / / www . pronextjs . dev / workshops / next -[] js -[] foundations -[] for -[] professional -[]
+ []
+
+
+
+[81]
+Overfull \hbox (3.1106pt too wide) in paragraph at lines 275--275
+\T1/cmss/m/n/12 ci-al Su-pa-ba-se Re-al-ti-me ser-ver re-po-si-to-ry. 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / github . com / supabase /
+ []
+
+
+
+[82]
+Overfull \hbox (4.02164pt too wide) in paragraph at lines 275--275
+\T1/cmss/m/n/12 tu-res. 2024. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / vercel . com / docs / deployments / preview -[] deployments$[]
+ []
+
+
+Overfull \hbox (12.19682pt too wide) in paragraph at lines 275--275
+\T1/cmss/m/n/12 2025. \T1/cmr/m/sc/12 url\T1/cmss/m/n/12 : []$\T1/cmtt/m/n/12 https : / / visuresolutions . com / alm -[] guide / requirements -[] gathering -[]
+ []
+
+
+
+[83] (./master.ind) (./master.aux)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-10-09>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package logreq Info: Writing requests to 'master.run.xml'.
+\openout1 = `master.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 32121 strings out of 467747
+ 624490 string characters out of 5431120
+ 1719494 words of memory out of 5000000
+ 59741 multiletter control sequences out of 15000+600000
+ 642519 words of font info for 73 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 108i,20n,107p,11254b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on master.pdf (95 pages, 2622149 bytes).
+PDF statistics:
+ 2392 PDF objects out of 2487 (max. 8388607)
+ 2224 compressed objects within 23 object streams
+ 699 named destinations out of 1000 (max. 500000)
+ 806 words of extra memory for PDF output out of 10000 (max. 10000000)
+

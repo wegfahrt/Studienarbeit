@@ -89,7 +89,7 @@ Jede User Story wird durch messbare Akzeptanzkriterien konkretisiert, die eine o
 \label{fig:smart-mindmap}
 \end{figure}
 
-Die \ac{SMART}-Kriterien stellen sicher, dass Akzeptanzkriterien \textbf{S}pezifisch (eindeutig und abgegrenzt), \textbf{M}essbar (quantifizierbar), \textbf{A}chievable (technisch umsetzbar), \textbf{R}elevant (beitragend zum Nutzwert) und \textbf{T}ime-bound (zeitlich einordenbar) formuliert sind.
+Die SMART-Kriterien stellen sicher, dass Akzeptanzkriterien \textbf{S}pezifisch (eindeutig und abgegrenzt), \textbf{M}essbar (quantifizierbar), \textbf{A}chievable (technisch umsetzbar), \textbf{R}elevant (beitragend zum Nutzwert) und \textbf{T}ime-bound (zeitlich einordenbar) formuliert sind.
 
 Exemplarisch zeigt Tabelle~\ref{tab:ac-qm-01} die Akzeptanzkriterien für die User Story US-QM-01 (Kanban-Board für Quest-Übersicht).
 
@@ -105,7 +105,7 @@ AC-QM-01.1 & Alle Quests in drei Spalten kategorisiert & Spaltenanzahl = 4 & Bei
 \addlinespace
 AC-QM-01.2 & Echtzeit-Filterung nach Quest-Name & Latenz $<$ 100ms & Bei Tastatureingabe \\
 \addlinespace
-AC-QM-01.3 & Numerische Quest-Anzahl pro Spalte & Counter sichtbar & Permanent \\
+AC-QM-01.3 & Numerische Quest-Anzahl pro Spalte & Counter sichtbar & Bei Seitenladung \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -179,7 +179,7 @@ Drittens erhöht die Dokumentation der Entscheidungsgrundlage die Nachvollziehba
 \subsection{Priorisierung nach MoSCoW}
 \label{sec:moscow}
 
-Die \ac{MoSCoW}-Methode ermöglicht eine systematische Kategorisierung der Anforderungen nach ihrer Relevanz für das \ac{MVP}~\cite{clegg1994case}. Die Priorisierung berücksichtigt sowohl den erwarteten Nutzwert als auch den geschätzten Implementierungsaufwand.
+Die \ac{MoSCoW}-Methode ermöglicht eine systematische Kategorisierung der Anforderungen nach ihrer Relevanz für das \ac{MVP}~\cite{clegg1994case} der Entwicklungsphase P-2 (Progression). Die Priorisierung berücksichtigt sowohl den erwarteten Nutzwert als auch den geschätzten Implementierungsaufwand.
 
 Abbildung~\ref{fig:moscow-quadrant} visualisiert die Einordnung der identifizierten Features in einem Quadranten-Diagramm mit den Achsen \glqq Nutzwert\grqq{} und \glqq Aufwand\grqq{}. Features im oberen linken Quadranten (hoher Wert, niedriger Aufwand) werden als Must-Have klassifiziert, während Features im unteren rechten Quadranten (niedriger Wert, hoher Aufwand) auf spätere Releases verschoben werden.
 
@@ -190,30 +190,7 @@ Abbildung~\ref{fig:moscow-quadrant} visualisiert die Einordnung der identifizier
 \label{fig:moscow-quadrant}
 \end{figure}
 
-Tabelle~\ref{tab:moscow} fasst die resultierende Kategorisierung zusammen und begründet die Zuordnung der einzelnen Feature-Gruppen.
-
-\begin{table}[htbp]
-\centering
-\caption{MoSCoW-Kategorisierung der Anforderungen}
-\label{tab:moscow}
-\begin{tabular}{lp{5.5cm}p{5.5cm}}
-\toprule
-\textbf{Kategorie} & \textbf{Features} & \textbf{Begründung} \\
-\midrule
-Must-Have & Quest-Kanban, Flow-Chart, Quest-Details, Item-Katalog, Workstation-Übersicht, Material-Calculator, Recycling & Adressieren die in Abschnitt~\ref{sec:problemstellung} definierten Kernprobleme; bilden funktionales \ac{MVP} \\
-\addlinespace
-Should-Have & Quest-Progress und -Details, Dashboard-Statistiken, Wishlist-Integration & Erhöhen den Nutzwert signifikant; Anwendung funktional auch ohne diese Features \\
-\addlinespace
-Could-Have & Squad-Features, Pathfinding-Algorithmen, OCR-basierter Screenshot-Import, Interaktive Karten & Hoher Aufwand; für spätere Releases nach Validierung des \ac{MVP} geplant \\
-\addlinespace
-Won't-Have & Creature-Datenbank & Zusatzfeatures mit geringerer Dringlichkeit\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Die Must-Have-Features bilden das \ac{MVP} und adressieren direkt die drei Kernprobleme aus der Problemstellung: Informationsasymmetrie bei Quests (Kanban, Flow-Chart, Details), ineffizientes Ressourcenmanagement (Material-Calculator, Recycling-Features) und fehlende Planungsgrundlage (Item-Katalog, Workstation-Übersicht).
-
-Die Should-Have-Features erweitern die Kernfunktionalität um Komfortfunktionen wie die Persistierung des Spielerfortschritts und aggregierte Statistiken. Diese Features erhöhen den Nutzwert erheblich, sind jedoch für die grundlegende Funktionsfähigkeit der Anwendung nicht zwingend erforderlich.
+Die Must-Have- und Should-Have-Features bilden das \ac{MVP} und adressieren direkt die drei Kernprobleme aus der Problemstellung: Informationsasymmetrie bei Quests (Kanban, Flow-Chart, Details), ineffizientes Ressourcenmanagement (Material-Calculator, Recycling-Features) und fehlende Planungsgrundlage (Item-Katalog, Workstation-Übersicht).
 
 Die Could-Have- und Won't-Have-Features wurden bewusst zurückgestellt, um den Fokus auf die Kernfunktionalität zu wahren. Insbesondere die Squad-Features und Pathfinding-Algorithmen erfordern erheblichen Entwicklungsaufwand und sind erst nach erfolgreicher Validierung des \ac{MVP} sinnvoll zu implementieren.
 
@@ -233,7 +210,7 @@ Die Could-Have- und Won't-Have-Features wurden bewusst zurückgestellt, um den F
 
 % Die \ac{MoSCoW}-Priorisierung strukturiert die Anforderungen nach ihrer Relevanz für das \ac{MVP}. Sieben Features wurden als Must-Have klassifiziert und bilden die Grundlage für die in den folgenden Abschnitten beschriebene Architektur- und Implementierungsphase.
 
-% Die definierten Akzeptanzkriterien nach dem \ac{SMART}-Schema ermöglichen eine objektive Validierung der Implementierung und bilden die Basis für die in Abschnitt~\ref{sec:testen} beschriebene Testphase.
+% Die definierten Akzeptanzkriterien nach dem SMART-Schema ermöglichen eine objektive Validierung der Implementierung und bilden die Basis für die in Abschnitt~\ref{sec:testen} beschriebene Testphase.
 
 \section{Technologieentscheidungen}
 \label{sec:technologieentscheidungen}
@@ -259,7 +236,7 @@ Die Wahl des Frontend-Frameworks bestimmt maßgeblich die Entwicklungseffizienz,
 
 \subsubsection{Evaluierte Alternativen}
 
-\textbf{Next.js 14 (App Router):} Full-Stack React-Framework mit Server-Side Rendering, Static Site Generation und dem App Router mit React Server Components. Optimiert für \ac{PaaS}-Deployment auf Vercel, aber auch self-hostbar~\cite{nextjsdocs2024}.
+\textbf{Next.js 15 (App Router):} Full-Stack React-Framework mit Server-Side Rendering, Static Site Generation und dem App Router mit React Server Components. Optimiert für \ac{PaaS}-Deployment auf Vercel, aber auch self-hostbar~\cite{nextjsdocs2024}.
 
 \textbf{Vite + React (SPA):} Klassische Single-Page-Application-Architektur mit modernem Build-Tool. Framework-agnostisch und auf beliebiger Infrastruktur deploybar – von einem einfachen nginx-Server bis zu \ac{CDN}-Hosting~\cite{vite2024}.
 
@@ -513,22 +490,28 @@ Die lose Kopplung zwischen den externen Diensten wird durch standardisierte Schn
 
 Das relationale Datenbankschema bildet die Domänenobjekte des Spiels Arc Raiders ab und unterstützt die in Abschnitt~\ref{sec:anforderungserhebung} definierten funktionalen Anforderungen. Abbildung~\ref{fig:er-diagram} zeigt das \ac{ER}-Diagramm der PostgreSQL-Datenbank.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{img/er_diagram_light_legend.png}
-\caption{Entity-Relationship-Diagramm der ArcDéx-Datenbank}
-\label{fig:er-diagram}
-\end{figure}
-
 \subsubsection{Domänenmodell und Entitäten}
 
 Das Schema gliedert sich in vier funktionale Bereiche, die den Feature-Bereichen der Anwendung entsprechen:
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{img/er_diagram_light_quests.png}
+\caption{Entity-Relationship-Diagramm Auschnitt: Quest-Management}
+\label{fig:er-diagram-quest-management}
+\end{figure}
 
-\textbf{Quest-Management:} Die Entität \texttt{quests} speichert die Grunddaten einer Quest (Name, Händler, Ziele, Erfahrungspunkte). Quest-Abhängigkeiten werden über die Assoziationstabelle \texttt{quest\_chain} als gerichteter Graph modelliert, wobei \texttt{previous\_quest\_id} auf die Voraussetzungs-Quest verweist. Die Tabellen \texttt{quest\_requirements} und \texttt{quest\_rewards} verknüpfen Quests mit den benötigten bzw. erhaltenen Items.
+\textbf{Quest-Management:} Die Entität \texttt{quests} speichert die Grunddaten einer Quest (Name, Händler, Ziele, Erfahrungspunkte). Quest-Abhängigkeiten werden über die Assoziationstabelle \texttt{quest\_chain} als gerichteter Graph modelliert, wobei \texttt{previous\_quest\_id} auf die Voraussetzungs-Quest verweist. Die Tabellen \texttt{quest\_requirements} und \texttt{quest\_rewards} verknüpfen Quests mit den benötigten bzw. erhaltenen Items (siehe Abbildung \ref{fig:er-diagram-quest-management}).
 
 \textbf{Item-Datenbank:} Die zentrale Entität \texttt{items} enthält alle Spielgegenstände mit Attributen wie Typ, Seltenheit, Wert und Gewicht. Komplexe, variable Datenstrukturen wie Effekte (\texttt{effects}) werden als \texttt{JSONB}-Spalten gespeichert, was flexible Schemata innerhalb des relationalen Modells ermöglicht.
 
-\textbf{Hideout-System:} Das Workstation-Upgrade-System wird durch drei Tabellen abgebildet: \texttt{hideout\_modules} definiert die verfügbaren Workstations mit maximalem Level, \texttt{hideout\_levels} spezifiziert die einzelnen Upgrade-Stufen mit sonstigen Voraussetzungen, und \texttt{hideout\_requirements} verknüpft jedes Level mit den benötigten Items.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{img/er_diagram_light_hideout.png}
+\caption{Entity-Relationship-Diagramm Auschnitt: Hideout-System}
+\label{fig:er-diagram-hideout}
+\end{figure}
+
+\textbf{Hideout-System:} Das Workstation-Upgrade-System wird durch drei Tabellen abgebildet: \texttt{hideout\_modules} definiert die verfügbaren Workstations mit maximalem Level, \texttt{hideout\_levels} spezifiziert die einzelnen Upgrade-Stufen mit sonstigen Voraussetzungen, und \texttt{hideout\_requirements} verknüpft jedes Level mit den benötigten Items (siehe Abbildung \ref{fig:er-diagram-hideout}).
 
 \textbf{Skill-System:} Die Entität \texttt{skill\_nodes} repräsentiert die Fähigkeiten im Skill-Baum mit Attributen wie Kategorie, maximale Punkte und Position im Baum. Die Tabelle \texttt{skill\_prerequisites} modelliert die Abhängigkeiten zwischen Skills als gerichteten azyklischen Graphen.
 
@@ -719,7 +702,7 @@ AC-MC-01.3 & Material-Aggregation & < 500ms \\
 \end{tabular}
 \end{table}
 
-\textbf{Manuelle Evaluation} erfolgt für funktionale Akzeptanzkriterien ohne Performance-Vorgaben. Diese Kriterien beschreiben Funktionalitäten, deren Erfüllung durch Inspektion der implementierten Features feststellbar ist (z.B. \glqq Kanban-Board zeigt drei Spalten\grqq{}). Die Bewertung erfolgt durch den Entwickler anhand einer dreistufigen Skala: \textit{vollständig erfüllt}, \textit{teilweise erfüllt} oder \textit{nicht erfüllt}, jeweils mit Begründung.
+\textbf{Manuelle Evaluation} erfolgt für funktionale Akzeptanzkriterien ohne Performance-Vorgaben. Diese Kriterien beschreiben Funktionalitäten, deren Erfüllung durch Inspektion der implementierten Features feststellbar ist (z.B. \glqq Kanban-Board zeigt vier Spalten\grqq{}). Die Bewertung erfolgt durch den Entwickler anhand einer dreistufigen Skala: \textit{vollständig erfüllt}, \textit{teilweise erfüllt} oder \textit{nicht erfüllt}, jeweils mit Begründung.
 
 Diese Differenzierung reduziert den Testaufwand auf die Kriterien, bei denen automatisierte Messung tatsächlichen Mehrwert liefert, ohne die Validierungsabdeckung zu kompromittieren.
 
@@ -727,7 +710,7 @@ Diese Differenzierung reduziert den Testaufwand auf die Kriterien, bei denen aut
 
 Die automatisierten Tests werden mit Playwright durchgeführt, einem 
 modernen E2E-Testing-Framework von Microsoft. Playwright bietet 
-gegenüber alternativen Frameworks wie Playwright mehrere Vorteile: 
+gegenüber alternativen Frameworks wie Cypress mehrere Vorteile: 
 native Unterstützung für parallele Testausführung, automatisches 
 Warten auf Elemente (Auto-Waiting) sowie eine TypeScript-native 
 API mit async/await-Syntax.
@@ -777,9 +760,9 @@ Die qualitative Evaluation erhebt die subjektive Nutzererfahrung und bewertet, i
 
 \subsubsection{Fragebogendesign}
 
-Der Fragebogen wurde als Google Form implementiert und gliedert sich in drei Teile, die unterschiedliche Dimensionen der User Experience erfassen:
+Der Fragebogen wurde als Google Form umgesetzt und gliedert sich in drei Teile, die unterschiedliche Dimensionen der User Experience erfassen:
 
-\textbf{Teil B: System Usability Scale (SUS)} umfasst die zehn standardisierten Items nach Brooke \cite{brooke1996sus}. Der \ac{SUS} ist ein etabliertes Instrument zur Messung der wahrgenommenen Usability und ermöglicht durch seinen standardisierten Score (0--100) den Vergleich mit Benchmark-Werten. Die Fragen werden auf einer fünfstufigen Likert-Skala beantwortet.
+\textbf{Teil B: System Usability Scale (SUS)} umfasst die zehn standardisierten Fragen nach Brooke \cite{brooke1996sus}. Der \ac{SUS} ist ein etabliertes Instrument zur Messung der wahrgenommenen Usability und ermöglicht durch seinen standardisierten Score (0--100) den Vergleich mit Benchmark-Werten. Die Fragen werden auf einer fünfstufigen Likert-Skala beantwortet.
 
 \textbf{Teil C: Problemlösungs-Bewertung} evaluiert direkt die in der Problemstellung identifizierten Kernprobleme sowie das im nachinein enstandene Recycling-Feature. Dieser Abschnitt ist in drei Dimensionen unterteilt:
 \begin{enumerate}

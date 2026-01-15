@@ -56,5 +56,7 @@ Aufgabenstellung feedback
 24.11
 - "Entwicklungsmethodik und Phasenmodell" konkrete Beispiele und Lösungen kürzen und erst im Kapitel über die Durchführung oder in MEthoden und Verfahren spezifizieren?
 
-## 12.01
+## 19.01
 Fragen:
+- 1.3 anforderungsvalidierung mvp entwicklung prototyping
+- jetzt schon abgeben? Bearbeitungszeitraum, Abgabe physisch?
