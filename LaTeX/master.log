@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  15 JAN 2026 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.10.26)  15 JAN 2026 12:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1026,12 +1026,27 @@ l.58 \acro{DAG}{Directed Acyclic Graph}
                                        )
 
 [9] (./abstract.tex
+Package acronym Info: Label `acro:E2E' newly defined as it shall be overridden
+although it is yet undefined on input line 20.
+Package acronym Info: Label `acro:SUS' newly defined as it shall be overridden
+although it is yet undefined on input line 20.
+
 
 [10
 
 
 
-])
+]
+Overfull \hbox (11.05588pt too wide) in paragraph at lines 56--65
+\T1/cmss/m/n/12 Board und Flow-Chart-Visualisierung für Ab-hän-gig-keits-gra-phen (UX-Score 4,42/5), (2) Material-
+ []
+
+
+Overfull \hbox (10.1658pt too wide) in paragraph at lines 56--65
+\T1/cmss/m/n/12 (UX-Score 4,33/5), (3) Recycling-Kalkulator mit Reverse-Engineering-Funktionalität und Graph-
+ []
+
+)
 
 [11
 
@@ -1102,8 +1117,11 @@ Overfull \hbox (2.05272pt too wide) in paragraph at lines 168--169
 [9]
 Package acronym Info: Label `acro:ORM' newly defined as it shall be overridden
 although it is yet undefined on input line 240.
-Package acronym Info: Label `acro:E2E' newly defined as it shall be overridden
-although it is yet undefined on input line 244.
+
+Overfull \hbox (9.85742pt too wide) in paragraph at lines 244--245
+\T1/cmss/m/n/12 de-fi-nier-ten Ak-zep-tanz-kri-te-ri-en. Die Code-Qualität wird durch ESLint mit TypeScript-spezifischen
+ []
+
 ) (./chapter1.tex
 
 [10]
@@ -1406,7 +1424,7 @@ although it is yet undefined on input line 40.
 
 
 [39]
-<./img/smart_kriterien_mindmap.png, id=1263, 4861.16125pt x 1950.28625pt>
+<./img/smart_kriterien_mindmap.png, id=1269, 4861.16125pt x 1950.28625pt>
 File: ./img/smart_kriterien_mindmap.png Graphic file (type png)
 <use ./img/smart_kriterien_mindmap.png>
 Package pdftex.def Info: ./img/smart_kriterien_mindmap.png  used on input line 87.
@@ -1432,7 +1450,7 @@ Package acronym Info: Label `acro:MVP' newly defined as it shall be overridden
 although it is yet undefined on input line 175.
 Package acronym Info: Label `acro:MoSCoW' newly defined as it shall be overridden
 although it is yet undefined on input line 182.
-<./img/moscow_quadrant.png, id=1302, 2509.375pt x 2509.375pt>
+<./img/moscow_quadrant.png, id=1308, 2509.375pt x 2509.375pt>
 File: ./img/moscow_quadrant.png Graphic file (type png)
 <use ./img/moscow_quadrant.png>
 Package pdftex.def Info: ./img/moscow_quadrant.png  used on input line 188.
@@ -1512,7 +1530,7 @@ Overfull \hbox (30.13795pt too wide) in paragraph at lines 424--438
 [51]
 
 [52]
-<./img/context_diagram.png, id=1422, 4582.11874pt x 2911.87875pt>
+<./img/context_diagram.png, id=1428, 4582.11874pt x 2911.87875pt>
 File: ./img/context_diagram.png Graphic file (type png)
 <use ./img/context_diagram.png>
 Package pdftex.def Info: ./img/context_diagram.png  used on input line 465.
@@ -1527,7 +1545,7 @@ Overfull \hbox (12.20554pt too wide) in paragraph at lines 474--475
 
 LaTeX Warning: Reference `fig:er-diagram' on page 54 undefined on input line 491.
 
-<img/er_diagram_light_quests.png, id=1438, 578.66188pt x 339.2675pt>
+<img/er_diagram_light_quests.png, id=1445, 578.66188pt x 339.2675pt>
 File: img/er_diagram_light_quests.png Graphic file (type png)
 <use img/er_diagram_light_quests.png>
 Package pdftex.def Info: img/er_diagram_light_quests.png  used on input line 498.
@@ -1535,7 +1553,7 @@ Package pdftex.def Info: img/er_diagram_light_quests.png  used on input line 498
 
 
 [54]
-<img/er_diagram_light_hideout.png, id=1447, 556.0775pt x 367.87437pt>
+<img/er_diagram_light_hideout.png, id=1453, 556.0775pt x 367.87437pt>
 File: img/er_diagram_light_hideout.png Graphic file (type png)
 <use img/er_diagram_light_hideout.png>
 Package pdftex.def Info: img/er_diagram_light_hideout.png  used on input line 509.
@@ -1569,7 +1587,7 @@ Overfull \hbox (8.3317pt too wide) in paragraph at lines 535--536
 [56 <./img/er_diagram_light_hideout.png>]
 Package acronym Info: Label `acro:CTE' newly defined as it shall be overridden
 although it is yet undefined on input line 539.
-<img/quest_page_component_diagram.png, id=1474, 4177.6075pt x 3901.57625pt>
+<img/quest_page_component_diagram.png, id=1480, 4177.6075pt x 3901.57625pt>
 File: img/quest_page_component_diagram.png Graphic file (type png)
 <use img/quest_page_component_diagram.png>
 Package pdftex.def Info: img/quest_page_component_diagram.png  used on input line 552.
@@ -1579,12 +1597,12 @@ Package pdftex.def Info: img/quest_page_component_diagram.png  used on input lin
 [57 <./img/quest_page_component_diagram.png>]
 
 [58]
-<img/simple_data_flow_diagram.png, id=1493, 5016.7425pt x 1495.5875pt>
+<img/simple_data_flow_diagram.png, id=1499, 5016.7425pt x 1495.5875pt>
 File: img/simple_data_flow_diagram.png Graphic file (type png)
 <use img/simple_data_flow_diagram.png>
 Package pdftex.def Info: img/simple_data_flow_diagram.png  used on input line 592.
 (pdftex.def)             Requested size: 407.15616pt x 121.361pt.
-<img/quest_page_state_diagram.png, id=1496, 4112.36375pt x 3152.77875pt>
+<img/quest_page_state_diagram.png, id=1502, 4112.36375pt x 3152.77875pt>
 File: img/quest_page_state_diagram.png Graphic file (type png)
 <use img/quest_page_state_diagram.png>
 Package pdftex.def Info: img/quest_page_state_diagram.png  used on input line 611.
@@ -1647,9 +1665,6 @@ although it is yet undefined on input line 759.
 
 
 [63]
-Package acronym Info: Label `acro:SUS' newly defined as it shall be overridden
-although it is yet undefined on input line 765.
-
 
 [64]) (./chapter3.tex
 
@@ -1852,16 +1867,16 @@ Package logreq Info: Writing requests to 'master.run.xml'.
 Here is how much of TeX's memory you used:
  32121 strings out of 467747
  624490 string characters out of 5431120
- 1719494 words of memory out of 5000000
+ 1719437 words of memory out of 5000000
  59741 multiletter control sequences out of 15000+600000
  642519 words of font info for 73 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  108i,20n,107p,11254b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx2488.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on master.pdf (95 pages, 2622149 bytes).
+Output written on master.pdf (95 pages, 2625495 bytes).
 PDF statistics:
- 2392 PDF objects out of 2487 (max. 8388607)
- 2224 compressed objects within 23 object streams
+ 2398 PDF objects out of 2487 (max. 8388607)
+ 2230 compressed objects within 23 object streams
  699 named destinations out of 1000 (max. 500000)
  806 words of extra memory for PDF output out of 10000 (max. 10000000)
 
